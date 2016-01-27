@@ -1,0 +1,237 @@
+/*b-services-block*/
+.b-services-block{
+  clear: both;
+  padding: 1px 17px 28px 20px;
+  background: #fff;
+  margin: 25px 0px 15px;
+  border: 1px solid #ccc;
+
+  &__title{
+    font-size: 21px;
+    margin-bottom: 17px;
+  }
+
+  &__item{
+    padding-top: 22px;
+    padding-right: 10px;
+    background: #f7f7f7;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+    margin-bottom: 16px;
+    padding-bottom: 20px;
+
+    &-order{
+      display: block;
+      float: right;
+      font-family: $neue-haas-bold;
+      font-size: 12px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0;
+      text-align: center;
+      background: #8b0333;
+      box-shadow: 0 1px 1px 0 rgba(0,0,0,.25);
+      width: 137px;
+      padding: 8px 0 9px;
+      margin-right: 16px;
+    }
+
+    &-title{
+      font-family: $neue-haas-reg;
+      font-size: 18px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #000;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0;
+      margin: 2px 0px 21px 27px;
+    }
+
+    &-img{
+      float: left;
+      font-size: 0;
+      line-height: 0;
+      margin-top: 7px;
+      margin-left: 28px;
+
+      img{
+        max-width: 100%;
+      }
+    }
+
+    &-text{
+      margin: 21px 0 24px 328px;
+      font-family: $neue-haas-reg;
+      font-size: 14px;
+      line-height: 1.5em;
+      font-weight: 400;
+      color: #000;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+
+      &--details{
+        margin: 0 0 12px 16px;
+      }
+    }
+
+    &-button{
+      display: inline-block;
+      height: 23px;
+      padding: 2px 14px 5px;
+      border-radius: 5px;
+      background: #6e9cde;
+      background: linear-gradient(to bottom, #8ec2ff, #6e9cde);
+      font-family: $neue-haas-medium;
+      font-size: 12px;
+      line-height: 25px;
+      font-weight: 400;
+      color: #fff;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      text-align: center;
+
+      &:hover,
+      &:focus{
+        background: #8ec2ff;
+        background: linear-gradient(to top, #8ec2ff, #6e9cde);
+      }
+
+      span{
+        font-family: $neue-haas-bold;
+      }
+
+      i{
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1em;
+      }
+
+      &-wrapper{
+        display: block;
+        margin-left: 328px;
+        margin-bottom: 31px;
+      }
+    }
+
+    &-details{
+      clear: both;
+      margin-top: 10px;
+      margin-left: 28px;
+
+      &-title{
+        margin: 0 0 26px 47px;
+        font-family: $neue-haas-medium;
+        font-size: 18px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #959595;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        position: relative;
+
+        &--scheme{
+
+          &::before{
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: -48px;
+            width: 30px;
+            height: 30px;
+            background: url("../images/b-services-block__item-details-title--scheme.png") no-repeat 0 0;
+          }
+        }
+
+        &--function{
+
+          &::before{
+            content: '';
+            position: absolute;
+            top: -1px;
+            left: -48px;
+            width: 30px;
+            height: 30px;
+            background: url("../images/b-services-block__item-details-title--function.png") no-repeat 0 0;
+          }
+        }
+      }
+    }
+
+    &-wrapper{
+      padding-top: 2px;
+
+      &--scheme{
+        border-left: 3px solid #4c83fc;
+      }
+
+      &--function{
+        border-left: 3px solid #dddddd;
+      }
+    }
+
+    &-scheme{
+      float: left;
+      width: 341px;
+
+      &-list{
+        list-style: none;
+        margin: 0 0 0 16px;
+        padding: 0;
+
+        &-unit{
+          font-family: $neue-haas-medium;
+          font-size: 16px;
+          line-height: 1.2em;
+          font-weight: 400;
+          color: #4c83fc;
+          text-transform: none;
+          text-decoration: none;
+          letter-spacing: 0;
+          margin-bottom: 5px;
+        }
+      }
+
+      &-note{
+        font-family: $neue-haas-light-it;
+        font-size: 12px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #959595;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        margin-left: 16px;
+      }
+    }
+
+    &-function{
+      float: right;
+      width: 341px;
+      margin-right: 6px;
+    }
+  }
+
+  &__link{
+    display: inline-block;
+    font-family: $neue-haas-bold;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-align: center;
+    background: #8b0333;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.25);
+    padding: 9px 16px;
+    margin-left: 10px;
+  }
+}
+/*end of b-services-block*/

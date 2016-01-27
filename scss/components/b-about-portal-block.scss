@@ -1,0 +1,118 @@
+/*b-about-portal-block*/
+.b-about-portal-block{
+  clear: both;
+  padding: 1px 6px 7px 19px;
+  background: #fff;
+  margin: 25px 0px 15px;
+  border: 1px solid #ccc;
+  min-height: 839px;
+
+  h2{
+    font-size: 21px;
+    margin-bottom: 12px;
+  }
+
+  &__description{
+    font-family: $neue-haas-bold;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    margin:0 0 27px;
+  }
+
+  &__text{
+    font-family: $neue-haas-reg;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #898989;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    margin: 0 0 37px;
+    text-align: center;
+    border: 1px solid #efeeee;
+    width: 769px;
+    height: 206px;
+  }
+
+  &__advantages{
+    margin-bottom: 15px;
+
+    &-title{
+      font-family: $neue-haas-bold;
+      font-size: 18px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #000;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0;
+      margin: 0 0 28px;
+      text-align: center;
+    }
+
+    &-table{
+      margin: 0;
+      padding: 0;
+    }
+
+    &-icon{
+      vertical-align: top;
+
+      img{
+        max-width: 100%;
+      }
+    }
+
+    &-feature{
+      font-family: $neue-haas-medium;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #000;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0;
+      padding-top: 8px;
+      padding-left: 22px;
+      vertical-align: top;
+    }
+
+    &-text{
+      font-family: $neue-haas-light;
+      font-size: 12px;
+      line-height: 1.5em;
+      font-weight: 400;
+      color: #000;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      padding-top: 7px;
+      padding-left: 92px;
+      padding-bottom: 31px;
+    }
+  }
+
+  &__link{
+    display: block;
+    font-family: $neue-haas-bold;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-align: center;
+    background: #8b0333;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.25);
+    width: 216px;
+    padding: 8px 0 9px;
+  }
+}
+/*end of b-about-portal-block*/

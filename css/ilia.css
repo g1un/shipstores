@@ -1,0 +1,1287 @@
+/*ilia' styles*/
+/*general*/
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/*end of general*/
+/*fonts*/
+@font-face {
+  font-family: 'NeueHaasUnicaW1G-Bold';
+  src: url(../fonts/NeueHaasUnicaW1G-Bold.ttf);
+}
+@font-face {
+  font-family: 'NeueHaasUnicaW1G-Medium';
+  src: url(../fonts/NeueHaasUnicaW1G-Medium.ttf);
+}
+@font-face {
+  font-family: 'NeueHaasUnicaW1G-LightIt';
+  src: url(../fonts/NeueHaasUnicaW1G-LightIt.ttf);
+}
+@font-face {
+  font-family: 'NeueHaasUnicaW1G-Light';
+  src: url(../fonts/NeueHaasUnicaW1G-Light.ttf);
+}
+@font-face {
+  font-family: 'NeueHaasUnicaW1G-Thin';
+  src: url(../fonts/NeueHaasUnicaW1G-Thin.ttf);
+}
+@font-face {
+  font-family: 'NeueHaasUnicaW1G-Regular';
+  src: url(../fonts/NeueHaasUnicaW1G-Regular.ttf);
+}
+/*end of fonts*/
+/*my variables*/
+/*end of my variables*/
+/*------------search on not main pages and breadcrums----------------------*/
+.b-breadcrumb-search {
+  width: 100%;
+  height: 33px;
+  float: left;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.bx-breadcrumb {
+  font-size: 9px;
+  color: #464646;
+  width: 470px;
+  overflow: hidden;
+  height: 33px !important;
+}
+
+.bx-breadcrumb a, .bx-breadcrumb a:hover, .bx-breadcrumb a:active {
+  text-decoration: none;
+  color: #464646;
+}
+
+.fa-angle-right {
+  padding: 0px 3px;
+}
+
+.bx-breadcrumb i {
+  margin-top: -3px;
+}
+
+.fa-angle-right:before {
+  content: "\f111" !important;
+  font-size: 4px;
+  color: #7fb3ff;
+}
+
+.b-search-nomain {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  border: 1px solid #7fb3ff;
+}
+
+.nomain-search {
+  height: 30px !important;
+}
+
+.search-small-pict {
+  width: 48px !important;
+  background: #7fb3ff url(images/search-img-small.png) center no-repeat !important;
+}
+
+.search-small-pict:hover {
+  background: url(images/search-img-small.png) no-repeat 50% 50%, url(images/search_bg.png) repeat-x #7fb3ff !important;
+}
+
+.nomain-inp-text {
+  width: 250px !important;
+  color: #000 !important;
+}
+
+/*------------/search on not main pages and breadcrums----------------------*/
+/*b-bonus-block*/
+.b-bonus-block {
+  clear: both;
+  padding: 1px 6px 7px 19px;
+  background: #fff;
+  margin: 25px 0px 15px;
+  border: 1px solid #ccc;
+  min-height: 839px;
+}
+.b-bonus-block h2 {
+  font-size: 21px;
+  margin-bottom: 21px;
+}
+.b-bonus-block__text {
+  font-family: "NeueHaasUnicaW1G-Regular";
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin-bottom: 27px;
+}
+.b-bonus-block__button {
+  display: block;
+  width: 196px;
+  height: 23px;
+  padding: 7px 10px 0;
+  margin-left: 1px;
+  border-radius: 5px;
+  background: #6e9cde;
+  background: -webkit-linear-gradient(top, #8ec2ff, #6e9cde);
+  background: linear-gradient(to bottom, #8ec2ff, #6e9cde);
+  font-family: "NeueHaasUnicaW1G-Medium";
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 31px;
+}
+.b-bonus-block__button:hover, .b-bonus-block__button:focus {
+  background: #8ec2ff;
+  background: -webkit-linear-gradient(bottom, #8ec2ff, #6e9cde);
+  background: linear-gradient(to top, #8ec2ff, #6e9cde);
+}
+.b-bonus-block__button span {
+  font-family: "NeueHaasUnicaW1G-Bold";
+}
+.b-bonus-block__link {
+  display: inline-block;
+  font-family: "NeueHaasUnicaW1G-Bold";
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  padding: 5px 113px 10px 16px;
+  margin-top: 9px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  position: relative;
+}
+.b-bonus-block__link span {
+  text-transform: uppercase;
+}
+.b-bonus-block__link::after {
+  content: '';
+  position: absolute;
+  top: 13px;
+  right: 12px;
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid #8b0333;
+}
+.b-bonus-block__presents {
+  display: none;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.25);
+  padding: 14px 17px 0 13px;
+  width: 516px;
+}
+.b-bonus-block__presents-hide {
+  float: right;
+  font-family: "NeueHaasUnicaW1G-Light";
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #959595;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  cursor: pointer;
+}
+.b-bonus-block__presents-title {
+  font-family: "NeueHaasUnicaW1G-Bold";
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin-left: 3px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+.b-bonus-block__presents-title span {
+  text-transform: uppercase;
+}
+.b-bonus-block__presents-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
+}
+.b-bonus-block__presents-item {
+  border: 1px solid #d7d7d7;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 19px;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  width: 112px;
+  min-height: 144px;
+}
+.b-bonus-block__presents-item:nth-child(4n) {
+  margin-right: 0;
+}
+.b-bonus-block__presents-item-title {
+  font-family: "NeueHaasUnicaW1G-Medium";
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 8px auto 17px;
+}
+.b-bonus-block__presents-item-points {
+  font-family: "NeueHaasUnicaW1G-Medium";
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  background: #8b0333;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  width: 100px;
+  padding: 2px 0 5px;
+  margin: 0 auto;
+}
+.b-bonus-block__presents-link {
+  text-decoration: none;
+}
+.b-bonus-block__presents-img {
+  width: 62px;
+  margin: 0 auto 12px;
+}
+.b-bonus-block__presents-img img {
+  max-width: 100%;
+}
+
+/*end of b-bonus-block*/
+/*b-about-portal-block*/
+.b-about-portal-block {
+  clear: both;
+  padding: 1px 6px 7px 19px;
+  background: #fff;
+  margin: 25px 0px 15px;
+  border: 1px solid #ccc;
+  min-height: 839px;
+}
+.b-about-portal-block h2 {
+  font-size: 21px;
+  margin-bottom: 12px;
+}
+.b-about-portal-block__description {
+  font-family: "NeueHaasUnicaW1G-Bold";
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0 0 27px;
+}
+.b-about-portal-block__text {
+  font-family: "NeueHaasUnicaW1G-Regular";
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #898989;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0 0 37px;
+  text-align: center;
+  border: 1px solid #efeeee;
+  width: 769px;
+  height: 206px;
+}
+.b-about-portal-block__advantages {
+  margin-bottom: 15px;
+}
+.b-about-portal-block__advantages-title {
+  font-family: "NeueHaasUnicaW1G-Bold";
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0 0 28px;
+  text-align: center;
+}
+.b-about-portal-block__advantages-table {
+  margin: 0;
+  padding: 0;
+}
+.b-about-portal-block__advantages-icon {
+  vertical-align: top;
+}
+.b-about-portal-block__advantages-icon img {
+  max-width: 100%;
+}
+.b-about-portal-block__advantages-feature {
+  font-family: "NeueHaasUnicaW1G-Medium";
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  padding-top: 8px;
+  padding-left: 22px;
+  vertical-align: top;
+}
+.b-about-portal-block__advantages-text {
+  font-family: "NeueHaasUnicaW1G-Light";
+  font-size: 12px;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  padding-top: 7px;
+  padding-left: 92px;
+  padding-bottom: 31px;
+}
+.b-about-portal-block__link {
+  display: block;
+  font-family: "NeueHaasUnicaW1G-Bold";
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  text-align: center;
+  background: #8b0333;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  width: 216px;
+  padding: 8px 0 9px;
+}
+
+/*end of b-about-portal-block*/
+/*b-services-block*/
+.b-services-block {
+  clear: both;
+  padding: 1px 17px 28px 20px;
+  background: #fff;
+  margin: 25px 0px 15px;
+  border: 1px solid #ccc;
+}
+.b-services-block__title {
+  font-size: 21px;
+  margin-bottom: 17px;
+}
+.b-services-block__item {
+  padding-top: 22px;
+  padding-right: 10px;
+  background: #f7f7f7;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+  margin-bottom: 16px;
+  padding-bottom: 20px;
+}
+.b-services-block__item-order {
+  display: block;
+  float: right;
+  font-family: "NeueHaasUnicaW1G-Bold";
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  text-align: center;
+  background: #8b0333;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  width: 137px;
+  padding: 8px 0 9px;
+  margin-right: 16px;
+}
+.b-services-block__item-title {
+  font-family: "NeueHaasUnicaW1G-Regular";
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 2px 0px 21px 27px;
+}
+.b-services-block__item-img {
+  float: left;
+  font-size: 0;
+  line-height: 0;
+  margin-top: 7px;
+  margin-left: 28px;
+}
+.b-services-block__item-img img {
+  max-width: 100%;
+}
+.b-services-block__item-text {
+  margin: 21px 0 24px 328px;
+  font-family: "NeueHaasUnicaW1G-Regular";
+  font-size: 14px;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.b-services-block__item-text--details {
+  margin: 0 0 12px 16px;
+}
+.b-services-block__item-button {
+  display: inline-block;
+  height: 23px;
+  padding: 2px 14px 5px;
+  border-radius: 5px;
+  background: #6e9cde;
+  background: -webkit-linear-gradient(top, #8ec2ff, #6e9cde);
+  background: linear-gradient(to bottom, #8ec2ff, #6e9cde);
+  font-family: "NeueHaasUnicaW1G-Medium";
+  font-size: 12px;
+  line-height: 25px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  text-align: center;
+}
+.b-services-block__item-button:hover, .b-services-block__item-button:focus {
+  background: #8ec2ff;
+  background: -webkit-linear-gradient(bottom, #8ec2ff, #6e9cde);
+  background: linear-gradient(to top, #8ec2ff, #6e9cde);
+}
+.b-services-block__item-button span {
+  font-family: "NeueHaasUnicaW1G-Bold";
+}
+.b-services-block__item-button i {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1em;
+}
+.b-services-block__item-button-wrapper {
+  display: block;
+  margin-left: 328px;
+  margin-bottom: 31px;
+}
+.b-services-block__item-details {
+  clear: both;
+  margin-top: 10px;
+  margin-left: 28px;
+}
+.b-services-block__item-details-title {
+  margin: 0 0 26px 47px;
+  font-family: "NeueHaasUnicaW1G-Medium";
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #959595;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  position: relative;
+}
+.b-services-block__item-details-title--scheme::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -48px;
+  width: 30px;
+  height: 30px;
+  background: url("../images/b-services-block__item-details-title--scheme.png") no-repeat 0 0;
+}
+.b-services-block__item-details-title--function::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -48px;
+  width: 30px;
+  height: 30px;
+  background: url("../images/b-services-block__item-details-title--function.png") no-repeat 0 0;
+}
+.b-services-block__item-wrapper {
+  padding-top: 2px;
+}
+.b-services-block__item-wrapper--scheme {
+  border-left: 3px solid #4c83fc;
+}
+.b-services-block__item-wrapper--function {
+  border-left: 3px solid #dddddd;
+}
+.b-services-block__item-scheme {
+  float: left;
+  width: 341px;
+}
+.b-services-block__item-scheme-list {
+  list-style: none;
+  margin: 0 0 0 16px;
+  padding: 0;
+}
+.b-services-block__item-scheme-list-unit {
+  font-family: "NeueHaasUnicaW1G-Medium";
+  font-size: 16px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #4c83fc;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin-bottom: 5px;
+}
+.b-services-block__item-scheme-note {
+  font-family: "NeueHaasUnicaW1G-LightIt";
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #959595;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin-left: 16px;
+}
+.b-services-block__item-function {
+  float: right;
+  width: 341px;
+  margin-right: 6px;
+}
+.b-services-block__link {
+  display: inline-block;
+  font-family: "NeueHaasUnicaW1G-Bold";
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  text-align: center;
+  background: #8b0333;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  padding: 9px 16px;
+  margin-left: 10px;
+}
+
+/*end of b-services-block*/
+/*b-dealers-block*/
+.b-dealers-block {
+  clear: both;
+  padding: 1px 17px 28px 20px;
+  background: #fff;
+  margin: 25px 0px 15px;
+  border: 1px solid #ccc;
+}
+.b-dealers-block__title {
+  font-size: 21px;
+  margin-top: 20px;
+  margin-bottom: 23px;
+}
+.b-dealers-block__search {
+  background: #f4f4f4;
+  padding: 19px 10px 17px 18px;
+  margin-bottom: 26px;
+}
+.b-dealers-block__search-title {
+  font-family: "NeueHaasUnicaW1G-Regular";
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0 0 19px;
+}
+.b-dealers-block__search-city, .b-dealers-block__search-category {
+  display: inline-block;
+  vertical-align: top;
+  width: 229px;
+  margin-right: 48px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+  position: relative;
+  cursor: pointer;
+}
+.b-dealers-block__search-city::before, .b-dealers-block__search-category::before {
+  content: '';
+  position: absolute;
+  top: 1px;
+  right: 0;
+  width: 27px;
+  height: 30px;
+  background: #fff;
+  pointer-events: none;
+  cursor: pointer;
+}
+.b-dealers-block__search-city::after, .b-dealers-block__search-category::after {
+  content: '';
+  position: absolute;
+  top: 12px;
+  right: 14px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid #8b0333;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  pointer-events: none;
+  cursor: pointer;
+}
+.b-dealers-block__search-city select, .b-dealers-block__search-category select {
+  outline: none;
+  border: none;
+  width: 229px;
+  font-family: "NeueHaasUnicaW1G-Regular";
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #959595;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  padding-left: 10px;
+  padding-bottom: 6px;
+  cursor: pointer;
+}
+.b-dealers-block__search-category {
+  margin-right: 0;
+}
+.b-dealers-block__item {
+  padding-bottom: 22px;
+  border-bottom: 1px solid #e1e1e1;
+}
+.b-dealers-block__item:last-child {
+  border-bottom: none;
+}
+.b-dealers-block__item-title {
+  font-family: "NeueHaasUnicaW1G-Bold";
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin-bottom: 58px;
+}
+.b-dealers-block__item-img {
+  float: left;
+  width: 196px;
+  text-align: center;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+.b-dealers-block__item-img img {
+  max-width: 100%;
+}
+.b-dealers-block__item-info {
+  float: left;
+  max-width: 560px;
+}
+.b-dealers-block__item-contacts {
+  float: left;
+  margin-bottom: 16px;
+}
+.b-dealers-block__item-company-name {
+  font-family: "NeueHaasUnicaW1G-Bold";
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #464646;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin-bottom: 18px;
+}
+.b-dealers-block__item-city {
+  font-family: "NeueHaasUnicaW1G-Regular";
+  font-size: 16px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #898989;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  padding-left: 35px;
+  position: relative;
+}
+.b-dealers-block__item-city::before {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 1px;
+  width: 13px;
+  height: 17px;
+  background: url("../images/b-dealers-block__item-city-icon.png") no-repeat 0 0;
+}
+.b-dealers-block__item-tel {
+  font-family: "NeueHaasUnicaW1G-Regular";
+  font-size: 16px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #898989;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  padding-left: 35px;
+  position: relative;
+}
+.b-dealers-block__item-tel::before {
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 1px;
+  width: 13px;
+  height: 17px;
+  background: url("../images/b-dealers-block__item-tel-icon.png") no-repeat 0 0;
+}
+.b-dealers-block__item-site {
+  float: right;
+}
+.b-dealers-block__item-site-name {
+  margin-bottom: 15px;
+}
+.b-dealers-block__item-site-name a {
+  display: block;
+  font-family: "NeueHaasUnicaW1G-Medium";
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #3577d7;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.b-dealers-block__item-icons {
+  font-size: 0;
+  text-align: right;
+}
+.b-dealers-block__item-icons-unit-1 {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 9px;
+  width: 13px;
+  height: 16px;
+  background: url("../images/b-dealers-block__item-icons-unit-1.png") no-repeat 0 0;
+}
+.b-dealers-block__item-icons-unit-2 {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 6px;
+  width: 21px;
+  height: 16px;
+  background: url("../images/b-dealers-block__item-icons-unit-2.png") no-repeat 0 0;
+}
+.b-dealers-block__item-icons-unit-3 {
+  display: inline-block;
+  vertical-align: top;
+  width: 21px;
+  height: 14px;
+  background: url("../images/b-dealers-block__item-icons-unit-3.png") no-repeat 0 0;
+}
+.b-dealers-block__item-text {
+  clear: both;
+  margin: 0 0 14px;
+  font-family: "NeueHaasUnicaW1G-Regular";
+  font-size: 16px;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: #464646;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  padding-right: 10px;
+}
+.b-dealers-block__item-link {
+  font-family: "NeueHaasUnicaW1G-Light";
+  font-size: 14px;
+  line-height: 1.5em;
+  font-weight: 400;
+  color: #898989;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  padding-right: 10px;
+}
+.b-dealers-block__item-link:hover, .b-dealers-block__item-link:focus {
+  color: #3577d7;
+}
+
+/*end of b-dealers-block*/
+/*b-contacts-block*/
+.b-contacts-block {
+  clear: both;
+  padding: 1px 17px 28px 20px;
+  background: #fff;
+  margin: 25px 0px 15px;
+  border: 1px solid #ccc;
+}
+.b-contacts-block__title {
+  font-size: 21px;
+  margin-top: 12px;
+  margin-bottom: 18px;
+}
+.b-contacts-block__map {
+  width: 766px;
+  height: 382px;
+  margin-left: 3px;
+  margin-bottom: 38px;
+  position: relative;
+}
+.b-contacts-block__map #map {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+.b-contacts-block__map .ymaps-layers-pane {
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
+  /* Firefox 3.5+ */
+  -webkit-filter: grayscale(100%)
+  /* Chrome 19+ & Safari 6+ */
+}
+.b-contacts-block__map-info {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 304px;
+  background: rgba(0, 0, 0, 0.61);
+}
+.b-contacts-block__map-list {
+  list-style: none;
+  margin: 0 0 14px;
+  padding: 0;
+}
+.b-contacts-block__map-item {
+  border-bottom: 1px solid #333;
+  position: relative;
+}
+.b-contacts-block__map-item-title {
+  font-family: "NeueHaasUnicaW1G-Medium";
+  font-size: 13px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin-bottom: 8px;
+}
+.b-contacts-block__map-item-text {
+  font-family: "NeueHaasUnicaW1G-Medium";
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #fff;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.b-contacts-block__map-item-text a {
+  color: #8dbbff;
+}
+.b-contacts-block__map-item-text a:hover, .b-contacts-block__map-item-text a:focus {
+  text-decoration: none;
+}
+.b-contacts-block__map-item--tel {
+  padding: 24px 10px 19px 70px;
+}
+.b-contacts-block__map-item--tel::before {
+  content: '';
+  position: absolute;
+  top: 26px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background: url("../images/b-contacts-block__map-item--tel.png") no-repeat 0 0;
+}
+.b-contacts-block__map-item--address {
+  padding: 18px 10px 19px 70px;
+}
+.b-contacts-block__map-item--address::before {
+  content: '';
+  position: absolute;
+  top: 26px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background: url("../images/b-contacts-block__map-item--address.png") no-repeat 0 0;
+}
+.b-contacts-block__map-item--mail {
+  padding: 12px 10px 15px 70px;
+}
+.b-contacts-block__map-item--mail::before {
+  content: '';
+  position: absolute;
+  top: 26px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background: url("../images/b-contacts-block__map-item--mail.png") no-repeat 0 0;
+}
+.b-contacts-block__map-item--schedule {
+  padding: 18px 10px 19px 70px;
+  border-bottom: none;
+}
+.b-contacts-block__map-item--schedule::before {
+  content: '';
+  position: absolute;
+  top: 26px;
+  left: 15px;
+  width: 30px;
+  height: 30px;
+  background: url("../images/b-contacts-block__map-item--schedule.png") no-repeat 0 0;
+}
+.b-contacts-block__map-share {
+  width: 154px;
+  height: 23px;
+  background: #fff;
+  margin-left: 50px;
+  padding: 9px 0 0 47px;
+  position: relative;
+  cursor: pointer;
+}
+.b-contacts-block__map-share.opened {
+  width: 207px;
+}
+.b-contacts-block__map-share.opened::after {
+  top: 14px;
+  right: 14px;
+  width: 0;
+  height: 0;
+  border-top: none;
+  border-bottom: 7px solid #b0aeaf;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+.b-contacts-block__map-share::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  left: 14px;
+  width: 18px;
+  height: 14px;
+  background: url("../images/b-contacts-block__map-share-title-arrow.png") no-repeat 0 0;
+}
+.b-contacts-block__map-share::after {
+  content: '';
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid #b0aeaf;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+.b-contacts-block__map-share-title {
+  font-family: "NeueHaasUnicaW1G-Regular";
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #505050;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.b-contacts-block__map-share-list {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0 0 13px;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  width: 254px;
+  background: #fff;
+  cursor: default;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.b-contacts-block__map-share-list.show {
+  display: block;
+}
+.b-contacts-block__map-share-item {
+  display: block;
+  text-decoration: none;
+  padding: 5px 17px 4px 52px;
+  position: relative;
+}
+.b-contacts-block__map-share-item:hover, .b-contacts-block__map-share-item:focus {
+  background: #e7f0fe;
+}
+.b-contacts-block__map-share-item--vk::before {
+  content: '';
+  position: absolute;
+  top: 9px;
+  left: 14px;
+  width: 29px;
+  height: 28px;
+  background: url("../images/b-contacts-block__map-share-item--vk.png") no-repeat 0 0;
+}
+.b-contacts-block__map-share-item--fb::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 14px;
+  width: 29px;
+  height: 28px;
+  background: url("../images/b-contacts-block__map-share-item--fb.png") no-repeat 0 0;
+}
+.b-contacts-block__map-share-item--twitter::before {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: 14px;
+  width: 26px;
+  height: 21px;
+  background: url("../images/b-contacts-block__map-share-item--twitter.png") no-repeat 0 0;
+}
+.b-contacts-block__map-share-social {
+  font-family: "NeueHaasUnicaW1G-Regular";
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #505050;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.b-contacts-block__map-share-social span {
+  font-size: 11px;
+  color: #999;
+}
+.b-contacts-block__map-share-link {
+  float: right;
+  font-family: "NeueHaasUnicaW1G-Light";
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #999;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin-top: 5px;
+  padding: 4px 9px 5px 8px;
+  box-shadow: 0 1px 1px 0 rgba(129, 146, 173, 0.43);
+  background: #fff;
+}
+.b-contacts-block__feedback {
+  background: #f4f4f4;
+  padding: 27px 10px 37px 18px;
+  margin: 0 7px 7px 2px;
+}
+.b-contacts-block__feedback-title {
+  font-family: "NeueHaasUnicaW1G-Bold";
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  text-align: center;
+  margin: 0 0 42px;
+}
+.b-contacts-block__feedback-list {
+  float: left;
+  margin: 0 0 12px;
+  padding: 0;
+  list-style: none;
+  width: 320px;
+}
+.b-contacts-block__feedback-item {
+  font-size: 0;
+  margin-bottom: 14px;
+}
+.b-contacts-block__feedback-item-title {
+  display: inline-block;
+  font-family: "NeueHaasUnicaW1G-Light";
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 9px 21px 0 3px;
+}
+.b-contacts-block__feedback-item-select {
+  display: inline-block;
+  vertical-align: top;
+  width: 199px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+  position: relative;
+  cursor: pointer;
+}
+.b-contacts-block__feedback-item-select::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 27px;
+  height: 32px;
+  background: #fff;
+  pointer-events: none;
+  cursor: pointer;
+}
+.b-contacts-block__feedback-item-select::after {
+  content: '';
+  position: absolute;
+  top: 13px;
+  right: 12px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid #8b0333;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  pointer-events: none;
+  cursor: pointer;
+}
+.b-contacts-block__feedback-item-select.opened::after {
+  border-top: none;
+  border-bottom: 7px solid #8b0333;
+}
+.b-contacts-block__feedback-item-select select {
+  outline: none;
+  border: none;
+  width: 199px;
+  font-family: "NeueHaasUnicaW1G-Light";
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  padding: 5px 10px 6px 6px;
+  cursor: pointer;
+}
+.b-contacts-block__feedback-item-select select option {
+  color: #6b6b6b;
+}
+.b-contacts-block__feedback-item label {
+  display: block;
+  float: left;
+}
+.b-contacts-block__feedback-item input {
+  display: block;
+  float: right;
+  margin-top: 2px;
+  margin-right: 33px;
+  outline: none;
+  border: 1px solid #d7d7d7;
+  width: 190px;
+  height: 28px;
+  padding-left: 6px;
+  font-family: "NeueHaasUnicaW1G-Light";
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.b-contacts-block__feedback-message {
+  float: right;
+  margin-right: 10px;
+  min-width: 393px;
+}
+.b-contacts-block__feedback-message-title {
+  display: block;
+  float: left;
+  font-family: "NeueHaasUnicaW1G-Regular";
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 3px 0 19px;
+  max-width: 80px;
+}
+.b-contacts-block__feedback-message textarea {
+  float: right;
+  outline: none;
+  border: 1px solid #d7d7d7;
+  resize: none;
+  width: 291px;
+  height: 111px;
+  padding: 6px;
+  font-family: "NeueHaasUnicaW1G-Regular";
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.b-contacts-block__feedback-submit {
+  clear: both;
+}
+.b-contacts-block__feedback-submit input {
+  display: block;
+  float: right;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  font-family: "NeueHaasUnicaW1G-Bold";
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  text-align: center;
+  background: #8b0333;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  padding: 8px 23px 8px 27px;
+  cursor: pointer;
+}
+.b-contacts-block__feedback-text {
+  display: block;
+  float: left;
+  font-family: "NeueHaasUnicaW1G-LightIt";
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #6b6b6b;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 6px 0 0 4px;
+  padding: 0;
+}
+
+/*end of b-contacts-block*/
+/*end of ilia' styles*/
+
+/*# sourceMappingURL=ilia.css.map */
