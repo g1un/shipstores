@@ -1,10 +1,4 @@
 /*faq*/
-ul,p,h2,h3,h4{
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .b-faq-block{
   clear: both;
   padding: 0;
@@ -29,7 +23,7 @@ ul,p,h2,h3,h4{
 
     &-link{
       display: block;
-      font-family: $neue-haas-medium;
+      font-family: NeueHaas_medium;
       font-size: 16px;
       line-height: 1.2em;
       font-weight: 400;
@@ -108,7 +102,7 @@ ul,p,h2,h3,h4{
         border: none;
         background: #f3f3f3;
         padding: 5px;
-        font-family: $neue-haas-light;
+        font-family: NeueHaas_light;
         font-size: 12px;
         line-height: 1.2em;
         font-weight: 400;
@@ -157,7 +151,7 @@ ul,p,h2,h3,h4{
     }
 
     &-title{
-      font-family: $neue-haas-medium;
+      font-family: NeueHaas_medium;
       font-size: 16px;
       line-height: 1.5em;
       font-weight: 400;
@@ -166,7 +160,7 @@ ul,p,h2,h3,h4{
       text-decoration: none;
       letter-spacing: 0;
       text-align: center;
-      margin-bottom: 27px;
+      margin:0 0 27px 0;
     }
 
     &-item{
@@ -175,7 +169,7 @@ ul,p,h2,h3,h4{
       margin-bottom: 41px;
 
       &-title{
-        font-family: $neue-haas-reg;
+        font-family: NeueHaas_reg;
         font-size: 14px;
         line-height: 1.2em;
         font-weight: 400;
@@ -198,7 +192,7 @@ ul,p,h2,h3,h4{
       }
 
       &-text{
-        font-family: $neue-haas-light;
+        font-family: NeueHaas_light;
         font-size: 12px;
         line-height: 1.5em;
         font-weight: 400;
@@ -206,6 +200,7 @@ ul,p,h2,h3,h4{
         text-transform: none;
         text-decoration: none;
         letter-spacing: 0;
+        margin: 0;
       }
     }
   }
@@ -217,7 +212,7 @@ ul,p,h2,h3,h4{
 //  &__text{
 //    display: inline-block;
 //    vertical-align: top;
-//    font-family: $neue-haas-light;
+//    font-family: NeueHaas_light;
 //    font-size: 14px;
 //    line-height: 1.2em;
 //    font-weight: 400;
@@ -231,7 +226,7 @@ ul,p,h2,h3,h4{
 //  &__select_page{
 //    display: inline-block;
 //    vertical-align: top;
-//    font-family: $neue-haas-light;
+//    font-family: NeueHaas_light;
 //    font-size: 14px;
 //    line-height: 1.2em;
 //    font-weight: 400;

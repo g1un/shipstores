@@ -33,13 +33,13 @@
   src: url(../fonts/NeueHaasUnicaW1G-Regular.ttf);
 }
 @font-face {
-  font-family: 'NeueHaasUnicaW1G-ThinItalic';
+  font-family: 'NeueHaas_thin-it';
   src: url(../fonts/NeueHaasUnicaW1G-ThinItalic.ttf);
 }
 /*end of fonts*/
 /*my variables*/
 /*end of my variables*/
-/*------------search on not main pages and breadcrums----------------------*/
+/*------------search on not main pages and breadcrumbs----------------------*/
 .b-breadcrumb-search {
   width: 100%;
   height: 33px;
@@ -100,7 +100,7 @@
   color: #000 !important;
 }
 
-/*------------/search on not main pages and breadcrums----------------------*/
+/*------------/search on not main pages and breadcrumbs----------------------*/
 /*b-bonus-block*/
 .b-bonus-block {
   clear: both;
@@ -1287,12 +1287,6 @@
 
 /*end of b-contacts-block*/
 /*faq*/
-ul, p, h2, h3, h4 {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
 .b-faq-block {
   clear: both;
   padding: 0;
@@ -1315,7 +1309,7 @@ ul, p, h2, h3, h4 {
 }
 .b-faq-block__nav-link {
   display: block;
-  font-family: "NeueHaas_medium";
+  font-family: NeueHaas_medium;
   font-size: 16px;
   line-height: 1.2em;
   font-weight: 400;
@@ -1369,7 +1363,7 @@ ul, p, h2, h3, h4 {
   border: none;
   background: #f3f3f3;
   padding: 5px;
-  font-family: "NeueHaas_light";
+  font-family: NeueHaas_light;
   font-size: 12px;
   line-height: 1.2em;
   font-weight: 400;
@@ -1409,7 +1403,7 @@ ul, p, h2, h3, h4 {
   display: none;
 }
 .b-faq-block__content-title {
-  font-family: "NeueHaas_medium";
+  font-family: NeueHaas_medium;
   font-size: 16px;
   line-height: 1.5em;
   font-weight: 400;
@@ -1418,7 +1412,7 @@ ul, p, h2, h3, h4 {
   text-decoration: none;
   letter-spacing: 0;
   text-align: center;
-  margin-bottom: 27px;
+  margin: 0 0 27px 0;
 }
 .b-faq-block__content-item {
   margin-left: 19px;
@@ -1426,7 +1420,7 @@ ul, p, h2, h3, h4 {
   margin-bottom: 41px;
 }
 .b-faq-block__content-item-title {
-  font-family: "NeueHaas_reg";
+  font-family: NeueHaas_reg;
   font-size: 14px;
   line-height: 1.2em;
   font-weight: 400;
@@ -1447,7 +1441,7 @@ ul, p, h2, h3, h4 {
   background: url("../images/b-faq-block__content-item-title.png") no-repeat 0 0;
 }
 .b-faq-block__content-item-text {
-  font-family: "NeueHaas_light";
+  font-family: NeueHaas_light;
   font-size: 12px;
   line-height: 1.5em;
   font-weight: 400;
@@ -1455,6 +1449,7 @@ ul, p, h2, h3, h4 {
   text-transform: none;
   text-decoration: none;
   letter-spacing: 0;
+  margin: 0;
 }
 
 /*end of faq*/

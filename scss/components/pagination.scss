@@ -1,0 +1,75 @@
+/*pagination*/
+.content__choice{
+  
+  &-pagination{
+    float: right;
+    margin-right: 8px;
+    margin-bottom: 20px;
+
+    &-title{
+      font-family: NeueHaas_reg;
+      font-size: 14 + px;
+      line-height: 18/14 + em;
+      font-weight: 400;
+      color: #636363;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      margin-right: 14px;
+    }
+
+    &-page-number{
+      font-family: NeueHaas_medium;
+      font-size: 14-plus + px;
+      line-height: 18/14-plus + em;
+      font-weight: 400;
+      color: #636363;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      margin-right: 39px;
+      position: relative;
+      cursor: pointer;
+
+      &::after{
+        content: '';
+        position: absolute;
+        top: 10px;
+        right: -17px;
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 7px solid #959595;
+      }
+    }
+
+    &-volume{
+      font-family: NeueHaas_reg;
+      font-size: 14-plus + px;
+      line-height: 18/14-plus + em;
+      font-weight: 400;
+      color: #636363;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      margin-right: 29px;
+    }
+
+    &-arrow{
+      display: inline-block;
+      border-left: 2px solid #959595;
+      border-bottom: 2px solid #959595;
+      width: 8px;
+      height: 8px;
+      transform: rotate(45deg);
+
+      &--right{
+        transform: rotate(-135deg);
+        margin-left: 32px;
+      }
+    }
+  }
+}
+
+/*end of pagination*/

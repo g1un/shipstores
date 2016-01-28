@@ -57,11 +57,13 @@ h2{
 }
 .g-button:hover{
     background: url(../images/button_bg.png) repeat-x;
+    background: linear-gradient(to bottom, #fff, #d9d9d9);
     box-shadow: 0 0 5px rgba(0,0,0,0.5);
     color: #4c83fc;
 }
 .g-blue_bg:hover{
-    background: url(../images/button_blue_bg.png) repeat-x !important;
+    background: url(../images/button_blue_bg.png) repeat-x;
+    background: linear-gradient(to bottom, #7fb3ff, #4e85fc);
     color: #FFF;
 }
 .g-white_font{

@@ -10,10 +10,10 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!--breadcrumbs-->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/b-breadcrumb-search.css">
 
-    <!--faq style-->
-    <link rel="stylesheet" type="text/css" href="css/faq.css">
+    <!--regulations style-->
+    <link rel="stylesheet" type="text/css" href="css/regulations.css">
 
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
@@ -158,101 +158,83 @@
             </div>
         </div>
 
-        <div class="b-faq-block clearfix">
-            <div class="b-faq-block__nav">
-                <h2 class="b-faq-block__title">Faq</h2>
+        <div class="b-regulations-block clearfix">
+            <div class="b-regulations-block__nav">
+                <h2 class="b-regulations-block__title content-title">Правила</h2>
 
-                <ul class="b-faq-block__nav-list">
-                    <li class="b-faq-block__nav-item">
-                        <a class="b-faq-block__nav-link b-faq-block__nav-link--cabinet" href="#">Работа с личным кабинетом</a>
-                    </li>
-                    <li class="b-faq-block__nav-item">
-                        <a class="b-faq-block__nav-link b-faq-block__nav-link--adv" href="#">Размещение объявлений</a>
-                    </li>
-                    <li class="b-faq-block__nav-item">
-                        <a class="b-faq-block__nav-link b-faq-block__nav-link--deals" href="#">Проведение сделок</a>
-                    </li>
-                    <li class="b-faq-block__nav-item">
-                        <a class="b-faq-block__nav-link b-faq-block__nav-link--security" href="#">Безопасность</a>
-                    </li>
-                    <li class="b-faq-block__nav-item">
-                        <a class="b-faq-block__nav-link b-faq-block__nav-link--services" href="#">Услуги портала</a>
-                    </li>
-                </ul>
+                <form class="b-regulations-block__nav-form" action="#" method="get">
+                    <ul class="b-regulations-block__nav-list">
+                        <li class="b-regulations-block__nav-item">
+                            <h4 class="b-regulations-block__nav-title b-regulations-block__nav-title--publish content-title-item">
+                                Публикация объявлений
+                            </h4>
+
+                            <input class="b-regulations-block__form-radio input-radio" type="radio" name="regulations-radio" id="adv-publish-radio--shops">
+                            <label class="b-regulations-block__form-label label-radio" for="adv-publish-radio--shops">Магазины</label>
+
+                            <input class="b-regulations-block__form-radio input-radio" type="radio" name="regulations-radio" id="adv-publish-radio--anonim">
+                            <label class="b-regulations-block__form-label label-radio" for="adv-publish-radio--anonim">Анонимные объявления</label>
+
+                            <input class="b-regulations-block__form-radio input-radio" type="radio" name="regulations-radio" id="adv-publish-radio--auctions">
+                            <label class="b-regulations-block__form-label label-radio" for="adv-publish-radio--auctions">Аукционы</label>
+                        </li>
+
+                        <li class="b-regulations-block__nav-item">
+                            <h4 class="b-regulations-block__nav-title b-regulations-block__nav-title--transactions content-title-item">
+                                Проведени сделок
+                            </h4>
+
+                            <input class="b-regulations-block__form-radio input-radio" type="radio" name="regulations-radio" id="transactions-radio--shops">
+                            <label class="b-regulations-block__form-label label-radio" for="transactions-radio--shops">Посредством магазина</label>
+
+                            <input class="b-regulations-block__form-radio input-radio" type="radio" name="regulations-radio" id="transactions-radio--anonim">
+                            <label class="b-regulations-block__form-label label-radio" for="transactions-radio--anonim">Посредством анонимного объявления</label>
+
+                            <input class="b-regulations-block__form-radio input-radio" type="radio" name="regulations-radio" id="transactions-radio--auctions">
+                            <label class="b-regulations-block__form-label label-radio" for="transactions-radio--auctions">Посредством аукциона</label>
+
+                            <input class="b-regulations-block__form-radio input-radio" type="radio" name="regulations-radio" id="transactions-radio--cancel">
+                            <label class="b-regulations-block__form-label label-radio" for="transactions-radio--cancel">Расторжение сделок</label>
+                        </li>
+
+                        <li class="b-regulations-block__nav-item">
+                            <h4 class="b-regulations-block__nav-title b-regulations-block__nav-title--jobs content-title-item">
+                                Публикации вакансий и резюме
+                            </h4>
+
+                            <input class="b-regulations-block__form-radio input-radio" type="radio" name="regulations-radio" id="jobs-radio--vacancies">
+                            <label class="b-regulations-block__form-label label-radio" for="jobs-radio--vacancies">Публикация вакансий</label>
+
+                            <input class="b-regulations-block__form-radio input-radio" type="radio" name="regulations-radio" id="jobs-radio--resume">
+                            <label class="b-regulations-block__form-label label-radio" for="jobs-radio--resume">Публикация резюме</label>
+                        </li>
+
+                        <li class="b-regulations-block__nav-item">
+                            <h4 class="b-regulations-block__nav-title b-regulations-block__nav-title--interaction content-title-item">
+                                Взаимодействие пользователей на сайте
+                            </h4>
+
+                            <input class="b-regulations-block__form-radio input-radio" type="radio" name="regulations-radio" id="interaction-radio--buyer">
+                            <label class="b-regulations-block__form-label label-radio" for="interaction-radio--buyer">Покупателя и продавца</label>
+
+                            <input class="b-regulations-block__form-radio input-radio" type="radio" name="regulations-radio" id="interaction-radio--applicant">
+                            <label class="b-regulations-block__form-label label-radio" for="interaction-radio--applicant">Соискателя и работодателя</label>
+                        </li>
+                    </ul>
+                </form>
             </div>
 
-            <div class="b-faq-block__content">
-                <form class="b-faq-block__content-search" action="#" method="get">
-                    <input class="b-faq-block__content-search-input" type="text" name="b-faq-block__content-search-input" id="b-faq-block__content-search-input" placeholder="Поиск вопросов по слову">
-                    <label class="b-faq-block__content-search-label">
-                        <img src="images/b-faq-block__content-search-label-submit.png" alt="b-faq-block__content-search-label-submit">
-                        <input class="b-faq-block__content-search-submit" type="submit">
-                    </label>
-                </form>
+            <div class="b-regulations-block__info">
+                <h3 class="b-regulations-block__info-title content-title-info">
+                    Проведение сделок<br>
+                    посредством магазина
+                </h3>
 
-                <h3 class="b-faq-block__content-title">Частозадаваемые вопросы по теме<br> «работа с личным кабинетом»</h3>
-
-                <section class="b-faq-block__content-item">
-                    <h4 class="b-faq-block__content-item-title">
-                        Мне пришло письмо о подтверждении регистрации, но ссылка не работает или не активна. Что делать?
-                    </h4>
-
-                    <p class="b-faq-block__content-item-text">
-                        Войдите в свой Личный кабинет — возможно, вы уже подтвердили регистрацию. В случае, если вы видите в Личном кабинете сообщение о том, что регистрация ещё не подтверждена, запросите код подтверждения регистрации повторно в разделе Настройки.
-                    </p>
-                </section>
-
-                <section class="b-faq-block__content-item">
-                    <h4 class="b-faq-block__content-item-title">
-                        Не могу войти в личный кабинет, что делать?
-                    </h4>
-
-                    <p class="b-faq-block__content-item-text">
-                        Если при входе в Личный кабинет вы получаете сообщение “Неправильная пара электронная почта / пароль”, убедитесь, что вы вводите корректный адрес электронной почты, и соответствующий ему пароль. Кроме этого, проверьте раскладку клавиатуры, не нажата ли клавиша “Caps Lock” и попробуйте ввести почту и пароль ещё раз. В случае сохранения проблемы, нажмите на странице входа в Личный кабинет клавиши “Ctrl”+”F5” (одновременно).
-                        Проблема входа в Личный кабинет может быть в настройках вашего браузера (браузер — это программа для просмотра интернет-страниц). Пожалуйста, убедитесь, что у вас установлена последняя версия браузера (если нет, обновите её); удалите cookies и кэш в настройках браузера; проверьте, включен ли JavaScript, либо попробуйте зайти на сайт, используя другой браузер.
-                        Если вы не можете войти в Личный кабинет после разблокировки, вам необходимо выйти из Личного кабинета и войти заново, нажав "Войти". В случае, если проблема сохраняется, вам следует открыть сайт в другом браузере.
-                    </p>
-                </section>
-
-                <section class="b-faq-block__content-item">
-                    <h4 class="b-faq-block__content-item-title">
-                        Как изменить номер телефона в личном кабинете?
-                    </h4>
-
-                    <p class="b-faq-block__content-item-text">
-                        Номер телефона вы можете изменить на странице Настройки своего Личного кабинета.
-                        В блоке "Контактная информация" расположен список всех ранее использованных вами телефонных номеров. Возле каждого номера присутствуют кнопки редактирования (карандаш) и удаления (крестик). После нажатия на кнопку редактирования вам будут доступны 2 действия:
-                        "Изменить" - дает возможность изменения выбранного номера телефона на новый. Изменения коснутся только тех объявлений, в которых ранее был указан выбранный номер.
-                        "Установить во всех объявлениях" - поменяется номер во всех объявлениях, независимо от того, какой номер был указан в них до этого.
-                        В уже размещённых объявлениях номер телефона можно изменить путём их отдельного редактирования.
-                    </p>
-                </section>
-
-                <div class="content__choice-pagination">
-                    <span class="content__choice-pagination-title">Текущая страница</span>
-                    <a class="content__choice-pagination-page-number" href="#">1</a>
-                    <span class="content__choice-pagination-volume">1-18</span>
-                    <a class="content__choice-pagination-arrow" href="#"></a>
-                    <a class="content__choice-pagination-arrow content__choice-pagination-arrow--right" href="#"></a>
-                </div>
-
-                <!--<div class="b-pager">-->
-                    <!--<div class="b-pager__text">Текущая страница 1</div>-->
-                    <!--<div class="b-pager__select_page">-->
-                        <!--<form method="get">-->
-                            <!--<select name="PAGEN_1" id="select_page">-->
-                                <!--<option value="1">1</option>-->
-                                <!--<option value="2">2</option>-->
-                                <!--<option value="3">3</option>-->
-                            <!--</select>-->
-                        <!--</form>-->
-                    <!--</div>-->
-                    <!--<div class="b-pager__items">1 - 18</div>-->
-
-                    <!--<div class="b-pager__prev-next">-->
-                        <!--<a href="#">&lt;</a><a href="#">&gt;</a>-->
-                    <!--</div>-->
-                <!--</div>-->
+                <p class="b-regulations-block__info-text">
+                    Продавец может разместить магазин – страницу компании с каталогом продукции в формате объявлений, которые не являются анонимными. Продавец публикует объявления в магазине, покупатель может откликнуться на странице объявления путем нажатия кнопки «покупаю» и выбора формы сделки (прямая или безопасная), либо создать набор товаров в корзине. Если покупатель набирает в корзину разные товары разных продавцов, они в корзине группируются по продавцам с возможностью оформить заказ на каждый из блоков товаров (по продавцам).
+                    На период до полной доставки товара и подтверждения от покупателя товар представлен на портале с пометкой «Товар зарезервирован».
+                    После полного проведения процесса покупки товара покупатель на сайте подтверждает проведение сделки (является фактом для списания комиссии), ставит оценку продавцу и оставляет отзыв (и наоборот – продавец покупателю), а также вводит сумму, по которой состоялась сделка.
+                </p>
             </div>
         </div>
 

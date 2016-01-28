@@ -1,0 +1,34 @@
+/*titles*/
+.content-title{
+  font-family: NeueHaas_bold, Helvetica, sans-serif;
+  font-size: 21px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+
+  &-item{
+    font-family: NeueHaas_medium, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+  }
+
+  &-info{
+    font-family: NeueHaas_bold, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0;
+  }
+}
+/*end of titles*/
