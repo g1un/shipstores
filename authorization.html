@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shipstores</title>
+    <meta charset="UTF-8">
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/ilia.css">
+
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <!-- слайдер Important Owl stylesheet-->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <!-- слайдер Default Theme -->
+    <link rel="stylesheet" href="css/owl.theme.css">
+    <!-- слайдер Include js plugin -->
+    <script src="js/owl.carousel.js"></script>
+
+    <!--стили селектов form styler css -->
+    <link href="css/jquery.formstyler.css" rel="stylesheet" />
+    <!--стили селектов form styler js -->
+    <script src="js/jquery.formstyler.min.js"></script>
+
+    <!-- main page -->
+    <script src="js/script.main_page.js"></script>
+
+</head>
+
+<body>
+
+<div class="b-main">
+
+    <div class="b-head">
+        <div class="b-head__logo">
+            <div class="b-logo">
+                <a href="#"><img src="images/logo.png" /></a>
+            </div>
+        </div>
+        <div class="b-head__links">
+            <div class="b-menu">
+                <div  class='b-menu__link'>
+                    <a href="#">закупки</a>
+                    <div class="b-menu__linkhover"></div>
+                </div>
+                <div  class='b-menu__link'>
+                    <a href="#">магазины</a>
+                    <div class="b-menu__linkhover"></div>
+                </div>
+                <div  class='b-menu__link'>
+                    <a href="#">объявления</a>
+                    <div class="b-menu__linkhover"></div>
+                </div>
+            </div>
+        </div>
+        <div class="b-head__currency">
+            <div class="b-curr">
+                <div class="b-curr_text">
+                    <div class="b-curr_text__curr_rub">
+                        <span class="g-rub g-white_font" style="line-height:1.7">₽</span>
+                    </div>
+                </div>
+                <div class="b-curr_pict">
+                    <img src="images/currency-rub.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="b-head__autorize">
+            <div class="b-topbuttons">
+                <div class="g-button b-topbuttons_button g-white_bg">Вход</div>
+                <div class="g-button b-topbuttons_button g-blue_bg">Регистрация</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-authorization-block">
+        <form class="b-authorization-block__form" action="#" method="get">
+            <h2 class="b-authorization-block__form-title">Войдите</h2>
+
+            <div class="b-authorization-block__form-error">Ошибка</div>
+
+            <label class="b-authorization-block__form-label" for="authorization-password">Пароль</label>
+            <input class="b-authorization-block__form-input-text" name="authorization-password" id="authorization-password">
+
+            <label class="b-authorization-block__form-label" for="authorization-mail">E-mail</label>
+            <input class="b-authorization-block__form-input-text" name="authorization-mail" id="authorization-mail">
+
+            <input class="b-authorization-block__form-input-checkbox" name="authorization-save-password" id="authorization-save-password">
+            <label class="b-authorization-block__form-label--light" for="authorization-save-password">Сохранить пароль</label>
+
+            <a class="b-authorization-block__form-link" href="#">Забыли пароль?</a>
+
+            <input class="b-authorization-block__form-input-submit" type="submit">
+        </form>
+    </div>
+
+    <div class="b-footer">
+        <div class="b-footer-cr">
+            <div class="b-footer-cr__copy">© 2015 ShipStores</div>
+            <div class="b-footer-cr__bitrix"><img src="images/bitrix.png" /></div>
+            <div class="b-footer-cr__menu">
+                <a href="#">Закупки</a>
+                <a href="#">Магазины</a>
+                <a href="#">Объявления</a>
+            </div>
+            <div class="b-footer-cr__7studio">
+                <p><a href="//7sait.spb.ru/services/sozdanie-saitov/" title="Разработка сайтов">Разработка сайта: «7 Студио»</a></p>
+                <p><a href="//7sait.spb.ru/services/internet-marketing/" title="Продвижение сайтов">Продвижение сайта: «7 Студио»</a></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="b-static-stripe">
+    <div class="b-your-blue">
+        <div class="b-your-blue__feedback my-divs">
+            <div class="form-button js-call-form">обратная связь</div>
+        </div>
+        <div class="b-your-blue__info my-divs b-your-blue__infofirst">
+            <div class="b-my-info">
+                <div class="b-my-info__icon icon-purchase"></div>
+                <div class="b-my-info__name"><a href="#">Закупки, в которых вы участвуете</a></div>
+                <div class="b-my-info__count">4</div>
+            </div>
+        </div>
+        <div class="b-your-blue__info my-divs">
+            <div class="b-my-info">
+                <div class="b-my-info__icon icon-notice"></div>
+                <div class="b-my-info__name"><a href="#">Размещено объявлений</a></div>
+                <div class="b-my-info__count">4</div>
+            </div>
+        </div>
+        <div class="b-your-blue__info my-divs">
+            <div class="b-my-info">
+                <div class="b-my-info__icon icon-favorites"></div>
+                <div class="b-my-info__name"><a href="#">Избранное</a></div>
+                <div class="b-my-info__count">4</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

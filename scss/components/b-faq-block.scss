@@ -1,0 +1,245 @@
+/*faq*/
+ul,p,h2,h3,h4{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.b-faq-block{
+  clear: both;
+  padding: 0;
+  background: #fff;
+  margin: 25px 0px 15px;
+  border: 1px solid #ccc;
+
+  &__title{
+    font-size: 21px;
+    margin: 16px 0 24px 19px;
+  }
+
+  &__nav{
+    float: left;
+    width: 323px;
+
+    &-list{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    &-link{
+      display: block;
+      font-family: $neue-haas-medium;
+      font-size: 16px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #000;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      padding: 15px 5px 21px 73px;
+      position: relative;
+
+      &::before{
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 20px;
+        width: 30px;
+        height: 30px;
+      }
+
+      &--cabinet{
+
+        &::before{
+          background: url("../images/b-faq-block__link--cabinet.png") no-repeat 0 0;
+        }
+      }
+
+      &--adv{
+
+        &::before{
+          background: url("../images/b-faq-block__link--adv.png") no-repeat 0 0;
+        }
+      }
+
+      &--deals{
+
+        &::before{
+          background: url("../images/b-faq-block__link--deals.png") no-repeat 0 0;
+        }
+      }
+
+      &--security{
+
+        &::before{
+          background: url("../images/b-faq-block__link--security.png") no-repeat 0 0;
+        }
+      }
+
+      &--services{
+
+        &::before{
+          background: url("../images/b-faq-block__link--services.png") no-repeat 0 0;
+        }
+      }
+
+      &:hover,
+      &:focus{
+        background: #e2eefe;
+      }
+    }
+  }
+
+  &__content{
+    float: right;
+    width: 489px;
+    border-left: 1px solid #efefef;
+
+    &-search{
+      text-align: right;
+      font-size: 0;
+      margin: 21px 20px 32px 0;
+
+      &-input{
+        display: inline-block;
+        vertical-align: top;
+        outline: none;
+        border: none;
+        background: #f3f3f3;
+        padding: 5px;
+        font-family: $neue-haas-light;
+        font-size: 12px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #c0c0c0;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        width: 203px;
+        height: 22px;
+
+        &:focus{
+          color: #000;
+        }
+
+        &::-webkit-input-placeholder{
+          opacity: 1;
+          color: #c0c0c0;
+        }
+
+        &:-ms-input-placeholder{
+          opacity: 1;
+          color: #c0c0c0;
+        }
+
+        &::-moz-placeholder{
+          opacity: 1;
+          color: #c0c0c0;
+        }
+      }
+
+      &-label{
+        display: inline-block;
+        vertical-align: top;
+        background: #f3f3f3;
+        padding: 8px 11px 5px 11px;
+        cursor: pointer;
+
+        img{
+          max-width: 100%;
+        }
+      }
+
+      &-submit{
+        display: none;
+      }
+    }
+
+    &-title{
+      font-family: $neue-haas-medium;
+      font-size: 16px;
+      line-height: 1.5em;
+      font-weight: 400;
+      color: #000;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0;
+      text-align: center;
+      margin-bottom: 27px;
+    }
+
+    &-item{
+      margin-left: 19px;
+      margin-right: 25px;
+      margin-bottom: 41px;
+
+      &-title{
+        font-family: $neue-haas-reg;
+        font-size: 14px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #6da5f8;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        margin: 0 0 17px 37px;
+        position: relative;
+
+        &::before{
+          content: '';
+          position: absolute;
+          top: 0;
+          left: -35px;
+          width: 19px;
+          height: 19px;
+          background: url("../images/b-faq-block__content-item-title.png") no-repeat 0 0;
+        }
+      }
+
+      &-text{
+        font-family: $neue-haas-light;
+        font-size: 12px;
+        line-height: 1.5em;
+        font-weight: 400;
+        color: #464646;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+      }
+    }
+  }
+}
+
+//.b-pager{
+//  font-size: 0;
+//
+//  &__text{
+//    display: inline-block;
+//    vertical-align: top;
+//    font-family: $neue-haas-light;
+//    font-size: 14px;
+//    line-height: 1.2em;
+//    font-weight: 400;
+//    color: #868686;
+//    text-transform: none;
+//    text-decoration: none;
+//    letter-spacing: 0;
+//    margin-right: 10px;
+//  }
+//
+//  &__select_page{
+//    display: inline-block;
+//    vertical-align: top;
+//    font-family: $neue-haas-light;
+//    font-size: 14px;
+//    line-height: 1.2em;
+//    font-weight: 400;
+//    color: #868686;
+//    text-transform: none;
+//    text-decoration: none;
+//    letter-spacing: 0;
+//    margin-right: 10px;
+//  }
+//}
+/*end of faq*/

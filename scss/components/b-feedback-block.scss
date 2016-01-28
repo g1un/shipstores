@@ -1,0 +1,246 @@
+/*b-feedback-block*/
+.b-feedback-block__box{
+  display: none;
+  background: #fff;
+  padding: 27px 10px 37px 18px;
+  position: relative;
+
+  &-title{
+    font-family: $neue-haas-bold;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 0 0 42px;
+  }
+
+  &-list{
+    float: left;
+    margin: 0 0 12px;
+    padding: 0;
+    list-style: none;
+    width: 320px;
+  }
+
+  &-item{
+    font-size: 0;
+    margin-bottom: 14px;
+
+    &-title{
+      display: inline-block;
+      font-family: $neue-haas-light;
+      font-size: 12px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #000;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      margin: 9px 21px 0 3px;
+    }
+
+    &-select{
+      display: inline-block;
+      vertical-align: top;
+      width: 199px;
+      box-shadow: 0 1px 3px 0 rgba(0,0,0,.25);
+      position: relative;
+      cursor: pointer;
+
+      &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 27px;
+        height: 32px;
+        background: #fff;
+        pointer-events: none;
+        cursor: pointer;
+      }
+
+      &::after{
+        content: '';
+        position: absolute;
+        top: 13px;
+        right: 12px;
+        width: 0;
+        height: 0;
+        border-top: 7px solid #8b0333;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        pointer-events: none;
+        cursor: pointer;
+      }
+
+      &.opened{
+
+        &::after{
+          border-top: none;
+          border-bottom: 7px solid #8b0333;
+        }
+      }
+
+      select{
+        outline: none;
+        border: none;
+        width: 199px;
+        font-family: $neue-haas-light;
+        font-size: 12px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #000;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        padding: 5px 10px 6px 6px;
+        cursor: pointer;
+
+        option{
+          color: #6b6b6b;
+        }
+      }
+    }
+
+    label{
+      display: block;
+      float: left;
+    }
+
+    input{
+      display: block;
+      float: right;
+      margin-top: 2px;
+      margin-right: 33px;
+      outline: none;
+      border: 1px solid #d7d7d7;
+      width: 190px;
+      height: 28px;
+      padding-left: 6px;
+      font-family: $neue-haas-light;
+      font-size: 12px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #000;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+    }
+  }
+
+  &-message{
+    float: right;
+    margin-right: 10px;
+    min-width: 393px;
+
+    &-title{
+      display: block;
+      float: left;
+      font-family: $neue-haas-reg;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #000;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      margin: 3px 0 19px;
+      max-width: 80px;
+    }
+
+    textarea{
+      float: right;
+      outline: none;
+      border: 1px solid #d7d7d7;
+      resize: none;
+      width: 291px;
+      height: 111px;
+      padding: 6px;
+      font-family: $neue-haas-reg;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #000;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+    }
+  }
+
+  &-submit{
+    clear: both;
+
+    input{
+      display: block;
+      float: right;
+      margin-right: 10px;
+      border: none;
+      outline: none;
+      font-family: $neue-haas-bold;
+      font-size: 12px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0;
+      text-align: center;
+      background: #8b0333;
+      box-shadow: 0 1px 1px 0 rgba(0,0,0,.25);
+      padding: 8px 23px 8px 27px;
+      cursor: pointer;
+    }
+  }
+
+  &-text{
+    display: block;
+    float: left;
+    font-family: $neue-haas-light-it;
+    font-size: 14px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #6b6b6b;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    margin: 6px 0 0 4px;
+    padding: 0;
+  }
+
+  &-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 68px;
+    height: 68px;
+    background: #e1e1e1;
+    cursor: pointer;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 30px;
+      right: 20px;
+      width: 25px;
+      height: 5px;
+      background: #fff;
+      transform: rotate(45deg);
+    }
+
+    &::after{
+      content: '';
+      position: absolute;
+      top: 30px;
+      right: 20px;
+      width: 25px;
+      height: 5px;
+      background: #fff;
+      transform: rotate(-45deg);
+    }
+  }
+}
+/*end of b-feedback-block*/

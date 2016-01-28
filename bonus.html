@@ -28,6 +28,10 @@
     <!-- main page -->
     <script src="js/script.main_page.js"></script>
 
+    <!--fancybox-->
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <script src="js/jquery.fancybox.pack.js"></script>
+
 </head>
 
 <body>
@@ -70,8 +74,14 @@
         </div>
         <div class="b-head__autorize">
             <div class="b-topbuttons">
-                <div class="g-button b-topbuttons_button g-white_bg">Вход</div>
-                <div class="g-button b-topbuttons_button g-blue_bg">Регистрация</div>
+                <a class="g-button b-topbuttons_button g-white_bg" href="#authorization">Вход</a>
+                <a class="g-button b-topbuttons_button g-blue_bg" href="#registration">Регистрация</a>
+                <!--СТИЛЬ!!!-->
+                <style>
+                    .b-topbuttons a{
+                        text-decoration: none;
+                    }
+                </style>
             </div>
         </div>
     </div>
@@ -116,7 +126,7 @@
         <div class="b-left_bottom">
             <div class="b-needhelp">
                 <div class="b-needhelp__header">нужна помощь?</div>
-                <div class="b-needhelp__body">Воспользуйтесь <a href="#">формой обратной связи</a> или свяжитесь с нами по телефону горячей линии</div>
+                <div class="b-needhelp__body">Воспользуйтесь <a href="#feedback">формой обратной связи</a> или свяжитесь с нами по телефону горячей линии</div>
                 <div class="b-needhelp__bottom">
                     <div class="b-shedule">
                         <div class="b-shedule__phone">8-800-100-00-00</div>
@@ -256,6 +266,110 @@
 
     </div>
 
+    <!--authorization-->
+    <div class="b-login-block">
+        <form class="b-login-block__form" action="#" method="get" id="authorization">
+            <h2 class="b-login-block__form-title">Войдите</h2>
+
+            <div class="b-login-block__form-error">Ошибка</div>
+
+            <label class="b-login-block__form-label" for="authorization-password">Пароль</label>
+            <input class="b-login-block__form-input" type="text" name="authorization-password" id="authorization-password">
+
+            <label class="b-login-block__form-label" for="authorization-mail">E-mail</label>
+            <input class="b-login-block__form-input" type="text" name="authorization-mail" id="authorization-mail">
+
+            <input class="b-login-block__form-checkbox" type="checkbox" name="authorization-save-password" id="authorization-save-password">
+            <label class="b-login-block__form-label b-login-block__form-label--checkbox" for="authorization-save-password">Сохранить пароль</label>
+
+            <a class="b-login-block__form-link" href="#">Забыли пароль?</a>
+
+            <input class="b-login-block__form-submit" type="submit" value="Вход">
+        </form>
+    </div>
+    <!--end of authorization-->
+
+    <!--registration-->
+    <div class="b-login-block">
+        <form class="b-login-block__form b-login-block__form--reg" action="#" method="get" id="registration">
+            <h2 class="b-login-block__form-title">Регистрация</h2>
+
+            <div class="b-login-block__form-error">Ошибка</div>
+
+            <input class="b-login-block__form-radio" type="radio" name="registration-radio" id="registration-radio-1">
+            <label class="b-login-block__form-label b-login-block__form-label--radio" for="registration-radio-1">Юридическое лицо</label>
+
+            <input class="b-login-block__form-radio" type="radio" name="registration-radio" id="registration-radio-2">
+            <label class="b-login-block__form-label b-login-block__form-label--radio b-login-block__form-label--radio-last" for="registration-radio-2">Физическое лицо</label>
+
+            <label class="b-login-block__form-label" for="registration-name">Ваше имя</label>
+            <input class="b-login-block__form-input" type="text" name="registration-name" id="registration-name">
+
+            <label class="b-login-block__form-label" for="registration-mail">E-mail</label>
+            <input class="b-login-block__form-input" type="text" name="registration-mail" id="registration-mail">
+
+            <label class="b-login-block__form-label" for="registration-password">Пароль</label>
+            <input class="b-login-block__form-input" type="text" name="registration-password" id="registration-password">
+
+            <label class="b-login-block__form-label" for="registration-tel">Номер телефона</label>
+            <input class="b-login-block__form-input b-login-block__form-input--last" type="text" name="registration-tel" id="registration-tel">
+
+            <p class="b-login-block__form-text">Только мобильные номера толефонов</p>
+
+            <input class="b-login-block__form-input b-login-block__form-input--code" type="text" name="registration-code" id="registration-code">
+            <label class="b-login-block__form-label b-login-block__form-label--code" for="registration-code">Код подтверждения</label>
+
+            <input class="b-login-block__form-checkbox" type="checkbox" name="registration-rules" id="registration-rules">
+            <label class="b-login-block__form-label b-login-block__form-label--checkbox b-login-block__form-label--checkbox-reg" for="registration-rules">Я согласен с правилами сайта</label>
+
+            <input class="b-login-block__form-submit" type="submit" value="Зарегистрироваться">
+        </form>
+    </div>
+    <!--end of registration-->
+
+    <!--feedback-->
+    <div class="b-feedback-block__box" id="feedback">
+        <h3 class="b-feedback-block__box-title">Форма обратной связи</h3>
+
+        <form class="b-feedback-block__box-form" action="#" method="get">
+            <ul class="b-feedback-block__box-list">
+                <li class="b-feedback-block__box-item">
+                    <div class="b-feedback-block__box-item-title">Тип письма</div>
+                    <div class="b-feedback-block__box-item-select">
+                        <select name="b-feedback-block__box-item-select" id="b-feedback-block__box-item-select">
+                            <option value="">Вопрос</option>
+                            <option value="1">Пожелание</option>
+                            <option value="2">Жалоба</option>
+                            <option value="3">Предложение</option>
+                            <option value="4">Другое</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="b-feedback-block__box-item clearfix">
+                    <label class="b-feedback-block__box-item-title" for="message-type">Ваше имя</label>
+                    <input type="text" name="message-type" id="message-type">
+                </li>
+                <li class="b-feedback-block__box-item clearfix">
+                    <label class="b-feedback-block__box-item-title" for="e-mail">E-mail</label>
+                    <input type="text" name="e-mail" id="e-mail">
+                </li>
+            </ul>
+
+            <div class="b-feedback-block__box-message">
+                <label class="b-feedback-block__box-message-title" for="feedback-message">Ваше сообщение</label>
+                <textarea name="feedback-message" id="feedback-message"></textarea>
+            </div>
+
+            <div class="b-feedback-block__box-submit clearfix">
+                <p class="b-feedback-block__box-text">Мы готовы ответить на все Ваши вопросы в любое время</p>
+                <input type="submit" value="Отправить письмо">
+            </div>
+        </form>
+
+        <div class="b-feedback-block__box-close"></div>
+    </div>
+    <!--end of feedback-->
+
     <div class="b-bottom-menu">
         <nav>
             <div class="b-menu-main"><!--b-menu_link_active-->
@@ -306,7 +420,14 @@
 <div class="b-static-stripe">
     <div class="b-your-blue">
         <div class="b-your-blue__feedback my-divs">
-            <div class="form-button js-call-form">обратная связь</div>
+            <a class="form-button js-call-form" href="#feedback">обратная связь</a>
+            <!--СТИЛЬ!!!-->
+            <style>
+                .form-button.js-call-form{
+                    display: block;
+                    text-decoration: none;
+                }
+            </style>
         </div>
         <div class="b-your-blue__info my-divs b-your-blue__infofirst">
             <div class="b-my-info">
@@ -332,6 +453,9 @@
     </div>
 </div>
 
+<!--fancybox fire script-->
+<script src="js/script-fancy.js"></script>
+<script src="js/script-bonus.js"></script>
 
 </body>
 </html>

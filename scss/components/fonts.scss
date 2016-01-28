@@ -1,11 +1,11 @@
 /*fonts*/
 @font-face {
-  font-family: 'NeueHaasUnicaW1G-Bold';
+  font-family: 'NeueHaas_bold';
   src: url(../fonts/NeueHaasUnicaW1G-Bold.ttf);
 }
 
 @font-face {
-  font-family: 'NeueHaasUnicaW1G-Medium';
+  font-family: 'NeueHaas_medium';
   src: url(../fonts/NeueHaasUnicaW1G-Medium.ttf);
 }
 
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: 'NeueHaasUnicaW1G-Light';
+  font-family: 'NeueHaas_light';
   src: url(../fonts/NeueHaasUnicaW1G-Light.ttf);
 }
 
@@ -25,7 +25,12 @@
 }
 
 @font-face {
-  font-family: 'NeueHaasUnicaW1G-Regular';
+  font-family: 'NeueHaas_reg';
   src: url(../fonts/NeueHaasUnicaW1G-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'NeueHaasUnicaW1G-ThinItalic';
+  src: url(../fonts/NeueHaasUnicaW1G-ThinItalic.ttf);
 }
 /*end of fonts*/
