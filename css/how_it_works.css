@@ -1,0 +1,288 @@
+/*regulations*/
+/*general*/
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/*end of general*/
+/*titles*/
+.content-title {
+  font-family: NeueHaas_bold, Helvetica, sans-serif;
+  font-size: 21px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.content-title-item {
+  font-family: NeueHaas_medium, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.content-title-item--reg {
+  font-family: NeueHaas_reg, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+.content-title-info {
+  font-family: NeueHaas_bold, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.content-title-info--low {
+  text-transform: none;
+}
+
+/*end of titles*/
+/*form*/
+.input-radio {
+  display: none;
+}
+.input-radio:checked + label::after {
+  background: #aec7ff;
+  background: -webkit-linear-gradient(315deg, #c6d8ff, #85a5f5);
+  background: linear-gradient(135deg, #c6d8ff, #85a5f5);
+}
+
+.label-radio {
+  cursor: pointer;
+  position: relative;
+}
+.label-radio::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: inset 0 1px 2px 0 rgba(48, 48, 48, 0.35);
+}
+.label-radio::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: transparent;
+}
+
+/*end of form*/
+/*buttons*/
+.brown_button {
+  display: block;
+  font-family: NeueHaas_bold, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  text-align: center;
+  background: #8b0333;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+/*end of buttons*/
+/*b-workflow-block*/
+.b-workflow-block {
+  clear: both;
+  background: #fff;
+  margin: 25px 0px 15px;
+  padding: 0 0 41px 0;
+  border: 1px solid #ccc;
+}
+.b-workflow-block__title {
+  margin: 0 0 23px 19px;
+  padding-top: 22px;
+}
+.b-workflow-block__item {
+  margin: 0 0 53px 18px;
+  font-size: 0;
+}
+.b-workflow-block__item:last-of-type {
+  margin-bottom: 13px;
+}
+.b-workflow-block__item-title {
+  margin: 0 0 32px 0;
+}
+.b-workflow-block__item-unit {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 33px;
+}
+.b-workflow-block__item-unit--large {
+  width: 300px;
+}
+.b-workflow-block__item-unit:last-child {
+  margin-right: 0;
+}
+.b-workflow-block__item-unit-title {
+  font-family: NeueHaas_reg, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0;
+  padding: 0 0 26px 72px;
+  position: relative;
+}
+.b-workflow-block__item-unit-title::before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 2px;
+  width: 55px;
+  height: 55px;
+}
+.b-workflow-block__item-unit-title--purchase::before {
+  background: url("../images/b-workflow-block__item-unit-title--purchase.png") no-repeat 0 0;
+}
+.b-workflow-block__item-unit-title--adv::before {
+  background: url("../images/b-workflow-block__item-unit-title--adv.png") no-repeat 0 0;
+}
+.b-workflow-block__item-unit-title--shops::before {
+  background: url("../images/b-workflow-block__item-unit-title--shops.png") no-repeat 0 0;
+}
+.b-workflow-block__item-unit-title--buyers {
+  margin-bottom: 6px;
+}
+.b-workflow-block__item-unit-title--buyers::before {
+  background: url("../images/b-workflow-block__item-unit-title--buyers.png") no-repeat 0 0;
+}
+.b-workflow-block__item-unit-title--sellers {
+  margin-bottom: 6px;
+}
+.b-workflow-block__item-unit-title--sellers::before {
+  background: url("../images/b-workflow-block__item-unit-title--sellers.png") no-repeat 0 0;
+}
+.b-workflow-block__item-unit-text {
+  font-family: NeueHaas_light, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0;
+  width: 210px;
+}
+.b-workflow-block__item-unit-note {
+  font-family: NeueHaas_bold, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0 0 19px 0;
+}
+.b-workflow-block__item-unit-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.b-workflow-block__item-unit-list-par {
+  font-family: NeueHaas_light, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0 0 16px;
+  padding: 0 0 0 24px;
+  position: relative;
+}
+.b-workflow-block__item-unit-list-par::before {
+  content: '';
+  position: absolute;
+  top: 7px;
+  left: 2px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #4c83fc;
+}
+.b-workflow-block__list {
+  list-style: none;
+  margin: 0 0 28px;
+  padding: 0;
+}
+.b-workflow-block__list-item {
+  margin: 0 0 2px;
+}
+.b-workflow-block__list-item:last-child {
+  margin-bottom: 0;
+}
+.b-workflow-block__list-link {
+  display: block;
+  background: #bfd9fe;
+  padding: 12px 0 17px 20px;
+  position: relative;
+}
+.b-workflow-block__list-link::after {
+  content: '';
+  position: absolute;
+  top: 22px;
+  right: 14px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid #3474d6;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+.b-workflow-block__list-article {
+  display: none;
+}
+.b-workflow-block__list-article.opened {
+  display: block;
+}
+.b-workflow-block__list-article-title {
+  margin: 5px 0 5px 0;
+  text-align: center;
+}
+.b-workflow-block__list-article-text {
+  margin: 0px 10px 5px;
+  font-family: NeueHaas_light, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.b-workflow-block__link {
+  width: 216px;
+  padding: 8px 0 9px;
+  margin: 0 0 0 19px;
+}
+
+/*end of b-workflow-block*/
+/*end of regulations*/
+
+/*# sourceMappingURL=how_it_works.css.map */

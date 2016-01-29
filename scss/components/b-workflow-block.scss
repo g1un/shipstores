@@ -1,0 +1,221 @@
+/*b-workflow-block*/
+.b-workflow-block {
+  clear: both;
+  background: #fff;
+  margin: 25px 0px 15px;
+  padding: 0 0 41px 0;
+  border: 1px solid #ccc;
+
+  &__title {
+    margin: 0 0 23px 19px;
+    padding-top: 22px;
+  }
+
+  &__item{
+    margin: 0 0 53px 18px;
+    font-size: 0;
+
+    &:last-of-type{
+      margin-bottom: 13px;
+    }
+
+    &-title{
+      margin: 0 0 32px 0;
+    }
+
+    &-unit{
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 33px;
+
+      &--large{
+        width: 300px;
+      }
+
+      &:last-child{
+        margin-right: 0;
+      }
+
+      &-title{
+        font-family: NeueHaas_reg, Helvetica, sans-serif;
+        font-size: 18px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #000;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0;
+        margin: 0;
+        padding: 0 0 26px 72px;
+        position: relative;
+
+        &::before{
+          content: '';
+          position: absolute;
+          top: -15px;
+          left: 2px;
+          width: 55px;
+          height: 55px;
+        }
+
+        &--purchase{
+
+          &::before{
+            background: url("../images/b-workflow-block__item-unit-title--purchase.png") no-repeat 0 0;
+          }
+        }
+
+        &--adv{
+
+          &::before{
+            background: url("../images/b-workflow-block__item-unit-title--adv.png") no-repeat 0 0;
+          }
+        }
+
+        &--shops{
+
+          &::before{
+            background: url("../images/b-workflow-block__item-unit-title--shops.png") no-repeat 0 0;
+          }
+        }
+
+        &--buyers{
+          margin-bottom: 6px;
+
+          &::before{
+            background: url("../images/b-workflow-block__item-unit-title--buyers.png") no-repeat 0 0;
+          }
+        }
+
+        &--sellers{
+          margin-bottom: 6px;
+
+          &::before{
+            background: url("../images/b-workflow-block__item-unit-title--sellers.png") no-repeat 0 0;
+          }
+        }
+      }
+
+      &-text{
+        font-family: NeueHaas_light, Helvetica, sans-serif;
+        font-size: 13px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #000;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        margin: 0;
+        width: 210px;
+      }
+
+      &-note{
+        font-family: NeueHaas_bold, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #000;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        margin: 0 0 19px 0;
+      }
+
+      &-list{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        &-par{
+          font-family: NeueHaas_light, Helvetica, sans-serif;
+          font-size: 13px;
+          line-height: 1.2em;
+          font-weight: 400;
+          color: #000;
+          text-transform: none;
+          text-decoration: none;
+          letter-spacing: 0;
+          margin: 0 0 16px;
+          padding: 0 0 0 24px;
+          position: relative;
+
+          &::before{
+            content: '';
+            position: absolute;
+            top: 7px;
+            left: 2px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #4c83fc;
+          }
+        }
+      }
+    }
+  }
+
+  &__list{
+    list-style: none;
+    margin: 0 0 28px;
+    padding: 0;
+
+    &-item{
+      margin: 0 0 2px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+
+    &-link{
+      display: block;
+      background: #bfd9fe;
+      padding: 12px 0 17px 20px;
+      position: relative;
+
+      &::after{
+        content: '';
+        position: absolute;
+        top: 22px;
+        right: 14px;
+        width: 0;
+        height: 0;
+        border-top: 7px solid #3474d6;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+      }
+    }
+
+    &-article{
+      display: none;
+
+      &.opened{
+        display: block;
+      }
+
+      &-title{
+        margin: 5px 0 5px 0;
+        text-align: center;
+      }
+
+      &-text{
+        margin: 0px 10px 5px;
+        font-family: NeueHaas_light, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #000;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+      }
+    }
+  }
+
+  &__link{
+    width: 216px;
+    padding: 8px 0 9px;
+    margin: 0 0 0 19px;
+  }
+}
+/*end of b-workflow-block*/

@@ -28,6 +28,10 @@
   text-decoration: none;
   letter-spacing: 0;
 }
+.content-title-item--reg {
+  font-family: NeueHaas_reg, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
 .content-title-info {
   font-family: NeueHaas_bold, Helvetica, sans-serif;
   font-size: 18px;
@@ -37,6 +41,9 @@
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 0;
+}
+.content-title-info--low {
+  text-transform: none;
 }
 
 /*end of titles*/

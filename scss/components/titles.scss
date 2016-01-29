@@ -18,6 +18,11 @@
     text-transform: none;
     text-decoration: none;
     letter-spacing: 0;
+
+    &--reg{
+      font-family: NeueHaas_reg, Helvetica, sans-serif;
+      text-transform: uppercase;
+    }
   }
 
   &-info{
@@ -29,6 +34,10 @@
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 0;
+
+    &--low{
+      text-transform: none;
+    }
   }
 }
 /*end of titles*/
