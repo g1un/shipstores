@@ -1,0 +1,60 @@
+/*deposit-message*/
+.deposit-message{
+  width: 588px;
+  height: 349px;
+  box-shadow: 0 1px 3px 0 rgba(0,0,0,.25);
+  box-sizing: border-box;
+  background: #fff;
+  padding: 69px 0 0 0;
+  text-align: center;
+  margin: 0 auto;
+
+  &__wrapper{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    background: rgba(0,0,0,.24);
+
+    &:target{
+      display: block;
+    }
+  }
+
+  &__title{
+    font-family: NeueHaas_bold, Helvetica, sans-serif;
+    font-size: 24px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #8b0333;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 0 0 23px;
+  }
+
+  &__text{
+    font-family: NeueHaas_reg, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.3em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 0 0 40px;
+  }
+
+  &__btn{
+    padding: 8px 0 10px 0;
+    width: 151px;
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+/*end of deposit-message*/
