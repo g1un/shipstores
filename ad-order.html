@@ -8,7 +8,12 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/ilia.css">
+
+    <!--breadcrumbs-->
+    <link rel="stylesheet" type="text/css" href="css/b-breadcrumb-search.css">
+
+    <!--advertisement style-->
+    <link rel="stylesheet" type="text/css" href="css/ad-order.css">
 
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
@@ -25,15 +30,8 @@
     <!--стили селектов form styler js -->
     <script src="js/jquery.formstyler.min.js"></script>
 
-    <!--contacts style-->
-    <link rel="stylesheet" type="text/css" href="css/contacts.css">
-
     <!-- main page -->
     <script src="js/script.main_page.js"></script>
-
-    <!--map-->
-    <script src="http://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
-    <script src="js/yandex-map.js"></script>
 
 </head>
 
@@ -160,107 +158,156 @@
             </div>
         </div>
 
-        <div class="b-contacts-block">
-            <h2 class="b-contacts-block__title">Контакты</h2>
+        <div class="b-ad-order-block clearfix">
+            <h2 class="b-ad-order-block__title content-title">Реклама</h2>
 
-            <div class="b-contacts-block__map">
-                <div id="map"></div>
-                <div class="b-contacts-block__map-info">
-                    <ul class="b-contacts-block__map-list">
-                        <li class="b-contacts-block__map-item b-contacts-block__map-item--tel">
-                            <div class="b-contacts-block__map-item-title">Телефон службы поддержки</div>
-                            <div class="b-contacts-block__map-item-text">+7 (911) 888-88-77</div>
-                        </li>
-                        <li class="b-contacts-block__map-item b-contacts-block__map-item--address">
-                            <div class="b-contacts-block__map-item-title">Адрес офиса</div>
-                            <div class="b-contacts-block__map-item-text">Санкт-Петербург ул. Ленина дом. 35</div>
-                        </li>
-                        <li class="b-contacts-block__map-item b-contacts-block__map-item--mail">
-                            <div class="b-contacts-block__map-item-title">Пишите нам</div>
-                            <div class="b-contacts-block__map-item-text">
-                                Техподдержка: <a href="#">support@shipstores.net</a>
-                            </div>
-                            <div class="b-contacts-block__map-item-text">
-                                Реклама: <a href="#">sales@shipstores.net</a>
-                            </div>
-                        </li>
-                        <li class="b-contacts-block__map-item b-contacts-block__map-item--schedule">
-                            <div class="b-contacts-block__map-item-title">Режим работы</div>
-                            <div class="b-contacts-block__map-item-text">Ежедневно, с 10:00 до 19:00</div>
-                        </li>
-                    </ul>
+            <form class="b-ad-order-block__options">
+                <div class="b-ad-order-block__options-sort jq-selectbox-main">
+                    <select id="b-ad-order-block__options-sort-select">
+                        <option>Выберите вид услуги</option>
+                        <option value="1">Пожелание</option>
+                        <option value="2">Жалоба</option>
+                        <option value="3">Предложение</option>
+                        <option value="4">Другое</option>
+                    </select>
+                </div>
 
-                    <div class="b-contacts-block__map-share">
-                        <div class="b-contacts-block__map-share-title">поделиться</div>
+                <h3 class="b-ad-order-block__options-title content-title-info content-title-info--low">Выберите подходящий вам вариант размещения баннера</h3>
 
-                        <ul class="b-contacts-block__map-share-list">
-                            <li>
-                                <a class="b-contacts-block__map-share-item b-contacts-block__map-share-item--vk" href="#">
-                                    <div class="b-contacts-block__map-share-link">поделиться</div>
-                                    <div class="b-contacts-block__map-share-social">
-                                        Vkontakte<br><span>345 друзей</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="b-contacts-block__map-share-item b-contacts-block__map-share-item--fb" href="#">
-                                    <div class="b-contacts-block__map-share-link">поделиться</div>
-                                    <div class="b-contacts-block__map-share-social">
-                                        Facebook<br><span>345 друзей</span>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="b-contacts-block__map-share-item b-contacts-block__map-share-item--twitter" href="#">
-                                    <div class="b-contacts-block__map-share-link">поделиться</div>
-                                    <div class="b-contacts-block__map-share-social">
-                                        Twitter<br><span>345 друзей</span>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
+                <div class="b-ad-order-block__options-select-wrapper-left">
+                    <div class="b-ad-order-block__options-select-title select-text select-text--black">Расположение</div>
+                    <div class="b-ad-order-block__options-location jq-selectbox-main">
+                        <select id="b-ad-order-block__options-location-select">
+                            <option value="1">Главная страница</option>
+                            <option value="2">Магазин</option>
+                            <option value="3">Закупки</option>
+                            <option value="4">Объявления</option>
+                        </select>
                     </div>
                 </div>
-            </div>
 
-            <div class="b-contacts-block__feedback">
-                <h3 class="b-contacts-block__feedback-title">Форма обратной связи</h3>
-
-                <form class="b-contacts-block__feedback-form" action="#" method="get">
-                    <ul class="b-contacts-block__feedback-list">
-                        <li class="b-contacts-block__feedback-item">
-                            <div class="b-contacts-block__feedback-item-title">Тип письма</div>
-                            <div class="b-contacts-block__feedback-item-select jq-selectbox-main">
-                                <select name="b-contacts-block__feedback-item-select" id="b-contacts-block__feedback-item-select">
-                                    <option>Вопрос</option>
-                                    <option value="1">Пожелание</option>
-                                    <option value="2">Жалоба</option>
-                                    <option value="3">Предложение</option>
-                                    <option value="4">Другое</option>
-                                </select>
-                            </div>
-                        </li>
-                        <li class="b-contacts-block__feedback-item clearfix">
-                            <label class="b-contacts-block__feedback-item-title" for="message-type">Ваше имя</label>
-                            <input type="text" name="message-type" id="message-type">
-                        </li>
-                        <li class="b-contacts-block__feedback-item clearfix">
-                            <label class="b-contacts-block__feedback-item-title" for="e-mail">E-mail</label>
-                            <input type="text" name="e-mail" id="e-mail">
-                        </li>
-                    </ul>
-
-                    <div class="b-contacts-block__feedback-message">
-                        <label class="b-contacts-block__feedback-message-title" for="feedback-message">Ваше сообщение</label>
-                        <textarea name="feedback-message" id="feedback-message"></textarea>
+                <div class="b-ad-order-block__options-select-wrapper-right">
+                    <div class="b-ad-order-block__options-select-title select-text select-text--black">Рекламный блок</div>
+                    <div class="b-ad-order-block__options-block-num jq-selectbox-main">
+                        <select id="b-ad-order-block__options-block-num-select">
+                            <option value="1">01</option>
+                            <option value="2">02</option>
+                            <option value="3">03</option>
+                            <option value="4">04</option>
+                            <option value="5">05</option>
+                        </select>
                     </div>
+                </div>
 
-                    <div class="b-contacts-block__feedback-submit clearfix">
-                        <p class="b-contacts-block__feedback-text">Мы готовы ответить на все Ваши вопросы в любое время</p>
-                        <input type="submit" value="Отправить письмо">
+                <div class="b-ad-order-block__options-select-title select-text select-text--black">Срок размещения</div>
+                <div class="b-ad-order-block__options-term jq-selectbox-main">
+                    <select id="b-ad-order-block__options-term-select">
+                        <option value="1">1 месяц</option>
+                        <option value="2">2 месяц</option>
+                        <option value="3">3 месяц</option>
+                        <option value="4">4 месяц</option>
+                    </select>
+                </div>
+
+                <div class="b-ad-order-block__options-select-title select-text select-text--black">Дата начала действия услуги</div>
+                <div class="b-ad-order-block__options-day jq-selectbox-main">
+                    <select id="b-ad-order-block__options-day-select">
+                        <option value="30">30</option>
+                        <option value="1">01</option>
+                        <option value="2">02</option>
+                        <option value="3">03</option>
+                        <option value="4">04</option>
+                    </select>
+                </div>
+                <div class="b-ad-order-block__options-month jq-selectbox-main">
+                    <select id="b-ad-order-block__options-month-select">
+                        <option value="8">август</option>
+                        <option value="1">январь</option>
+                        <option value="2">февраль</option>
+                        <option value="3">март</option>
+                        <option value="4">апрель</option>
+                    </select>
+                </div>
+                <div class="b-ad-order-block__options-year jq-selectbox-main">
+                    <select id="b-ad-order-block__options-year-select">
+                        <option value="1">2016</option>
+                        <option value="2">2017</option>
+                        <option value="3">2018</option>
+                        <option value="4">2019</option>
+                    </select>
+                    <p class="b-ad-order-block__options-text select-text">
+                        Данная услуга будет действовать с 30.08.2015 по 30.11.2015
+                    </p>
+                </div>
+
+
+
+                <div class="b-ad-order-block__options-cost">
+                    <div class="b-ad-order-block__options-cost-text select-text">Стоимость услуги составит</div>
+                    <div class="b-ad-order-block__options-cost-value select-text">10 <span>€</span></div>
+                </div>
+
+                <div class="b-ad-order-block__options-scheme clearfix">
+                    <div class="b-ad-order-block__options-scheme-block b-ad-order-block__options-scheme-block-1">Реклама <span>01</span></div>
+                    <div class="b-ad-order-block__options-scheme-block b-ad-order-block__options-scheme-block-4"><span>04</span></div>
+                    <div class="b-ad-order-block__options-scheme-block b-ad-order-block__options-scheme-block-5"><span>05</span></div>
+                    <div class="b-ad-order-block__options-scheme-block b-ad-order-block__options-scheme-block-3">Реклама <span>03</span></div>
+                    <div class="b-ad-order-block__options-scheme-block b-ad-order-block__options-scheme-block-2">Реклама <span>02</span></div>
+                    <div class="b-ad-order-block__options-scheme-block-left"></div>
+                    <div class="b-ad-order-block__options-scheme-block-bottom"></div>
+                </div>
+
+                <input class="b-ad-order-block__options-submit brown_button" type="submit" value="Заказать данный баннер">
+            </form>
+
+            <div class="b-ad-order-block__orders">
+                <h3 class="b-ad-order-block__orders-title active">Мои заказы</h3>
+                <h3 class="b-ad-order-block__orders-title">История заказов</h3>
+
+                <form class="b-ad-order-block__orders-info b-ad-order-block__orders-info--my-orders clearfix">
+                    <div class="b-ad-order-block__orders-info-btn b-ad-order-block__orders-info-btn--del">Удалить</div>
+                    <div class="b-ad-order-block__orders-info-btn b-ad-order-block__orders-info-btn--single-bill">Оплатить отдельным счетом</div>
+
+                    <table class="b-ad-order-block__orders-info-table">
+                        <tr>
+                            <td>
+                                <input class="input-checkbox" type="checkbox" name="b-ad-order-block__orders-info-check-01" id="b-ad-order-block__orders-info-check-01" checked>
+                                <label class="label-checkbox" for="b-ad-order-block__orders-info-check-01">
+                                    Баннерная реклама (рекламный блок 01)
+                                </label>
+                            </td>
+                            <td>800 <span>руб</span></td>
+                            <td>7 €</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="input-checkbox" type="checkbox" name="b-ad-order-block__orders-info-check-02" id="b-ad-order-block__orders-info-check-02">
+                                <label class="label-checkbox" for="b-ad-order-block__orders-info-check-02">
+                                    Баннерная реклама (рекламный блок 04)
+                                </label>
+                            </td>
+                            <td>800 <span>руб</span></td>
+                            <td>10 €</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input class="input-checkbox" type="checkbox" name="b-ad-order-block__orders-info-check-03" id="b-ad-order-block__orders-info-check-03">
+                                <label class="label-checkbox" for="b-ad-order-block__orders-info-check-03">
+                                    Баннерная реклама (рекламный блок 02)
+                                </label>
+                            </td>
+                            <td>800 <span>руб</span></td>
+                            <td>10 €</td>
+                        </tr>
+                    </table>
+
+                    <div class="b-ad-order-block__orders-info-sum select-text">
+                        Итого к оплате <span>800</span> руб.
                     </div>
+                    <input class="b-ad-order-block__orders-info-submit" type="submit" value="Перейти к оплате">
                 </form>
             </div>
+
 
 
         </div>
@@ -348,10 +395,6 @@
     </div>
 </div>
 
-<!--ilia's js-->
-<script src="js/ilia.js"></script>
-
-<!--formstyler js-->
 <script src="js/contacts.js"></script>
 
 </body>

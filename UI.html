@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shipstores UI</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link href="css/jquery.formstyler.css" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
+
+</head>
+
+<body>
+
+<div class="b-main">
+
+    <div class="b-head">
+        <div class="b-head__logo">
+            <div class="b-logo">
+                <a href="#"><img src="images/logo.png" /></a>
+            </div>
+        </div>
+        <div class="b-head__links">
+            <div class="b-menu">
+                <div  class='b-menu__link'>
+                    <a href="#">закупки</a>
+                    <div class="b-menu__linkhover"></div>
+                </div>
+                <div  class='b-menu__link'>
+                    <a href="#">магазины</a>
+                    <div class="b-menu__linkhover"></div>
+                </div>
+                <div  class='b-menu__link'>
+                    <a href="#">объявления</a>
+                    <div class="b-menu__linkhover"></div>
+                </div>
+            </div>
+        </div>
+        <div class="b-head__currency">
+            <div class="b-curr">
+                <div class="b-curr_text">
+                    <div class="b-curr_text__curr_rub">
+                        <span class="g-rub g-white_font" style="line-height:1.7">₽</span>
+                    </div>
+                </div>
+                <div class="b-curr_pict">
+                    <img src="images/currency-rub.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="b-head__autorize">
+            <div class="b-topbuttons">
+                <div class="g-button b-topbuttons_button g-white_bg">Вход</div>
+                <div class="g-button b-topbuttons_button g-blue_bg">Регистрация</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-ui-block__feedback">
+        <h3 class="b-ui-block__feedback-title">Форма обратной связи</h3>
+
+        <form class="b-ui-block__feedback-form" action="#" method="get">
+            <ul class="b-ui-block__feedback-list">
+                <li class="b-ui-block__feedback-item">
+                    <div class="b-ui-block__feedback-item-title">Тип письма</div>
+                    <div class="b-ui-block__feedback-item-select jq-selectbox">
+                        <select name="b-ui-block__feedback-item-select" id="b-ui-block__feedback-item-select">
+                            <option>Вопрос</option>
+                            <option value="1">Пожелание</option>
+                            <option value="2">Жалоба</option>
+                            <option value="3">Предложение</option>
+                            <option value="4">Другое</option>
+                        </select>
+                    </div>
+                </li>
+                <li class="b-ui-block__feedback-item clearfix">
+                    <label class="b-ui-block__feedback-item-title" for="message-type">Ваше имя</label>
+                    <input type="text" name="message-type" id="message-type">
+                </li>
+                <li class="b-ui-block__feedback-item clearfix">
+                    <label class="b-ui-block__feedback-item-title" for="e-mail">E-mail</label>
+                    <input type="text" name="e-mail" id="e-mail">
+                </li>
+            </ul>
+
+            <div class="b-ui-block__feedback-message">
+                <label class="b-ui-block__feedback-message-title" for="feedback-message">Ваше сообщение</label>
+                <textarea name="feedback-message" id="feedback-message"></textarea>
+            </div>
+
+            <div class="b-ui-block__feedback-submit clearfix">
+                <p class="b-ui-block__feedback-text">Мы готовы ответить на все Ваши вопросы в любое время</p>
+                <input type="submit" value="Отправить письмо">
+            </div>
+        </form>
+    </div>
+
+    <div class="b-bottom-menu">
+        <nav>
+            <div class="b-menu-main"><!--b-menu_link_active-->
+                <div  class='b-menu-main__link'>
+                    <a href="#">О портале</a>
+                </div>
+                <div  class='b-menu-main__link'>
+                    <a href="#">Услуги портала</a>
+                </div>
+                <div  class='b-menu-main__link'>
+                    <a href="#">Новости</a>
+                </div>
+                <div  class='b-menu-main__link'>
+                    <a href="#">Реклама</a>
+                </div>
+                <div  class='b-menu-main__link'>
+                    <a href="#">Контакты</a>
+                </div>
+                <div  class='b-menu-main__link'>
+                    <a href="#">Дилеры</a>
+                </div>
+                <div  class='b-menu-main__link'>
+                    <a href="#">shipstoresbonus</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="b-footer">
+        <div class="b-footer-cr">
+            <div class="b-footer-cr__copy">© 2015 ShipStores</div>
+            <div class="b-footer-cr__bitrix"><img src="images/bitrix.png" /></div>
+            <div class="b-footer-cr__menu">
+                <a href="#">Закупки</a>
+                <a href="#">Магазины</a>
+                <a href="#">Объявления</a>
+            </div>
+            <div class="b-footer-cr__7studio">
+                <p><a href="//7sait.spb.ru/services/sozdanie-saitov/" title="Разработка сайтов">Разработка сайта: «7 Студио»</a></p>
+                <p><a href="//7sait.spb.ru/services/internet-marketing/" title="Продвижение сайтов">Продвижение сайта: «7 Студио»</a></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="b-static-stripe">
+    <div class="b-your-blue">
+        <div class="b-your-blue__feedback my-divs">
+            <div class="form-button js-call-form">обратная связь</div>
+        </div>
+        <div class="b-your-blue__info my-divs b-your-blue__infofirst">
+            <div class="b-my-info">
+                <div class="b-my-info__icon icon-purchase"></div>
+                <div class="b-my-info__name"><a href="#">Закупки, в которых вы участвуете</a></div>
+                <div class="b-my-info__count">4</div>
+            </div>
+        </div>
+        <div class="b-your-blue__info my-divs">
+            <div class="b-my-info">
+                <div class="b-my-info__icon icon-notice"></div>
+                <div class="b-my-info__name"><a href="#">Размещено объявлений</a></div>
+                <div class="b-my-info__count">4</div>
+            </div>
+        </div>
+        <div class="b-your-blue__info my-divs">
+            <div class="b-my-info">
+                <div class="b-my-info__icon icon-favorites"></div>
+                <div class="b-my-info__name"><a href="#">Избранное</a></div>
+                <div class="b-my-info__count">4</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/script.js"></script>
+<script src="js/script.main_page.js"></script>
+<script src="js/ui.js"></script>
+
+</body>
+</html>

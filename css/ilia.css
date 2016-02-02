@@ -17,7 +17,7 @@
   src: url(../fonts/NeueHaasUnicaW1G-Medium.ttf);
 }
 @font-face {
-  font-family: 'NeueHaasUnicaW1G-LightIt';
+  font-family: 'NeueHaas_light-it';
   src: url(../fonts/NeueHaasUnicaW1G-LightIt.ttf);
 }
 @font-face {
@@ -886,7 +886,7 @@
   position: relative;
 }
 .b-contacts-block__map-item-title {
-  font-family: "NeueHaas_medium";
+  font-family: NeueHaas_medium, Helvetica, sans-serif;
   font-size: 13px;
   line-height: 1.2em;
   font-weight: 400;
@@ -897,7 +897,7 @@
   margin-bottom: 8px;
 }
 .b-contacts-block__map-item-text {
-  font-family: "NeueHaas_medium";
+  font-family: NeueHaas_medium, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 1.2em;
   font-weight: 400;
@@ -1004,7 +1004,7 @@
   border-right: 6px solid transparent;
 }
 .b-contacts-block__map-share-title {
-  font-family: "NeueHaas_reg";
+  font-family: NeueHaas_reg, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 1.2em;
   font-weight: 400;
@@ -1066,7 +1066,7 @@
   background: url("../images/b-contacts-block__map-share-item--twitter.png") no-repeat 0 0;
 }
 .b-contacts-block__map-share-social {
-  font-family: "NeueHaas_reg";
+  font-family: NeueHaas_reg, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.2em;
   font-weight: 400;
@@ -1081,7 +1081,7 @@
 }
 .b-contacts-block__map-share-link {
   float: right;
-  font-family: "NeueHaas_light";
+  font-family: NeueHaas_light, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 1.2em;
   font-weight: 400;
@@ -1100,7 +1100,7 @@
   margin: 0 7px 7px 2px;
 }
 .b-contacts-block__feedback-title {
-  font-family: "NeueHaas_bold";
+  font-family: NeueHaas_bold, Helvetica, sans-serif;
   font-size: 18px;
   line-height: 1.2em;
   font-weight: 400;
@@ -1124,7 +1124,7 @@
 }
 .b-contacts-block__feedback-item-title {
   display: inline-block;
-  font-family: "NeueHaas_light";
+  font-family: NeueHaas_light, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 1.2em;
   font-weight: 400;
@@ -1135,46 +1135,13 @@
   margin: 9px 21px 0 3px;
 }
 .b-contacts-block__feedback-item-select {
-  display: inline-block;
-  vertical-align: top;
   width: 199px;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
-  position: relative;
-  cursor: pointer;
-}
-.b-contacts-block__feedback-item-select::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 27px;
-  height: 32px;
-  background: #fff;
-  pointer-events: none;
-  cursor: pointer;
-}
-.b-contacts-block__feedback-item-select::after {
-  content: '';
-  position: absolute;
-  top: 13px;
-  right: 12px;
-  width: 0;
-  height: 0;
-  border-top: 7px solid #8b0333;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  pointer-events: none;
-  cursor: pointer;
-}
-.b-contacts-block__feedback-item-select.opened::after {
-  border-top: none;
-  border-bottom: 7px solid #8b0333;
 }
 .b-contacts-block__feedback-item-select select {
   outline: none;
   border: none;
   width: 199px;
-  font-family: "NeueHaas_light";
+  font-family: NeueHaas_light, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 1.2em;
   font-weight: 400;
@@ -1202,7 +1169,7 @@
   width: 190px;
   height: 28px;
   padding-left: 6px;
-  font-family: "NeueHaas_light";
+  font-family: NeueHaas_light, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 1.2em;
   font-weight: 400;
@@ -1219,7 +1186,7 @@
 .b-contacts-block__feedback-message-title {
   display: block;
   float: left;
-  font-family: "NeueHaas_reg";
+  font-family: NeueHaas_reg, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.2em;
   font-weight: 400;
@@ -1238,7 +1205,7 @@
   width: 291px;
   height: 111px;
   padding: 6px;
-  font-family: "NeueHaas_reg";
+  font-family: NeueHaas_reg, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.2em;
   font-weight: 400;
@@ -1256,7 +1223,7 @@
   margin-right: 10px;
   border: none;
   outline: none;
-  font-family: "NeueHaas_bold";
+  font-family: NeueHaas_bold, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 1.2em;
   font-weight: 400;
@@ -1273,7 +1240,7 @@
 .b-contacts-block__feedback-text {
   display: block;
   float: left;
-  font-family: "NeueHaasUnicaW1G-LightIt";
+  font-family: NeueHaas_light, Helvetica, sans-serif-it;
   font-size: 14px;
   line-height: 1.2em;
   font-weight: 400;

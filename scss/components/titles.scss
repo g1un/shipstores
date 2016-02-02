@@ -40,4 +40,19 @@
     }
   }
 }
+
+.select-text{
+  font-family: NeueHaas_reg, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #959595;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+
+  &--black{
+    color: #000;
+  }
+}
 /*end of titles*/

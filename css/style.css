@@ -18,6 +18,10 @@
     src: url(../fonts/NeueHaasUnicaW1G-Light.ttf);
     font-weight: normal;
 }
+@font-face {
+    font-family: NeueHaas_light-it;
+    src: url(../fonts/NeueHaasUnicaW1G-LightIt.ttf);
+}
 html, body {
     margin:0;
     padding:0;

@@ -1,4 +1,6 @@
 /*form*/
+
+/*radio button*/
 .input-radio{
   display: none;
 
@@ -35,4 +37,168 @@
     background: transparent;
   }
 }
+/*end of radio button*/
+
+/*checkbox*/
+.input-checkbox{
+  display: none;
+
+  &:checked{
+
+    & + label{
+
+      &::before{
+        box-shadow: none;
+        background: #7fb3ff;
+      }
+
+      &::after{
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 2px;
+        width: 6px;
+        height: 4px;
+        border-left: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        background: transparent;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+.label-checkbox{
+  position: relative;
+  cursor: pointer;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13px;
+    height: 13px;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px 0 rgba(173,173,173,.75);
+    background: #fff;
+  }
+}
+/*end of checkbox*/
+
+/*brown button*/
+.brown_button{
+  display: block;
+  border: none;
+  outline: none;
+  font-family: NeueHaas_bold, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  text-align: center;
+  background: #8b0333;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.25);
+  padding: 8px 23px 8px 27px;
+  cursor: pointer;
+  
+  &:hover,
+  &:focus{
+    background: #a71548;
+  }
+}
+/*end of brown button*/
+
+/*select formstyler plugin*/
+.jq-selectbox-main{
+  display: inline-block;
+  vertical-align: top;
+
+  .jq-selectbox{
+    width: 100%;
+
+    &.opened {
+
+      .jq-selectbox__trigger-arrow {
+        border-top: none;
+        border-bottom: 7px solid #8b0333;
+      }
+    }
+  }
+
+  .dropup{
+
+    .jq-selectbox__dropdown{
+      box-shadow: 0 0 4px 0 rgba(0,0,0,.25);
+    }
+  }
+
+  li{
+    font-family: NeueHaas_light, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #8f9091;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    padding: 4px 11px 0;
+
+    &.selected{
+      background: #e7f0fe;
+    }
+  }
+
+  .jq-selectbox__select {
+    border: none;
+    //width: 199px;
+    height: 32px;
+    box-sizing: border-box;
+    padding: 9px 36px 6px 10px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .25);
+    position: relative;
+  }
+
+  .jq-selectbox__select-text {
+    font-family: NeueHaas_light, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+  }
+
+  .jq-selectbox__trigger {
+    width: 36px;
+    height: 32px;
+  }
+
+  .jq-selectbox__trigger-arrow{
+    top: 13px;
+    right: 12px;
+    width: 0;
+    height: 0;
+    border-bottom: 0;
+    border-top: 7px solid #8b0333;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    pointer-events: none;
+  }
+
+  .jq-selectbox .placeholder{
+  }
+
+  .jq-selectbox__dropdown{
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.15);
+    margin-top: 0;
+  }
+}
+
+
+/*end of select formstyler plugin*/
 /*end of form*/
