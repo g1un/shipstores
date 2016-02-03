@@ -54,18 +54,7 @@
   background: #7fb3ff;
 }
 .input-checkbox:checked + label::after {
-  content: '';
-  position: absolute;
-  top: 2px;
-  left: 2px;
-  width: 6px;
-  height: 4px;
-  border-left: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  background: transparent;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  display: block;
 }
 
 .label-checkbox {
@@ -83,8 +72,86 @@
   box-shadow: inset 0 1px 3px 0 rgba(173, 173, 173, 0.75);
   background: #fff;
 }
+.label-checkbox::after {
+  display: none;
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 6px;
+  height: 4px;
+  border-left: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
 
 /*end of checkbox*/
+/*type='text'*/
+.type-text {
+  border: 1px solid #d7d7d7;
+  outline: none;
+}
+.type-text:hover, .type-text:focus {
+  border: 1px solid #7fb3ff;
+}
+.type-text:disabled {
+  background: #f1f1f1;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.17);
+  border: none;
+}
+.type-text:disabled:hover, .type-text:disabled:focus {
+  border: none;
+}
+.type-text-shadow {
+  padding: 5px;
+  border: none;
+  outline: none;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+}
+
+/*end of type='text'*/
+/*textarea*/
+.textarea {
+  padding: 5px;
+}
+.textarea::-webkit-input-placeholder {
+  opacity: 1;
+  font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #959595;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.textarea:-ms-input-placeholder {
+  opacity: 1;
+  font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #959595;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.textarea::-moz-placeholder {
+  opacity: 1;
+  font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #959595;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+
+/*end of textarea*/
 /*brown button*/
 .brown_button {
   display: block;
@@ -229,6 +296,20 @@
 }
 .select-text--black {
   color: #000;
+}
+
+.text-little {
+  font-family: NeueHaas_medium, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.text-little--light {
+  font-family: NeueHaas_light, Helvetica, sans-serif;
 }
 
 /*end of titles*/

@@ -55,4 +55,19 @@
     color: #000;
   }
 }
+
+.text-little{
+  font-family: NeueHaas_medium, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+
+  &--light{
+    font-family: NeueHaas_light, Helvetica, sans-serif;
+  }
+}
 /*end of titles*/

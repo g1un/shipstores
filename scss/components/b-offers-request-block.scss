@@ -1,0 +1,447 @@
+/*b-offers-request-block*/
+.b-offers-request-block {
+  clear: both;
+  padding: 0 0 75px;
+  background: #fff;
+  margin: 25px 0 15px;
+  border: 1px solid #ccc;
+
+  &__title {
+    margin: 0 0 21px 18px;
+    padding-top: 24px;
+  }
+
+  &__text{
+    margin: 0 0 22px 20px;
+  }
+
+  &__form{
+    margin: 0 0 0 15px;
+  }
+
+  &__table{
+    margin: 0 0 31px;
+
+    &-title{
+      width: 155px;
+      padding: 0 0 7px;
+
+      &--country{
+        padding: 13px 0 0;
+        vertical-align: top;
+      }
+
+      &--city{
+        vertical-align: top;
+        padding: 16px 0 0;
+      }
+
+      &--deal-kind{
+        vertical-align: top;
+        padding: 15px 0 0;
+      }
+
+      &--category{
+        vertical-align: top;
+        padding: 15px 0 0;
+      }
+
+      &--offer-name{
+        vertical-align: top;
+        padding: 10px 0 0;
+      }
+
+      &--price{
+        vertical-align: top;
+        padding: 11px 0 0;
+      }
+
+      &--term{
+        vertical-align: top;
+        padding: 20px 0 0;
+
+        span{
+          display: block;
+          float: right;
+          font-family: NeueHaas_light-it, Helvetica, sans-serif;
+          font-size: 12px;
+          line-height: 1.2em;
+          font-weight: 400;
+          color: #959595;
+          text-transform: none;
+          text-decoration: none;
+          letter-spacing: 0;
+        }
+      }
+    }
+
+    &-name,
+    &-tel,
+    &-mail{
+      padding: 0 0 7px;
+      width: 166px;
+
+      &-radio{
+
+        input:checked{
+
+          &+label{
+            font-size: 14px;
+          }
+        }
+
+        label{
+          display: block;
+          float: left;
+          margin: -6px 0 0;
+          padding: 0 0 0 33px;
+          font-family: NeueHaas_light-it, Helvetica, sans-serif;
+          font-size: 0;
+          min-height: 17px;
+
+          &::before{
+            top: 3px;
+          }
+
+          &::after{
+            top: 6px;
+          }
+        }
+      }
+    }
+
+    &-country-select{
+      margin: 4px 0 0;
+
+      .jq-selectbox{
+        width: 200px;
+      }
+    }
+
+    &-city-select{
+      margin: 7px 0 0;
+
+      .jq-selectbox{
+        width: 200px;
+      }
+    }
+
+    &-deal-kind-select{
+      margin: 6px 0 0;
+
+      .jq-selectbox{
+        width: 200px;
+      }
+    }
+
+    &-category-select{
+      margin: 6px 0 0;
+
+      .jq-selectbox{
+        width: 200px;
+      }
+    }
+
+    &-offer-name{
+
+      input{
+        display: block;
+        margin: 7px 0 0;
+        width: 607px;
+        height: 32px;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+    }
+
+    &-starting-price{
+
+      .type-text{
+        display: inline-block;
+        margin: 7px 11px 0 0;
+        width: 130px;
+        height: 32px;
+        padding: 5px;
+        box-sizing: border-box;
+      }
+
+      &-currency{
+        margin: 7px 13px 0 0;
+
+        &.disabled{
+          position: relative;
+
+          &:hover,
+          &:focus{
+            border: none;
+          }
+
+          .jq-selectbox{
+            z-index: 0 !important;
+          }
+
+          .jq-selectbox__select{
+            box-shadow: none;
+          }
+
+          .disabled{
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            background: rgba(241,241,241,.85);
+            box-shadow: inset 0 1px 2px 0 rgba(0,0,0,.17);
+            border: none;
+          }
+        }
+
+        .jq-selectbox{
+          width: 102px;
+        }
+      }
+
+      .label-radio{
+        margin: 0;
+        padding: 0 0 0 21px;
+
+        &::before{
+          top: 4px;
+        }
+
+        &::after{
+          top: 7px;
+        }
+      }
+    }
+
+    &-term{
+
+      &-day{
+        margin: 11px 5px 0 0;
+        width: 57px;
+
+        .jq-selectbox{
+
+          &__select{
+            padding-right: 25px;
+          }
+
+          &__trigger{
+            width: 25px;
+
+            &-arrow{
+              right: 8px;
+            }
+          }
+        }
+      }
+
+      &-month{
+        margin: 11px 4px 0 0;
+        width: 75px;
+
+        .jq-selectbox{
+
+          &__select{
+            padding-right: 25px;
+            padding-left: 7px;
+          }
+
+          &__trigger{
+            width: 25px;
+
+            &-arrow{
+              right: 5px;
+            }
+          }
+        }
+      }
+
+      &-year{
+        margin: 11px 17px 0 0;
+        width: 67px;
+
+        .jq-selectbox{
+
+          &__select{
+            padding-right: 25px;
+            padding-left: 7px;
+          }
+
+          &__trigger{
+            width: 25px;
+
+            &-arrow{
+              right: 10px;
+            }
+          }
+        }
+      }
+
+      &-hours{
+        margin: 11px 6px 0 0;
+        position: relative;
+        width: 54px;
+
+        .jq-selectbox{
+
+          &__select{
+            padding-right: 25px;
+            padding-left: 7px;
+          }
+
+          &__trigger{
+            width: 25px;
+
+            &-arrow{
+              right: 10px;
+            }
+          }
+        }
+
+        &>span{
+          position: absolute;
+          top: -19px;
+          left: 0;
+          font-family: NeueHaas_light-it, Helvetica, sans-serif;
+          font-size: 12px;
+          line-height: 1.2em;
+          font-weight: 400;
+          color: #959595;
+          text-transform: none;
+          text-decoration: none;
+          letter-spacing: 0;
+        }
+      }
+
+      &-minutes{
+        margin: 11px 0 0 0;
+        position: relative;
+        width: 54px;
+
+        .jq-selectbox {
+
+          &__select {
+            padding-right: 25px;
+            padding-left: 7px;
+          }
+
+          &__trigger {
+            width: 25px;
+
+            &-arrow {
+              right: 10px;
+            }
+          }
+        }
+
+        &>span{
+          position: absolute;
+          top: -19px;
+          left: 0;
+          font-family: NeueHaas_light-it, Helvetica, sans-serif;
+          font-size: 12px;
+          line-height: 1.2em;
+          font-weight: 400;
+          color: #959595;
+          text-transform: none;
+          text-decoration: none;
+          letter-spacing: 0;
+        }
+      }
+
+      &>span{
+        display: inline-block;
+        vertical-align: top;
+        margin: 19px 6px 0 0;
+        font-family: NeueHaas_light-it, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #959595;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+      }
+    }
+  }
+
+  &__add-doc{
+    margin: 0 17px 29px 3px;
+    padding: 0 0 10px;
+    border: 1px solid #d7d7d7;
+
+    &-text{
+      display: inline-block;
+      vertical-align: top;
+      padding: 0 0 0 59px;
+      margin: 7px 0 0;
+      font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+      position: relative;
+
+      &::before{
+        content: '';
+        position: absolute;
+        top: 9px;
+        left: 16px;
+        width: 19px;
+        height: 19px;
+        background: url("../images/b-security-block__link--data-protect.png") no-repeat 0 0;
+        background-size: 100%;
+      }
+
+      span{
+        font-family: NeueHaas_medium-it, Helvetica, sans-serif;
+      }
+    }
+
+    input{
+      display: none;
+    }
+
+    label{
+      display: block;
+      float: right;
+      margin: 9px 6px 0 0;
+      padding: 9px 0;
+      width: 248px;
+    }
+  }
+
+  &__translation{
+    background: #f3f3f3;
+    margin: 0 18px 31px 3px;
+    padding: 0 0 3px;
+
+    &-title{
+      font-family: NeueHaas_medium, Helvetica, sans-serif;
+      color: #000;
+      padding: 13px 0 0 15px;
+      margin: 0 0 16px;
+    }
+
+    label{
+      display: block;
+      margin: 0 0 13px 14px;
+      padding: 0 0 0 23px;
+
+      &::before{
+        top: 2px;
+      }
+
+      &::after{
+        top: 5px;
+      }
+    }
+  }
+
+  &__submit{
+    float: right;
+    margin: 0 24px 0 0;
+    padding: 8px 0;
+    width: 248px;
+  }
+}
+/*end of b-offers-request-block*/

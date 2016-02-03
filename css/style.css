@@ -22,6 +22,18 @@
     font-family: NeueHaas_light-it;
     src: url(../fonts/NeueHaasUnicaW1G-LightIt.ttf);
 }
+@font-face {
+    font-family: NeueHaas_thin-it;
+    src: url(../fonts/NeueHaasUnicaW1G-ThinItalic.ttf);
+}
+@font-face {
+    font-family: NeueHaas_medium-it;
+    src: url(../fonts/NeueHaasUnicaW1G-MediumIt.ttf);
+}
+@font-face {
+    font-family: NeueHaas_it;
+    src: url(../fonts/NeueHaasUnicaW1G-Italic.ttf);
+}
 html, body {
     margin:0;
     padding:0;
