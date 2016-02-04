@@ -1,0 +1,55 @@
+/*price-offer-form*/
+.price-offer{
+  display: none;
+  width: 849px;
+  height: 246px;
+  box-sizing: border-box;
+  padding: 44px 0 0 0;
+  text-align: left;
+
+  &__title{
+    margin: 0 0 34px;
+    text-align: center;
+  }
+
+  &__form{
+    margin: 0 34px 0;
+  }
+
+  &__label{
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px 14px 0 0;
+  }
+
+  &__sum{
+    display: inline-block;
+    vertical-align: top;
+    width: 106px;
+    height: 22px;
+    margin: 0 8px 0 0;
+    font-family: NeueHaas_bold, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #8b0333;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-align: center;
+
+    &-units{
+      display: inline-block;
+      vertical-align: top;
+      font-family: NeueHaas_light, Helvetica, sans-serif;
+      margin: 6px 0 0;
+    }
+  }
+
+  &__submit{
+    display: block;
+    width: 193px;
+    margin: 37px auto 0;
+  }
+}
+/*end of price-offer-form*/

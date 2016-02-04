@@ -1,0 +1,116 @@
+/*application-window*/
+.application-window{
+  display: none;
+  width: 849px;
+  height: 392px;
+  font-family: NeueHaas_reg, Helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  padding: 43px 0 0;
+  box-sizing: border-box;
+
+  &__title{
+    margin: 0 0 41px;
+    text-align: center;
+  }
+
+  &__name{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px 21px 0;
+    min-width: 150px;
+    text-align: left;
+
+    &--last{
+      margin-bottom: 36px;
+    }
+  }
+
+  &__property{
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    text-align: left;
+  }
+
+  &__text{
+    margin: 0 0 32px;
+
+    &:last-of-type{
+      margin-bottom: 0;
+    }
+
+    &-blue{
+      font-family: NeueHaas_bold, Helvetica, sans-serif;
+      color: #3577d7;
+    }
+
+    &-bold{
+      font-family: NeueHaas_medium, Helvetica, sans-serif;
+    }
+  }
+
+  &__photo{
+    float: left;
+    width: 57px;
+    font-size: 0;
+    line-height: 0;
+    margin: 14px 0 0;
+
+    img{
+      max-width: 100%;
+    }
+  }
+
+  &__customer{
+
+    &-name{
+      margin: 20px 0 0 73px;
+    }
+
+    &-city{
+      margin: 6px 0 0 73px;
+      font-family: NeueHaas_reg, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #464646;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+    }
+  }
+
+  &__left{
+    float: left;
+    width: 400px;
+    margin: 0 132px 0 34px;
+  }
+
+  &__right{
+    float: left;
+    width: 200px;
+    margin: 0;
+  }
+
+  &__fee{
+    display: block;
+    float: left;
+    margin: 33px 0 0 37px;
+    width: 249px;
+    clear: left;
+  }
+
+  &__continue{
+    display: block;
+    float: right;
+    margin: 31px 86px 0 0;
+    width: 186px;
+  }
+}
+/*end of application-window*/

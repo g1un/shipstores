@@ -125,6 +125,27 @@ $(document).ready(function() {
     ymaps.ready(init);
   }
   /*end of map in create-purchase block*/
+
+  /*price-offer*/
+  $(".js-fancy--close-on").fancybox({
+    padding: 0,
+    margin: 0,
+    autoCenter: true,
+    fitToView	: false,
+    openEffect	: 'fade',
+    helpers: {
+      overlay: {
+        locked: false,
+        css: {
+          'background': 'rgba(0,0,0,.24)',
+        }
+      }
+    },
+    tpl: {
+      closeBtn: '<div class="form-close"></div>',
+    }
+  });
+  /*end of price-offer*/
 });
 /*end of contacts.js*/
 

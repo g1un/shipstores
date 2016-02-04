@@ -93,6 +93,14 @@
 .type-text {
   border: 1px solid #d7d7d7;
   outline: none;
+  font-family: NeueHaas_light, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #464646;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
 }
 .type-text:hover, .type-text:focus {
   border: 1px solid #7fb3ff;
@@ -110,6 +118,9 @@
   border: none;
   outline: none;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+}
+.type-text-shadow {
+  box-shadow: inset -1px 1px 3px 0 rgba(0, 0, 0, 0.17);
 }
 
 /*end of type='text'*/
@@ -168,7 +179,7 @@
   text-align: center;
   background: #8b0333;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
-  padding: 8px 23px 8px 27px;
+  padding: 8px 0;
   cursor: pointer;
 }
 .brown_button:hover, .brown_button:focus {
@@ -176,6 +187,79 @@
 }
 
 /*end of brown button*/
+/*blue button*/
+.blue_button {
+  padding: 8px 0;
+  cursor: pointer;
+  background: #7fb3ff;
+  outline: none;
+  border: none;
+  font-family: NeueHaas_bold, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #FFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  text-align: center;
+}
+.blue_button:hover, .blue_button:focus {
+  background: #4c83fc;
+}
+.blue_button--dark {
+  background: #4c83fc;
+}
+.blue_button--dark:hover, .blue_button--dark:focus {
+  background: #0050ff;
+}
+
+/*end of blue button*/
+/*shadow button*/
+.shadow_button {
+  padding: 8px 0;
+  cursor: pointer;
+  background: #f7f7f7;
+  outline: none;
+  border: none;
+  font-family: NeueHaas_medium, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #464646;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  text-align: center;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+.shadow_button:hover, .shadow_button:focus {
+  box-shadow: 0 -1px 1px 0 rgba(0, 0, 0, 0.25);
+}
+
+/*end of shadow button*/
+/*gradient_button*/
+.gradient_button {
+  font-family: NeueHaas_medium, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0 9px;
+  background: #79aaf2;
+  background: -webkit-linear-gradient(top, #a4c8ff, #789add);
+  background: linear-gradient(to bottom, #a4c8ff, #789add);
+}
+.gradient_button span {
+  font-size: 16px;
+}
+
+/*end of gradient_button*/
 /*select formstyler plugin*/
 .jq-selectbox-main {
   display: inline-block;
@@ -244,6 +328,49 @@
 }
 
 /*end of select formstyler plugin*/
+/*form-close*/
+.form-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 68px;
+  height: 68px;
+  background: #e1e1e1;
+  cursor: pointer;
+}
+.form-close::before {
+  content: '';
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 25px;
+  height: 5px;
+  background: #fff;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.form-close::after {
+  content: '';
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  width: 25px;
+  height: 5px;
+  background: #fff;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+/*end of form-close*/
+/*form-white*/
+.form-white {
+  background: #fff;
+  box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.31);
+}
+
+/*end of form-white*/
 /*end of form*/
 /*end of contacts*/
 

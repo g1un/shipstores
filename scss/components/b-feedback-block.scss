@@ -6,7 +6,7 @@
   position: relative;
 
   &-title{
-    font-family: $neue-haas-bold;
+    font-family: NeueHaas_bold, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 1.2em;
     font-weight: 400;
@@ -32,7 +32,7 @@
 
     &-title{
       display: inline-block;
-      font-family: $neue-haas-light;
+      font-family: NeueHaas_light, Helvetica, sans-serif;
       font-size: 12px;
       line-height: 1.2em;
       font-weight: 400;
@@ -89,7 +89,7 @@
         outline: none;
         border: none;
         width: 199px;
-        font-family: $neue-haas-light;
+        font-family: NeueHaas_light, Helvetica, sans-serif;
         font-size: 12px;
         line-height: 1.2em;
         font-weight: 400;
@@ -121,14 +121,6 @@
       width: 190px;
       height: 28px;
       padding-left: 6px;
-      font-family: $neue-haas-light;
-      font-size: 12px;
-      line-height: 1.2em;
-      font-weight: 400;
-      color: #000;
-      text-transform: none;
-      text-decoration: none;
-      letter-spacing: 0;
     }
   }
 
@@ -140,7 +132,7 @@
     &-title{
       display: block;
       float: left;
-      font-family: $neue-haas-reg;
+      font-family: NeueHaas_reg, Helvetica, sans-serif;
       font-size: 14px;
       line-height: 1.2em;
       font-weight: 400;
@@ -160,7 +152,7 @@
       width: 291px;
       height: 111px;
       padding: 6px;
-      font-family: $neue-haas-reg;
+      font-family: NeueHaas_reg, Helvetica, sans-serif;
       font-size: 14px;
       line-height: 1.2em;
       font-weight: 400;
@@ -178,28 +170,15 @@
       display: block;
       float: right;
       margin-right: 10px;
-      border: none;
-      outline: none;
-      font-family: $neue-haas-bold;
-      font-size: 12px;
-      line-height: 1.2em;
-      font-weight: 400;
-      color: #fff;
-      text-transform: uppercase;
-      text-decoration: none;
-      letter-spacing: 0;
-      text-align: center;
-      background: #8b0333;
-      box-shadow: 0 1px 1px 0 rgba(0,0,0,.25);
-      padding: 8px 23px 8px 27px;
-      cursor: pointer;
+      width: 185px;
+      padding: 8px 0;
     }
   }
 
   &-text{
     display: block;
     float: left;
-    font-family: $neue-haas-light-it;
+    font-family: NeueHaas_light-it, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 1.2em;
     font-weight: 400;
