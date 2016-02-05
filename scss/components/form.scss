@@ -236,7 +236,7 @@
 }
 /*end of blue button*/
 
-/*shadow button*/
+/*shadow_button*/
 .shadow_button{
   padding: 8px 0;
   cursor: pointer;
@@ -259,7 +259,7 @@
     box-shadow: 0 -1px 1px 0 rgba(0,0,0,.25);
   }
 }
-/*end of shadow button*/
+/*end of shadow_button*/
 
 /*gradient_button*/
 .gradient_button{
@@ -287,6 +287,25 @@
 .jq-selectbox-main{
   display: inline-block;
   vertical-align: top;
+
+  &.disabled{
+
+    .disabled{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.85);
+      box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.17);
+      border: none;
+    }
+
+    .jq-selectbox{
+      z-index: 0 !important;
+    }
+  }
 
   .jq-selectbox{
     width: 100%;
@@ -411,5 +430,70 @@
   box-shadow: 2px 2px 3px 0 rgba(0,0,0,.31);
 }
 /*end of form-white*/
+
+/*close-blue*/
+.close-blue{
+  position: absolute;
+  top: -11px;
+  right: -8px;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background: #7fb3ff;
+  cursor: pointer;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    width: 2px;
+    height: 10px;
+    background: #fff;
+    transform: rotate(45deg);
+  }
+
+  &::after{
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 8px;
+    width: 2px;
+    height: 10px;
+    background: #fff;
+    transform: rotate(-45deg);
+  }
+}
+/*end of close-blue*/
+
+/*round-check*/
+.round-check{
+  position: relative;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #7fb3ff;
+  }
+
+  &::after{
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 9px;
+    height: 6px;
+    background: transparent;
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transform: rotate(-45deg);
+  }
+}
+/*end of round-check*/
 
 /*end of form*/

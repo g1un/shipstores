@@ -127,25 +127,43 @@ $(document).ready(function() {
   /*end of map in create-purchase block*/
 
   /*price-offer*/
-  $(".js-fancy--close-on").fancybox({
-    padding: 0,
-    margin: 0,
-    autoCenter: true,
-    fitToView	: false,
-    openEffect	: 'fade',
-    helpers: {
-      overlay: {
-        locked: false,
-        css: {
-          'background': 'rgba(0,0,0,.24)',
+  if ($(".js-fancy--close-on").length){
+    $(".js-fancy--close-on").fancybox({
+      padding: 0,
+      margin: 0,
+      autoCenter: true,
+      fitToView	: false,
+      openEffect	: 'fade',
+      helpers: {
+        overlay: {
+          locked: false,
+          css: {
+            'background': 'rgba(0,0,0,.24)',
+          }
         }
+      },
+      tpl: {
+        closeBtn: '<div class="form-close"></div>',
       }
-    },
-    tpl: {
-      closeBtn: '<div class="form-close"></div>',
-    }
-  });
+    });
+  }
   /*end of price-offer*/
+
+  /*b-post-ad-block__options-notes-popup*/
+  if ($('.b-post-ad-block__options-notes-popup').length){
+    var noteText = $('.b-post-ad-block__options-notes-text');
+    var notePopup = $('.b-post-ad-block__options-notes-popup');
+    var notePopupClose = $('.b-post-ad-block__options-notes-popup-close');
+
+    noteText.on('focus', function(){
+      notePopup.css('display', 'block');
+    });
+
+    notePopupClose.on('click', function(){
+      notePopup.css('display', 'none');
+    });
+  }
+  /*end of b-post-ad-block__options-notes-popup*/
 });
 /*end of contacts.js*/
 

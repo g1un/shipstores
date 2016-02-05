@@ -1,0 +1,31 @@
+/*application-approval*/
+.application-approval{
+  display: none;
+  width: 849px;
+  height: 266px;
+  box-sizing: border-box;
+  padding: 47px 60px 0;
+
+  &__title{
+    margin: 0 0 41px;
+    text-align: center;
+    line-height: 1.35em;
+  }
+
+  &__text{
+    font-family: NeueHaas_reg, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    margin: 0 0 9px;
+
+    span{
+      color: #3577d7;
+    }
+  }
+}
+/*end of application-approval*/

@@ -65,6 +65,10 @@
   &--black{
     color: #000;
   }
+
+  &--thinit{
+    font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+  }
 }
 
 .form-text{
@@ -90,6 +94,11 @@
 
   &--light{
     font-family: NeueHaas_light, Helvetica, sans-serif;
+  }
+
+  &--italic{
+    font-family: NeueHaas_it, Helvetica, sans-serif;
+    color: #363636;
   }
 }
 /*end of titles*/
