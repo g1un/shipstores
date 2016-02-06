@@ -2,39 +2,124 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fcd0dfe-5008-4eef-af29-66eff83d1d95" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/scss/components/application-approval.scss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/components/b-contacts-block.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/components/b-contacts-block.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/components/form.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/scss/components/form.css.map" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/UI.html" afterPath="$PROJECT_DIR$/UI.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ad-order.html" afterPath="$PROJECT_DIR$/ad-order.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auction-public--offers-request.html" afterPath="$PROJECT_DIR$/auction-public--offers-request.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/auction-public.html" afterPath="$PROJECT_DIR$/auction-public.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/authorization.html" afterPath="$PROJECT_DIR$/authorization.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bonus.html" afterPath="$PROJECT_DIR$/bonus.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/contacts.html" afterPath="$PROJECT_DIR$/contacts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/create-purchase.html" afterPath="$PROJECT_DIR$/create-purchase.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/ad-order.css" afterPath="$PROJECT_DIR$/css/ad-order.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/ad-order.css.map" afterPath="$PROJECT_DIR$/css/ad-order.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/auction-public--offers-request.css" afterPath="$PROJECT_DIR$/css/auction-public--offers-request.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/auction-public--offers-request.css.map" afterPath="$PROJECT_DIR$/css/auction-public--offers-request.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/auction-public.css" afterPath="$PROJECT_DIR$/css/auction-public.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/auction-public.css.map" afterPath="$PROJECT_DIR$/css/auction-public.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/b-breadcrumb-search.css" afterPath="$PROJECT_DIR$/css/b-breadcrumb-search.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/b-breadcrumb-search.css.map" afterPath="$PROJECT_DIR$/css/b-breadcrumb-search.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/b-breadcrumbs-search.css" afterPath="$PROJECT_DIR$/css/b-breadcrumbs-search.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/b-breadcrumbs-search.css.map" afterPath="$PROJECT_DIR$/css/b-breadcrumbs-search.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bonus.css" afterPath="$PROJECT_DIR$/css/bonus.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/bonus.css.map" afterPath="$PROJECT_DIR$/css/bonus.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/contacts.css" afterPath="$PROJECT_DIR$/css/contacts.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/contacts.css.map" afterPath="$PROJECT_DIR$/css/contacts.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/create-purchase.css" afterPath="$PROJECT_DIR$/css/create-purchase.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/create-purchase.css.map" afterPath="$PROJECT_DIR$/css/create-purchase.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/faq.css" afterPath="$PROJECT_DIR$/css/faq.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/faq.css.map" afterPath="$PROJECT_DIR$/css/faq.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/help.css" afterPath="$PROJECT_DIR$/css/help.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/help.css.map" afterPath="$PROJECT_DIR$/css/help.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/how_it_works.css" afterPath="$PROJECT_DIR$/css/how_it_works.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/how_it_works.css.map" afterPath="$PROJECT_DIR$/css/how_it_works.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/ilia.css" afterPath="$PROJECT_DIR$/css/ilia.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/ilia.css.map" afterPath="$PROJECT_DIR$/css/ilia.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/offers-request.css" afterPath="$PROJECT_DIR$/css/offers-request.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/offers-request.css.map" afterPath="$PROJECT_DIR$/css/offers-request.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/post-ad.css" afterPath="$PROJECT_DIR$/css/post-ad.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/post-ad.css.map" afterPath="$PROJECT_DIR$/css/post-ad.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/public-request.css" afterPath="$PROJECT_DIR$/css/public-request.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/public-request.css.map" afterPath="$PROJECT_DIR$/css/public-request.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/regulations.css" afterPath="$PROJECT_DIR$/css/regulations.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/regulations.css.map" afterPath="$PROJECT_DIR$/css/regulations.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/security.css" afterPath="$PROJECT_DIR$/css/security.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/security.css.map" afterPath="$PROJECT_DIR$/css/security.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/ui.css" afterPath="$PROJECT_DIR$/css/ui.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/ui.css.map" afterPath="$PROJECT_DIR$/css/ui.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dealers.html" afterPath="$PROJECT_DIR$/dealers.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/faq.html" afterPath="$PROJECT_DIR$/faq.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/help.html" afterPath="$PROJECT_DIR$/help.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/how_it_works.html" afterPath="$PROJECT_DIR$/how_it_works.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/contacts.js" afterPath="$PROJECT_DIR$/js/contacts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/help.js" afterPath="$PROJECT_DIR$/js/help.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ilia.js" afterPath="$PROJECT_DIR$/js/ilia.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script-bonus.js" afterPath="$PROJECT_DIR$/js/script-bonus.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script-fancy.js" afterPath="$PROJECT_DIR$/js/script-fancy.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.js" afterPath="$PROJECT_DIR$/js/script.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/script.main_page.js" afterPath="$PROJECT_DIR$/js/script.main_page.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/ui.js" afterPath="$PROJECT_DIR$/js/ui.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/workflow.js" afterPath="$PROJECT_DIR$/js/workflow.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/yandex-map.js" afterPath="$PROJECT_DIR$/js/yandex-map.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/o_portale.html" afterPath="$PROJECT_DIR$/o_portale.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/offers-request.html" afterPath="$PROJECT_DIR$/offers-request.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/post-ad.html" afterPath="$PROJECT_DIR$/post-ad.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/regulations.html" afterPath="$PROJECT_DIR$/regulations.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/ad-order.scss" afterPath="$PROJECT_DIR$/scss/ad-order.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/auction-public--offers-request.scss" afterPath="$PROJECT_DIR$/scss/auction-public--offers-request.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/form.css" afterPath="$PROJECT_DIR$/scss/components/form.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/form.css.map" afterPath="$PROJECT_DIR$/scss/components/form.css.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/auction-public.scss" afterPath="$PROJECT_DIR$/scss/auction-public.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/bonus.scss" afterPath="$PROJECT_DIR$/scss/bonus.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/application-approval.scss" afterPath="$PROJECT_DIR$/scss/components/application-approval.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/application-window.scss" afterPath="$PROJECT_DIR$/scss/components/application-window.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-about-portal-block.scss" afterPath="$PROJECT_DIR$/scss/components/b-about-portal-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-ad-order-block.scss" afterPath="$PROJECT_DIR$/scss/components/b-ad-order-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-auction-public--offers-request-block.scss" afterPath="$PROJECT_DIR$/scss/components/b-auction-public--offers-request-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-auction-public-block.scss" afterPath="$PROJECT_DIR$/scss/components/b-auction-public-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-bonus-block.scss" afterPath="$PROJECT_DIR$/scss/components/b-bonus-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-breadcrumb-search.scss" afterPath="$PROJECT_DIR$/scss/components/b-breadcrumb-search.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-contacts-block.scss" afterPath="$PROJECT_DIR$/scss/components/b-contacts-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-create-purchase-block.scss" afterPath="$PROJECT_DIR$/scss/components/b-create-purchase-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-dealers-block.scss" afterPath="$PROJECT_DIR$/scss/components/b-dealers-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-faq-block.scss" afterPath="$PROJECT_DIR$/scss/components/b-faq-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-feedback-block.scss" afterPath="$PROJECT_DIR$/scss/components/b-feedback-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-help-block.scss" afterPath="$PROJECT_DIR$/scss/components/b-help-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-login-block.scss" afterPath="$PROJECT_DIR$/scss/components/b-login-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-offers-request-block.scss" afterPath="$PROJECT_DIR$/scss/components/b-offers-request-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-pager.scss" afterPath="$PROJECT_DIR$/scss/components/b-pager.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-post-ad-block.scss" afterPath="$PROJECT_DIR$/scss/components/b-post-ad-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-regulations-block.scss" afterPath="$PROJECT_DIR$/scss/components/b-regulations-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-security-block.scss" afterPath="$PROJECT_DIR$/scss/components/b-security-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-services-block.scss" afterPath="$PROJECT_DIR$/scss/components/b-services-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-ui-block.scss" afterPath="$PROJECT_DIR$/scss/components/b-ui-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/b-workflow-block.scss" afterPath="$PROJECT_DIR$/scss/components/b-workflow-block.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/buttons.scss" afterPath="$PROJECT_DIR$/scss/components/buttons.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/deposit-message.scss" afterPath="$PROJECT_DIR$/scss/components/deposit-message.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/fonts.scss" afterPath="$PROJECT_DIR$/scss/components/fonts.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/form.scss" afterPath="$PROJECT_DIR$/scss/components/form.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/general.scss" afterPath="$PROJECT_DIR$/scss/components/general.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/myvariables.scss" afterPath="$PROJECT_DIR$/scss/components/myvariables.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/pagination.scss" afterPath="$PROJECT_DIR$/scss/components/pagination.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/price-offer-form.scss" afterPath="$PROJECT_DIR$/scss/components/price-offer-form.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/components/titles.scss" afterPath="$PROJECT_DIR$/scss/components/titles.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/contacts.scss" afterPath="$PROJECT_DIR$/scss/contacts.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/create-purchase.scss" afterPath="$PROJECT_DIR$/scss/create-purchase.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/faq.scss" afterPath="$PROJECT_DIR$/scss/faq.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/help.scss" afterPath="$PROJECT_DIR$/scss/help.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/how_it_works.scss" afterPath="$PROJECT_DIR$/scss/how_it_works.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/ilia.scss" afterPath="$PROJECT_DIR$/scss/ilia.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/offers-request.scss" afterPath="$PROJECT_DIR$/scss/offers-request.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/post-ad.scss" afterPath="$PROJECT_DIR$/scss/post-ad.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/regulations.scss" afterPath="$PROJECT_DIR$/scss/regulations.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/security.scss" afterPath="$PROJECT_DIR$/scss/security.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/ui.scss" afterPath="$PROJECT_DIR$/scss/ui.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/security.html" afterPath="$PROJECT_DIR$/security.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/uslugi_portala.html" afterPath="$PROJECT_DIR$/uslugi_portala.html" />
     </list>
     <ignored path="shipstores.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,31 +140,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="post-ad.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/post-ad.html">
+      <file leaf-file-name="ad-unit-anonim.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ad-unit-anonim.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="26.038462">
-              <caret line="476" column="80" selection-start-line="476" selection-start-column="80" selection-end-line="476" selection-end-column="80" />
+            <state vertical-scroll-proportion="-5.818182">
+              <caret line="178" column="61" selection-start-line="178" selection-start-column="61" selection-end-line="178" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="b-post-ad-block.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scss/components/b-post-ad-block.scss">
+      <file leaf-file-name="b-ad-unit-anonim-block.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scss/components/b-ad-unit-anonim-block.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.0">
-              <caret line="540" column="5" selection-start-line="540" selection-start-column="5" selection-end-line="540" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.7900172">
+              <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post-ad.scss" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/scss/post-ad.scss">
+      <file leaf-file-name="b-ad-unit-block.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/components/b-ad-unit-block.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27419356">
-              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+            <state vertical-scroll-proportion="-14.076923">
+              <caret line="103" column="16" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -88,8 +173,8 @@
       <file leaf-file-name="titles.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/components/titles.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.730769">
-              <caret line="73" column="1" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="10" />
+            <state vertical-scroll-proportion="-0.65384614">
+              <caret line="75" column="14" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -98,18 +183,18 @@
       <file leaf-file-name="form.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/components/form.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.269231">
+            <state vertical-scroll-proportion="-11.230769">
               <caret line="487" column="11" selection-start-line="487" selection-start-column="11" selection-end-line="487" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contacts.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/contacts.js">
+      <file leaf-file-name="ad-unit-anonim.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scss/ad-unit-anonim.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="148" column="3" selection-start-line="148" selection-start-column="3" selection-end-line="148" selection-end-column="3" />
+            <state vertical-scroll-proportion="-5.8846154">
+              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -123,12 +208,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scss/components/b-security-block.scss" />
-        <option value="$PROJECT_DIR$/scss/help.scss" />
-        <option value="$PROJECT_DIR$/js/help.js" />
-        <option value="$PROJECT_DIR$/scss/components/b-help-block.scss" />
-        <option value="$PROJECT_DIR$/help.html" />
-        <option value="$PROJECT_DIR$/scss/contacts.scss" />
         <option value="$PROJECT_DIR$/js/ui.js" />
         <option value="$PROJECT_DIR$/scss/ui.scss" />
         <option value="$PROJECT_DIR$/scss/components/b-ui-block.scss" />
@@ -146,7 +225,6 @@
         <option value="$PROJECT_DIR$/scss/create-purchase.scss" />
         <option value="$PROJECT_DIR$/scss/components/b-offers-request-block.scss" />
         <option value="$PROJECT_DIR$/offers-request.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/create-purchase.html" />
         <option value="$PROJECT_DIR$/scss/components/b-create-purchase-block.scss" />
         <option value="$PROJECT_DIR$/scss/components/b-bonus-block.scss" />
@@ -168,12 +246,19 @@
         <option value="$PROJECT_DIR$/auction-public--offers-request.html" />
         <option value="$PROJECT_DIR$/scss/auction-public--offers-request.scss" />
         <option value="$PROJECT_DIR$/scss/components/application-approval.scss" />
-        <option value="$PROJECT_DIR$/scss/components/titles.scss" />
-        <option value="$PROJECT_DIR$/js/contacts.js" />
         <option value="$PROJECT_DIR$/scss/components/form.scss" />
         <option value="$PROJECT_DIR$/post-ad.html" />
         <option value="$PROJECT_DIR$/scss/components/b-post-ad-block.scss" />
         <option value="$PROJECT_DIR$/scss/post-ad.scss" />
+        <option value="$PROJECT_DIR$/scss/ad-unit.scss" />
+        <option value="$PROJECT_DIR$/scss/components/titles.scss" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/ad-unit.html" />
+        <option value="$PROJECT_DIR$/js/contacts.js" />
+        <option value="$PROJECT_DIR$/scss/ad-unit-anonim.scss" />
+        <option value="$PROJECT_DIR$/ad-unit-anonim.html" />
+        <option value="$PROJECT_DIR$/scss/components/b-ad-unit-block.scss" />
+        <option value="$PROJECT_DIR$/scss/components/b-ad-unit-anonim-block.scss" />
       </list>
     </option>
   </component>
@@ -298,7 +383,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shipstore" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
@@ -379,24 +464,24 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913387" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -415,49 +500,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/help.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26198632">
-          <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/components/b-help-block.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7258065">
-          <caret line="110" column="24" selection-start-line="110" selection-start-column="24" selection-end-line="110" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/ilia.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15232974">
-          <caret line="5" column="41" selection-start-line="3" selection-start-column="33" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/contacts.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/ui.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="4" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="4" />
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/UI.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.8909092">
-          <caret line="94" column="46" selection-start-line="93" selection-start-column="51" selection-end-line="94" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/ui.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21288015">
@@ -598,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769">
-          <caret line="21" column="34" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/faq.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="7.799283">
@@ -647,13 +682,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contacts.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.403226">
-          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/components/b-feedback-block.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.836364">
@@ -693,7 +721,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.82437277">
           <caret line="103" column="20" selection-start-line="103" selection-start-column="20" selection-end-line="103" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -701,7 +728,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.8461537">
           <caret line="12" column="0" selection-start-line="11" selection-start-column="40" selection-end-line="13" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -709,7 +735,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.21326165">
           <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -717,7 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="12.33871">
           <caret line="398" column="44" selection-start-line="398" selection-start-column="44" selection-end-line="398" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -725,7 +749,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.9230769">
           <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -733,31 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="13.240076">
           <caret line="373" column="120" selection-start-line="373" selection-start-column="16" selection-end-line="373" selection-end-column="120" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/contacts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="148" column="3" selection-start-line="148" selection-start-column="3" selection-end-line="148" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/components/form.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.269231">
-          <caret line="487" column="11" selection-start-line="487" selection-start-column="11" selection-end-line="487" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/components/titles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.730769">
-          <caret line="73" column="1" selection-start-line="73" selection-start-column="1" selection-end-line="73" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -765,7 +763,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="26.038462">
           <caret line="476" column="80" selection-start-line="476" selection-start-column="80" selection-end-line="476" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -773,7 +770,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.0">
           <caret line="540" column="5" selection-start-line="540" selection-start-column="5" selection-end-line="540" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -781,6 +777,92 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.27419356">
           <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6702509">
+          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ad-unit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.029259896">
+          <caret line="273" column="73" selection-start-line="273" selection-start-column="40" selection-end-line="273" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/contacts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4398682">
+          <caret line="212" column="29" selection-start-line="212" selection-start-column="29" selection-end-line="212" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contacts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.029259896">
+          <caret line="35" column="44" selection-start-line="33" selection-start-column="4" selection-end-line="35" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/components/titles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="75" column="14" selection-start-line="75" selection-start-column="14" selection-end-line="75" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/components/form.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.230769">
+          <caret line="487" column="11" selection-start-line="487" selection-start-column="11" selection-end-line="487" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/ad-unit.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20481928">
+          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/ad-unit-anonim.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ad-unit-anonim.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.818182">
+          <caret line="178" column="61" selection-start-line="178" selection-start-column="61" selection-end-line="178" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/components/b-ad-unit-block.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.076923">
+          <caret line="103" column="16" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/components/b-ad-unit-anonim-block.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7900172">
+          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
           <folding />
         </state>
       </provider>

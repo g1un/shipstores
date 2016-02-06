@@ -34,6 +34,10 @@
     font-family: NeueHaas_it;
     src: url(../fonts/NeueHaasUnicaW1G-Italic.ttf);
 }
+@font-face {
+    font-family: NeueHaas_thin;
+    src: url(../fonts/NeueHaasUnicaW1G-Thin.ttf);
+}
 html, body {
     margin:0;
     padding:0;

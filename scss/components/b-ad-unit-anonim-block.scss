@@ -1,0 +1,32 @@
+/*b-ad-unit-anonim-block*/
+.b-ad-unit-block {
+
+  &__views{
+    float: right;
+    margin: 28px 26px 0 0;
+    padding: 0 0 0 31px;
+    font-family: NeueHaas_light-it, Helvetica, sans-serif;
+    color: #464646;
+    position: relative;
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 4px;
+      left: 0;
+      width: 19px;
+      height: 11px;
+      background: url("../images/b-auction-public-block__purchase-views.png") no-repeat 0 0;
+    }
+  }
+
+  &__panel{
+
+    &-published{
+      clear: none;
+      float: right;
+      margin: 9px 8px 0 0;
+    }
+  }
+}
+/*end of b-ad-unit-anonim-block*/
