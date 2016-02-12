@@ -22,7 +22,7 @@
     &-order{
       display: block;
       float: right;
-      font-family: $neue-haas-bold;
+      font-family: NeueHaas_bold, Helvetica, sans-serif;
       font-size: 12px;
       line-height: 1.2em;
       font-weight: 400;
@@ -39,7 +39,7 @@
     }
 
     &-title{
-      font-family: $neue-haas-reg;
+      font-family: NeueHaas_reg, Helvetica, sans-serif;
       font-size: 18px;
       line-height: 1.2em;
       font-weight: 400;
@@ -64,7 +64,7 @@
 
     &-text{
       margin: 21px 0 24px 328px;
-      font-family: $neue-haas-reg;
+      font-family: NeueHaas_reg, Helvetica, sans-serif;
       font-size: 14px;
       line-height: 1.5em;
       font-weight: 400;
@@ -85,7 +85,7 @@
       border-radius: 5px;
       background: #6e9cde;
       background: linear-gradient(to bottom, #8ec2ff, #6e9cde);
-      font-family: $neue-haas-medium;
+      font-family: NeueHaas_medium, Helvetica, sans-serif;
       font-size: 12px;
       line-height: 25px;
       font-weight: 400;
@@ -102,7 +102,7 @@
       }
 
       span{
-        font-family: $neue-haas-bold;
+        font-family: NeueHaas_bold, Helvetica, sans-serif;
       }
 
       i{
@@ -125,7 +125,7 @@
 
       &-title{
         margin: 0 0 26px 47px;
-        font-family: $neue-haas-medium;
+        font-family: NeueHaas_medium, Helvetica, sans-serif;
         font-size: 18px;
         line-height: 1.2em;
         font-weight: 400;
@@ -185,7 +185,7 @@
         padding: 0;
 
         &-unit{
-          font-family: $neue-haas-medium;
+          font-family: NeueHaas_medium, Helvetica, sans-serif;
           font-size: 16px;
           line-height: 1.2em;
           font-weight: 400;
@@ -198,7 +198,7 @@
       }
 
       &-note{
-        font-family: $neue-haas-light-it;
+        font-family: NeueHaas_light-it, Helvetica, sans-serif;
         font-size: 12px;
         line-height: 1.2em;
         font-weight: 400;
@@ -219,7 +219,7 @@
 
   &__link{
     display: inline-block;
-    font-family: $neue-haas-bold;
+    font-family: NeueHaas_bold, Helvetica, sans-serif;
     font-size: 12px;
     line-height: 1.2em;
     font-weight: 400;

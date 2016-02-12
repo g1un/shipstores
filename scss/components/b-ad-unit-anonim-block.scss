@@ -28,5 +28,92 @@
       margin: 9px 8px 0 0;
     }
   }
+
+  &__right{
+
+    &-info{
+      margin: 0 0 13px;
+      padding: 13px 0 20px 17px;
+      background: #f3f3f3;
+    }
+
+    &-rating{
+      margin: 0 0 25px;
+      padding: 0 0 0 18px;
+      font-size: 0;
+      line-height: 0;
+      
+      &-title{
+        font-family: NeueHaas_light-it, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #959595;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        margin: 0 0 7px;
+      }
+      
+      span{
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 3px 0 0;
+        width: 16px;
+        height: 16px;
+        background: url("../images/yellow-star.png") no-repeat 0 0;
+      }
+    }
+
+    &-btn{
+      width: 216px;
+      font-family: NeueHaas_bold, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0;
+      margin: 0 auto 11px;
+
+      &--complain{
+        font-family: NeueHaas_medium, Helvetica, sans-serif;
+        color: #464646;
+        margin: 0 auto 52px;
+      }
+    }
+
+    &-form{
+      background: #f3f3f3;
+      padding: 26px 0 19px;
+      margin: 0;
+
+      &-submit{
+        margin: 0 auto 15px;
+        width: 216px;
+      }
+
+      &-text{
+        margin: 0 0 16px 20px;
+      }
+
+      &-label{
+        display: block;
+        vertical-align: top;
+        text-decoration: underline;
+        margin: 0 0 13px 17px;
+        padding: 0 0 0 29px;
+
+        &::before{
+          top: 4px;
+        }
+
+        &::after{
+          top: 7px;
+        }
+      }
+    }
+  }
 }
 /*end of b-ad-unit-anonim-block*/

@@ -1,0 +1,32 @@
+/*purchase-confirm-anonim*/
+.purchase-confirm-anonim{
+  display: none;
+  padding: 64px 0 0;
+  width: 751px;
+  height: 342px;
+  box-sizing: border-box;
+
+  &__title{
+    margin: 0 0 35px;
+    text-align: center;
+  }
+
+  &__text{
+    font-family: NeueHaas_medium, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.3em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    margin: 0 0 41px;
+    text-align: center;
+  }
+
+  &__link{
+    margin: 0 auto;
+    width: 194px;
+  }
+}
+/*end of purchase-confirm-anonim*/

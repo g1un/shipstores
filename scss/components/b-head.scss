@@ -1,0 +1,254 @@
+/*b-head__messages & b-head__user*/
+.b-head{
+
+  &__currency-lang{
+    display: block;
+    float: left;
+    margin: 15px 0 0 29px;
+    border: 1px solid #fff;
+    width: 97px;
+    height: 30px;
+    position: relative;
+  }
+
+  &__currency{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 48px;
+    height: 30px;
+    text-align: center;
+    font-family: NeueHaas_medium, Helvetica, sans-serif;
+    font-size: 23px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #fff;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    cursor: pointer;
+
+    li{
+      display: none;
+
+      &.show{
+        display: block;
+      }
+    }
+
+    &-list{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: none;
+      position: absolute;
+      top: 35px;
+      left: -113px;
+      z-index: 999;
+      background: #fff;
+      border: 1px solid #8b0333;
+
+      &.show{
+        display: block;
+      }
+
+      li{
+        display: block;
+        min-width: 150px;
+        padding: 5px;
+        font-family: NeueHaas_reg, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #000;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        cursor: pointer;
+        
+        &:hover,
+        &:focus,
+        &.active{
+          background: #f4f4f4;
+        }
+      }
+    }
+  }
+
+  &__lang{
+    list-style: none;
+    float: right;
+    background: #f4f4f4;
+    margin: 0;
+    padding: 7px 12px 8px 15px;
+    cursor: pointer;
+
+    li{
+      display: none;
+      margin: 0 auto;
+
+      &.show{
+        display: block;
+        width: 22px;
+        height: 15px;
+      }
+
+      &.ru{
+        background: url("../images/ru.jpg") no-repeat 0 0;
+      }
+
+      &.en{
+        background: url("../images/en.gif") no-repeat 0 0;
+      }
+
+      &.fr{
+        background: url("../images/fr.jpg") no-repeat 0 0;
+      }
+
+      &.sp{
+        background: url("../images/sp.jpg") no-repeat 0 0;
+      }
+
+      &.ch{
+        background: url("../images/ch.png") no-repeat 0 0;
+      }
+
+      &.it{
+        background: url("../images/it.png") no-repeat 0 0;
+      }
+
+      &.ge{
+        background: url("../images/ge.jpg") no-repeat 0 0;
+      }
+    }
+
+    &-list{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: none;
+      position: absolute;
+      top: 35px;
+      left: 47px;
+      z-index: 999;
+      background: #fff;
+      border: 1px solid #8b0333;
+
+      &.show{
+        display: block;
+      }
+
+      li{
+        display: block;
+        min-width: 150px;
+        padding: 5px;
+        font-family: NeueHaas_reg, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #000;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        cursor: pointer;
+
+        &:hover,
+        &:focus,
+        &.active{
+          background: #f4f4f4;
+        }
+      }
+    }
+  }
+
+  &__messages{
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 1px 0 rgba(0,0,0,.25);
+    background: #720229;
+    text-decoration: none;
+    margin: 8px 17px 0 45px;
+    position: relative;
+
+    &-number{
+      font-family: NeueHaas_medium, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1em;
+      font-weight: 400;
+      color: #464646;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0;
+      background: #fff;
+      border-radius: 50%;
+      width: 17px;
+      height: 17px;
+      box-sizing: border-box;
+      display: block;
+      position: absolute;
+      top: -2px;
+      right: -4px;
+      padding-left: 5px;
+
+    }
+
+    &::before{
+      content: '';
+      position: absolute;
+      top: 9px;
+      left: 10px;
+      width: 20px;
+      height: 22px;
+      background: url("../images/bell.png") no-repeat 0 0;
+    }
+  }
+
+  &__user{
+    display: block;
+    float: left;
+    margin-top: 6px;
+    text-decoration: none;
+    color: #fff;
+    max-width: 227px;
+
+    &-photo{
+      display: block;
+      float: left;
+      width: 46px;
+      box-sizing: border-box;
+      border-radius: 50%;
+      border: 2px solid #c6c4c2;
+      padding: 1px;
+      margin: 0;
+    }
+
+    &-name{
+      float: left;
+      clear: right;
+      font-family: NeueHaas_medium, Helvetica, sans-serif;
+      font-size: 18px;
+      line-height: 1.2em;
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: 0;
+      margin-top: 2px;
+      margin-left: 14px;
+    }
+
+    &-status{
+      font-family: NeueHaas_light-it, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 1.2em;
+      font-weight: 400;
+      text-transform: none;
+      letter-spacing: 0;
+      margin-top: 27px;
+      margin-left: 60px;
+    }
+  }
+}
+/*end of b-head__messages & b-head__user*/

@@ -1,13 +1,13 @@
 /*regulations*/
-/*general*/
+/*GENERAL*/
 .clearfix::after {
   content: '';
   display: table;
   clear: both;
 }
 
-/*end of general*/
-/*titles*/
+/*end of GENERAL*/
+/*TITLES*/
 .form-title {
   font-family: NeueHaas_bold, Helvetica, sans-serif;
   font-size: 24px;
@@ -57,6 +57,24 @@
   text-transform: none;
 }
 
+.content-text {
+  font-family: NeueHaas_reg, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  padding: 0;
+  margin: 0;
+}
+.content-text span {
+  font-family: NeueHaas_bold, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
 .select-text {
   font-family: NeueHaas_reg, Helvetica, sans-serif;
   font-size: 14px;
@@ -103,8 +121,8 @@
   color: #363636;
 }
 
-/*end of titles*/
-/*form*/
+/*end of TITLES*/
+/*FORM*/
 /*radio button*/
 .input-radio {
   display: none;
@@ -286,6 +304,7 @@
 /*end of brown button*/
 /*blue button*/
 .blue_button {
+  display: block;
   padding: 8px 0;
   cursor: pointer;
   background: #7fb3ff;
@@ -314,6 +333,7 @@
 /*end of blue button*/
 /*shadow_button*/
 .shadow_button {
+  display: block;
   padding: 8px 0;
   cursor: pointer;
   background: #f7f7f7;
@@ -337,6 +357,7 @@
 /*end of shadow_button*/
 /*gradient_button*/
 .gradient_button {
+  display: block;
   font-family: NeueHaas_medium, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 1.2em;
@@ -549,24 +570,78 @@
 }
 
 /*end of round-check*/
-/*end of form*/
-/*buttons*/
-.brown_button {
-  display: block;
-  font-family: NeueHaas_bold, Helvetica, sans-serif;
-  font-size: 12px;
+/*pagination*/
+.pagination {
+  float: right;
+  margin: 0 6px 0 0;
+}
+.pagination-title {
+  font-family: NeueHaas_light, Helvetica, sans-serif;
+  font-size: 14px;
   line-height: 1.2em;
   font-weight: 400;
-  color: #fff;
-  text-transform: uppercase;
+  color: #868686;
+  text-transform: none;
   text-decoration: none;
   letter-spacing: 0;
-  text-align: center;
-  background: #8b0333;
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+  margin-right: 17px;
+}
+.pagination-page-number {
+  font-family: NeueHaas_bold, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #868686;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin-right: 41px;
+  position: relative;
+  cursor: pointer;
+}
+.pagination-page-number::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: -17px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 7px solid #959595;
+}
+.pagination-volume {
+  font-family: NeueHaas_medium, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #868686;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin-right: 30px;
+}
+.pagination-arrow {
+  margin: 0 4px 0 0;
+  display: inline-block;
+  border-left: 2px solid #959595;
+  border-bottom: 2px solid #959595;
+  width: 6px;
+  height: 6px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.pagination-arrow--right {
+  margin: 0;
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  margin-left: 32px;
 }
 
-/*end of buttons*/
+/*end of pagination*/
+/*end of FORM*/
 /*b-workflow-block*/
 .b-workflow-block {
   clear: both;
@@ -587,7 +662,18 @@
   margin-bottom: 13px;
 }
 .b-workflow-block__item-title {
+  font-family: NeueHaas_reg, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
   margin: 0 0 32px 0;
+}
+.b-workflow-block__item-title span {
+  font-family: NeueHaas_bold, Helvetica, sans-serif;
 }
 .b-workflow-block__item-unit {
   display: inline-block;
@@ -721,26 +807,34 @@
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
 }
+.b-workflow-block__list-link.opened::after {
+  border-top: none;
+  border-bottom: 7px solid #3474d6;
+}
 .b-workflow-block__list-article {
   display: none;
+  padding: 0 20px;
 }
 .b-workflow-block__list-article.opened {
   display: block;
 }
-.b-workflow-block__list-article-title {
-  margin: 5px 0 5px 0;
-  text-align: center;
+.b-workflow-block__list-text--margin {
+  margin: 20px 0;
 }
-.b-workflow-block__list-article-text {
-  margin: 0px 10px 5px;
-  font-family: NeueHaas_light, Helvetica, sans-serif;
-  font-size: 12px;
-  line-height: 1.2em;
-  font-weight: 400;
-  color: #000;
-  text-transform: none;
-  text-decoration: none;
-  letter-spacing: 0;
+.b-workflow-block__list-text--margin-top {
+  margin: 20px 0 0;
+}
+.b-workflow-block__list-points {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+}
+.b-workflow-block__list-points--top {
+  margin: 20px 0;
+}
+.b-workflow-block__list-features {
+  border-left: 4px solid #bfd9fe;
+  padding: 0 0 0 20px;
 }
 .b-workflow-block__link {
   width: 216px;

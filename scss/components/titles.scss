@@ -1,4 +1,4 @@
-/*titles*/
+/*TITLES*/
 .form-title{
   font-family: NeueHaas_bold, Helvetica, sans-serif;
   font-size: 24px;
@@ -52,6 +52,25 @@
   }
 }
 
+.content-text{
+  font-family: NeueHaas_reg, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  padding: 0;
+  margin: 0;
+
+  span{
+    font-family: NeueHaas_bold, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+}
+
 .select-text{
   font-family: NeueHaas_reg, Helvetica, sans-serif;
   font-size: 14px;
@@ -101,4 +120,4 @@
     color: #363636;
   }
 }
-/*end of titles*/
+/*end of TITLES*/

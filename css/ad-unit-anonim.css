@@ -1,13 +1,13 @@
-/*regulations*/
-/*general*/
+/*ad-unit-anonim*/
+/*GENERAL*/
 .clearfix::after {
   content: '';
   display: table;
   clear: both;
 }
 
-/*end of general*/
-/*titles*/
+/*end of GENERAL*/
+/*TITLES*/
 .form-title {
   font-family: NeueHaas_bold, Helvetica, sans-serif;
   font-size: 24px;
@@ -57,6 +57,24 @@
   text-transform: none;
 }
 
+.content-text {
+  font-family: NeueHaas_reg, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  padding: 0;
+  margin: 0;
+}
+.content-text span {
+  font-family: NeueHaas_bold, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
 .select-text {
   font-family: NeueHaas_reg, Helvetica, sans-serif;
   font-size: 14px;
@@ -103,8 +121,8 @@
   color: #363636;
 }
 
-/*end of titles*/
-/*form*/
+/*end of TITLES*/
+/*FORM*/
 /*radio button*/
 .input-radio {
   display: none;
@@ -286,6 +304,7 @@
 /*end of brown button*/
 /*blue button*/
 .blue_button {
+  display: block;
   padding: 8px 0;
   cursor: pointer;
   background: #7fb3ff;
@@ -314,6 +333,7 @@
 /*end of blue button*/
 /*shadow_button*/
 .shadow_button {
+  display: block;
   padding: 8px 0;
   cursor: pointer;
   background: #f7f7f7;
@@ -337,6 +357,7 @@
 /*end of shadow_button*/
 /*gradient_button*/
 .gradient_button {
+  display: block;
   font-family: NeueHaas_medium, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 1.2em;
@@ -549,7 +570,78 @@
 }
 
 /*end of round-check*/
-/*end of form*/
+/*pagination*/
+.pagination {
+  float: right;
+  margin: 0 6px 0 0;
+}
+.pagination-title {
+  font-family: NeueHaas_light, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #868686;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin-right: 17px;
+}
+.pagination-page-number {
+  font-family: NeueHaas_bold, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #868686;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin-right: 41px;
+  position: relative;
+  cursor: pointer;
+}
+.pagination-page-number::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: -17px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 7px solid #959595;
+}
+.pagination-volume {
+  font-family: NeueHaas_medium, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #868686;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin-right: 30px;
+}
+.pagination-arrow {
+  margin: 0 4px 0 0;
+  display: inline-block;
+  border-left: 2px solid #959595;
+  border-bottom: 2px solid #959595;
+  width: 6px;
+  height: 6px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.pagination-arrow--right {
+  margin: 0;
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  margin-left: 32px;
+}
+
+/*end of pagination*/
+/*end of FORM*/
 /*b-ad-unit-block*/
 .b-ad-unit-block {
   clear: both;
@@ -882,8 +974,154 @@
   float: right;
   margin: 9px 8px 0 0;
 }
+.b-ad-unit-block__right-info {
+  margin: 0 0 13px;
+  padding: 13px 0 20px 17px;
+  background: #f3f3f3;
+}
+.b-ad-unit-block__right-rating {
+  margin: 0 0 25px;
+  padding: 0 0 0 18px;
+  font-size: 0;
+  line-height: 0;
+}
+.b-ad-unit-block__right-rating-title {
+  font-family: NeueHaas_light-it, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #959595;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0 0 7px;
+}
+.b-ad-unit-block__right-rating span {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 3px 0 0;
+  width: 16px;
+  height: 16px;
+  background: url("../images/yellow-star.png") no-repeat 0 0;
+}
+.b-ad-unit-block__right-btn {
+  width: 216px;
+  font-family: NeueHaas_bold, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0 auto 11px;
+}
+.b-ad-unit-block__right-btn--complain {
+  font-family: NeueHaas_medium, Helvetica, sans-serif;
+  color: #464646;
+  margin: 0 auto 52px;
+}
+.b-ad-unit-block__right-form {
+  background: #f3f3f3;
+  padding: 26px 0 19px;
+  margin: 0;
+}
+.b-ad-unit-block__right-form-submit {
+  margin: 0 auto 15px;
+  width: 216px;
+}
+.b-ad-unit-block__right-form-text {
+  margin: 0 0 16px 20px;
+}
+.b-ad-unit-block__right-form-label {
+  display: block;
+  vertical-align: top;
+  text-decoration: underline;
+  margin: 0 0 13px 17px;
+  padding: 0 0 0 29px;
+}
+.b-ad-unit-block__right-form-label::before {
+  top: 4px;
+}
+.b-ad-unit-block__right-form-label::after {
+  top: 7px;
+}
 
 /*end of b-ad-unit-anonim-block*/
-/*end of regulations*/
+/*purchase-confirm-anonim*/
+.purchase-confirm-anonim {
+  display: none;
+  padding: 64px 0 0;
+  width: 751px;
+  height: 342px;
+  box-sizing: border-box;
+}
+.purchase-confirm-anonim__title {
+  margin: 0 0 35px;
+  text-align: center;
+}
+.purchase-confirm-anonim__text {
+  font-family: NeueHaas_medium, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.3em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0 0 41px;
+  text-align: center;
+}
+.purchase-confirm-anonim__link {
+  margin: 0 auto;
+  width: 194px;
+}
+
+/*end of purchase-confirm-anonim*/
+/*purchase-confirm*/
+.purchase-confirm {
+  padding: 64px 0 0;
+  width: 751px;
+  height: 252px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+}
+.purchase-confirm__wrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  background: rgba(0, 0, 0, 0.24);
+}
+.purchase-confirm__wrapper:target {
+  display: block;
+}
+.purchase-confirm__title {
+  margin: 0 0 35px;
+  text-align: center;
+}
+.purchase-confirm__text {
+  font-family: NeueHaas_medium, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.3em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin: 0;
+  text-align: center;
+}
+.purchase-confirm__link {
+  margin: 0 auto;
+  width: 194px;
+}
+
+/*end of purchase-confirm*/
+/*end of ad-unit-anonim*/
 
 /*# sourceMappingURL=ad-unit-anonim.css.map */

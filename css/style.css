@@ -126,16 +126,16 @@ h2{
         margin: 10px 40px;
     }
 
-.b-head__links, .b-head__currency, .b-head__autorize{
+.b-head__links/*, .b-head__currency delete*/, .b-head__autorize{
     float: left;
     height: 100%;
 }
 .b-head__links{
     padding: 0 25px;
 }
-.b-head__currency{
+/*.b-head__currency{
     margin-left: 24px;
-}
+}delete*/
     .b-curr{
         width: 100px;
         margin-top: 15px;

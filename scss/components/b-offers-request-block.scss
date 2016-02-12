@@ -17,6 +17,11 @@
 
   &__form{
     margin: 0 0 0 15px;
+
+    table{
+      border-collapse: separate;
+      border-spacing: 2px;
+    }
   }
 
   &__table{

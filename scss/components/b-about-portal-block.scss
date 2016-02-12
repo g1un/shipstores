@@ -13,7 +13,7 @@
   }
 
   &__description{
-    font-family: $neue-haas-bold;
+    font-family: NeueHaas_bold, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 1.2em;
     font-weight: 400;
@@ -25,7 +25,7 @@
   }
 
   &__text{
-    font-family: $neue-haas-reg;
+    font-family: NeueHaas_reg, Helvetica, sans-serif;
     font-size: 18px;
     line-height: 1.2em;
     font-weight: 400;
@@ -44,7 +44,7 @@
     margin-bottom: 15px;
 
     &-title{
-      font-family: $neue-haas-bold;
+      font-family: NeueHaas_bold, Helvetica, sans-serif;
       font-size: 18px;
       line-height: 1.2em;
       font-weight: 400;
@@ -70,7 +70,7 @@
     }
 
     &-feature{
-      font-family: $neue-haas-medium;
+      font-family: NeueHaas_medium, Helvetica, sans-serif;
       font-size: 14px;
       line-height: 1.2em;
       font-weight: 400;
@@ -84,7 +84,7 @@
     }
 
     &-text{
-      font-family: $neue-haas-light;
+      font-family: NeueHaas_light, Helvetica, sans-serif;
       font-size: 12px;
       line-height: 1.5em;
       font-weight: 400;
@@ -100,7 +100,7 @@
 
   &__link{
     display: block;
-    font-family: $neue-haas-bold;
+    font-family: NeueHaas_bold, Helvetica, sans-serif;
     font-size: 12px;
     line-height: 1.2em;
     font-weight: 400;

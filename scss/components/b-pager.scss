@@ -1,7 +1,7 @@
 /*b-pager*/
 .b-pager{
   float: right;
-  font-family: $neue-haas-light;
+  font-family: NeueHaas_light, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 1.2em;
   font-weight: 400;
@@ -29,7 +29,7 @@
 
   &__items{
     display: inline-block;
-    font-family: $neue-haas-medium;
+    font-family: NeueHaas_medium, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 1.2em;
     font-weight: 400;

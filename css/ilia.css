@@ -1,12 +1,12 @@
 /*ilia' styles*/
-/*general*/
+/*GENERAL*/
 .clearfix::after {
   content: '';
   display: table;
   clear: both;
 }
 
-/*end of general*/
+/*end of GENERAL*/
 /*fonts*/
 @font-face {
   font-family: 'NeueHaas_bold';

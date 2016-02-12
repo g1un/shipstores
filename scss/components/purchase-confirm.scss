@@ -1,0 +1,48 @@
+/*purchase-confirm*/
+.purchase-confirm{
+  padding: 64px 0 0;
+  width: 751px;
+  height: 252px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+
+  &__wrapper{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background: rgba(0,0,0,.24);
+
+    &:target{
+      display: block;
+    }
+  }
+
+  &__title{
+    margin: 0 0 35px;
+    text-align: center;
+  }
+
+  &__text{
+    font-family: NeueHaas_medium, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.3em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    margin: 0;
+    text-align: center;
+  }
+
+  &__link{
+    margin: 0 auto;
+    width: 194px;
+  }
+}
+/*end of purchase-confirm*/

@@ -1,13 +1,13 @@
 /*regulations*/
-/*general*/
+/*GENERAL*/
 .clearfix::after {
   content: '';
   display: table;
   clear: both;
 }
 
-/*end of general*/
-/*titles*/
+/*end of GENERAL*/
+/*TITLES*/
 .form-title {
   font-family: NeueHaas_bold, Helvetica, sans-serif;
   font-size: 24px;
@@ -57,6 +57,24 @@
   text-transform: none;
 }
 
+.content-text {
+  font-family: NeueHaas_reg, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  padding: 0;
+  margin: 0;
+}
+.content-text span {
+  font-family: NeueHaas_bold, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
 .select-text {
   font-family: NeueHaas_reg, Helvetica, sans-serif;
   font-size: 14px;
@@ -103,15 +121,14 @@
   color: #363636;
 }
 
-/*end of titles*/
-/*form*/
+/*end of TITLES*/
+/*FORM*/
 /*radio button*/
 .input-radio {
   display: none;
 }
 .input-radio:checked + label::after {
   background: #aec7ff;
-  background: -webkit-linear-gradient(315deg, #c6d8ff, #85a5f5);
   background: linear-gradient(135deg, #c6d8ff, #85a5f5);
 }
 
@@ -180,9 +197,7 @@
   border-left: 2px solid #fff;
   border-bottom: 2px solid #fff;
   background: transparent;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 /*end of checkbox*/
@@ -286,6 +301,7 @@
 /*end of brown button*/
 /*blue button*/
 .blue_button {
+  display: block;
   padding: 8px 0;
   cursor: pointer;
   background: #7fb3ff;
@@ -314,6 +330,7 @@
 /*end of blue button*/
 /*shadow_button*/
 .shadow_button {
+  display: block;
   padding: 8px 0;
   cursor: pointer;
   background: #f7f7f7;
@@ -337,6 +354,7 @@
 /*end of shadow_button*/
 /*gradient_button*/
 .gradient_button {
+  display: block;
   font-family: NeueHaas_medium, Helvetica, sans-serif;
   font-size: 12px;
   line-height: 1.2em;
@@ -349,7 +367,6 @@
   border-radius: 5px;
   padding: 5px 0 9px;
   background: #79aaf2;
-  background: -webkit-linear-gradient(top, #a4c8ff, #789add);
   background: linear-gradient(to bottom, #a4c8ff, #789add);
 }
 .gradient_button span {
@@ -457,9 +474,7 @@
   width: 25px;
   height: 5px;
   background: #fff;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .form-close::after {
   content: '';
@@ -469,9 +484,7 @@
   width: 25px;
   height: 5px;
   background: #fff;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 /*end of form-close*/
@@ -501,9 +514,7 @@
   width: 2px;
   height: 10px;
   background: #fff;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 .close-blue::after {
   content: '';
@@ -513,9 +524,7 @@
   width: 2px;
   height: 10px;
   background: #fff;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 /*end of close-blue*/
@@ -543,13 +552,78 @@
   background: transparent;
   border-left: 3px solid #fff;
   border-bottom: 3px solid #fff;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 /*end of round-check*/
-/*end of form*/
+/*pagination*/
+.pagination {
+  float: right;
+  margin: 0 6px 0 0;
+}
+.pagination-title {
+  font-family: NeueHaas_light, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #868686;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin-right: 17px;
+}
+.pagination-page-number {
+  font-family: NeueHaas_bold, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #868686;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin-right: 41px;
+  position: relative;
+  cursor: pointer;
+}
+.pagination-page-number::after {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: -17px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 7px solid #959595;
+}
+.pagination-volume {
+  font-family: NeueHaas_medium, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #868686;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+  margin-right: 30px;
+}
+.pagination-arrow {
+  margin: 0 4px 0 0;
+  display: inline-block;
+  border-left: 2px solid #959595;
+  border-bottom: 2px solid #959595;
+  width: 6px;
+  height: 6px;
+  transform: rotate(45deg);
+}
+.pagination-arrow--right {
+  margin: 0;
+  transform: rotate(-135deg);
+  margin-left: 32px;
+}
+
+/*end of pagination*/
+/*end of FORM*/
 /*b-auction-public-block*/
 .b-auction-public-block {
   clear: both;

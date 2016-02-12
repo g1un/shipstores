@@ -206,8 +206,6 @@ $(document).ready(function() {
     var adUnitMessage = $('.b-ad-unit-block__respond-opened');
     var adUnitMessageButton = $('.b-ad-unit-block__respond-messages');
 
-    console.log(adUnitMessageButton[1]);
-
     for(var i=0; i<adUnitMessageButton.length; i++){
       adUnitMessageButton[i].addEventListener('click', function(){
         $(this).toggleClass('opened');
@@ -221,6 +219,125 @@ $(document).ready(function() {
 
   }
   /*end of b-ad-unit-block messages*/
+
+  /*purchase-confirm*/
+  if ($('.purchase-confirm__wrapper').length) {
+
+    var purchaseConfirm = $('.purchase-confirm__wrapper');
+    var purchaseConfirmMsg = $('.purchase-confirm');
+    var purchaseConfirmBtn = $('.purchase-confirm__close');
+
+    function purchaseConfirmCss() {
+      if (window.innerHeight >= purchaseConfirmMsg.outerHeight()) {
+        var purchaseConfirmMargin = (window.innerHeight - purchaseConfirmMsg.outerHeight()) / 2;
+        purchaseConfirmMsg.css('margin-top', purchaseConfirmMargin);
+      }
+    }
+
+    purchaseConfirmCss();
+
+    $(window).on('resize', function () {
+      purchaseConfirmCss();
+    });
+
+    purchaseConfirmBtn.on('click', function () {
+      purchaseConfirm.css('display', 'none');
+    });
+
+    purchaseConfirm.mousedown(function (e) {
+      var clicked = $(e.target);
+      if (clicked.is('.purchase-confirm') || clicked.parents().is('.purchase-confirm')) {
+        return;
+      } else {
+        purchaseConfirm.hide();
+      }
+    });
+  }
+  /*end of purchase-confirm*/
+
+  /*currency*/
+	if($('.b-head__currency-lang').length){
+		var currencyBtn = $('.b-head__currency');
+		var currencyList = $('.b-head__currency-list');
+		var currencyListBtn = $('.b-head__currency-list li');
+
+		currencyBtn.on('click', function(){
+			currencyList.toggleClass('show');
+		});
+
+		$(window).mousedown(function (e) {
+			var clicked = $(e.target);
+			if (clicked.is('.b-head__currency-list') || clicked.parents().is('.b-head__currency-list') || clicked.is('.b-head__currency') || clicked.parents().is('.b-head__currency')) {
+				return;
+			} else {
+				currencyList.removeClass('show');
+			}
+		});
+
+		for(var i=0; i<currencyListBtn.length; i++){
+			currencyListBtn[i].addEventListener('click', function() {
+				for(var j=0; j<currencyListBtn.length; j++){
+					currencyListBtn[j].classList.remove('active');
+				};
+				$(this).addClass('active');
+				var activeCurrency = this.className.substr(0,2);
+
+				for(var i=0; i<$('.b-head__currency li').length; i++){
+					$('.b-head__currency li')[i].classList.remove('show');
+				}
+
+				for(var i=0; i<$('.b-head__currency li').length; i++){
+					if($('.b-head__currency li')[i].className.substr(0,2) == activeCurrency){
+						$('.b-head__currency li')[i].classList.add('show');
+					}
+				}
+			});
+		}
+	}
+  /*end of currency*/
+
+	/*lang*/
+	if($('.b-head__lang').length){
+		var langBtn = $('.b-head__lang');
+		var langList = $('.b-head__lang-list');
+		var langListBtn = $('.b-head__lang-list li');
+		console.log('ok');
+
+		langBtn.on('click', function(){
+			langList.toggleClass('show');
+		});
+
+		$(window).mousedown(function (e) {
+			var clicked = $(e.target);
+			if (clicked.is('.b-head__lang-list') || clicked.parents().is('.b-head__lang-list') || clicked.is('.b-head__lang') || clicked.parents().is('.b-head__lang')) {
+				return;
+			} else {
+				langList.removeClass('show');
+			}
+		});
+
+		for(var i=0; i<langListBtn.length; i++){
+			langListBtn[i].addEventListener('click', function() {
+				for(var j=0; j<langListBtn.length; j++){
+					langListBtn[j].classList.remove('active');
+				};
+				$(this).addClass('active');
+				var activelang = this.className.substr(0,2);
+
+				for(var i=0; i<$('.b-head__lang li').length; i++){
+					//console.log($('.b-head__lang li')[i]);
+					$('.b-head__lang li')[i].classList.remove('show');
+				}
+
+				for(var i=0; i<$('.b-head__lang li').length; i++){
+					if($('.b-head__lang li')[i].className.substr(0,2) == activelang){
+						$('.b-head__lang li')[i].classList.add('show');
+					}
+				}
+			});
+		}
+	}
+	/*end of lang*/
 });
 /*end of contacts.js*/
 
