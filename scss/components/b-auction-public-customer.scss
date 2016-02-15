@@ -1,0 +1,229 @@
+/*b-auction-public-active-block*/
+.b-auction-public-block{
+
+  &__purchase-shipping-address{
+
+    &--active{
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.b-auction-public-block{
+
+  &__bets{
+
+    &-title{
+      clear: both;
+      margin: 0 0 18px;
+      text-align: center;
+      text-transform: uppercase;
+
+      span{
+        font-size: 16px;
+      }
+    }
+
+    &-list{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+    }
+
+    &-item{
+      margin: 0 0 32px;
+
+      &-title{
+        font-family: NeueHaas_medium, Helvetica, sans-serif;
+        font-size: 18px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #464646;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        text-align: center;
+        margin: 0 auto 8px;
+        max-width: 400px;
+
+        span{
+          font-family: NeueHaas_light-it, Helvetica, sans-serif;
+          font-size: 16px;
+        }
+      }
+
+      &-percentage{
+        float: right;
+        margin: -4px 22px 0 0;
+        padding: 2px 0 0;
+        text-align: center;
+        color: #464646;
+        width: 49px;
+        height: 28px;
+        box-sizing: border-box;
+        border: 2px solid #f0f0f0;
+      }
+    }
+
+    &-table{
+      margin: 0 20px 0 17px;
+      padding: 0;
+      border-collapse: collapse;
+      border: none;
+
+      tr{
+
+        &:not(:first-child){
+          border-bottom: 1px solid #ededed;
+        }
+
+        &:first-child{
+          height: 39px;
+          background: #f3f3f3;
+        }
+
+        th{
+          font-family: NeueHaas_light, Helvetica, sans-serif;
+          font-size: 11px;
+          line-height: 1.2em;
+          font-weight: 400;
+          color: #898989;
+          text-transform: none;
+          text-decoration: none;
+          letter-spacing: 0;
+
+          &:first-child{
+            width: 177px;
+            padding: 0 0 0 11px;
+          }
+
+          &:nth-child(2){
+            text-align: center;
+            padding: 0;
+          }
+
+          &:nth-child(3){
+            text-align: center;
+            padding: 0;
+          }
+        }
+
+        td{
+          padding: 8px 0;
+          vertical-align: middle;
+
+          &:first-child{
+            width: 141px;
+            margin: 0;
+            font-size: 0;
+            line-height: 0;
+          }
+
+          &:nth-child(2){
+            width: 47px;
+            font-family: NeueHaas_light, Helvetica, sans-serif;
+            font-size: 18px;
+            line-height: 1.2em;
+            font-weight: 400;
+            color: #000;
+            text-transform: none;
+            text-decoration: none;
+            letter-spacing: 0;
+            background: url("../images/yellow-star.png") no-repeat center center;
+          }
+
+          &:nth-child(3){
+            width: 120px;
+            color: #464646;
+            text-align: center;
+
+            &.waiting{
+              background: url("../images/sandhours-grey.png") no-repeat center center;
+            }
+          }
+
+          &:last-child{
+            width: 219px;
+            padding: 0 0 0 11px;
+            box-sizing: border-box;
+            font-family: NeueHaas_bold, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 1.2em;
+            font-weight: 400;
+            color: #8b0333;
+            text-transform: none;
+            text-decoration: none;
+            letter-spacing: 0;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    &-user-img{
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 10px 0 13px;
+      padding: 0;
+      width: 29px;
+
+      img{
+        max-width: 100%;
+      }
+    }
+
+    &-user-name{
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &-time-left{
+      padding: 0 0 2px 16px;
+      margin: 6px 0 0 17px;
+      float: left;
+      font-family: NeueHaas_light-it, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #8b0333;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      background: url("../images/sandhours-bordo.png") no-repeat center left;
+    }
+  }
+
+  &__winner{
+    float: right;
+    width: 248px;
+
+    &-title{
+      margin: 0 0 24px;
+      padding: 11px 0 13px;
+      font-family: NeueHaas_medium, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #8b0333;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      background: #f3f3f3;
+      text-align: center;
+    }
+
+    &-info{
+      font-family: NeueHaas_light-it, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #959595;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      padding: 0 19px;
+    }
+  }
+}
+/*end of b-auction-public-active-block*/

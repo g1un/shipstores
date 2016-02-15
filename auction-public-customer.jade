@@ -1,0 +1,108 @@
+include includes/header.html
+include includes/auction-public-active.html
+div.b-auction-public-active-block.b-auction-public-block__bets
+	h3.b-auction-public-block__bets-title.form-text Ставки (<span>3</span> участника)
+	ul.b-auction-public-block__bets-list
+		li.b-auction-public-block__bets-item
+			div.b-auction-public-block__bets-item-percentage.form-text 10%
+			div.b-auction-public-block__bets-item-title 1 шаг
+				span (время 12:00 - 12:05)
+			table.b-auction-public-block__bets-table
+				tr
+					th(colspan='2') Участник
+					th Ставка, руб.
+					th Лучшее предложение
+				tr
+					td
+						div.b-auction-public-block__bets-user-img
+							img(src='images/user-1.png', alt='user-1')
+						div.b-auction-public-block__bets-user-name.text-little.text-little--light Александр Р.
+					td 4
+					td.select-text 330 000
+					td
+				tr
+					td
+						div.b-auction-public-block__bets-user-img
+							img(src='images/user-2.png', alt='user-2')
+						div.b-auction-public-block__bets-user-name.text-little.text-little--light Игорь Р.
+					td 5
+					td.select-text 300 000
+					td 300 000
+				tr
+					td
+						div.b-auction-public-block__bets-user-img
+							img(src='images/user-3.png', alt='user-3')
+						div.b-auction-public-block__bets-user-name.text-little.text-little--light Олег Н.
+					td 3
+					td.select-text 350 000
+					td
+		li.b-auction-public-block__bets-item
+			div.b-auction-public-block__bets-item-title 2 шаг
+				span (время 12:00 - 12:15)
+			table.b-auction-public-block__bets-table
+				tr
+					th(colspan='2') Участник
+					th Ставка, руб.
+					th Лучшее предложение
+				tr
+					td
+						div.b-auction-public-block__bets-user-img
+							img(src='images/user-1.png', alt='user-1')
+						div.b-auction-public-block__bets-user-name.text-little.text-little--light Александр Р.
+					td 4
+					td.select-text снялся
+					td
+				tr
+					td
+						div.b-auction-public-block__bets-user-img
+							img(src='images/user-2.png', alt='user-2')
+						div.b-auction-public-block__bets-user-name.text-little.text-little--light Игорь Р.
+					td 5
+					td.select-text 290 000
+					td
+				tr
+					td
+						div.b-auction-public-block__bets-user-img
+							img(src='images/user-3.png', alt='user-3')
+						div.b-auction-public-block__bets-user-name.text-little.text-little--light Олег Н.
+					td 3
+					td.select-text 276 000
+					td 276 000
+		li.b-auction-public-block__bets-item
+			div.b-auction-public-block__bets-time-left 4:17
+			div.b-auction-public-block__bets-item-title 3 шаг
+				span (идет прием ставок)
+			table.b-auction-public-block__bets-table
+				tr
+					th(colspan='2') Участник
+					th Ставка, руб.
+					th Лучшее предложение
+				tr
+					td
+						div.b-auction-public-block__bets-user-img
+							img(src='images/user-1.png', alt='user-1')
+						div.b-auction-public-block__bets-user-name.text-little.text-little--light Александр Р.
+					td 4
+					td.select-text 267 000
+					td
+				tr
+					td
+						div.b-auction-public-block__bets-user-img
+							img(src='images/user-2.png', alt='user-2')
+						div.b-auction-public-block__bets-user-name.text-little.text-little--light Игорь Р.
+					td 5
+					td.waiting
+					td
+				tr
+					td
+						div.b-auction-public-block__bets-user-img
+							img(src='images/user-3.png', alt='user-3')
+						div.b-auction-public-block__bets-user-name.text-little.text-little--light Олег Н.
+					td 3
+					td.select-text 266 000
+					td 266 000
+include includes/closing-div.html
+div.b-auction-public-active-block.b-auction-public-block__winner
+	div.b-auction-public-block__winner-title Победитель закупки
+	div.b-auction-public-block__winner-info Победитель закупки еще не выбран
+include includes/footer.html

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shipstores</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="css/jquery.formstyler.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"><!--Не добавлять эти стили!!!-->
+    <link rel="stylesheet" type="text/css" href="css/b-breadcrumbs-search.css"><!--Не добавлять эти стили!!!-->
+    <link rel="stylesheet" type="text/css" href="css/ui.css"><!--Не добавлять эти стили!!!-->
+    <link rel="stylesheet" type="text/css" href="css/page-styles.css"><!--А ВОТ ЭТО НОВЫЕ СТИЛИ - ИХ ДОБАВИТЬ!-->
+</head>
+
+<body>
+
+<div class="b-main">
+
+    <div class="b-head">
+        <div class="b-head__logo">
+            <div class="b-logo">
+                <a href="#"><img src="images/logo.png" /></a>
+            </div>
+        </div>
+        <div class="b-head__links">
+            <div class="b-menu">
+                <div  class='b-menu__link'>
+                    <a href="#">закупки</a>
+                    <div class="b-menu__linkhover"></div>
+                </div>
+                <div  class='b-menu__link'>
+                    <a href="#">магазины</a>
+                    <div class="b-menu__linkhover"></div>
+                </div>
+                <div  class='b-menu__link'>
+                    <a href="#">объявления</a>
+                    <div class="b-menu__linkhover"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-head__currency-lang">
+						<ul class="b-head__currency">						
+								<li class="ru show">₽</li>						
+								<li class="us">$</li>						
+								<li class="eu">€</li>						
+								<li class="gb">£</li>
+						</ul>
+
+						<ul class="b-head__currency-list">
+								<li class="ru active">₽ Российский рубль</li>
+								<li class="us">$ Доллар США</li>
+								<li class="eu">€ Евро</li>
+								<li class="gb">£ Фунт стерлингов</li>
+						</ul>
+
+						<ul class="b-head__lang">
+								<li class="ru show"></li>
+								<li class="en"></li>
+								<li class="fr"></li>
+								<li class="sp"></li>
+								<li class="ch"></li>
+								<li class="it"></li>
+								<li class="ge"></li>
+						</ul>
+
+						<ul class="b-head__lang-list">
+								<li class="ru active">Русский</li>
+								<li class="en">English (UK)</li>
+								<li class="fr">Français</li>
+								<li class="sp">Español</li>
+								<li class="ch">简体中文</li>
+								<li class="it">Italiano</li>
+								<li class="ge">Deutsch</li>
+						</ul>
+				</div>
+        <div class="b-head__autorize">
+            <div class="b-topbuttons">
+                <div class="g-button b-topbuttons_button g-white_bg">Вход</div>
+                <div class="g-button b-topbuttons_button g-blue_bg">Регистрация</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-left">
+        <div class="b-left__menu">
+            <div class="b-leftmenu">
+                <div class="b-leftmenublue">
+                    <nav>
+                        <ul>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-1">Навигация и связь</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-2">Аварийно-спасательные средства</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-3">Противопожарные средства</a></li>
+                            <li> <a href="#" class="b-leftmenublue__link b-leftmenu_link-4">Судовое оборудование</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-5">Судовая электрика</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-6">Корпус и палуба</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-7">Судовые материалы</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-8">Рыбопромысловое оборудование</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-9">Гидрографическое оборудование</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-10">Водолазное и подводное оборудование</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-11">Плавсредства</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-12">Услуги и сервис</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-13">Сувениры и винтаж</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-14">Разное</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-15">Работа</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="b-leftmenuwhite">
+                    <nav>
+                        <ul>
+                            <li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-16">Как это работает</a></li>
+                            <li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-17">Правила</a></li>
+                            <li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-18">Помощь</a></li>
+                            <li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-19">Безопасность</a></li>
+                            <li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-20">FAQ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="b-left_bottom">
+            <div class="b-needhelp">
+                <div class="b-needhelp__header">нужна помощь?</div>
+                <div class="b-needhelp__body">Воспользуйтесь <a href="#">формой обратной связи</a> или свяжитесь с нами по телефону горячей линии</div>
+                <div class="b-needhelp__bottom">
+                    <div class="b-shedule">
+                        <div class="b-shedule__phone">8-800-100-00-00</div>
+                        <div class="b-shedule__shedule">ежедневно<br>с 9:00 до 20:00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-right">
+
+        <div class="b-advertising-top">
+            <a href="#"><img src="images/banner-01.jpg" /></a>
+        </div>
+
+        <div class="b-breadcrumb-search">
+            <li nk href="/bitrix/css/main/font-awesome.css?145318681428777" type="text/css" rel="stylesheet">
+                <div class="bx-breadcrumb">
+                    <div class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+
+                        <a href="/" title="Главная" itemprop="url">
+                            <span itemprop="title">Главная</span>
+                        </a>
+                    </div>
+                    <div class="bx-breadcrumb-item">
+                        <i class="fa fa-angle-right"></i>
+                        <span>Новости</span>
+                    </div><div style="clear:both"></div></div> <div class="b-search-nomain">
+                <div class="b-search__text nomain-search">
+                    <input class="b-search__inpfield nomain-search nomain-inp-text" type="text" value="">
+                    <input class="b-search__submit nomain-search search-small-pict" type="submit" value="">
+                </div>
+            </div>
+        </div>
+
+        <div class="b-stores-block clearfix">
+            <h2 class="b-stores-block__title content-title">Магазины</h2>
+
+            <form class="b-stores-block__sort clearfix" action="#" method="get">
+                <div class="b-stores-block__sort-type clearfix">
+                    <div class="b-stores-block__sort-type-title select-text select-text--black">Сортировать по</div>
+
+                    <input class="input-radio" type="radio" name="b-stores-block__sort" id="b-stores-block__sort-by-volume">
+                    <label class="label-radio text-little text-little--light" for="b-stores-block__sort-by-volume">Количеству товаров</label>
+
+                    <input class="input-radio" type="radio" name="b-stores-block__sort" id="b-stores-block__sort-by-rating">
+                    <label class="label-radio text-little text-little--light" for="b-stores-block__sort-by-rating">Рейтингу</label>
+                </div>
+
+                <div class="b-stores-block__sort-select">
+                    <div class="b-stores-block__sort-select-title select-text select-text--black">Выберите категорию</div>
+
+                    <div class="b-stores-block__sort-select-category jq-selectbox-main">
+                        <select name="b-stores-block__sort-select-category" id="b-stores-block__sort-select-category">
+                            <option value="0">Все категории</option>
+                            <option value="1">Навигация и связь</option>
+                            <option value="2">Аварийно-спасательные средства</option>
+                            <option value="3">Противопожарные средства</option>
+                            <option value="4">Судовое оборудование</option>
+                            <option value="5">Судовая электрика</option>
+                            <option value="6">Корпус и палуба</option>
+                            <option value="7">Судовые материалы</option>
+                            <option value="8">Рыбопромысловое оборудование</option>
+                            <option value="9">Гидрографическое оборудование</option>
+                            <option value="10">Водолазное и подводное оборудование</option>
+                            <option value="11">Плавсредства</option>
+                            <option value="12">Услуги и сервис</option>
+                            <option value="13">Сувениры и винтаж</option>
+                            <option value="14">Разное</option>
+                            <option value="15">Работа</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="b-stores-block__sort-select">
+                    <div class="b-stores-block__sort-select-title select-text select-text--black">Город</div>
+
+                    <div class="b-stores-block__sort-select-city jq-selectbox-main">
+                        <select name="b-stores-block__sort-select-city" id="b-stores-block__sort-select-city" data-placeholder="Выберите город">
+                            <option></option>
+                            <option value="1">Москва</option>
+                            <option value="2">Санкт-Петербург</option>
+                        </select>
+                    </div>
+                </div>
+
+                <input class="b-stores-block__sort-submit brown_button" type="submit" name="b-stores-block__sort-submit" id="b-stores-block__sort-submit" value="Показать">
+            </form>
+
+            <table class="b-stores-block__table">
+                <tr>
+                    <th>Лого</th>
+                    <th>Название магазина</th>
+                    <th>Всего товаров</th>
+                    <th>Последний добавленный</th>
+                    <th>Рейтинг</th>
+                    <th>Город</th>
+                </tr>
+                <tr>
+                    <td><img src="images/company-logo.png" alt="company-logo"></td>
+                    <td><a href="#">УПС «Мария»</a></td>
+                    <td>2</td>
+                    <td>Судовая лебедка</td>
+                    <td>5</td>
+                    <td>Санкт-Петербург</td>
+                </tr>
+                <tr>
+                    <td><img src="images/company-logo.png" alt="company-logo"></td>
+                    <td><a href="#">УПС «Мария»</a></td>
+                    <td>2</td>
+                    <td>Судовая лебедка</td>
+                    <td>5</td>
+                    <td>Санкт-Петербург</td>
+                </tr>
+                <tr>
+                    <td><img src="images/company-logo.png" alt="company-logo"></td>
+                    <td><a href="#">УПС «Мария»</a></td>
+                    <td>2</td>
+                    <td>Судовая лебедка</td>
+                    <td>5</td>
+                    <td>Санкт-Петербург</td>
+                </tr>
+                <tr>
+                    <td><img src="images/company-logo.png" alt="company-logo"></td>
+                    <td><a href="#">УПС «Мария»</a></td>
+                    <td>2</td>
+                    <td>Судовая лебедка</td>
+                    <td>5</td>
+                    <td>Санкт-Петербург</td>
+                </tr>
+                <tr>
+                    <td><img src="images/company-logo.png" alt="company-logo"></td>
+                    <td><a href="#">УПС «Мария»</a></td>
+                    <td>2</td>
+                    <td>Судовая лебедка</td>
+                    <td>5</td>
+                    <td>Санкт-Петербург</td>
+                </tr>
+                <tr>
+                    <td><img src="images/company-logo.png" alt="company-logo"></td>
+                    <td><a href="#">УПС «Мария»</a></td>
+                    <td>2</td>
+                    <td>Судовая лебедка</td>
+                    <td>5</td>
+                    <td>Санкт-Петербург</td>
+                </tr>
+                <tr>
+                    <td><img src="images/company-logo.png" alt="company-logo"></td>
+                    <td><a href="#">УПС «Мария»</a></td>
+                    <td>2</td>
+                    <td>Судовая лебедка</td>
+                    <td>5</td>
+                    <td>Санкт-Петербург</td>
+                </tr>
+                <tr>
+                    <td><img src="images/company-logo.png" alt="company-logo"></td>
+                    <td><a href="#">УПС «Мария»</a></td>
+                    <td>2</td>
+                    <td>Судовая лебедка</td>
+                    <td>5</td>
+                    <td>Санкт-Петербург</td>
+                </tr>
+                <tr>
+                    <td><img src="images/company-logo.png" alt="company-logo"></td>
+                    <td><a href="#">УПС «Мария»</a></td>
+                    <td>2</td>
+                    <td>Судовая лебедка</td>
+                    <td>5</td>
+                    <td>Санкт-Петербург</td>
+                </tr>
+                <tr>
+                    <td><img src="images/company-logo.png" alt="company-logo"></td>
+                    <td><a href="#">УПС «Мария»</a></td>
+                    <td>2</td>
+                    <td>Судовая лебедка</td>
+                    <td>5</td>
+                    <td>Санкт-Петербург</td>
+                </tr>
+                <tr>
+                    <td><img src="images/company-logo.png" alt="company-logo"></td>
+                    <td><a href="#">УПС «Мария»</a></td>
+                    <td>2</td>
+                    <td>Судовая лебедка</td>
+                    <td>5</td>
+                    <td>Санкт-Петербург</td>
+                </tr>
+                <tr>
+                    <td><img src="images/company-logo.png" alt="company-logo"></td>
+                    <td><a href="#">УПС «Мария»</a></td>
+                    <td>2</td>
+                    <td>Судовая лебедка</td>
+                    <td>5</td>
+                    <td>Санкт-Петербург</td>
+                </tr>
+                <tr>
+                    <td><img src="images/company-logo.png" alt="company-logo"></td>
+                    <td><a href="#">УПС «Мария»</a></td>
+                    <td>2</td>
+                    <td>Судовая лебедка</td>
+                    <td>5</td>
+                    <td>Санкт-Петербург</td>
+                </tr>
+                <tr>
+                    <td><img src="images/company-logo.png" alt="company-logo"></td>
+                    <td><a href="#">УПС «Мария»</a></td>
+                    <td>2</td>
+                    <td>Судовая лебедка</td>
+                    <td>5</td>
+                    <td>Санкт-Петербург</td>
+                </tr>
+            </table>
+
+            <div class="b-stores-block__pagination pagination">
+                <span class="pagination-title">Текущая страница</span>
+                <a class="pagination-page-number" href="#">1</a>
+                <span class="pagination-volume">1-18</span>
+                <a class="pagination-arrow" href="#"></a>
+                <a class="pagination-arrow pagination-arrow--right" href="#"></a>
+            </div>
+        </div>
+
+        <div class="b-advertising-bottom">
+            <div class="b-advertising-bottom__banner banner-02"><a href="#"><img src="images/examples/banner2.png" /></a></div>
+            <div class="b-advertising-bottom__banner banner-03"><a href="#"><img src="images/examples/banner3.png" /></a></div>
+        </div>
+
+    </div>
+
+    <div class="b-bottom-menu">
+        <nav>
+            <div class="b-menu-main"><!--b-menu_link_active-->
+                <div  class='b-menu-main__link'>
+                    <a href="#">О портале</a>
+                </div>
+                <div  class='b-menu-main__link'>
+                    <a href="#">Услуги портала</a>
+                </div>
+                <div  class='b-menu-main__link'>
+                    <a href="#">Новости</a>
+                </div>
+                <div  class='b-menu-main__link'>
+                    <a href="#">Реклама</a>
+                </div>
+                <div  class='b-menu-main__link'>
+                    <a href="#">Контакты</a>
+                </div>
+                <div  class='b-menu-main__link'>
+                    <a href="#">Дилеры</a>
+                </div>
+                <div  class='b-menu-main__link'>
+                    <a href="#">shipstoresbonus</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="b-footer">
+        <div class="b-footer-cr">
+            <div class="b-footer-cr__copy">© 2015 ShipStores</div>
+            <div class="b-footer-cr__bitrix"><img src="images/bitrix.png" /></div>
+            <div class="b-footer-cr__menu">
+                <a href="#">Закупки</a>
+                <a href="#">Магазины</a>
+                <a href="#">Объявления</a>
+            </div>
+            <div class="b-footer-cr__7studio">
+                <p><a href="//7sait.spb.ru/services/sozdanie-saitov/" title="Разработка сайтов">Разработка сайта: «7 Студио»</a></p>
+                <p><a href="//7sait.spb.ru/services/internet-marketing/" title="Продвижение сайтов">Продвижение сайта: «7 Студио»</a></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="b-static-stripe">
+    <div class="b-your-blue">
+        <div class="b-your-blue__feedback my-divs">
+            <div class="form-button js-call-form">обратная связь</div>
+        </div>
+        <div class="b-your-blue__info my-divs b-your-blue__infofirst">
+            <div class="b-my-info">
+                <div class="b-my-info__icon icon-purchase"></div>
+                <div class="b-my-info__name"><a href="#">Закупки, в которых вы участвуете</a></div>
+                <div class="b-my-info__count">4</div>
+            </div>
+        </div>
+        <div class="b-your-blue__info my-divs">
+            <div class="b-my-info">
+                <div class="b-my-info__icon icon-notice"></div>
+                <div class="b-my-info__name"><a href="#">Размещено объявлений</a></div>
+                <div class="b-my-info__count">4</div>
+            </div>
+        </div>
+        <div class="b-your-blue__info my-divs">
+            <div class="b-my-info">
+                <div class="b-my-info__icon icon-favorites"></div>
+                <div class="b-my-info__name"><a href="#">Избранное</a></div>
+                <div class="b-my-info__count">4</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/contacts.js"></script>
+
+</body>
+</html>
