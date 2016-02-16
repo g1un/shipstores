@@ -3,42 +3,14 @@
 <head>
     <title>Shipstores</title>
     <meta charset="UTF-8">
-
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-    <!--fancybox-->
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <!--breadcrumbs-->
-    <link rel="stylesheet" type="text/css" href="css/b-breadcrumb-search.css">
-
-    <!--auction-public style-->
-    <link rel="stylesheet" type="text/css" href="css/auction-public.css">
-
-    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-
-    <!-- слайдер Important Owl stylesheet-->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <!-- слайдер Default Theme -->
-    <link rel="stylesheet" href="css/owl.theme.css">
-    <!-- слайдер Include js plugin -->
-    <script src="js/owl.carousel.js"></script>
-
-    <!--стили селектов form styler css -->
     <link href="css/jquery.formstyler.css" rel="stylesheet" />
-    <!--стили селектов form styler js -->
-    <script src="js/jquery.formstyler.min.js"></script>
-
-    <!-- main page -->
-    <script src="js/script.main_page.js"></script>
-
-    <!--fancybox-->
-    <script src="js/jquery.fancybox.pack.js"></script>
-
+    <link href="css/jquery.fancybox.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/b-breadcrumbs-search.css">
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
+    <link rel="stylesheet" type="text/css" href="css/page-styles.css">
 </head>
 
 <body>
@@ -67,18 +39,43 @@
                 </div>
             </div>
         </div>
-        <div class="b-head__currency">
-            <div class="b-curr">
-                <div class="b-curr_text">
-                    <div class="b-curr_text__curr_rub">
-                        <span class="g-rub g-white_font" style="line-height:1.7">₽</span>
-                    </div>
-                </div>
-                <div class="b-curr_pict">
-                    <img src="images/currency-rub.jpg">
-                </div>
-            </div>
+
+        <div class="b-head__currency-lang">
+            <ul class="b-head__currency">
+                <li class="ru show">₽</li>
+                <li class="us">$</li>
+                <li class="eu">€</li>
+                <li class="gb">£</li>
+            </ul>
+
+            <ul class="b-head__currency-list">
+                <li class="ru active">₽ Российский рубль</li>
+                <li class="us">$ Доллар США</li>
+                <li class="eu">€ Евро</li>
+                <li class="gb">£ Фунт стерлингов</li>
+            </ul>
+
+            <ul class="b-head__lang">
+                <li class="ru show"></li>
+                <li class="en"></li>
+                <li class="fr"></li>
+                <li class="sp"></li>
+                <li class="ch"></li>
+                <li class="it"></li>
+                <li class="ge"></li>
+            </ul>
+
+            <ul class="b-head__lang-list">
+                <li class="ru active">Русский</li>
+                <li class="en">English (UK)</li>
+                <li class="fr">Français</li>
+                <li class="sp">Español</li>
+                <li class="ch">简体中文</li>
+                <li class="it">Italiano</li>
+                <li class="ge">Deutsch</li>
+            </ul>
         </div>
+
         <div class="b-head__autorize">
             <div class="b-topbuttons">
                 <div class="g-button b-topbuttons_button g-white_bg">Вход</div>
@@ -374,7 +371,11 @@
 </div>
 <!--end of price-offer form-->
 
-<script src="js/contacts.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/contacts.js"></script>
 
 </body>
 </html>

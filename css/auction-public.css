@@ -129,6 +129,7 @@
 }
 .input-radio:checked + label::after {
   background: #aec7ff;
+  background: -webkit-linear-gradient(315deg, #c6d8ff, #85a5f5);
   background: linear-gradient(135deg, #c6d8ff, #85a5f5);
 }
 
@@ -197,7 +198,9 @@
   border-left: 2px solid #fff;
   border-bottom: 2px solid #fff;
   background: transparent;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 /*end of checkbox*/
@@ -229,10 +232,13 @@
   padding: 5px;
   border: none;
   outline: none;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
-}
-.type-text-shadow {
   box-shadow: inset -1px 1px 3px 0 rgba(0, 0, 0, 0.17);
+}
+.type-text-shadow-sim {
+  padding: 5px;
+  border: none;
+  outline: none;
+  box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.17);
 }
 
 /*end of type='text'*/
@@ -367,6 +373,7 @@
   border-radius: 5px;
   padding: 5px 0 9px;
   background: #79aaf2;
+  background: -webkit-linear-gradient(top, #a4c8ff, #789add);
   background: linear-gradient(to bottom, #a4c8ff, #789add);
 }
 .gradient_button span {
@@ -378,6 +385,9 @@
 .jq-selectbox-main {
   display: inline-block;
   vertical-align: top;
+}
+.jq-selectbox-main.disabled {
+  position: relative;
 }
 .jq-selectbox-main.disabled .disabled {
   position: absolute;
@@ -392,6 +402,9 @@
 }
 .jq-selectbox-main.disabled .jq-selectbox {
   z-index: 0 !important;
+}
+.jq-selectbox-main.disabled .jq-selectbox__select {
+  box-shadow: none;
 }
 .jq-selectbox-main .jq-selectbox {
   width: 100%;
@@ -474,7 +487,9 @@
   width: 25px;
   height: 5px;
   background: #fff;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .form-close::after {
   content: '';
@@ -484,7 +499,9 @@
   width: 25px;
   height: 5px;
   background: #fff;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 /*end of form-close*/
@@ -514,7 +531,9 @@
   width: 2px;
   height: 10px;
   background: #fff;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .close-blue::after {
   content: '';
@@ -524,7 +543,9 @@
   width: 2px;
   height: 10px;
   background: #fff;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 /*end of close-blue*/
@@ -552,7 +573,9 @@
   background: transparent;
   border-left: 3px solid #fff;
   border-bottom: 3px solid #fff;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 /*end of round-check*/
@@ -614,11 +637,15 @@
   border-bottom: 2px solid #959595;
   width: 6px;
   height: 6px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .pagination-arrow--right {
   margin: 0;
-  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
   margin-left: 32px;
 }
 
@@ -668,7 +695,7 @@
 }
 .b-auction-public-block__purchase-max-price {
   font-family: NeueHaas_thin-it, Helvetica, sans-serif;
-  margin: 0 0 82px 18px;
+  margin: 0 0 0 18px;
 }
 .b-auction-public-block__purchase-max-price-ru {
   display: inline-block;
@@ -874,7 +901,7 @@
 .b-auction-public-block__purchase-bottom {
   clear: both;
   margin: 0;
-  padding: 0 0 28px;
+  padding: 73px 0 28px;
 }
 .b-auction-public-block__purchase-bottom-title {
   margin: 0 0 18px;
@@ -989,6 +1016,26 @@
   width: 217px;
   margin: 0 auto 11px;
   font-size: 12px;
+}
+.b-auction-public-block__buyer-attention {
+  margin: 15px 0;
+  padding: 0 18px;
+  font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #898989;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0;
+}
+.b-auction-public-block__buyer-attention-link {
+  font-family: NeueHaas_light-it, Helvetica, sans-serif;
+  color: #8b0333;
+  text-decoration: underline;
+}
+.b-auction-public-block__buyer-attention-link:hover, .b-auction-public-block__buyer-attention-linkfocus {
+  text-decoration: none;
 }
 
 /*end of b-auction-public-block*/

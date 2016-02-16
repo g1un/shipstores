@@ -47,7 +47,7 @@
 
     &-max-price{
       font-family: NeueHaas_thin-it, Helvetica, sans-serif;
-      margin: 0 0 82px 18px;
+      margin: 0 0 0 18px;
 
       &-ru{
         display: inline-block;
@@ -291,7 +291,7 @@
     &-bottom{
       clear: both;
       margin: 0;
-      padding: 0 0 28px;
+      padding: 73px 0 28px;
 
       &-title{
         margin: 0 0 18px;
@@ -422,6 +422,30 @@
       width: 217px;
       margin: 0 auto 11px;
       font-size: 12px;
+    }
+
+    &-attention{
+      margin: 15px 0;
+      padding: 0 18px;
+      font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #898989;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+
+      &-link{
+        font-family: NeueHaas_light-it, Helvetica, sans-serif;
+        color: #8b0333;
+        text-decoration: underline;
+
+        &:hover,
+        &focus{
+          text-decoration: none;
+        }
+      }
     }
   }
 }

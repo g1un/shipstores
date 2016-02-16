@@ -1,0 +1,137 @@
+include includes/header.html
+include includes/auction-public-active.html
+div.b-auction-public-block__protocol
+	a.b-auction-public-block__protocol-download(href="#") Скачать протокол
+	h3.b-auction-public-block__protocol-title.form-text Протокол подведения итогов закупки
+	table.b-auction-public-block__protocol-table-info
+		tr
+			td.text-little.text-little--light Покупатель
+			td.text-little.text-little--light Александр К.
+		tr
+			td.text-little.text-little--light Наименование закупки
+			td.text-little.text-little--light Кронштейн для трапа
+		tr
+			td.text-little.text-little--light Категория товара
+			td.text-little.text-little--light Судовое оборудование
+		tr
+			td.text-little.text-little--light Дата и время начала закупки
+			td.text-little.text-little--light 15.09.2015 в 12:00
+		tr
+			td.text-little.text-little--light Тип закупки
+			td.text-little.text-little--light Открытый
+		tr
+			td.text-little.text-little--light Шаг закупки
+			td.text-little.text-little--light пост. 5 минут
+		tr
+			td.text-little.text-little--light Шаг по цене
+			td.text-little.text-little--light 10%
+		tr
+			td.text-little.text-little--light Фиксация окончания
+			td.text-little.text-little--light Последняя ставка
+		tr
+			td.text-little.text-little--light Способ оплаты товара
+			td.text-little.text-little--light Прямая сделка
+		tr
+			td.text-little.text-little--light Приложение с заявкой
+			td.text-little.text-little--light Есть
+		tr
+			td.text-little.text-little--light Место и дата поставки
+			td.text-little.text-little--light РФ, Санкт-Петербург, Торговый порт, причал №5
+		tr
+			td.text-little.text-little--light Особые условия
+			td.text-little.text-little--light оформление таможни
+		tr
+			td.text-little.text-little--light Начальная цена, руб.
+			td.text-little.text-little--light 400 000
+		tr
+			td.text-little.text-little--light Окончание закупки
+			td.text-little.text-little--light 15 минут с момента последней ставки
+	table.b-auction-public-block__protocol-table-results
+		tr.b-auction-public-block__protocol-table-results-header
+			th(rowspan="2").b-auction-public-block__protocol-table-results-header-first Участник
+			th(rowspan="2").b-auction-public-block__protocol-table-results-header-second Рейтинг
+			th(colspan="3").b-auction-public-block__protocol-table-results-header-third.center <span>Ставки участников</span>
+			th(rowspan="2").b-auction-public-block__protocol-table-results-header-fourth Результаты<br> закупки
+			th(rowspan="2").b-auction-public-block__protocol-table-results-header-fifth Лучшее предложение
+		tr.header
+			th
+				div.b-auction-public-block__protocol-table-results-step 1 шаг
+				div.b-auction-public-block__protocol-table-results-period 12:00-12:05
+			th
+				div.b-auction-public-block__protocol-table-results-step 2 шаг
+				div.b-auction-public-block__protocol-table-results-period 12:10-12:15
+			th
+				div.b-auction-public-block__protocol-table-results-step 3 шаг
+				div.b-auction-public-block__protocol-table-results-period 12:20-12:25
+		tr.tr
+			td.user.text-little.text-little--light Участник №1
+			td.rating.text-little.text-little--light 4
+			td 330 000
+			td снялся
+			td снялся
+			td.result-price <span>330 000</span>
+			td
+		tr.tr
+			td.user.text-little.text-little--light Участник №2
+			td.rating.text-little.text-little--light 5
+			td 300 000
+			td 290 000
+			td 270 000
+			td.result-price <span>270 000</span>
+			td
+		tr.tr.b-auction-public-block__protocol-table-results-winner
+			td.user.text-little.text-little--light Участник №3
+			td.rating.text-little.text-little--light 3
+			td 350 000
+			td 276 000
+			td 266 000
+			td.result-price <span>266 000</span>
+			td 260 000
+
+include includes/closing-div.html
+include includes/b-auction-public-block__buyer.html
+form.b-auction-public-block__complete-deal(action="#", method="get")
+	p.b-auction-public-block__complete-deal-text
+		Вы участвуете в этом аукционе.<br>
+		Если сделка уже совершена, вам необходимо подтвердить проведение сделки. Выполните ряд последующих действий  и нажмите <span>«Завершить сделку»</span>
+	p.b-auction-public-block__complete-deal-text
+		Поставьте Александру оценку за качество проведения сделки
+	input.b-auction-public-block__complete-deal-rate.type-text-shadow-sim(type="text", name="b-auction-public-block__complete-deal-rate", id="b-auction-public-block__complete-deal-rate" pattern="[1-5]{1}")
+	div.b-auction-public-block__complete-deal-note от 1 до 5
+	label.b-auction-public-block__complete-deal-comment-label(for="b-auction-public-block__complete-deal-comment") Оставьте свой отзыв
+	textarea.b-auction-public-block__complete-deal-comment.type-text-shadow-sim(name="b-auction-public-block__complete-deal-comment", id="b-auction-public-block__complete-deal-comment")
+	label.b-auction-public-block__complete-deal-sum-label(for='b-auction-public-block__complete-deal-sum') Сумма сделки
+	input.b-auction-public-block__complete-deal-sum.type-text-shadow-sim(type='text', name='b-auction-public-block__complete-deal-sum', id='b-auction-public-block__complete-deal-sum')
+	div.b-auction-public-block__complete-deal-currency.jq-selectbox-main.disabled
+		div.disabled
+		select(name='b-auction-public-block__complete-deal-currency-select', id-='b-auction-public-block__complete-deal-currency-select')
+			option(value='1') рублей
+			option(value='2') долларов
+			option(value='3') евро
+			option(value='4') фунтов
+	input.b-auction-public-block__complete-deal-submit.brown_button(name='b-auction-public-block__complete-deal-submit', id='b-auction-public-block__complete-deal-submit', value='Завершить сделку')
+
+form.b-auction-public-block__send-claim(action='#', method='get')
+	p.b-auction-public-block__send-claim-text
+		Если вы остались <span>недовольны</span> результатом сделки, мы рассмотрим вашу заявку и примем  меры для урегирулирования вопроса:
+	input.b-auction-public-block__send-claim-check.input-checkbox(type='checkbox', name='b-auction-public-block__send-claim-check', id='b-auction-public-block__send-claim-check')
+	label.b-auction-public-block__send-claim-check-label.label-checkbox(for='b-auction-public-block__send-claim-check')
+		Я недоволен результатом сделки, прошу рассмотреть мою заявку
+	div.b-auction-public-block__send-claim-block
+		p.b-auction-public-block__send-claim-block-info
+			Перед заполнением Акта расторжения сделки внимательно прочитайте
+			a(href='#') Протокол проведения закупки
+		p.b-auction-public-block__send-claim-block-text
+			Пожалуйста, заполните <a href='#'>Акт о расторжении договора</a> и отправьте его вместе с заявкой на рассмотрение
+		label.b-auction-public-block__send-claim-block-textarea-label(for='b-auction-public-block__send-claim-block-textarea')
+			Ваш комментарий
+		textarea.b-auction-public-block__send-claim-block-textarea.type-text-shadow-sim(name='b-auction-public-block__send-claim-block-textarea', id='b-auction-public-block__send-claim-block-textarea')
+		input.b-auction-public-block__send-claim-block-file(type='file', name='b-auction-public-block__send-claim-block-file', id='b-auction-public-block__send-claim-block-file')
+		label.b-auction-public-block__send-claim-block-file-label(for='b-auction-public-block__send-claim-block-file')
+			Загрузить акт
+		div.b-auction-public-block__send-claim-block-note 1 вложение
+		a.b-auction-public-block__send-claim-block-attachment(href='#')
+			Акт о расторжении договора.doc
+	input.b-auction-public-block__send-claim-submit.shadow_button(type='submit', name='b-auction-public-block__send-claim-submit', id='b-auction-public-block__send-claim-submit', value='Отправить претензию' disabled)
+
+include includes/footer.html

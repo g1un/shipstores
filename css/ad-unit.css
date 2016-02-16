@@ -232,10 +232,13 @@
   padding: 5px;
   border: none;
   outline: none;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
-}
-.type-text-shadow {
   box-shadow: inset -1px 1px 3px 0 rgba(0, 0, 0, 0.17);
+}
+.type-text-shadow-sim {
+  padding: 5px;
+  border: none;
+  outline: none;
+  box-shadow: inset 0 1px 1px 0 rgba(0, 0, 0, 0.17);
 }
 
 /*end of type='text'*/
@@ -383,6 +386,9 @@
   display: inline-block;
   vertical-align: top;
 }
+.jq-selectbox-main.disabled {
+  position: relative;
+}
 .jq-selectbox-main.disabled .disabled {
   position: absolute;
   top: 0;
@@ -396,6 +402,9 @@
 }
 .jq-selectbox-main.disabled .jq-selectbox {
   z-index: 0 !important;
+}
+.jq-selectbox-main.disabled .jq-selectbox__select {
+  box-shadow: none;
 }
 .jq-selectbox-main .jq-selectbox {
   width: 100%;

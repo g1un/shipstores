@@ -301,7 +301,6 @@ $(document).ready(function() {
 		var langBtn = $('.b-head__lang');
 		var langList = $('.b-head__lang-list');
 		var langListBtn = $('.b-head__lang-list li');
-		console.log('ok');
 
 		langBtn.on('click', function(){
 			langList.toggleClass('show');
@@ -338,6 +337,31 @@ $(document).ready(function() {
 		}
 	}
 	/*end of lang*/
+
+  /*disabling of b-auction-public-block__send-claim*/
+  if ($('.b-auction-public-block__send-claim').length){
+    var claimSendCheck = $('.b-auction-public-block__send-claim-check');
+    var claimSendCheckLabel = $('.b-auction-public-block__send-claim-check-label');
+    var claimSendSubmit = $('.b-auction-public-block__send-claim-submit');
+    var claimSendBlock = $('.b-auction-public-block__send-claim-block');
+
+    function claimSendOff(){
+      if (claimSendCheck.is(':checked')){
+	      claimSendSubmit.prop('disabled', false);
+	      claimSendBlock.addClass('show');
+      } else{
+	      claimSendSubmit.prop('disabled', true);
+	      claimSendBlock.removeClass('show');
+      }
+    }
+
+    claimSendOff();
+
+	  claimSendCheckLabel.on('click', function(){
+      setTimeout(function () {claimSendOff();}, 50);
+    });
+  }
+  /*end of disabling of b-auction-public-block__send-claim*/
 });
 /*end of contacts.js*/
 

@@ -1,17 +1,8 @@
-/*b-auction-public-active-block*/
-.b-auction-public-block{
-
-  &__purchase-shipping-address{
-
-    &--active{
-      margin-bottom: 32px;
-    }
-  }
-}
-
+/*b-auction-public-block--bets*/
 .b-auction-public-block{
 
   &__bets{
+    margin: 32px 0 0 0;
 
     &-title{
       clear: both;
@@ -164,7 +155,7 @@
     &-user-img{
       display: inline-block;
       vertical-align: middle;
-      margin: 0 10px 0 13px;
+      margin: 0 0 0 13px;
       padding: 0;
       width: 29px;
 
@@ -174,6 +165,7 @@
     }
 
     &-user-name{
+      margin: 0 0 0 10px;
       display: inline-block;
       vertical-align: middle;
     }
@@ -191,6 +183,42 @@
       text-decoration: none;
       letter-spacing: 0;
       background: url("../images/sandhours-bordo.png") no-repeat center left;
+    }
+
+    &--seller-in-purchase{
+      padding: 0 0 44px;
+
+      &.b-auction-public-block__bets{
+
+        .b-auction-public-block__bets{
+
+          &-table{
+
+            th{
+
+              &:first-child{
+                text-align: left;
+              }
+            }
+
+            td{
+
+              &:first-child{
+                width: 188px;
+              }
+
+              &:nth-child(2){
+                width: 0;
+              }
+            }
+          }
+
+          &-make-offer-link{
+            margin: 37px auto 0;
+            width: 216px;
+          }
+        }
+      }
     }
   }
 
@@ -226,4 +254,4 @@
     }
   }
 }
-/*end of b-auction-public-active-block*/
+/*end of b-auction-public-block--bets*/

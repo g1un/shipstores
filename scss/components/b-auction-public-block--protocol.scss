@@ -1,0 +1,214 @@
+/*b-auction-public-block--protocol*/
+.b-auction-public-block{
+
+  &__protocol{
+    text-align: right;
+    margin: 60px 0 0;
+    padding: 0;
+
+    &-download{
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 17px 20px 0;
+      font-family: NeueHaas_reg, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #8b0333;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+
+      &:hover,
+      &:focus{
+        text-decoration: underline;
+      }
+    }
+
+    &-title{
+      margin: 0 0 33px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    &-table-info{
+      margin: 0 16px 14px 17px;
+      padding: 0;
+      border-collapse: collapse;
+      border: none;
+      text-align: left;
+
+      td{
+        margin: 0;
+        padding: 0 0 12px;
+        vertical-align: top;
+
+        &:first-child{
+          width: 210px;
+        }
+
+        &:last-child{
+          font-family: NeueHaas_reg, Helvetica, sans-serif;
+        }
+      }
+    }
+
+    &-table-results{
+      margin: 0;
+      padding: 0;
+      border-collapse: collapse;
+      border: none;
+      text-align: left;
+
+      .tr{
+        border-bottom: 1px solid #ededed;
+      }
+
+      th{
+        padding: 0;
+        border: none;
+        height: 32px;
+        background: #f3f3f3;
+      }
+
+      &-header{
+        background: #f3f3f3;
+
+        th{
+          vertical-align: middle;
+          font-family: NeueHaas_light, Helvetica, sans-serif;
+          font-size: 11px;
+          line-height: 1.2em;
+          font-weight: 400;
+          color: #898989;
+          text-transform: none;
+          text-decoration: none;
+          letter-spacing: 0;
+          text-align: center;
+
+          &.center{
+            
+            span{
+              display: block;
+              margin: 0 auto;
+              padding: 8px 0 7px;
+              color: #464646;
+              background: #fff;
+              width: 207px;
+            }
+          }
+        }
+      }
+
+      td{
+        vertical-align: top;
+        margin: 0;
+        padding: 21px 0 14px;
+        font-family: NeueHaas_reg, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #464646;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        text-align: center;
+        border: none;
+
+        &.user{
+         font-family: NeueHaas_light, Helvetica, sans-serif;
+          color: #000;
+        }
+
+        &:first-child{
+          width: 100px;
+        }
+
+        &:nth-child(2){
+          width: 63px;
+        }
+
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5){
+          width: 69px;
+        }
+
+        &:nth-child(6){
+          width: 105px;
+        }
+
+        &:last-child{
+          width: 89px;
+        }
+      }
+
+      &-step{
+        font-family: NeueHaas_reg, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #898989;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        text-align: center;
+        background: #f3f3f3;
+      }
+
+      &-period{
+        font-family: NeueHaas_light-it, Helvetica, sans-serif;
+        font-size: 10px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #8b0333;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        text-align: center;
+        background: #f3f3f3;
+      }
+
+      .rating{
+        font-family: NeueHaas_light, Helvetica, sans-serif;
+      }
+      
+      &-winner{
+        background: #8b0333;
+
+        &.tr{
+          border-bottom: none;
+        }
+
+        .rating{
+          font-family: NeueHaas_reg, Helvetica, sans-serif;
+        }
+
+        td{
+          font-family: NeueHaas_medium, Helvetica, sans-serif;
+          color: #fff;
+
+          &.user{
+            color: #fff;
+          }
+        }
+
+        .result-price{
+
+          span{
+            display: block;
+            font-family: NeueHaas_bold, Helvetica, sans-serif;
+            color: #8b0333;
+            background: #fff;
+            width: 73px;
+            min-height: 32px;
+            margin: -11px auto -4px;
+            padding: 11px 0 0;
+            box-sizing: border-box;
+          }
+        }
+      }
+    }
+  }
+}
+/*end of b-auction-public-block--protocol*/
