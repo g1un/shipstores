@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Shipstores</title>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="/favicon.ico" type="image/x-icon">
+		<link href="css/jquery.formstyler.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"><!--Не добавлять эти стили!!!-->
+		<link rel="stylesheet" type="text/css" href="css/b-breadcrumbs-search.css"><!--Не добавлять эти стили!!!-->
+		<link rel="stylesheet" type="text/css" href="css/ui.css"><!--Не добавлять эти стили!!!-->
+		<link rel="stylesheet" type="text/css" href="css/page-styles.css"><!--А ВОТ ЭТО НОВЫЕ СТИЛИ - ИХ ДОБАВИТЬ!-->
+	</head>
+
+	<body>
+
+		<div class="b-main">
+
+			<div class="b-head">
+				<div class="b-head__logo">
+					<div class="b-logo">
+						<a href="#"><img src="images/logo.png" /></a>
+					</div>
+				</div>
+				<div class="b-head__links">
+					<div class="b-menu">
+						<div  class='b-menu__link'>
+							<a href="#">закупки</a>
+							<div class="b-menu__linkhover"></div>
+						</div>
+						<div  class='b-menu__link'>
+							<a href="#">магазины</a>
+							<div class="b-menu__linkhover"></div>
+						</div>
+						<div  class='b-menu__link'>
+							<a href="#">объявления</a>
+							<div class="b-menu__linkhover"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="b-head__currency-lang">
+					<ul class="b-head__currency">
+						<li class="ru show">₽</li>
+						<li class="us">$</li>
+						<li class="eu">€</li>
+						<li class="gb">£</li>
+					</ul>
+
+					<ul class="b-head__currency-list">
+						<li class="ru active">₽ Российский рубль</li>
+						<li class="us">$ Доллар США</li>
+						<li class="eu">€ Евро</li>
+						<li class="gb">£ Фунт стерлингов</li>
+					</ul>
+
+					<ul class="b-head__lang">
+						<li class="ru show"></li>
+						<li class="en"></li>
+						<li class="fr"></li>
+						<li class="sp"></li>
+						<li class="ch"></li>
+						<li class="it"></li>
+						<li class="ge"></li>
+					</ul>
+
+					<ul class="b-head__lang-list">
+						<li class="ru active">Русский</li>
+						<li class="en">English (UK)</li>
+						<li class="fr">Français</li>
+						<li class="sp">Español</li>
+						<li class="ch">简体中文</li>
+						<li class="it">Italiano</li>
+						<li class="ge">Deutsch</li>
+					</ul>
+				</div>
+				<div class="b-head__autorize">
+					<div class="b-topbuttons">
+						<div class="g-button b-topbuttons_button g-white_bg">Вход</div>
+						<div class="g-button b-topbuttons_button g-blue_bg">Регистрация</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="b-left">
+				<div class="b-left__menu">
+					<div class="b-leftmenu">
+						<div class="b-leftmenublue">
+							<nav>
+								<ul>
+									<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-1">Навигация и связь</a></li>
+									<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-2">Аварийно-спасательные средства</a></li>
+									<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-3">Противопожарные средства</a></li>
+									<li> <a href="#" class="b-leftmenublue__link b-leftmenu_link-4">Судовое оборудование</a></li>
+									<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-5">Судовая электрика</a></li>
+									<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-6">Корпус и палуба</a></li>
+									<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-7">Судовые материалы</a></li>
+									<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-8">Рыбопромысловое оборудование</a></li>
+									<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-9">Гидрографическое оборудование</a></li>
+									<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-10">Водолазное и подводное оборудование</a></li>
+									<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-11">Плавсредства</a></li>
+									<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-12">Услуги и сервис</a></li>
+									<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-13">Сувениры и винтаж</a></li>
+									<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-14">Разное</a></li>
+									<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-15">Работа</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="b-leftmenuwhite">
+							<nav>
+								<ul>
+									<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-16">Как это работает</a></li>
+									<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-17">Правила</a></li>
+									<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-18">Помощь</a></li>
+									<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-19">Безопасность</a></li>
+									<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-20">FAQ</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="b-left_bottom">
+					<div class="b-needhelp">
+						<div class="b-needhelp__header">нужна помощь?</div>
+						<div class="b-needhelp__body">Воспользуйтесь <a href="#">формой обратной связи</a> или свяжитесь с нами по телефону горячей линии</div>
+						<div class="b-needhelp__bottom">
+							<div class="b-shedule">
+								<div class="b-shedule__phone">8-800-100-00-00</div>
+								<div class="b-shedule__shedule">ежедневно<br>с 9:00 до 20:00</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="b-right">
+
+				<div class="b-advertising-top">
+					<a href="#"><img src="images/banner-01.jpg" /></a>
+				</div>
+
+				<div class="b-breadcrumb-search">
+					<li nk href="/bitrix/css/main/font-awesome.css?145318681428777" type="text/css" rel="stylesheet">
+						<div class="bx-breadcrumb">
+							<div class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+
+								<a href="/" title="Главная" itemprop="url">
+									<span itemprop="title">Главная</span>
+								</a>
+							</div>
+							<div class="bx-breadcrumb-item">
+								<i class="fa fa-angle-right"></i>
+								<span>Новости</span>
+							</div><div style="clear:both"></div></div> <div class="b-search-nomain">
+						<div class="b-search__text nomain-search">
+							<input class="b-search__inpfield nomain-search nomain-inp-text" type="text" value="">
+							<input class="b-search__submit nomain-search search-small-pict" type="submit" value="">
+						</div>
+					</div>
+				</div>
+
+				<div class="b-auction-public-block clearfix">
+					<div class="b-auction-public-block__purchase clearfix">
+						<div class="b-auction-public-block__purchase-left clearfix">
+							<h2 class="b-auction-public-block__title content-title">Закупка <span>№4545</span></h2>
+
+							<h3 class="b-auction-public-block__purchase-title content-title">Кронштейн для трала</h3>
+
+							<a class="b-auction-public-block__purchase-link text-little text-little--light" href="#">Спецификация на поставку</a>
+
+							<div class="b-auction-public-block__purchase-max-price text-little">
+								Лучшая (минимальная) цена закупки
+								<div class="b-auction-public-block__purchase-max-price-ru">
+									400 000 <span>руб.</span>
+								</div>
+								<div class="b-auction-public-block__purchase-max-price-eu">
+									6 031.4 <span>€</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="b-auction-public-block__purchase-right">
+							<div class="b-auction-public-block__purchase-category">
+								<div class="b-auction-public-block__purchase-category-title">Категория</div>
+								<div class="b-auction-public-block__purchase-category-val content-title-item">Судовое оборудование</div>
+							</div>
+
+							<div class="b-auction-public-block__purchase-posted">
+								Размещено сегодня в 10:45
+							</div>
+
+							<div class="b-auction-public-block__purchase-views">10 просмотров</div>
+
+							<div class="b-auction-public-block__purchase-info">
+								<div class="b-auction-public-block__purchase-info-item">
+									<div class="b-auction-public-block__purchase-info-item-title">Дата начала закупки</div>
+									<div class="b-auction-public-block__purchase-info-item-val b-auction-public-block__purchase-info-item-val--start">
+										15.09.2015 в <span>12:00</span>
+									</div>
+								</div>
+
+								<div class="b-auction-public-block__purchase-info-item">
+									<div class="b-auction-public-block__purchase-info-item-title">Вид сделки</div>
+									<div class="b-auction-public-block__purchase-info-item-val b-auction-public-block__purchase-info-item-val--kind">
+										любая
+									</div>
+								</div>
+
+								<div class="b-auction-public-block__purchase-info-item">
+									<div class="b-auction-public-block__purchase-info-item-title">Условия поставки</div>
+									<div class="b-auction-public-block__purchase-info-item-val b-auction-public-block__purchase-info-item-val--condition">
+										склад покупателя
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="b-auction-public-block__purchase-shipping-date b-auction-public-block__purchase-shipping-date--out clearfix">
+							<div class="b-auction-public-block__purchase-shipping-date-title b-auction-public-block__purchase-shipping-date--out-title text-little text-little--light">Дата поставки</div>
+							<div class="b-auction-public-block__purchase-shipping-date-val b-auction-public-block__purchase-shipping-date--out-val text-little">31.10.2015</div>
+						</div>
+
+						<div class="b-auction-public-block__purchase-shipping-address clearfix">
+							<div class="b-auction-public-block__purchase-shipping-address-title text-little text-little--light">Адрес поставки</div>
+							<div class="b-auction-public-block__purchase-shipping-address-val text-little">Россия, город Санкт-Петербург, ул. Лесная, дом 45</div>
+						</div>
+
+						<div class="b-auction-public-block__protocol"><a href="#" class="b-auction-public-block__protocol-download">Скачать протокол</a>
+							<h3 class="b-auction-public-block__protocol-title form-text">Протокол подведения итогов закупки</h3>
+							<table class="b-auction-public-block__protocol-table-info">
+								<tr>
+									<td class="text-little text-little--light">Покупатель</td>
+									<td class="text-little text-little--light">Александр К.</td>
+								</tr>
+								<tr>
+									<td class="text-little text-little--light">Наименование закупки</td>
+									<td class="text-little text-little--light">Кронштейн для трапа</td>
+								</tr>
+								<tr>
+									<td class="text-little text-little--light">Категория товара</td>
+									<td class="text-little text-little--light">Судовое оборудование</td>
+								</tr>
+								<tr>
+									<td class="text-little text-little--light">Дата и время начала закупки</td>
+									<td class="text-little text-little--light">15.09.2015 в 12:00</td>
+								</tr>
+								<tr>
+									<td class="text-little text-little--light">Тип закупки</td>
+									<td class="text-little text-little--light">Открытый</td>
+								</tr>
+								<tr>
+									<td class="text-little text-little--light">Шаг закупки</td>
+									<td class="text-little text-little--light">пост. 5 минут</td>
+								</tr>
+								<tr>
+									<td class="text-little text-little--light">Шаг по цене</td>
+									<td class="text-little text-little--light">10%</td>
+								</tr>
+								<tr>
+									<td class="text-little text-little--light">Фиксация окончания</td>
+									<td class="text-little text-little--light">Последняя ставка</td>
+								</tr>
+								<tr>
+									<td class="text-little text-little--light">Способ оплаты товара</td>
+									<td class="text-little text-little--light">Прямая сделка</td>
+								</tr>
+								<tr>
+									<td class="text-little text-little--light">Приложение с заявкой</td>
+									<td class="text-little text-little--light">Есть</td>
+								</tr>
+								<tr>
+									<td class="text-little text-little--light">Место и дата поставки</td>
+									<td class="text-little text-little--light">РФ, Санкт-Петербург, Торговый порт, причал №5</td>
+								</tr>
+								<tr>
+									<td class="text-little text-little--light">Особые условия</td>
+									<td class="text-little text-little--light">оформление таможни</td>
+								</tr>
+								<tr>
+									<td class="text-little text-little--light">Начальная цена, руб.</td>
+									<td class="text-little text-little--light">400 000</td>
+								</tr>
+								<tr>
+									<td class="text-little text-little--light">Окончание закупки</td>
+									<td class="text-little text-little--light">15 минут с момента последней ставки</td>
+								</tr>
+							</table>
+
+							<table class="b-auction-public-block__protocol-table-results">
+								<tr class="b-auction-public-block__protocol-table-results-header">
+									<th rowspan="2" class="b-auction-public-block__protocol-table-results-header-first">Участник</th>
+									<th rowspan="2" class="b-auction-public-block__protocol-table-results-header-second">Рейтинг</th>
+									<th colspan="3" class="b-auction-public-block__protocol-table-results-header-third center"><span>Ставки участников</span></th>
+									<th rowspan="2" class="b-auction-public-block__protocol-table-results-header-fourth">Результаты<br> закупки</th>
+									<th rowspan="2" class="b-auction-public-block__protocol-table-results-header-fifth">Лучшее предложение</th>
+								</tr>
+								<tr class="header">
+									<th>
+										<div class="b-auction-public-block__protocol-table-results-step">1 шаг</div>
+										<div class="b-auction-public-block__protocol-table-results-period">12:00-12:05</div>
+									</th>
+									<th>
+										<div class="b-auction-public-block__protocol-table-results-step">2 шаг</div>
+										<div class="b-auction-public-block__protocol-table-results-period">12:10-12:15</div>
+									</th>
+									<th>
+										<div class="b-auction-public-block__protocol-table-results-step">3 шаг</div>
+										<div class="b-auction-public-block__protocol-table-results-period">12:20-12:25</div>
+									</th>
+								</tr>
+								<tr class="tr">
+									<td class="user text-little text-little--light">Участник №1</td>
+									<td class="rating text-little text-little--light">4</td>
+									<td>330 000</td>
+									<td>снялся</td>
+									<td>снялся</td>
+									<td class="result-price"><span>330 000</span></td>
+									<td></td>
+								</tr>
+								<tr class="tr">
+									<td class="user text-little text-little--light">Участник №2</td>
+									<td class="rating text-little text-little--light">5</td>
+									<td>300 000</td>
+									<td>290 000</td>
+									<td>270 000</td>
+									<td class="result-price"><span>270 000</span></td>
+									<td></td>
+								</tr>
+								<tr class="tr b-auction-public-block__protocol-table-results-winner">
+									<td class="user text-little text-little--light">Участник №3</td>
+									<td class="rating text-little text-little--light">3</td>
+									<td>350 000</td>
+									<td>276 000</td>
+									<td>266 000</td>
+									<td class="result-price"><span>266 000</span></td>
+									<td>260 000</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+
+					<div class="b-auction-public-active-block b-auction-public-block__winner">
+						<div class="b-auction-public-block__winner-title">Победитель закупки</div>
+
+						<div class="b-auction-public-block__buyer-info clearfix">
+
+							<div class="b-auction-public-block__buyer-photo">
+								<img src="images/b-auction-public-block__buyer-photo.png" alt="b-auction-public-block__buyer-photo">
+							</div>
+							<div class="b-auction-public-block__buyer-name">Игорь К.</div>
+
+							<div class="b-auction-public-block__buyer-city">Сакнт-Петербург</div>
+
+							<div class="b-auction-public-block__buyer-rating">
+								<div class="b-auction-public-block__buyer-rating-title">Рейтинг победителя</div>
+								<span></span><span></span><span></span><span></span>
+							</div>
+						</div>
+
+						<a class="b-auction-public-block__buyer-btn b-auction-public-block__buyer-btn--ask blue_button" href="#">Задать вопрос победителю</a>
+
+						<a class="b-auction-public-block__buyer-btn b-auction-public-block__buyer-btn--complain shadow_button" href="#">Отменить закупку</a>
+
+						<p class="b-auction-public-block__buyer-attention">
+							Внимание! Внимательно ознакомьтесь с <a class="b-auction-public-block__buyer-attention-link" href="#">правилами отмены закупки</a>
+						</p>
+
+						<form action="#" method="get" class="b-auction-public-block__complete-deal">
+							<p class="b-auction-public-block__complete-deal-text">
+								Вы участвуете в этом аукционе.<br>
+								Если сделка уже совершена, вам необходимо подтвердить проведение сделки. Выполните ряд последующих действий  и нажмите <span>«Завершить сделку»</span>
+							</p>
+							<p class="b-auction-public-block__complete-deal-text">Поставьте Александру оценку за качество проведения сделки</p>
+							<input type="text" name="b-auction-public-block__complete-deal-rate" id="b-auction-public-block__complete-deal-rate" pattern="[1-5]{1}" class="b-auction-public-block__complete-deal-rate type-text-shadow-sim"/>
+							<div class="b-auction-public-block__complete-deal-note">от 1 до 5</div>
+							<label for="b-auction-public-block__complete-deal-comment" class="b-auction-public-block__complete-deal-comment-label">Оставьте свой отзыв</label>
+							<textarea name="b-auction-public-block__complete-deal-comment" id="b-auction-public-block__complete-deal-comment" class="b-auction-public-block__complete-deal-comment type-text-shadow-sim"></textarea>
+							<label for="b-auction-public-block__complete-deal-sum" class="b-auction-public-block__complete-deal-sum-label">Сумма сделки</label>
+							<input type="text" name="b-auction-public-block__complete-deal-sum" id="b-auction-public-block__complete-deal-sum" class="b-auction-public-block__complete-deal-sum type-text-shadow-sim"/>
+							<div class="b-auction-public-block__complete-deal-currency jq-selectbox-main disabled">
+								<div class="disabled"></div>
+								<select name="b-auction-public-block__complete-deal-currency-select" id-="b-auction-public-block__complete-deal-currency-select">
+									<option value="1">рублей</option>
+									<option value="2">долларов</option>
+									<option value="3">евро</option>
+									<option value="4">фунтов</option>
+								</select>
+							</div>
+							<input name="b-auction-public-block__complete-deal-submit" id="b-auction-public-block__complete-deal-submit" value="Завершить сделку" class="b-auction-public-block__complete-deal-submit brown_button"/>
+						</form>
+
+						<form action="#" method="get" class="b-auction-public-block__send-claim">
+							<p class="b-auction-public-block__send-claim-text">Если вы остались <span>недовольны</span> результатом сделки, мы рассмотрим вашу заявку и примем  меры для урегирулирования вопроса:</p>
+							<input type="checkbox" name="b-auction-public-block__send-claim-check" id="b-auction-public-block__send-claim-check" class="b-auction-public-block__send-claim-check input-checkbox"/>
+							<label for="b-auction-public-block__send-claim-check" class="b-auction-public-block__send-claim-check-label label-checkbox">Я недоволен результатом сделки, прошу рассмотреть мою заявку</label>
+							<div class="b-auction-public-block__send-claim-block">
+								<p class="b-auction-public-block__send-claim-block-info">Перед заполнением Акта расторжения сделки внимательно прочитайте<a href="#">Протокол проведения закупки</a></p>
+								<p class="b-auction-public-block__send-claim-block-text">Пожалуйста, заполните <a href='#'>Акт о расторжении договора</a> и отправьте его вместе с заявкой на рассмотрение</p>
+								<label for="b-auction-public-block__send-claim-block-textarea" class="b-auction-public-block__send-claim-block-textarea-label">Ваш комментарий</label>
+								<textarea name="b-auction-public-block__send-claim-block-textarea" id="b-auction-public-block__send-claim-block-textarea" class="b-auction-public-block__send-claim-block-textarea type-text-shadow-sim"></textarea>
+								<input type="file" name="b-auction-public-block__send-claim-block-file" id="b-auction-public-block__send-claim-block-file" class="b-auction-public-block__send-claim-block-file"/>
+								<label for="b-auction-public-block__send-claim-block-file" class="b-auction-public-block__send-claim-block-file-label">Загрузить акт</label>
+								<div class="b-auction-public-block__send-claim-block-note">1 вложение</div><a href="#" class="b-auction-public-block__send-claim-block-attachment">Акт о расторжении договора.doc</a>
+							</div>
+							<input type="submit" name="b-auction-public-block__send-claim-submit" id="b-auction-public-block__send-claim-submit" value="Отправить претензию" disabled="disabled" class="b-auction-public-block__send-claim-submit shadow_button"/>
+						</form>
+					</div>
+				</div>
+
+				<div class="b-advertising-bottom">
+					<div class="b-advertising-bottom__banner banner-02"><a href="#"><img src="images/examples/banner2.png" /></a></div>
+					<div class="b-advertising-bottom__banner banner-03"><a href="#"><img src="images/examples/banner3.png" /></a></div>
+				</div>
+
+			</div>
+
+			<div class="b-bottom-menu">
+				<nav>
+					<div class="b-menu-main"><!--b-menu_link_active-->
+						<div  class='b-menu-main__link'>
+							<a href="#">О портале</a>
+						</div>
+						<div  class='b-menu-main__link'>
+							<a href="#">Услуги портала</a>
+						</div>
+						<div  class='b-menu-main__link'>
+							<a href="#">Новости</a>
+						</div>
+						<div  class='b-menu-main__link'>
+							<a href="#">Реклама</a>
+						</div>
+						<div  class='b-menu-main__link'>
+							<a href="#">Контакты</a>
+						</div>
+						<div  class='b-menu-main__link'>
+							<a href="#">Дилеры</a>
+						</div>
+						<div  class='b-menu-main__link'>
+							<a href="#">shipstoresbonus</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+			<div class="b-footer">
+				<div class="b-footer-cr">
+					<div class="b-footer-cr__copy">© 2015 ShipStores</div>
+					<div class="b-footer-cr__bitrix"><img src="images/bitrix.png" /></div>
+					<div class="b-footer-cr__menu">
+						<a href="#">Закупки</a>
+						<a href="#">Магазины</a>
+						<a href="#">Объявления</a>
+					</div>
+					<div class="b-footer-cr__7studio">
+						<p><a href="//7sait.spb.ru/services/sozdanie-saitov/" title="Разработка сайтов">Разработка сайта: «7 Студио»</a></p>
+						<p><a href="//7sait.spb.ru/services/internet-marketing/" title="Продвижение сайтов">Продвижение сайта: «7 Студио»</a></p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="b-static-stripe">
+			<div class="b-your-blue">
+				<div class="b-your-blue__feedback my-divs">
+					<div class="form-button js-call-form">обратная связь</div>
+				</div>
+				<div class="b-your-blue__info my-divs b-your-blue__infofirst">
+					<div class="b-my-info">
+						<div class="b-my-info__icon icon-purchase"></div>
+						<div class="b-my-info__name"><a href="#">Закупки, в которых вы участвуете</a></div>
+						<div class="b-my-info__count">4</div>
+					</div>
+				</div>
+				<div class="b-your-blue__info my-divs">
+					<div class="b-my-info">
+						<div class="b-my-info__icon icon-notice"></div>
+						<div class="b-my-info__name"><a href="#">Размещено объявлений</a></div>
+						<div class="b-my-info__count">4</div>
+					</div>
+				</div>
+				<div class="b-your-blue__info my-divs">
+					<div class="b-my-info">
+						<div class="b-my-info__icon icon-favorites"></div>
+						<div class="b-my-info__name"><a href="#">Избранное</a></div>
+						<div class="b-my-info__count">4</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/jquery.formstyler.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/contacts.js"></script>
+
+	</body>
+</html>
