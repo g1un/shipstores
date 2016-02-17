@@ -362,6 +362,53 @@ $(document).ready(function() {
     });
   }
   /*end of disabling of b-auction-public-block__send-claim*/
+
+  /*map in b-auction-public-block__purchase-shipping-address-map*/
+  if($('.b-auction-public-block__purchase-shipping-address-map').length){
+
+    function init () {
+      var myMap = new ymaps.Map("map", {
+        center: [59.937314,30.315472],
+        zoom: 11
+      }),
+
+      // Создаем метку с помощью вспомогательного класса.
+      myPlacemark1 = new ymaps.Placemark([59.937314,30.315472], {
+        hintContent: '',
+        //balloonContent: ''
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#image',
+        // Своё изображение иконки метки.
+        iconImageHref: 'images/create-purchase-map-icon.png',
+        // Размеры метки.
+        iconImageSize: [39, 38],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-3, -42]
+      });
+
+      //myMap.controls.add('smallZoomControl');
+      // Добавляем все метки на карту.
+      myMap.geoObjects
+      .add(myPlacemark1);
+    }
+
+    ymaps.ready(init);
+  }
+  /*end of map in b-auction-public-block__purchase-shipping-address-map*/
+
+	/*close/open map in b-auction-public-block__purchase-shipping-address-map*/
+	if($('.b-auction-public-block__purchase-shipping-address-map').length){
+		var shippingAddressMapBtn = $('.b-auction-public-block__purchase-shipping-address-val');
+		var shippingAddress = $('.b-auction-public-block__purchase-shipping-address');
+
+		shippingAddressMapBtn.on('click', function(){
+			shippingAddress.toggleClass('opened');
+		});
+	}
+	/*end of close/open map in b-auction-public-block__purchase-shipping-address-map*/
 });
 /*end of contacts.js*/
 

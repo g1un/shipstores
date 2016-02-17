@@ -204,11 +204,29 @@
             td{
 
               &:first-child{
-                width: 188px;
+                width: 125px;
               }
 
               &:nth-child(2){
-                width: 0;
+                width: 83px;
+                background: none;
+                font-family: NeueHaas_light, Helvetica, sans-serif;
+                font-size: 12px;
+                line-height: 1.2em;
+                font-weight: 400;
+                color: #8b0333;
+                text-transform: none;
+                text-decoration: none;
+                letter-spacing: 0;
+              }
+
+              &:nth-child(3){
+                width: 110px;
+                background: none;
+              }
+
+              &:last-child{
+                width: 209px;
               }
             }
           }
@@ -251,6 +269,45 @@
       text-decoration: none;
       letter-spacing: 0;
       padding: 0 19px;
+    }
+
+    &-name{
+      font-family: NeueHaas_medium, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #000;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      margin: 0 0 6px 0;
+    }
+
+    &-rating{
+      font-size: 0;
+      line-height: 0;
+      margin: 0;
+
+      &-title{
+        font-family: NeueHaas_light-it, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #959595;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        margin: 0 0 6px;
+      }
+
+      span{
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 3px 0 0;
+        width: 16px;
+        height: 16px;
+        background: url("../images/yellow-star.png") no-repeat 0 0;
+      }
     }
   }
 }

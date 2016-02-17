@@ -1040,6 +1040,9 @@
 
 /*end of b-auction-public-block*/
 /*b-auction-public--offers-request-block*/
+.b-auction-public-block__purchase {
+  overflow: hidden;
+}
 .b-auction-public-block__purchase-step {
   margin: 0 0 84px;
   position: relative;
@@ -1102,7 +1105,7 @@
 }
 .b-auction-public-block__purchase-shipping-date--out {
   clear: both;
-  margin-bottom: 14px;
+  margin-bottom: 4px;
 }
 .b-auction-public-block__purchase-shipping-date--out-title {
   margin: 0 82px 0 0;
@@ -1111,8 +1114,18 @@
   float: left;
 }
 .b-auction-public-block__purchase-shipping-address {
-  margin: 0 0 0 17px;
+  padding: 10px 0 0 17px;
   position: relative;
+}
+.b-auction-public-block__purchase-shipping-address.opened {
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.15);
+}
+.b-auction-public-block__purchase-shipping-address.opened::before {
+  border-bottom: 7px solid #8b0333;
+  border-top: none;
+}
+.b-auction-public-block__purchase-shipping-address.opened .b-auction-public-block__purchase-shipping-address-map {
+  display: block;
 }
 .b-auction-public-block__purchase-shipping-address-title {
   float: left;
@@ -1121,17 +1134,31 @@
 .b-auction-public-block__purchase-shipping-address-val {
   float: left;
   margin: 0;
+  cursor: pointer;
 }
 .b-auction-public-block__purchase-shipping-address::before {
   content: '';
   position: absolute;
-  top: 5px;
+  top: 15px;
   right: 28px;
   width: 0;
   height: 0;
   border-top: 7px solid #8b0333;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
+}
+.b-auction-public-block__purchase-shipping-address-map {
+  display: none;
+  clear: both;
+  padding: 10px 0 12px;
+  width: 526px;
+  height: 165px;
+}
+.b-auction-public-block__purchase-shipping-address-map #map {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
 }
 .b-auction-public-block__purchase-make-offer--center {
   margin-right: 0;

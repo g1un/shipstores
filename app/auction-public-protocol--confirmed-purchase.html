@@ -169,9 +169,9 @@
 							<a class="b-auction-public-block__purchase-link text-little text-little--light" href="#">Спецификация на поставку</a>
 
 							<div class="b-auction-public-block__purchase-max-price text-little">
-								Максимальная цена закупки
+								Лучшая (минимальная) цена закупки
 								<div class="b-auction-public-block__purchase-max-price-ru">
-									400 000 <span>руб.</span>
+									266 000 <span>руб.</span>
 								</div>
 								<div class="b-auction-public-block__purchase-max-price-eu">
 									6 031.4 <span>€</span>
@@ -340,7 +340,10 @@
 							</table>
 						</div>
 					</div>
+
 					<div class="b-auction-public-block__buyer">
+						<div class="b-auction-public-block__buyer-purchase-confirmed form-text">Эта покупка состоялась</div>
+
 						<div class="b-auction-public-block__buyer-title">Покупатель</div>
 
 						<div class="b-auction-public-block__buyer-info clearfix">
@@ -358,52 +361,17 @@
 							</div>
 						</div>
 
-						<a class="b-auction-public-block__buyer-btn b-auction-public-block__buyer-btn--ask blue_button" href="#">Задать вопрос Александру</a>
+						<div class="b-auction-public-block__winner-title">Победитель</div>
 
-						<a class="b-auction-public-block__buyer-btn b-auction-public-block__buyer-btn--favourite blue_button blue_button--dark" href="#">Добавить в избранное</a>
+						<div class="b-auction-public-block__winner-info clearfix">
+							<div class="b-auction-public-block__winner-name">Участник №3</div>
 
-						<a class="b-auction-public-block__buyer-btn b-auction-public-block__buyer-btn--complain shadow_button" href="#">Пожаловаться на закупку</a>
+							<div class="b-auction-public-block__winner-rating">
+								<div class="b-auction-public-block__winner-rating-title">Средняя оценка</div>
+								<span></span><span></span><span></span><span></span>
+							</div>
+						</div>
 					</div>
-
-					<form action="#" method="get" class="b-auction-public-block__complete-deal">
-						<p class="b-auction-public-block__complete-deal-text">
-							Вы участвуете в этом аукционе.<br>
-							Если сделка уже совершена, вам необходимо подтвердить проведение сделки. Выполните ряд последующих действий  и нажмите <span>«Завершить сделку»</span>
-						</p>
-						<p class="b-auction-public-block__complete-deal-text">Поставьте Александру оценку за качество проведения сделки</p>
-						<input type="text" name="b-auction-public-block__complete-deal-rate" id="b-auction-public-block__complete-deal-rate" pattern="[1-5]{1}" class="b-auction-public-block__complete-deal-rate type-text-shadow-sim"/>
-						<div class="b-auction-public-block__complete-deal-note">от 1 до 5</div>
-						<label for="b-auction-public-block__complete-deal-comment" class="b-auction-public-block__complete-deal-comment-label">Оставьте свой отзыв</label>
-						<textarea name="b-auction-public-block__complete-deal-comment" id="b-auction-public-block__complete-deal-comment" class="b-auction-public-block__complete-deal-comment type-text-shadow-sim"></textarea>
-						<label for="b-auction-public-block__complete-deal-sum" class="b-auction-public-block__complete-deal-sum-label">Сумма сделки</label>
-						<input type="text" name="b-auction-public-block__complete-deal-sum" id="b-auction-public-block__complete-deal-sum" class="b-auction-public-block__complete-deal-sum type-text-shadow-sim"/>
-						<div class="b-auction-public-block__complete-deal-currency jq-selectbox-main disabled">
-							<div class="disabled"></div>
-							<select name="b-auction-public-block__complete-deal-currency-select" id-="b-auction-public-block__complete-deal-currency-select">
-								<option value="1">рублей</option>
-								<option value="2">долларов</option>
-								<option value="3">евро</option>
-								<option value="4">фунтов</option>
-							</select>
-						</div>
-						<input name="b-auction-public-block__complete-deal-submit" id="b-auction-public-block__complete-deal-submit" value="Завершить сделку" class="b-auction-public-block__complete-deal-submit brown_button"/>
-					</form>
-
-					<form action="#" method="get" class="b-auction-public-block__send-claim">
-						<p class="b-auction-public-block__send-claim-text">Если вы остались <span>недовольны</span> результатом сделки, мы рассмотрим вашу заявку и примем  меры для урегирулирования вопроса:</p>
-						<input type="checkbox" name="b-auction-public-block__send-claim-check" id="b-auction-public-block__send-claim-check" class="b-auction-public-block__send-claim-check input-checkbox"/>
-						<label for="b-auction-public-block__send-claim-check" class="b-auction-public-block__send-claim-check-label label-checkbox">Я недоволен результатом сделки, прошу рассмотреть мою заявку</label>
-						<div class="b-auction-public-block__send-claim-block">
-							<p class="b-auction-public-block__send-claim-block-info">Перед заполнением Акта расторжения сделки внимательно прочитайте<a href="#">Протокол проведения закупки</a></p>
-							<p class="b-auction-public-block__send-claim-block-text">Пожалуйста, заполните <a href='#'>Акт о расторжении договора</a> и отправьте его вместе с заявкой на рассмотрение</p>
-							<label for="b-auction-public-block__send-claim-block-textarea" class="b-auction-public-block__send-claim-block-textarea-label">Ваш комментарий</label>
-							<textarea name="b-auction-public-block__send-claim-block-textarea" id="b-auction-public-block__send-claim-block-textarea" class="b-auction-public-block__send-claim-block-textarea type-text-shadow-sim"></textarea>
-							<input type="file" name="b-auction-public-block__send-claim-block-file" id="b-auction-public-block__send-claim-block-file" class="b-auction-public-block__send-claim-block-file"/>
-							<label for="b-auction-public-block__send-claim-block-file" class="b-auction-public-block__send-claim-block-file-label">Загрузить акт</label>
-							<div class="b-auction-public-block__send-claim-block-note">1 вложение</div><a href="#" class="b-auction-public-block__send-claim-block-attachment">Акт о расторжении договора.doc</a>
-						</div>
-						<input type="submit" name="b-auction-public-block__send-claim-submit" id="b-auction-public-block__send-claim-submit" value="Отправить претензию" disabled="disabled" class="b-auction-public-block__send-claim-submit shadow_button"/>
-					</form>
 				</div>
 
 				<div class="b-advertising-bottom">

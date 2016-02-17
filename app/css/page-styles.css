@@ -1304,6 +1304,19 @@
   .b-auction-public-block__buyer {
     float: right;
     width: 248px; }
+    .b-auction-public-block__buyer-purchase-confirmed {
+      margin: 0;
+      padding: 56px 0 27px;
+      text-align: center;
+      position: relative; }
+      .b-auction-public-block__buyer-purchase-confirmed::before {
+        content: '';
+        position: absolute;
+        top: 24px;
+        left: 112px;
+        width: 23px;
+        height: 25px;
+        background: url("../images/hammer.png") no-repeat 0 0; }
     .b-auction-public-block__buyer-info {
       margin: 0 0 36px; }
     .b-auction-public-block__buyer-title {
@@ -1394,97 +1407,113 @@
 
 /*end of b-auction-public-block*/
 /*b-auction-public--offers-request-block*/
-.b-auction-public-block__purchase-step {
-  margin: 0 0 84px;
-  position: relative; }
-  .b-auction-public-block__purchase-step-val {
-    float: left;
-    margin: 6px 27px 0 32px;
-    font-family: NeueHaas_reg, Helvetica, sans-serif;
-    font-size: 20px;
-    line-height: 1.2em;
-    font-weight: 400;
-    color: #8b0333;
-    text-transform: none;
-    text-decoration: none;
-    letter-spacing: 0;
+.b-auction-public-block__purchase {
+  overflow: hidden; }
+  .b-auction-public-block__purchase-step {
+    margin: 0 0 84px;
     position: relative; }
-    .b-auction-public-block__purchase-step-val::before {
+    .b-auction-public-block__purchase-step-val {
+      float: left;
+      margin: 6px 27px 0 32px;
+      font-family: NeueHaas_reg, Helvetica, sans-serif;
+      font-size: 20px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #8b0333;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      position: relative; }
+      .b-auction-public-block__purchase-step-val::before {
+        content: '';
+        position: absolute;
+        top: -6px;
+        left: -13px;
+        width: 50px;
+        height: 47px;
+        background: url("../images/b-auction-public-block__purchase-step-val.png") no-repeat 0 0; }
+    .b-auction-public-block__purchase-step-units {
+      float: left;
+      margin: 0;
+      padding: 2px 0 3px;
+      width: 49px;
+      font-family: NeueHaas_light, Helvetica, sans-serif;
+      font-size: 8px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #fff;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0;
+      text-align: center;
+      background: #8b0333;
+      border-radius: 8px;
+      position: absolute;
+      top: 35px;
+      left: 18px; }
+    .b-auction-public-block__purchase-step-title {
+      padding: 16px 0 0;
+      font-family: NeueHaas_light-it, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #464646;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+  .b-auction-public-block__purchase-left {
+    margin-bottom: 0; }
+  .b-auction-public-block__purchase-shipping-date--out {
+    clear: both;
+    margin-bottom: 4px; }
+    .b-auction-public-block__purchase-shipping-date--out-title {
+      margin: 0 82px 0 0; }
+    .b-auction-public-block__purchase-shipping-date--out-val {
+      float: left; }
+  .b-auction-public-block__purchase-shipping-address {
+    padding: 10px 0 0 17px;
+    position: relative; }
+    .b-auction-public-block__purchase-shipping-address.opened {
+      box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.15); }
+      .b-auction-public-block__purchase-shipping-address.opened::before {
+        border-bottom: 7px solid #8b0333;
+        border-top: none; }
+      .b-auction-public-block__purchase-shipping-address.opened .b-auction-public-block__purchase-shipping-address-map {
+        display: block; }
+    .b-auction-public-block__purchase-shipping-address-title {
+      float: left;
+      margin: 0 72px 0 0; }
+    .b-auction-public-block__purchase-shipping-address-val {
+      float: left;
+      margin: 0;
+      cursor: pointer; }
+    .b-auction-public-block__purchase-shipping-address::before {
       content: '';
       position: absolute;
-      top: -6px;
-      left: -13px;
-      width: 50px;
-      height: 47px;
-      background: url("../images/b-auction-public-block__purchase-step-val.png") no-repeat 0 0; }
-  .b-auction-public-block__purchase-step-units {
-    float: left;
-    margin: 0;
-    padding: 2px 0 3px;
-    width: 49px;
-    font-family: NeueHaas_light, Helvetica, sans-serif;
-    font-size: 8px;
-    line-height: 1.2em;
-    font-weight: 400;
-    color: #fff;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0;
-    text-align: center;
-    background: #8b0333;
-    border-radius: 8px;
-    position: absolute;
-    top: 35px;
-    left: 18px; }
-  .b-auction-public-block__purchase-step-title {
-    padding: 16px 0 0;
-    font-family: NeueHaas_light-it, Helvetica, sans-serif;
-    font-size: 12px;
-    line-height: 1.2em;
-    font-weight: 400;
-    color: #464646;
-    text-transform: none;
-    text-decoration: none;
-    letter-spacing: 0; }
-
-.b-auction-public-block__purchase-left {
-  margin-bottom: 0; }
-
-.b-auction-public-block__purchase-shipping-date--out {
-  clear: both;
-  margin-bottom: 14px; }
-  .b-auction-public-block__purchase-shipping-date--out-title {
-    margin: 0 82px 0 0; }
-  .b-auction-public-block__purchase-shipping-date--out-val {
-    float: left; }
-
-.b-auction-public-block__purchase-shipping-address {
-  margin: 0 0 0 17px;
-  position: relative; }
-  .b-auction-public-block__purchase-shipping-address-title {
-    float: left;
-    margin: 0 72px 0 0; }
-  .b-auction-public-block__purchase-shipping-address-val {
-    float: left;
-    margin: 0; }
-  .b-auction-public-block__purchase-shipping-address::before {
-    content: '';
-    position: absolute;
-    top: 5px;
-    right: 28px;
-    width: 0;
-    height: 0;
-    border-top: 7px solid #8b0333;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent; }
-
-.b-auction-public-block__purchase-make-offer--center {
-  margin-right: 0; }
-
-.b-auction-public-block__purchase-make-offer-link--center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
+      top: 15px;
+      right: 28px;
+      width: 0;
+      height: 0;
+      border-top: 7px solid #8b0333;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent; }
+    .b-auction-public-block__purchase-shipping-address-map {
+      display: none;
+      clear: both;
+      padding: 10px 0 12px;
+      width: 526px;
+      height: 165px; }
+      .b-auction-public-block__purchase-shipping-address-map #map {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0; }
+  .b-auction-public-block__purchase-make-offer--center {
+    margin-right: 0; }
+  .b-auction-public-block__purchase-make-offer-link--center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
 
 /*end of b-auction-public--offers-request-block*/
 /*b-bonus-block*/
@@ -4928,9 +4957,23 @@
     .b-auction-public-block__bets--seller-in-purchase.b-auction-public-block__bets .b-auction-public-block__bets-table th:first-child {
       text-align: left; }
     .b-auction-public-block__bets--seller-in-purchase.b-auction-public-block__bets .b-auction-public-block__bets-table td:first-child {
-      width: 188px; }
+      width: 125px; }
     .b-auction-public-block__bets--seller-in-purchase.b-auction-public-block__bets .b-auction-public-block__bets-table td:nth-child(2) {
-      width: 0; }
+      width: 83px;
+      background: none;
+      font-family: NeueHaas_light, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #8b0333;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+    .b-auction-public-block__bets--seller-in-purchase.b-auction-public-block__bets .b-auction-public-block__bets-table td:nth-child(3) {
+      width: 110px;
+      background: none; }
+    .b-auction-public-block__bets--seller-in-purchase.b-auction-public-block__bets .b-auction-public-block__bets-table td:last-child {
+      width: 209px; }
     .b-auction-public-block__bets--seller-in-purchase.b-auction-public-block__bets .b-auction-public-block__bets-make-offer-link {
       margin: 37px auto 0;
       width: 216px; }
@@ -4961,6 +5004,37 @@
     text-decoration: none;
     letter-spacing: 0;
     padding: 0 19px; }
+  .b-auction-public-block__winner-name {
+    font-family: NeueHaas_medium, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    margin: 0 0 6px 0; }
+  .b-auction-public-block__winner-rating {
+    font-size: 0;
+    line-height: 0;
+    margin: 0; }
+    .b-auction-public-block__winner-rating-title {
+      font-family: NeueHaas_light-it, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #959595;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      margin: 0 0 6px; }
+    .b-auction-public-block__winner-rating span {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0 3px 0 0;
+      width: 16px;
+      height: 16px;
+      background: url("../images/yellow-star.png") no-repeat 0 0; }
 
 /*end of b-auction-public-block--bets*/
 /*b-auction-public-block--protocol*/
@@ -5006,37 +5080,73 @@
     border-collapse: collapse;
     border: none;
     text-align: left; }
-    .b-auction-public-block__protocol-table-results .tr {
-      border-bottom: 1px solid #ededed; }
+    .b-auction-public-block__protocol-table-results tr {
+      border-top: 1px solid #ededed; }
+      .b-auction-public-block__protocol-table-results tr:nth-child(2) th {
+        padding: 4px 0 7px; }
+      .b-auction-public-block__protocol-table-results tr:first-child, .b-auction-public-block__protocol-table-results tr:nth-child(2), .b-auction-public-block__protocol-table-results tr:nth-child(3) {
+        border-top: none; }
+      .b-auction-public-block__protocol-table-results tr.b-auction-public-block__protocol-table-results-winner {
+        border-top: none;
+        background: #8b0333; }
+        .b-auction-public-block__protocol-table-results tr.b-auction-public-block__protocol-table-results-winner td {
+          font-family: NeueHaas_medium, Helvetica, sans-serif;
+          color: #fff; }
+          .b-auction-public-block__protocol-table-results tr.b-auction-public-block__protocol-table-results-winner td:first-child {
+            font-family: NeueHaas_light, Helvetica, sans-serif; }
+          .b-auction-public-block__protocol-table-results tr.b-auction-public-block__protocol-table-results-winner td:nth-child(2) {
+            font-family: NeueHaas_reg, Helvetica, sans-serif; }
+          .b-auction-public-block__protocol-table-results tr.b-auction-public-block__protocol-table-results-winner td:nth-child(6) {
+            font-family: NeueHaas_bold, Helvetica, sans-serif;
+            color: #8b0333;
+            padding: 7px 0; }
+            .b-auction-public-block__protocol-table-results tr.b-auction-public-block__protocol-table-results-winner td:nth-child(6) span {
+              display: block;
+              min-width: 73px;
+              margin: 0 auto;
+              padding: 8px 0;
+              background: #fff;
+              text-align: center; }
     .b-auction-public-block__protocol-table-results th {
-      padding: 0;
-      border: none;
-      height: 32px;
-      background: #f3f3f3; }
-    .b-auction-public-block__protocol-table-results-header {
-      background: #f3f3f3; }
-      .b-auction-public-block__protocol-table-results-header th {
-        vertical-align: middle;
-        font-family: NeueHaas_light, Helvetica, sans-serif;
-        font-size: 11px;
+      font-family: NeueHaas_light, Helvetica, sans-serif;
+      font-size: 11px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #898989;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      text-align: center;
+      background: #f3f3f3;
+      padding: 0; }
+      .b-auction-public-block__protocol-table-results th:nth-child(3) span {
+        display: block;
+        color: #464646;
+        text-align: center;
+        background: #fff;
+        margin: 2px 0 0;
+        padding: 4px 0 7px; }
+      .b-auction-public-block__protocol-table-results th .b-auction-public-block__protocol-table-results-step {
+        font-family: NeueHaas_reg, Helvetica, sans-serif;
+        font-size: 12px;
         line-height: 1.2em;
         font-weight: 400;
         color: #898989;
         text-transform: none;
         text-decoration: none;
         letter-spacing: 0;
-        text-align: center; }
-        .b-auction-public-block__protocol-table-results-header th.center span {
-          display: block;
-          margin: 0 auto;
-          padding: 8px 0 7px;
-          color: #464646;
-          background: #fff;
-          width: 207px; }
+        margin: 0 0 3px; }
+      .b-auction-public-block__protocol-table-results th .b-auction-public-block__protocol-table-results-period {
+        font-family: NeueHaas_light-it, Helvetica, sans-serif;
+        font-size: 10px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #8b0333;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0; }
     .b-auction-public-block__protocol-table-results td {
-      vertical-align: top;
-      margin: 0;
-      padding: 21px 0 14px;
+      padding: 15px 0;
       font-family: NeueHaas_reg, Helvetica, sans-serif;
       font-size: 12px;
       line-height: 1.2em;
@@ -5045,66 +5155,21 @@
       text-transform: none;
       text-decoration: none;
       letter-spacing: 0;
-      text-align: center;
-      border: none; }
-      .b-auction-public-block__protocol-table-results td.user {
+      text-align: center; }
+      .b-auction-public-block__protocol-table-results td:first-child {
+        width: 114px;
         font-family: NeueHaas_light, Helvetica, sans-serif;
         color: #000; }
-      .b-auction-public-block__protocol-table-results td:first-child {
-        width: 100px; }
       .b-auction-public-block__protocol-table-results td:nth-child(2) {
-        width: 63px; }
+        width: 50px;
+        font-family: NeueHaas_light, Helvetica, sans-serif;
+        color: #000; }
       .b-auction-public-block__protocol-table-results td:nth-child(3), .b-auction-public-block__protocol-table-results td:nth-child(4), .b-auction-public-block__protocol-table-results td:nth-child(5) {
         width: 69px; }
       .b-auction-public-block__protocol-table-results td:nth-child(6) {
-        width: 105px; }
+        width: 96px; }
       .b-auction-public-block__protocol-table-results td:last-child {
-        width: 89px; }
-    .b-auction-public-block__protocol-table-results-step {
-      font-family: NeueHaas_reg, Helvetica, sans-serif;
-      font-size: 12px;
-      line-height: 1.2em;
-      font-weight: 400;
-      color: #898989;
-      text-transform: none;
-      text-decoration: none;
-      letter-spacing: 0;
-      text-align: center;
-      background: #f3f3f3; }
-    .b-auction-public-block__protocol-table-results-period {
-      font-family: NeueHaas_light-it, Helvetica, sans-serif;
-      font-size: 10px;
-      line-height: 1.2em;
-      font-weight: 400;
-      color: #8b0333;
-      text-transform: none;
-      text-decoration: none;
-      letter-spacing: 0;
-      text-align: center;
-      background: #f3f3f3; }
-    .b-auction-public-block__protocol-table-results .rating {
-      font-family: NeueHaas_light, Helvetica, sans-serif; }
-    .b-auction-public-block__protocol-table-results-winner {
-      background: #8b0333; }
-      .b-auction-public-block__protocol-table-results-winner.tr {
-        border-bottom: none; }
-      .b-auction-public-block__protocol-table-results-winner .rating {
-        font-family: NeueHaas_reg, Helvetica, sans-serif; }
-      .b-auction-public-block__protocol-table-results-winner td {
-        font-family: NeueHaas_medium, Helvetica, sans-serif;
-        color: #fff; }
-        .b-auction-public-block__protocol-table-results-winner td.user {
-          color: #fff; }
-      .b-auction-public-block__protocol-table-results-winner .result-price span {
-        display: block;
-        font-family: NeueHaas_bold, Helvetica, sans-serif;
-        color: #8b0333;
-        background: #fff;
-        width: 73px;
-        min-height: 32px;
-        margin: -11px auto -4px;
-        padding: 11px 0 0;
-        box-sizing: border-box; }
+        width: 97px; }
 
 /*end of b-auction-public-block--protocol*/
 /*b-auction-public-block__complete_deal-send_claim*/

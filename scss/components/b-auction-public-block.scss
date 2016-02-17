@@ -334,6 +334,23 @@
     float: right;
     width: 248px;
 
+    &-purchase-confirmed{
+      margin: 0;
+      padding: 56px 0 27px;
+      text-align: center;
+      position: relative;
+
+      &::before{
+        content: '';
+        position: absolute;
+        top: 24px;
+        left: 112px;
+        width: 23px;
+        height: 25px;
+        background: url("../images/hammer.png") no-repeat 0 0;
+      }
+    }
+
     &-info{
       margin: 0 0 36px;
     }

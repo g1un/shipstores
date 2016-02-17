@@ -60,50 +60,110 @@
       border: none;
       text-align: left;
 
-      .tr{
-        border-bottom: 1px solid #ededed;
-      }
+      tr{
+        border-top: 1px solid #ededed;
 
-      th{
-        padding: 0;
-        border: none;
-        height: 32px;
-        background: #f3f3f3;
-      }
+        &:nth-child(2){
 
-      &-header{
-        background: #f3f3f3;
+          th{
+            padding: 4px 0 7px;
+          }
+        }
 
-        th{
-          vertical-align: middle;
-          font-family: NeueHaas_light, Helvetica, sans-serif;
-          font-size: 11px;
-          line-height: 1.2em;
-          font-weight: 400;
-          color: #898989;
-          text-transform: none;
-          text-decoration: none;
-          letter-spacing: 0;
-          text-align: center;
+        &:first-child,
+        &:nth-child(2),
+        &:nth-child(3){
+          border-top: none;
+        }
 
-          &.center{
-            
-            span{
-              display: block;
-              margin: 0 auto;
-              padding: 8px 0 7px;
-              color: #464646;
-              background: #fff;
-              width: 207px;
+        &.b-auction-public-block__protocol-table-results-winner{
+          border-top: none;
+          background: #8b0333;
+
+          td{
+            font-family: NeueHaas_medium, Helvetica, sans-serif;
+            color: #fff;
+
+            &:first-child{
+              font-family: NeueHaas_light, Helvetica, sans-serif;
+            }
+
+            &:nth-child(2){
+              font-family: NeueHaas_reg, Helvetica, sans-serif;
+            }
+
+            &:nth-child(6){
+              font-family: NeueHaas_bold, Helvetica, sans-serif;
+              color: #8b0333;
+              padding: 7px 0;
+              
+              span{
+                display: block;
+                min-width: 73px;
+                margin: 0 auto;
+                padding: 8px 0;
+                background: #fff;
+                text-align: center;
+              }
             }
           }
         }
       }
 
+      th{
+        font-family: NeueHaas_light, Helvetica, sans-serif;
+        font-size: 11px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #898989;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0;
+        text-align: center;
+        background: #f3f3f3;
+        padding: 0;
+        
+        &:nth-child(3){
+          
+          span{
+            display: block;
+            color: #464646;
+            text-align: center;
+            background: #fff;
+            margin: 2px 0 0;
+            padding: 4px 0 7px;
+          }
+        }
+
+        .b-auction-public-block__protocol-table-results{
+
+          &-step{
+            font-family: NeueHaas_reg, Helvetica, sans-serif;
+            font-size: 12px;
+            line-height: 1.2em;
+            font-weight: 400;
+            color: #898989;
+            text-transform: none;
+            text-decoration: none;
+            letter-spacing: 0;
+            margin: 0 0 3px;
+          }
+
+          &-period{
+            font-family: NeueHaas_light-it, Helvetica, sans-serif;
+            font-size: 10px;
+            line-height: 1.2em;
+            font-weight: 400;
+            color: #8b0333;
+            text-transform: none;
+            text-decoration: none;
+            letter-spacing: 0;
+          }
+        }
+      }
+
       td{
-        vertical-align: top;
-        margin: 0;
-        padding: 21px 0 14px;
+        padding: 15px 0;
         font-family: NeueHaas_reg, Helvetica, sans-serif;
         font-size: 12px;
         line-height: 1.2em;
@@ -113,19 +173,17 @@
         text-decoration: none;
         letter-spacing: 0;
         text-align: center;
-        border: none;
 
-        &.user{
-         font-family: NeueHaas_light, Helvetica, sans-serif;
+        &:first-child{
+          width: 114px;
+          font-family: NeueHaas_light, Helvetica, sans-serif;
           color: #000;
         }
 
-        &:first-child{
-          width: 100px;
-        }
-
         &:nth-child(2){
-          width: 63px;
+          width: 50px;
+          font-family: NeueHaas_light, Helvetica, sans-serif;
+          color: #000;
         }
 
         &:nth-child(3),
@@ -135,77 +193,11 @@
         }
 
         &:nth-child(6){
-          width: 105px;
+          width: 96px;
         }
 
         &:last-child{
-          width: 89px;
-        }
-      }
-
-      &-step{
-        font-family: NeueHaas_reg, Helvetica, sans-serif;
-        font-size: 12px;
-        line-height: 1.2em;
-        font-weight: 400;
-        color: #898989;
-        text-transform: none;
-        text-decoration: none;
-        letter-spacing: 0;
-        text-align: center;
-        background: #f3f3f3;
-      }
-
-      &-period{
-        font-family: NeueHaas_light-it, Helvetica, sans-serif;
-        font-size: 10px;
-        line-height: 1.2em;
-        font-weight: 400;
-        color: #8b0333;
-        text-transform: none;
-        text-decoration: none;
-        letter-spacing: 0;
-        text-align: center;
-        background: #f3f3f3;
-      }
-
-      .rating{
-        font-family: NeueHaas_light, Helvetica, sans-serif;
-      }
-      
-      &-winner{
-        background: #8b0333;
-
-        &.tr{
-          border-bottom: none;
-        }
-
-        .rating{
-          font-family: NeueHaas_reg, Helvetica, sans-serif;
-        }
-
-        td{
-          font-family: NeueHaas_medium, Helvetica, sans-serif;
-          color: #fff;
-
-          &.user{
-            color: #fff;
-          }
-        }
-
-        .result-price{
-
-          span{
-            display: block;
-            font-family: NeueHaas_bold, Helvetica, sans-serif;
-            color: #8b0333;
-            background: #fff;
-            width: 73px;
-            min-height: 32px;
-            margin: -11px auto -4px;
-            padding: 11px 0 0;
-            box-sizing: border-box;
-          }
+          width: 97px;
         }
       }
     }
