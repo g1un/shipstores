@@ -1,261 +1,261 @@
 /*contacts.js*/
 $(document).ready(function() {
-  if (document.querySelector('.jq-selectbox-main')) {
-    $('select').styler();
-  }
+	if (document.querySelector('.jq-selectbox-main')) {
+		$('select').styler();
+	}
 
-  /*deposit message*/
-  if ($('.deposit-message__wrapper').length) {
+	/*deposit message*/
+	if ($('.deposit-message__wrapper').length) {
 
-    var deposit = $('.deposit-message__wrapper');
-    var depositMsg = $('.deposit-message');
-    var depositBtn = $('.deposit-message__btn');
+		var deposit = $('.deposit-message__wrapper');
+		var depositMsg = $('.deposit-message');
+		var depositBtn = $('.deposit-message__btn');
 
-    function depositCss() {
-      if (window.innerHeight >= depositMsg.outerHeight()) {
-        var depositMargin = (window.innerHeight - depositMsg.outerHeight() - $('.b-static-stripe').outerHeight()) / 2;
-        depositMsg.css('margin-top', depositMargin);
-      }
-    }
+		function depositCss() {
+			if (window.innerHeight >= depositMsg.outerHeight()) {
+				var depositMargin = (window.innerHeight - depositMsg.outerHeight() - $('.b-static-stripe').outerHeight()) / 2;
+				depositMsg.css('margin-top', depositMargin);
+			}
+		}
 
-    depositCss();
+		depositCss();
 
-    $(window).on('resize', function () {
-      depositCss();
-    });
+		$(window).on('resize', function () {
+			depositCss();
+		});
 
-    depositBtn.on('click', function () {
-      deposit.css('display', 'none');
-    });
+		depositBtn.on('click', function () {
+			deposit.css('display', 'none');
+		});
 
-    deposit.mousedown(function (e) {
-      var clicked = $(e.target);
-      if (clicked.is('.deposit-message') || clicked.parents().is('.deposit-message')) {
-        return;
-      } else {
-        deposit.hide();
-      }
-    });
-  }
-  /*end of deposit message*/
+		deposit.mousedown(function (e) {
+			var clicked = $(e.target);
+			if (clicked.is('.deposit-message') || clicked.parents().is('.deposit-message')) {
+				return;
+			} else {
+				deposit.hide();
+			}
+		});
+	}
+	/*end of deposit message*/
 
-  /*disabling of starting price*/
-  if ($('.disabling-block').length){
-    var startingPriceBtn = $('.disabling-btn');
-    var startingPriceLabel = $('.disabling-label');
-    var startingPriceVal = $('.disabling-val');
-    var startingPriceCurrency = $('.disabling-currency');
+	/*disabling of starting price*/
+	if ($('.disabling-block').length){
+		var startingPriceBtn = $('.disabling-btn');
+		var startingPriceLabel = $('.disabling-label');
+		var startingPriceVal = $('.disabling-val');
+		var startingPriceCurrency = $('.disabling-currency');
 
-    function startingPriceOff(){
-      if (startingPriceBtn.is(':checked')){
-        startingPriceVal.prop('disabled', true);
-        startingPriceCurrency.addClass('disabled');
-      } else{
-        startingPriceVal.prop('disabled', false);
-        startingPriceCurrency.removeClass('disabled');
-      }
-    }
+		function startingPriceOff(){
+			if (startingPriceBtn.is(':checked')){
+				startingPriceVal.prop('disabled', true);
+				startingPriceCurrency.addClass('disabled');
+			} else{
+				startingPriceVal.prop('disabled', false);
+				startingPriceCurrency.removeClass('disabled');
+			}
+		}
 
-    startingPriceOff();
+		startingPriceOff();
 
-    startingPriceLabel.on('click', function(){
-      setTimeout(function () {startingPriceOff();}, 50);
-    });
-  }
-  /*end of disabling of starting price*/
+		startingPriceLabel.on('click', function(){
+			setTimeout(function () {startingPriceOff();}, 50);
+		});
+	}
+	/*end of disabling of starting price*/
 
-  /*disabling of shipping address*/
-  if ($('.disabling-address').length){
-    var addressEnabler = $('.address-enabler');
-    var addressDisabler = $('.address-disabler');
-    var disAddress = $('.disabling-address');
+	/*disabling of shipping address*/
+	if ($('.disabling-address').length){
+		var addressEnabler = $('.address-enabler');
+		var addressDisabler = $('.address-disabler');
+		var disAddress = $('.disabling-address');
 
-    function shippingAssressOff(){
-      if (addressEnabler.is(':checked')){
-        disAddress.prop('disabled', false);
-      } else{
-        disAddress.prop('disabled', true);
-      }
-    }
+		function shippingAssressOff(){
+			if (addressEnabler.is(':checked')){
+				disAddress.prop('disabled', false);
+			} else{
+				disAddress.prop('disabled', true);
+			}
+		}
 
-    shippingAssressOff();
+		shippingAssressOff();
 
-    addressEnabler.on('click', function(){
-      setTimeout(function () {shippingAssressOff();}, 50);
-    });
+		addressEnabler.on('click', function(){
+			setTimeout(function () {shippingAssressOff();}, 50);
+		});
 
-    addressDisabler.on('click', function(){
-      setTimeout(function () {shippingAssressOff();}, 50);
-    });
-  }
-  /*end of disabling of shipping address*/
+		addressDisabler.on('click', function(){
+			setTimeout(function () {shippingAssressOff();}, 50);
+		});
+	}
+	/*end of disabling of shipping address*/
 
-  /*map in create-purchase block*/
-  if($('.b-create-purchase-block__options-map').length){
+	/*map in create-purchase block*/
+	if($('.b-create-purchase-block__options-map').length){
 
-    function init () {
-      var myMap = new ymaps.Map("map", {
-        center: [59.937314,30.315472],
-        zoom: 11
-      }),
+		function init () {
+			var myMap = new ymaps.Map("map", {
+				center: [59.937314,30.315472],
+				zoom: 11
+			}),
 
-      // Создаем метку с помощью вспомогательного класса.
-      myPlacemark1 = new ymaps.Placemark([59.937314,30.315472], {
-        hintContent: '',
-        //balloonContent: ''
-      }, {
-        // Опции.
-        // Необходимо указать данный тип макета.
-        iconLayout: 'default#image',
-        // Своё изображение иконки метки.
-        iconImageHref: 'images/create-purchase-map-icon.png',
-        // Размеры метки.
-        iconImageSize: [39, 38],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
-        iconImageOffset: [-3, -42]
-      });
+			// Создаем метку с помощью вспомогательного класса.
+			myPlacemark1 = new ymaps.Placemark([59.937314,30.315472], {
+				hintContent: '',
+				//balloonContent: ''
+			}, {
+				// Опции.
+				// Необходимо указать данный тип макета.
+				iconLayout: 'default#image',
+				// Своё изображение иконки метки.
+				iconImageHref: 'images/create-purchase-map-icon.png',
+				// Размеры метки.
+				iconImageSize: [39, 38],
+				// Смещение левого верхнего угла иконки относительно
+				// её "ножки" (точки привязки).
+				iconImageOffset: [-3, -42]
+			});
 
-      //myMap.controls.add('smallZoomControl');
-      // Добавляем все метки на карту.
-      myMap.geoObjects
-      .add(myPlacemark1);
-    }
+			//myMap.controls.add('smallZoomControl');
+			// Добавляем все метки на карту.
+			myMap.geoObjects
+			.add(myPlacemark1);
+		}
 
-    ymaps.ready(init);
-  }
-  /*end of map in create-purchase block*/
+		ymaps.ready(init);
+	}
+	/*end of map in create-purchase block*/
 
-  /*map in ad-unit*/
-  if($('.b-ad-unit-block__map').length){
+	/*map in ad-unit*/
+	if($('.b-ad-unit-block__map').length){
 
-    function init () {
-      var myMap = new ymaps.Map("map", {
-        center: [59.937314,30.315472],
-        zoom: 11
-      }),
+		function init () {
+			var myMap = new ymaps.Map("map", {
+				center: [59.937314,30.315472],
+				zoom: 11
+			}),
 
-      // Создаем метку с помощью вспомогательного класса.
-      myPlacemark1 = new ymaps.Placemark([59.937314,30.315472], {
-        hintContent: '',
-        //balloonContent: ''
-      }, {
-        // Опции.
-        // Необходимо указать данный тип макета.
-        iconLayout: 'default#image',
-        // Своё изображение иконки метки.
-        iconImageHref: 'images/create-purchase-map-icon.png',
-        // Размеры метки.
-        iconImageSize: [39, 38],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
-        iconImageOffset: [-3, -42]
-      });
+			// Создаем метку с помощью вспомогательного класса.
+			myPlacemark1 = new ymaps.Placemark([59.937314,30.315472], {
+				hintContent: '',
+				//balloonContent: ''
+			}, {
+				// Опции.
+				// Необходимо указать данный тип макета.
+				iconLayout: 'default#image',
+				// Своё изображение иконки метки.
+				iconImageHref: 'images/create-purchase-map-icon.png',
+				// Размеры метки.
+				iconImageSize: [39, 38],
+				// Смещение левого верхнего угла иконки относительно
+				// её "ножки" (точки привязки).
+				iconImageOffset: [-3, -42]
+			});
 
-      //myMap.controls.add('smallZoomControl');
-      // Добавляем все метки на карту.
-      myMap.geoObjects
-      .add(myPlacemark1);
-    }
+			//myMap.controls.add('smallZoomControl');
+			// Добавляем все метки на карту.
+			myMap.geoObjects
+			.add(myPlacemark1);
+		}
 
-    ymaps.ready(init);
-  }
-  /*end of map in ad-unit*/
+		ymaps.ready(init);
+	}
+	/*end of map in ad-unit*/
 
-  /*price-offer*/
-  if ($(".js-fancy--close-on").length){
-    $(".js-fancy--close-on").fancybox({
-      padding: 0,
-      margin: 0,
-      autoCenter: true,
-      fitToView	: false,
-      openEffect	: 'fade',
-      helpers: {
-        overlay: {
-          locked: false,
-          css: {
-            'background': 'rgba(0,0,0,.24)',
-          }
-        }
-      },
-      tpl: {
-        closeBtn: '<div class="form-close"></div>',
-      }
-    });
-  }
-  /*end of price-offer*/
+	/*price-offer*/
+	if ($(".js-fancy--close-on").length){
+		$(".js-fancy--close-on").fancybox({
+			padding: 0,
+			margin: 0,
+			autoCenter: true,
+			fitToView	: false,
+			openEffect	: 'fade',
+			helpers: {
+				overlay: {
+					locked: false,
+					css: {
+						'background': 'rgba(0,0,0,.24)',
+					}
+				}
+			},
+			tpl: {
+				closeBtn: '<div class="form-close"></div>',
+			}
+		});
+	}
+	/*end of price-offer*/
 
-  /*b-post-ad-block__options-notes-popup*/
-  if ($('.b-post-ad-block__options-notes-popup').length){
-    var noteText = $('.b-post-ad-block__options-notes-text');
-    var notePopup = $('.b-post-ad-block__options-notes-popup');
-    var notePopupClose = $('.b-post-ad-block__options-notes-popup-close');
+	/*b-post-ad-block__options-notes-popup*/
+	if ($('.b-post-ad-block__options-notes-popup').length){
+		var noteText = $('.b-post-ad-block__options-notes-text');
+		var notePopup = $('.b-post-ad-block__options-notes-popup');
+		var notePopupClose = $('.b-post-ad-block__options-notes-popup-close');
 
-    noteText.on('focus', function(){
-      notePopup.css('display', 'block');
-    });
+		noteText.on('focus', function(){
+			notePopup.css('display', 'block');
+		});
 
-    notePopupClose.on('click', function(){
-      notePopup.css('display', 'none');
-    });
-  }
-  /*end of b-post-ad-block__options-notes-popup*/
+		notePopupClose.on('click', function(){
+			notePopup.css('display', 'none');
+		});
+	}
+	/*end of b-post-ad-block__options-notes-popup*/
 
-  /*b-ad-unit-block messages*/
-  if ($('.b-ad-unit-block__respond-opened').length){
-    var adUnitMessage = $('.b-ad-unit-block__respond-opened');
-    var adUnitMessageButton = $('.b-ad-unit-block__respond-messages');
+	/*b-ad-unit-block messages*/
+	if ($('.b-ad-unit-block__respond-opened').length){
+		var adUnitMessage = $('.b-ad-unit-block__respond-opened');
+		var adUnitMessageButton = $('.b-ad-unit-block__respond-messages');
 
-    for(var i=0; i<adUnitMessageButton.length; i++){
-      adUnitMessageButton[i].addEventListener('click', function(){
-        $(this).toggleClass('opened');
-        if($(this).hasClass('opened')){
-          $(this).next().css('display','block');
-        }else{
-          $(this).next().css('display','none');
-        }
-      });
-    }
+		for(var i=0; i<adUnitMessageButton.length; i++){
+			adUnitMessageButton[i].addEventListener('click', function(){
+				$(this).toggleClass('opened');
+				if($(this).hasClass('opened')){
+					$(this).next().css('display','block');
+				}else{
+					$(this).next().css('display','none');
+				}
+			});
+		}
 
-  }
-  /*end of b-ad-unit-block messages*/
+	}
+	/*end of b-ad-unit-block messages*/
 
-  /*purchase-confirm*/
-  if ($('.purchase-confirm__wrapper').length) {
+	/*purchase-confirm*/
+	if ($('.purchase-confirm__wrapper').length) {
 
-    var purchaseConfirm = $('.purchase-confirm__wrapper');
-    var purchaseConfirmMsg = $('.purchase-confirm');
-    var purchaseConfirmBtn = $('.purchase-confirm__close');
+		var purchaseConfirm = $('.purchase-confirm__wrapper');
+		var purchaseConfirmMsg = $('.purchase-confirm');
+		var purchaseConfirmBtn = $('.purchase-confirm__close');
 
-    function purchaseConfirmCss() {
-      if (window.innerHeight >= purchaseConfirmMsg.outerHeight()) {
-        var purchaseConfirmMargin = (window.innerHeight - purchaseConfirmMsg.outerHeight()) / 2;
-        purchaseConfirmMsg.css('margin-top', purchaseConfirmMargin);
-      }
-    }
+		function purchaseConfirmCss() {
+			if (window.innerHeight >= purchaseConfirmMsg.outerHeight()) {
+				var purchaseConfirmMargin = (window.innerHeight - purchaseConfirmMsg.outerHeight()) / 2;
+				purchaseConfirmMsg.css('margin-top', purchaseConfirmMargin);
+			}
+		}
 
-    purchaseConfirmCss();
+		purchaseConfirmCss();
 
-    $(window).on('resize', function () {
-      purchaseConfirmCss();
-    });
+		$(window).on('resize', function () {
+			purchaseConfirmCss();
+		});
 
-    purchaseConfirmBtn.on('click', function () {
-      purchaseConfirm.css('display', 'none');
-    });
+		purchaseConfirmBtn.on('click', function () {
+			purchaseConfirm.css('display', 'none');
+		});
 
-    purchaseConfirm.mousedown(function (e) {
-      var clicked = $(e.target);
-      if (clicked.is('.purchase-confirm') || clicked.parents().is('.purchase-confirm')) {
-        return;
-      } else {
-        purchaseConfirm.hide();
-      }
-    });
-  }
-  /*end of purchase-confirm*/
+		purchaseConfirm.mousedown(function (e) {
+			var clicked = $(e.target);
+			if (clicked.is('.purchase-confirm') || clicked.parents().is('.purchase-confirm')) {
+				return;
+			} else {
+				purchaseConfirm.hide();
+			}
+		});
+	}
+	/*end of purchase-confirm*/
 
-  /*currency*/
+	/*currency*/
 	if($('.b-head__currency-lang').length){
 		var currencyBtn = $('.b-head__currency');
 		var currencyList = $('.b-head__currency-list');
@@ -294,7 +294,7 @@ $(document).ready(function() {
 			});
 		}
 	}
-  /*end of currency*/
+	/*end of currency*/
 
 	/*lang*/
 	if($('.b-head__lang').length){
@@ -338,66 +338,66 @@ $(document).ready(function() {
 	}
 	/*end of lang*/
 
-  /*disabling of b-auction-public-block__send-claim*/
-  if ($('.b-auction-public-block__send-claim').length){
-    var claimSendCheck = $('.b-auction-public-block__send-claim-check');
-    var claimSendCheckLabel = $('.b-auction-public-block__send-claim-check-label');
-    var claimSendSubmit = $('.b-auction-public-block__send-claim-submit');
-    var claimSendBlock = $('.b-auction-public-block__send-claim-block');
+	/*disabling of b-auction-public-block__send-claim*/
+	if ($('.b-auction-public-block__send-claim').length){
+		var claimSendCheck = $('.b-auction-public-block__send-claim-check');
+		var claimSendCheckLabel = $('.b-auction-public-block__send-claim-check-label');
+		var claimSendSubmit = $('.b-auction-public-block__send-claim-submit');
+		var claimSendBlock = $('.b-auction-public-block__send-claim-block');
 
-    function claimSendOff(){
-      if (claimSendCheck.is(':checked')){
-	      claimSendSubmit.prop('disabled', false);
-	      claimSendBlock.addClass('show');
-      } else{
-	      claimSendSubmit.prop('disabled', true);
-	      claimSendBlock.removeClass('show');
-      }
-    }
+		function claimSendOff(){
+			if (claimSendCheck.is(':checked')){
+				claimSendSubmit.prop('disabled', false);
+				claimSendBlock.addClass('show');
+			} else{
+				claimSendSubmit.prop('disabled', true);
+				claimSendBlock.removeClass('show');
+			}
+		}
 
-    claimSendOff();
+		claimSendOff();
 
-	  claimSendCheckLabel.on('click', function(){
-      setTimeout(function () {claimSendOff();}, 50);
-    });
-  }
-  /*end of disabling of b-auction-public-block__send-claim*/
+		claimSendCheckLabel.on('click', function(){
+			setTimeout(function () {claimSendOff();}, 50);
+		});
+	}
+	/*end of disabling of b-auction-public-block__send-claim*/
 
-  /*map in b-auction-public-block__purchase-shipping-address-map*/
-  if($('.b-auction-public-block__purchase-shipping-address-map').length){
+	/*map in b-auction-public-block__purchase-shipping-address-map*/
+	if($('.b-auction-public-block__purchase-shipping-address-map').length){
 
-    function init () {
-      var myMap = new ymaps.Map("map", {
-        center: [59.937314,30.315472],
-        zoom: 11
-      }),
+		function init () {
+			var myMap = new ymaps.Map("map", {
+				center: [59.937314,30.315472],
+				zoom: 11
+			}),
 
-      // Создаем метку с помощью вспомогательного класса.
-      myPlacemark1 = new ymaps.Placemark([59.937314,30.315472], {
-        hintContent: '',
-        //balloonContent: ''
-      }, {
-        // Опции.
-        // Необходимо указать данный тип макета.
-        iconLayout: 'default#image',
-        // Своё изображение иконки метки.
-        iconImageHref: 'images/create-purchase-map-icon.png',
-        // Размеры метки.
-        iconImageSize: [39, 38],
-        // Смещение левого верхнего угла иконки относительно
-        // её "ножки" (точки привязки).
-        iconImageOffset: [-3, -42]
-      });
+			// Создаем метку с помощью вспомогательного класса.
+			myPlacemark1 = new ymaps.Placemark([59.937314,30.315472], {
+				hintContent: '',
+				//balloonContent: ''
+			}, {
+				// Опции.
+				// Необходимо указать данный тип макета.
+				iconLayout: 'default#image',
+				// Своё изображение иконки метки.
+				iconImageHref: 'images/create-purchase-map-icon.png',
+				// Размеры метки.
+				iconImageSize: [39, 38],
+				// Смещение левого верхнего угла иконки относительно
+				// её "ножки" (точки привязки).
+				iconImageOffset: [-3, -42]
+			});
 
-      //myMap.controls.add('smallZoomControl');
-      // Добавляем все метки на карту.
-      myMap.geoObjects
-      .add(myPlacemark1);
-    }
+			//myMap.controls.add('smallZoomControl');
+			// Добавляем все метки на карту.
+			myMap.geoObjects
+			.add(myPlacemark1);
+		}
 
-    ymaps.ready(init);
-  }
-  /*end of map in b-auction-public-block__purchase-shipping-address-map*/
+		ymaps.ready(init);
+	}
+	/*end of map in b-auction-public-block__purchase-shipping-address-map*/
 
 	/*close/open map in b-auction-public-block__purchase-shipping-address-map*/
 	if($('.b-auction-public-block__purchase-shipping-address-map').length){
@@ -409,6 +409,32 @@ $(document).ready(function() {
 		});
 	}
 	/*end of close/open map in b-auction-public-block__purchase-shipping-address-map*/
+
+	/*show/hide b-orders-list-block__orders-story-block*/
+	if($('.b-orders-list-block__orders-story-block').length){
+		var ordersStoryBlockBtn = $('.b-orders-list-block__orders-story');
+		var ordersStoryBlock = $('.b-orders-list-block__orders-story-block');
+		var ordersStoryBlockClose = $('.b-orders-list-block__orders-story-block-close');
+
+		ordersStoryBlockBtn.on('click', function(){
+			ordersStoryBlock.addClass('show');
+		});
+
+		ordersStoryBlockClose.on('click', function(){
+			ordersStoryBlock.removeClass('show');
+		});
+
+		$(window).mousedown(function (e) {
+			var clicked = $(e.target);
+			if (clicked.is('.b-orders-list-block__orders-story-block')||clicked.closest('.b-orders-list-block__orders-story-block').length){
+				console.log('closest');
+				return;
+			} else {
+				ordersStoryBlock.removeClass('show');
+			}
+		});
+	}
+	/*end of show/hide b-orders-list-block__orders-story-block*/
 });
 /*end of contacts.js*/
 

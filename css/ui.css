@@ -101,6 +101,7 @@
   text-transform: none;
   text-decoration: none;
   letter-spacing: 0;
+  box-sizing: content-box;
 }
 .type-text:hover, .type-text:focus {
   border: 1px solid #7fb3ff;
@@ -266,6 +267,30 @@
 }
 
 /*end of gradient_button*/
+/*blue-white-btn*/
+.blue-white-btn {
+  display: block;
+  font-family: NeueHaas_reg, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 8px 0 6px;
+  background: #7fb3ff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.blue-white-btn:hover, .blue-white-btn:focus {
+  color: #959595;
+  background: #fff;
+  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.17);
+}
+
+/*end of blue-white-btn*/
 /*select formstyler plugin*/
 .jq-selectbox-main {
   display: inline-block;

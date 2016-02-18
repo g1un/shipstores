@@ -1,0 +1,440 @@
+/*b-orders-list-block*/
+.b-orders-list-block{
+  clear: both;
+  margin: 0;
+  padding: 0 0 16px;
+  width: 815px;
+	position: relative;
+
+  &__orders-story{
+    float: right;
+		margin: 0;
+    padding: 9px 0 10px;
+		width: 189px;
+		font-family: NeueHaas_medium, Helvetica, sans-serif;
+    font-size: 12px;
+
+    &-block{
+      display: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 360px;
+			background: #f3f3f3;
+			box-shadow: 0 3px 9px 0 rgba(0,0,0,.15);
+
+			&.show{
+				display: block;
+			}
+
+			&-title{
+				float: left;
+				background: #7fb3ff;
+				width: 326px;
+				padding: 9px 0 10px 16px;
+				margin: 0 0 27px;
+				box-sizing: border-box;
+				font-family: NeueHaas_medium, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #fff;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: 0;
+
+				&:hover,
+				&:focus{
+					background: #4c83fc;
+				}
+			}
+
+			&-close{
+				float: right;
+				width: 34px;
+				height: 33px;
+				background: #e2e2e2;
+				cursor: pointer;
+				position: relative;
+
+				&::before{
+					content: '';
+					position: absolute;
+					top: 7px;
+					right: 15px;
+					width: 5px;
+					height: 19px;
+					background: #fff;
+					transform: rotate(45deg);
+				}
+
+				&::after{
+					content: '';
+					position: absolute;
+					top: 7px;
+					right: 15px;
+					width: 5px;
+					height: 19px;
+					background: #fff;
+					transform: rotate(-45deg);
+				}
+			}
+
+			&-table{
+				clear: both;
+				border-collapse: collapse;
+				border: none;
+				padding: 0;
+				margin: 0;
+			}
+
+			&-td{
+				vertical-align: top;
+				padding: 0;
+				border: none;
+				box-sizing: border-box;
+
+				&:first-child{
+					width: 218px;
+					padding: 0 0 12px 14px;
+				}
+
+				&:last-child{
+					width: 142px;
+					font-family: NeueHaas_light-it, Helvetica, sans-serif;
+					font-size: 12px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #666767;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+					padding: 0 0 0 11px;
+				}
+			}
+
+			&-ad{
+				font-family: NeueHaas_reg, Helvetica, sans-serif;
+				font-size: 11px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #898989;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&-category{
+				font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+				font-size: 11px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #afafaf;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				margin: 0 0 3px;
+			}
+
+			&-price{
+				font-family: NeueHaas_medium, Helvetica, sans-serif;
+				font-size: 13px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+
+				span{
+					font-family: NeueHaas_reg, Helvetica, sans-serif;
+					font-size: 10px;
+				}
+			}
+    }
+  }
+
+  &__title{
+    margin: 0 0 29px;
+  }
+
+  &__info{
+    margin: 0 0 17px;
+
+	  &--deals{
+		  margin: 0 0 20px;
+	  }
+  }
+
+  &__purchase-deal-table{
+		clear: both;
+    margin: 0 0 35px;
+    padding: 0;
+    border-collapse: collapse;
+    border: none;
+    background: #fff;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+
+    &-tr{
+
+      &:nth-child(n+2){
+        border-bottom: 1px solid #ededed;
+      }
+    }
+
+    &-th{
+      background: #f3f3f3;
+      font-family: NeueHaas_light, Helvetica, sans-serif;
+      font-size: 11px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #acacac;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      padding: 16px 0;
+      border: none;
+      border-right: 1px solid #fff;
+
+      &:last-child{
+        border: none;
+      }
+    }
+
+    &-td{
+      border: none;
+      padding: 8px 0;
+      border-right: 1px solid #fff;
+      font-family: NeueHaas_reg, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-weight: 400;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+			box-sizing: border-box;
+
+      &-category{
+        display: inline-block;
+        color: #464646;
+        text-decoration: underline;
+
+        &:hover,
+        &:focus{
+          text-decoration: none;
+        }
+      }
+
+      &-type{
+        font-family: NeueHaas_light, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #3577d7;
+      }
+
+      &:first-child{
+        width: 285px;
+        padding-left: 13px;
+      }
+
+      &:nth-child(2){
+        width: 131px;
+        padding-left: 12px;
+      }
+
+      &:nth-child(3){
+        width: 131px;
+        font-family: NeueHaas_medium, Helvetica, sans-serif;
+        text-align: center;
+      }
+
+      &:nth-child(4){
+        width: 131px;
+        padding-left: 13px;
+      }
+
+      &:last-child{
+        width: 133px;
+        border: none;
+        text-align: right;
+        padding-right: 24px;
+
+        span{
+          font-family: NeueHaas_medium, Helvetica, sans-serif;
+          color: #8b0333;
+        }
+      }
+    }
+
+		&--deals{
+			margin: 0 0 38px;
+
+			.b-orders-list-block__purchase-deal-table{
+
+				&-td{
+
+					&:nth-child(3){
+						text-align: left;
+						padding-left: 11px;
+					}
+				}
+			}
+		}
+  }
+
+	&__selector{
+		margin: 0 0 14px;
+		font-size: 0;
+		background: #fff;
+		float: left;
+
+		&-item{
+			display: inline-block;
+			vertical-align: top;
+			text-align: center;
+			margin: 0 1px 0 0;
+
+			&.active{
+				color: #959595;
+				background: #fff;
+				box-shadow: inset 0 1px 2px 0 rgba(0,0,0,.17);
+			}
+
+			&:last-child{
+				margin: 0;
+			}
+
+			&--all{
+				width: 91px;
+			}
+
+			&--individ{
+				width: 222px;
+			}
+
+			&--entity{
+				width: 225px;
+			}
+
+			&--sellers{
+				width: 141px;
+			}
+
+			&--stores{
+				width: 138px;
+			}
+
+			&--ads{
+				width: 145px;
+			}
+
+			&--purchases{
+				width: 133px;
+			}
+
+			&--vacancies{
+				width: 128px;
+			}
+
+			&--resume{
+				width: 125px;
+			}
+		}
+	}
+
+	&__table-favourite{
+		clear: both;
+		border-collapse: collapse;
+		border: none;
+		padding: 0;
+		margin: 0;
+		background: #fff;
+		box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+
+		&-tr{
+			padding: 0;
+			margin: 0;
+			border: none;
+
+			&:nth-child(n+2){
+				border-bottom: 1px solid #ededed;
+			}
+		}
+		
+		&-th{
+			padding: 16px 0;
+			background: #f3f3f3;
+			font-family: NeueHaas_light, Helvetica, sans-serif;
+			font-size: 11px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #acacac;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			border: none;
+			border-right: 1px solid #fff;
+			width: 282px;
+
+			&:last-child{
+				border: none;
+				width: 534px;
+			}
+		}
+
+		&-td{
+			vertical-align: middle;
+			padding: 14px 0;
+			box-sizing: border-box;
+			font-family: NeueHaas_light, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			border: none;
+			border-right: 1px solid #fff;
+
+			&:first-child{
+				padding-left: 17px;
+				width: 282px;
+
+				a{
+					color: #000;
+					text-decoration: none;
+
+					&:focus,
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+
+			&:nth-child(2){
+				padding-left: 28px;
+				width: 297px;
+				font-family: NeueHaas_medium, Helvetica, sans-serif;
+				color: #464646;
+			}
+
+			&:last-child{
+				padding-right: 38px;
+				border: none;
+				width: 237px;
+				text-align: right;
+			}
+		}
+
+		&-remove{
+			display: inline-block;
+			vertical-align: top;
+			width: 161px;
+			text-transform: none;
+			font-family: NeueHaas_reg, Helvetica, sans-serif;
+			font-size: 12px;
+			padding: 2px 0 5px;
+		}
+	}
+}
+/*end of b-orders-list-block*/
