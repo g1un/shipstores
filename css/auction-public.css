@@ -657,6 +657,14 @@
 }
 
 /*end of pagination*/
+/*table*/
+.table {
+  border-collapse: collapse;
+  border: none;
+  padding: 0;
+}
+
+/*end of table*/
 /*end of FORM*/
 /*b-auction-public-block*/
 .b-auction-public-block {

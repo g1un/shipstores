@@ -1,0 +1,80 @@
+/*b-orders-list-story-block*/
+.b-orders-list-story-block{
+	clear: both;
+	margin: 0 0 20px;
+
+	&__title{
+		margin: 0 0 29px;
+	}
+
+	&__info{
+		margin: 0 0 17px;
+	}
+
+	&__back{
+		display: block;
+		float: right;
+		margin: 0;
+		width: 216px;
+		padding: 9px 0 10px;
+		font-family: NeueHaas_medium, Helvetica, sans-serif;
+		font-size: 12px;
+	}
+
+	&__table{
+
+		&-td{
+			font-family: NeueHaas_reg, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			box-sizing: border-box;
+
+			&-category{
+				display: inline-block;
+				color: #464646;
+				text-decoration: underline;
+
+				&--italic{
+					font-family: NeueHaas_light-it, Helvetica, sans-serif;
+					text-decoration: none;
+				}
+			}
+
+			&-type{
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 10px;
+				color: #3577d7;
+			}
+
+			&:first-child{
+				width: 311px;
+				padding: 8px 0 8px 13px;
+			}
+
+			&:nth-child(2){
+				width: 170px;
+				font-family: NeueHaas_medium, Helvetica, sans-serif;
+				padding: 8px 0 8px 11px;
+			}
+
+			&:nth-child(3){
+				width: 168px;
+				font-family: NeueHaas_reg, Helvetica, sans-serif;
+				padding: 8px 0 8px 13px;
+			}
+
+			&:last-child {
+				width: 166px;
+				font-family: NeueHaas_medium, Helvetica, sans-serif;
+				color: #8b0333;
+				text-align: right;
+				padding: 8px 23px 8px 0;
+			}
+		}
+	}
+}
+/*end of b-orders-list-story-block*/

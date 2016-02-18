@@ -7,6 +7,7 @@
 	position: relative;
 
   &__orders-story{
+		display: block;
     float: right;
 		margin: 0;
     padding: 9px 0 10px;
@@ -82,9 +83,6 @@
 
 			&-table{
 				clear: both;
-				border-collapse: collapse;
-				border: none;
-				padding: 0;
 				margin: 0;
 			}
 
@@ -169,37 +167,6 @@
   &__purchase-deal-table{
 		clear: both;
     margin: 0 0 35px;
-    padding: 0;
-    border-collapse: collapse;
-    border: none;
-    background: #fff;
-    box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
-
-    &-tr{
-
-      &:nth-child(n+2){
-        border-bottom: 1px solid #ededed;
-      }
-    }
-
-    &-th{
-      background: #f3f3f3;
-      font-family: NeueHaas_light, Helvetica, sans-serif;
-      font-size: 11px;
-      line-height: 1.2em;
-      font-weight: 400;
-      color: #acacac;
-      text-transform: none;
-      text-decoration: none;
-      letter-spacing: 0;
-      padding: 16px 0;
-      border: none;
-      border-right: 1px solid #fff;
-
-      &:last-child{
-        border: none;
-      }
-    }
 
     &-td{
       border: none;
@@ -218,11 +185,6 @@
         display: inline-block;
         color: #464646;
         text-decoration: underline;
-
-        &:hover,
-        &:focus{
-          text-decoration: none;
-        }
       }
 
       &-type{
@@ -343,40 +305,36 @@
 
 	&__table-favourite{
 		clear: both;
-		border-collapse: collapse;
-		border: none;
-		padding: 0;
 		margin: 0;
 		background: #fff;
 		box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+
+		tr{
+
+			&:nth-child(n+2){
+				cursor: default;
+
+				&:hover,
+				&:focus{
+					background: #fff;
+
+					td{
+						border-color: #fff;
+					}
+				}
+			}
+		}
 
 		&-tr{
 			padding: 0;
 			margin: 0;
 			border: none;
-
-			&:nth-child(n+2){
-				border-bottom: 1px solid #ededed;
-			}
 		}
 		
 		&-th{
-			padding: 16px 0;
-			background: #f3f3f3;
-			font-family: NeueHaas_light, Helvetica, sans-serif;
-			font-size: 11px;
-			line-height: 1.2em;
-			font-weight: 400;
-			color: #acacac;
-			text-transform: none;
-			text-decoration: none;
-			letter-spacing: 0;
-			border: none;
-			border-right: 1px solid #fff;
 			width: 282px;
 
 			&:last-child{
-				border: none;
 				width: 534px;
 			}
 		}

@@ -542,6 +542,14 @@
 }
 
 /*end of pagination*/
+/*table*/
+.table {
+  border-collapse: collapse;
+  border: none;
+  padding: 0;
+}
+
+/*end of table*/
 /*end of FORM*/
 /*TITLES*/
 .form-title {

@@ -1,123 +1,123 @@
 /*TITLES*/
 .form-title{
-  font-family: NeueHaas_bold, Helvetica, sans-serif;
-  font-size: 24px;
-  line-height: 1.2em;
-  font-weight: 400;
-  color: #000;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0;
+	font-family: NeueHaas_bold, Helvetica, sans-serif;
+	font-size: 24px;
+	line-height: 1.2em;
+	font-weight: 400;
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0;
 }
 
 .content-title{
-  font-family: NeueHaas_bold, Helvetica, sans-serif;
-  font-size: 21px;
-  line-height: 1.2em;
-  font-weight: 400;
-  color: #000;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0;
+	font-family: NeueHaas_bold, Helvetica, sans-serif;
+	font-size: 21px;
+	line-height: 1.2em;
+	font-weight: 400;
+	color: #000;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0;
 
-  &-item{
-    font-family: NeueHaas_medium, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.2em;
-    font-weight: 400;
-    color: #000;
-    text-transform: none;
-    text-decoration: none;
-    letter-spacing: 0;
+	&-item{
+		font-family: NeueHaas_medium, Helvetica, sans-serif;
+		font-size: 16px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
 
-    &--reg{
-      font-family: NeueHaas_reg, Helvetica, sans-serif;
-      text-transform: uppercase;
-    }
-  }
+		&--reg{
+			font-family: NeueHaas_reg, Helvetica, sans-serif;
+			text-transform: uppercase;
+		}
+	}
 
-  &-info{
-    font-family: NeueHaas_bold, Helvetica, sans-serif;
-    font-size: 18px;
-    line-height: 1.2em;
-    font-weight: 400;
-    color: #000;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 0;
+	&-info{
+		font-family: NeueHaas_bold, Helvetica, sans-serif;
+		font-size: 18px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 0;
 
-    &--low{
-      text-transform: none;
-    }
-  }
+		&--low{
+			text-transform: none;
+		}
+	}
 }
 
 .content-text{
-  font-family: NeueHaas_reg, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.2em;
-  font-weight: 400;
-  color: #000;
-  text-transform: none;
-  text-decoration: none;
-  letter-spacing: 0;
-  padding: 0;
-  margin: 0;
+	font-family: NeueHaas_reg, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.2em;
+	font-weight: 400;
+	color: #000;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: 0;
+	padding: 0;
+	margin: 0;
 
-  span{
-    font-family: NeueHaas_bold, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
-  }
+	span{
+		font-family: NeueHaas_bold, Helvetica, sans-serif;
+		padding: 0;
+		margin: 0;
+	}
 }
 
 .select-text{
-  font-family: NeueHaas_reg, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 1.2em;
-  font-weight: 400;
-  color: #959595;
-  text-transform: none;
-  text-decoration: none;
-  letter-spacing: 0;
+	font-family: NeueHaas_reg, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.2em;
+	font-weight: 400;
+	color: #959595;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: 0;
 
-  &--black{
-    color: #000;
-  }
+	&--black{
+		color: #000;
+	}
 
-  &--thinit{
-    font-family: NeueHaas_thin-it, Helvetica, sans-serif;
-  }
+	&--thinit{
+		font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+	}
 }
 
 .form-text{
-  font-family: NeueHaas_medium, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 1.2em;
-  font-weight: 400;
-  color: #000;
-  text-transform: none;
-  text-decoration: none;
-  letter-spacing: 0;
+	font-family: NeueHaas_medium, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.2em;
+	font-weight: 400;
+	color: #000;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: 0;
 }
 
 .text-little{
-  font-family: NeueHaas_medium, Helvetica, sans-serif;
-  font-size: 12px;
-  line-height: 1.2em;
-  font-weight: 400;
-  color: #000;
-  text-transform: none;
-  text-decoration: none;
-  letter-spacing: 0;
+	font-family: NeueHaas_medium, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 1.2em;
+	font-weight: 400;
+	color: #000;
+	text-transform: none;
+	text-decoration: none;
+	letter-spacing: 0;
 
-  &--light{
-    font-family: NeueHaas_light, Helvetica, sans-serif;
-  }
+	&--light{
+		font-family: NeueHaas_light, Helvetica, sans-serif;
+	}
 
-  &--italic{
-    font-family: NeueHaas_it, Helvetica, sans-serif;
-    color: #363636;
-  }
+	&--italic{
+		font-family: NeueHaas_it, Helvetica, sans-serif;
+		color: #363636;
+	}
 }
 /*end of TITLES*/

@@ -129,6 +129,7 @@
 }
 .input-radio:checked + label::after {
   background: #aec7ff;
+  background: -webkit-linear-gradient(315deg, #c6d8ff, #85a5f5);
   background: linear-gradient(135deg, #c6d8ff, #85a5f5);
 }
 
@@ -197,7 +198,9 @@
   border-left: 2px solid #fff;
   border-bottom: 2px solid #fff;
   background: transparent;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 /*end of checkbox*/
@@ -371,6 +374,7 @@
   border-radius: 5px;
   padding: 5px 0 9px;
   background: #79aaf2;
+  background: -webkit-linear-gradient(top, #a4c8ff, #789add);
   background: linear-gradient(to bottom, #a4c8ff, #789add);
 }
 .gradient_button span {
@@ -508,7 +512,9 @@
   width: 25px;
   height: 5px;
   background: #fff;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .form-close::after {
   content: '';
@@ -518,7 +524,9 @@
   width: 25px;
   height: 5px;
   background: #fff;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 /*end of form-close*/
@@ -548,7 +556,9 @@
   width: 2px;
   height: 10px;
   background: #fff;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .close-blue::after {
   content: '';
@@ -558,7 +568,9 @@
   width: 2px;
   height: 10px;
   background: #fff;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 /*end of close-blue*/
@@ -586,7 +598,9 @@
   background: transparent;
   border-left: 3px solid #fff;
   border-bottom: 3px solid #fff;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 /*end of round-check*/
@@ -648,15 +662,27 @@
   border-bottom: 2px solid #959595;
   width: 6px;
   height: 6px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 .pagination-arrow--right {
   margin: 0;
-  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+          transform: rotate(-135deg);
   margin-left: 32px;
 }
 
 /*end of pagination*/
+/*table*/
+.table {
+  border-collapse: collapse;
+  border: none;
+  padding: 0;
+}
+
+/*end of table*/
 /*end of FORM*/
 /*b-ad-unit-block*/
 .b-ad-unit-block {
