@@ -196,22 +196,27 @@
       &:first-child{
         width: 285px;
         padding-left: 13px;
+				padding-right: 5px;
       }
 
       &:nth-child(2){
         width: 131px;
         padding-left: 12px;
+				padding-right: 5px;
       }
 
       &:nth-child(3){
         width: 131px;
         font-family: NeueHaas_medium, Helvetica, sans-serif;
         text-align: center;
+				padding-left: 5px;
+				padding-right: 5px;
       }
 
       &:nth-child(4){
         width: 131px;
         padding-left: 13px;
+				padding-right: 5px;
       }
 
       &:last-child{
@@ -219,6 +224,7 @@
         border: none;
         text-align: right;
         padding-right: 24px;
+				padding-left: 5px;
 
         span{
           font-family: NeueHaas_medium, Helvetica, sans-serif;
@@ -246,7 +252,7 @@
 	&__selector{
 		margin: 0 0 14px;
 		font-size: 0;
-		background: #fff;
+		//background: #fff;
 		float: left;
 
 		&-item{
@@ -254,6 +260,8 @@
 			vertical-align: top;
 			text-align: center;
 			margin: 0 1px 0 0;
+			padding-left: 26px;
+			padding-right: 26px;
 
 			&.active{
 				color: #959595;
@@ -265,41 +273,41 @@
 				margin: 0;
 			}
 
-			&--all{
-				width: 91px;
-			}
-
-			&--individ{
-				width: 222px;
-			}
-
-			&--entity{
-				width: 225px;
-			}
-
-			&--sellers{
-				width: 141px;
-			}
-
-			&--stores{
-				width: 138px;
-			}
-
-			&--ads{
-				width: 145px;
-			}
-
-			&--purchases{
-				width: 133px;
-			}
-
-			&--vacancies{
-				width: 128px;
-			}
-
-			&--resume{
-				width: 125px;
-			}
+			//&--all{
+			//	width: 91px;
+			//}
+			//
+			//&--individ{
+			//	width: 222px;
+			//}
+			//
+			//&--entity{
+			//	width: 225px;
+			//}
+			//
+			//&--sellers{
+			//	width: 141px;
+			//}
+			//
+			//&--stores{
+			//	width: 138px;
+			//}
+			//
+			//&--ads{
+			//	width: 145px;
+			//}
+			//
+			//&--purchases{
+			//	width: 133px;
+			//}
+			//
+			//&--vacancies{
+			//	width: 128px;
+			//}
+			//
+			//&--resume{
+			//	width: 125px;
+			//}
 		}
 	}
 
@@ -392,6 +400,23 @@
 			font-family: NeueHaas_reg, Helvetica, sans-serif;
 			font-size: 12px;
 			padding: 2px 0 5px;
+		}
+	}
+
+	&--seller{
+
+		.b-orders-list-block{
+
+			&__purchase-deal-table{
+
+				&-td{
+
+					&:nth-child(3){
+						text-align: left;
+						padding-left: 10px;
+					}
+				}
+			}
 		}
 	}
 }

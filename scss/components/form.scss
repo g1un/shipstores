@@ -224,16 +224,16 @@
 
   &:hover,
   &:focus{
-	background: #4c83fc;
+		background: #4c83fc;
   }
   
   &--dark{
 	background: #4c83fc;
 
-	&:hover,
-	&:focus{
-	  background: #0050ff;
-	}
+		&:hover,
+		&:focus{
+			background: #0050ff;
+		}
   }
 }
 /*end of blue button*/
