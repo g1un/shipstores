@@ -46,6 +46,8 @@ $(document).ready(function() {
     var startingPriceVal = $('.disabling-val');
     var startingPriceCurrency = $('.disabling-currency');
 
+    console.log(startingPriceBtn);
+
     function startingPriceOff(){
       if (startingPriceBtn.is(':checked')){
         startingPriceVal.prop('disabled', true);

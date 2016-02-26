@@ -435,6 +435,59 @@ $(document).ready(function() {
 		});
 	}
 	/*end of show/hide b-orders-list-block__orders-story-block*/
+
+	/*b-cabinet-block__activities-form*/
+	if($('.b-cabinet-block__activities-form').length){
+		var activitiesForm = $('.b-cabinet-block__activities-form');
+		var activitiesBtn = $('.b-cabinet-block__activities-all');
+		var activitiesInput = $('.b-cabinet-block__activities-item input');
+		var activitiesRemove = $('.b-cabinet-block__activities-chosen-remove');
+		var activitiesList = $('.b-cabinet-block__activities-list');
+
+		activitiesBtn.on('click', function(){
+			activitiesBtn.toggleClass('opened');
+			activitiesForm.toggleClass('show');
+		});
+
+		$(window).mousedown(function (e) {
+			var clicked = $(e.target);
+			if (clicked.is('.b-cabinet-block__activities-form')||clicked.closest('.b-cabinet-block__activities-form').length||clicked.closest('.b-cabinet-block__activities-all').length){
+				return;
+			} else {
+				activitiesBtn.removeClass('opened');
+				activitiesForm.removeClass('show');
+			}
+		});
+
+		function activitiesListing(){
+			for(var i=0; i<activitiesInput.length; i++){
+				if ($(activitiesInput[i]).is(':checked')){
+					$( ".b-cabinet-block__activities-chosen" ).append('<li class="b-cabinet-block__activities-chosen-item clearfix"><div class="b-cabinet-block__activities-chosen-title select-text">'+ $(activitiesInput[i]).next().text() + '</div><div class="b-cabinet-block__activities-chosen-remove"></div></li>');
+					$('.b-cabinet-block__activities-chosen').find('div:contains('+ $(activitiesInput[i]).next().text() + ')').next().on('click', function(){
+						$(this).parent().remove();
+						activitiesList.find('label:contains('+$(this).prev().text()+')').prev().prop('checked', false);
+					});
+				}
+
+				$(activitiesInput[i]).on('click', function () {
+					if($(this).is(':checked')){
+						$( ".b-cabinet-block__activities-chosen" ).append('<li class="b-cabinet-block__activities-chosen-item clearfix"><div class="b-cabinet-block__activities-chosen-title select-text">'+ $(this).next().text() + '</div><div class="b-cabinet-block__activities-chosen-remove"></div></li>');
+						$('.b-cabinet-block__activities-chosen').find('div:contains('+$(this).next().text()+')').next().on('click',
+						function(){
+							$(this).parent().remove();
+							activitiesList.find('label:contains('+$(this).prev().text()+')').prev().prop('checked', false);
+						});
+					} else{
+						$('.b-cabinet-block__activities-chosen').find('div:contains('+$(this).next().text()+')').parent().remove();
+					}
+				});
+			}
+		}
+
+		activitiesListing();
+
+	}
+	/*end of b-cabinet-block__activities-form*/
 });
 /*end of contacts.js*/
 
