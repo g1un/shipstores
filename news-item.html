@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <link href="css/jquery.formstyler.css" rel="stylesheet" /><!--стили селектов form styler css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/b-breadcrumb-search.css"><!--breadcrumbs-->
-    <link rel="stylesheet" type="text/css" href="css/news-item.css"><!--news-item style-->
+    <link href="css/jquery.formstyler.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/template_styles.css">
 </head>
 
 <body>
@@ -37,24 +35,48 @@
                 </div>
             </div>
         </div>
-        <div class="b-head__currency">
-            <div class="b-curr">
-                <div class="b-curr_text">
-                    <div class="b-curr_text__curr_rub">
-                        <span class="g-rub g-white_font" style="line-height:1.7">₽</span>
-                    </div>
-                </div>
-                <div class="b-curr_pict">
-                    <img src="images/currency-rub.jpg">
-                </div>
+
+        <div class="b-head__currency-lang">
+            <ul class="b-head__currency">
+                <li class="ru show">₽</li>
+                <li class="us">$</li>
+                <li class="eu">€</li>
+                <li class="gb">£</li>
+            </ul>
+
+            <ul class="b-head__currency-list">
+                <li class="ru active">₽ Российский рубль</li>
+                <li class="us">$ Доллар США</li>
+                <li class="eu">€ Евро</li>
+                <li class="gb">£ Фунт стерлингов</li>
+            </ul>
+
+            <ul class="b-head__lang">
+                <li class="ru show"></li>
+                <li class="en"></li>
+                <li class="fr"></li>
+                <li class="sp"></li>
+                <li class="ch"></li>
+                <li class="it"></li>
+                <li class="ge"></li>
+            </ul>
+
+            <ul class="b-head__lang-list">
+                <li class="ru active">Русский</li>
+                <li class="en">English (UK)</li>
+                <li class="fr">Français</li>
+                <li class="sp">Español</li>
+                <li class="ch">简体中文</li>
+                <li class="it">Italiano</li>
+                <li class="ge">Deutsch</li>
+            </ul>
+        </div>
+        <div class="b-head__autorize">
+            <div class="b-topbuttons">
+                <div class="g-button b-topbuttons_button g-white_bg">Вход</div>
+                <div class="g-button b-topbuttons_button g-blue_bg">Регистрация</div>
             </div>
         </div>
-        <a class="b-head__messages" href="#"><span class="b-head__messages-number">1</span></a>
-        <a class="b-head__user" href="#">
-            <img class="b-head__user-photo" src="images/b-auction-public-block__buyer-photo.png" alt="b-head__user-photo">
-            <div class="b-head__user-name">Александр К.</div>
-            <div class="b-head__user-status">Физическое лицо</div>
-        </a>
     </div>
 
     <div class="b-left">
@@ -278,7 +300,8 @@
 </div>
 
 <script src="js/jquery-1.9.1.min.js"></script>
-<script src="js/jquery.formstyler.min.js"></script><!--стили селектов form styler js -->
+<script src="js/jquery.formstyler.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
 <script src="js/contacts.js"></script>
 
 </body>

@@ -1,0 +1,31 @@
+/*buy-in-shop*/
+.buy-in-shop{
+	width: 751px;
+	min-height: 342px;
+	box-sizing: border-box;
+	padding: 64px 20px 0;
+
+	&__title{
+		margin: 0 0 35px;
+		text-align: center;
+	}
+
+	&__text{
+		margin: 0 0 42px;
+		font-family: NeueHaas_medium, Helvetica, sans-serif;
+		font-size: 18px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		text-align: center;
+	}
+
+	&__link{
+		width: 194px;
+		margin: 0 auto;
+	}
+}
+/*end of buy-in-shop*/

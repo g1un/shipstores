@@ -971,6 +971,9 @@
       text-decoration: underline; }
       .b-ad-unit-block__respond-opened-answer:hover, .b-ad-unit-block__respond-opened-answer:focus {
         text-decoration: none; }
+  .b-ad-unit-block--shop .b-ad-unit-block__right-info {
+    padding: 13px 20px;
+    text-align: center; }
 
 /*end of b-ad-unit-block*/
 /*b-ad-unit-anonim-block*/
@@ -6777,8 +6780,146 @@
         text-transform: none;
         font-size: 12px;
         width: 97px; }
+    .b-cabinet-block__private-info-passport {
+      font-size: 0;
+      line-height: 0; }
+      .b-cabinet-block__private-info-passport label {
+        display: inline-block;
+        vertical-align: top;
+        margin: 11px 12px 0 0; }
+        .b-cabinet-block__private-info-passport label:first-child {
+          width: 67px; }
+        .b-cabinet-block__private-info-passport label:last-child {
+          width: 146px; }
+        .b-cabinet-block__private-info-passport label input {
+          display: block;
+          width: 100%; }
     .b-cabinet-block__private-info-save {
       width: 173px; }
 
 /*end of b-cabinet-block*/
+/*buy-in-shop*/
+.buy-in-shop {
+  width: 751px;
+  min-height: 342px;
+  box-sizing: border-box;
+  padding: 64px 20px 0; }
+  .buy-in-shop__title {
+    margin: 0 0 35px;
+    text-align: center; }
+  .buy-in-shop__text {
+    margin: 0 0 42px;
+    font-family: NeueHaas_medium, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-align: center; }
+  .buy-in-shop__link {
+    width: 194px;
+    margin: 0 auto; }
+
+/*end of buy-in-shop*/
+/*ask*/
+.ask {
+  display: none;
+  width: 890px;
+  min-height: 623px;
+  box-sizing: border-box;
+  padding: 0 0 26px; }
+  .ask__title {
+    margin: 0 0 28px;
+    text-align: center;
+    min-height: 69px;
+    padding: 23px 0 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e1e1e1; }
+  .ask__message {
+    width: 748px;
+    margin: 0 auto 20px; }
+    .ask__message-img {
+      float: left;
+      font-size: 0;
+      line-height: 0;
+      width: 29px;
+      margin: 0 8px 7px 0; }
+      .ask__message-img img {
+        width: 100%; }
+    .ask__message-interlocutor {
+      float: left;
+      margin: 5px 0 0; }
+    .ask__message-date {
+      float: right;
+      margin: 5px 0 0;
+      font-family: NeueHaas_light-it, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #252525;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+    .ask__message-text {
+      clear: both;
+      margin: 0;
+      padding: 13px 20px 15px;
+      font-family: NeueHaas_reg, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #252525;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+      .ask__message-text--questioner {
+        background: #eef5ff; }
+      .ask__message-text--answerer {
+        border: 1px solid #d7d7d7; }
+  .ask__write {
+    width: 748px;
+    margin: 150px auto 0; }
+    .ask__write-textarea {
+      display: block;
+      width: 100%;
+      min-height: 109px;
+      box-sizing: border-box;
+      padding: 12px 11px;
+      margin: 0 0 25px; }
+      .ask__write-textarea::-webkit-input-placeholder {
+        opacity: 1;
+        font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #b2b2b2;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0; }
+      .ask__write-textarea:-ms-input-placeholder {
+        opacity: 1;
+        font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #b2b2b2;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0; }
+      .ask__write-textarea::-moz-placeholder {
+        opacity: 1;
+        font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #b2b2b2;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0; }
+    .ask__write-submit {
+      width: 152px; }
+
+/*end of ask*/
 /*end of PAGE-STYLES*/

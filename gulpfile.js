@@ -33,7 +33,7 @@ gulp.task('browserSync', function() {
 	browserSync.init({
 		server: {
 			baseDir: 'app',
-			index: "cabinet-individual-company.html"
+			index: "ad-unit-shop.html"
 		},
 	})
 });

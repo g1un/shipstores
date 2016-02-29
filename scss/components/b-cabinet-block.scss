@@ -1396,6 +1396,30 @@
 			}
 		}
 
+		&-passport{
+			font-size: 0;
+			line-height: 0;
+
+			label{
+				display: inline-block;
+				vertical-align: top;
+				margin: 11px 12px 0 0;
+
+				&:first-child{
+					width: 67px;
+				}
+
+				&:last-child{
+					width: 146px;
+				}
+
+				input{
+					display: block;
+					width: 100%;
+				}
+			}
+		}
+
 		&-save{
 			width: 173px;
 		}

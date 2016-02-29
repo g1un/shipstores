@@ -5,7 +5,7 @@
 		<meta charset="UTF-8">
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 		<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		<link href="css/jquery.formstyler.css" rel="stylesheet" />
+		<link href="css/jquery.formstyler.css" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/style.css"><!--Не добавлять эти стили!!!-->
 		<link rel="stylesheet" type="text/css" href="css/b-breadcrumbs-search.css"><!--Не добавлять эти стили!!!-->
 		<link rel="stylesheet" type="text/css" href="css/ui.css"><!--Не добавлять эти стили!!!-->
@@ -171,7 +171,7 @@
 							<div class="b-auction-public-block__purchase-max-price text-little">
 								Лучшая (минимальная) цена закупки
 								<div class="b-auction-public-block__purchase-max-price-ru">
-									400 000 <span>руб.</span>
+									266 000 <span>руб.</span>
 								</div>
 								<div class="b-auction-public-block__purchase-max-price-eu">
 									6 031.4 <span>€</span>
@@ -223,6 +223,9 @@
 						<div class="b-auction-public-block__purchase-shipping-address clearfix">
 							<div class="b-auction-public-block__purchase-shipping-address-title text-little text-little--light">Адрес поставки</div>
 							<div class="b-auction-public-block__purchase-shipping-address-val text-little">Россия, город Санкт-Петербург, ул. Лесная, дом 45</div>
+							<div class="b-auction-public-block__purchase-shipping-address-map">
+								<div id="map"></div>
+							</div>
 						</div>
 
 						<div class="b-auction-public-block__protocol"><a href="#" class="b-auction-public-block__protocol-download">Скачать протокол</a>
@@ -333,7 +336,7 @@
 									<td>276 000</td>
 									<td>266 000</td>
 									<td class="result-price"><span>266 000</span></td>
-									<td>260 000</td>
+									<td>266 000</td>
 								</tr>
 							</table>
 						</div>
@@ -491,6 +494,7 @@
 
 		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 		<script src="js/jquery.formstyler.min.js"></script>
+		<script src="http://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 		<script type="text/javascript" src="js/contacts.js"></script>
 

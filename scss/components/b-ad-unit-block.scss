@@ -146,6 +146,11 @@
     }
   }
 
+	table.b-ad-unit-block__table{
+		border-collapse: separate;
+		border-spacing: 2px;
+	}
+
   &__table{
     margin: 0 20px 0 16px;
 
@@ -367,6 +372,18 @@
     }
   }
 
+  &--shop{
 
+		.b-ad-unit-block{
+
+			&__right{
+
+				&-info{
+					padding: 13px 20px;
+					text-align: center;
+				}
+			}
+		}
+	}
 }
 /*end of b-ad-unit-block*/

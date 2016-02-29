@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shipstores</title>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link href="css/jquery.formstyler.css" rel="stylesheet">
+    <link href="css/jquery.fancybox.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/b-breadcrumbs-search.css">
+    <link rel="stylesheet" type="text/css" href="css/ui.css">
+    <link rel="stylesheet" type="text/css" href="css/page-styles.css">
+</head>
+
+<body>
+
+<div class="b-main">
+
+    <div class="b-head">
+        <div class="b-head__logo">
+            <div class="b-logo">
+                <a href="#"><img src="images/logo.png" /></a>
+            </div>
+        </div>
+        <div class="b-head__links">
+            <div class="b-menu">
+                <div  class='b-menu__link'>
+                    <a href="#">закупки</a>
+                    <div class="b-menu__linkhover"></div>
+                </div>
+                <div  class='b-menu__link'>
+                    <a href="#">магазины</a>
+                    <div class="b-menu__linkhover"></div>
+                </div>
+                <div  class='b-menu__link'>
+                    <a href="#">объявления</a>
+                    <div class="b-menu__linkhover"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="b-head__currency-lang">
+            <ul class="b-head__currency">
+                <li class="ru show">₽</li>
+                <li class="us">$</li>
+                <li class="eu">€</li>
+                <li class="gb">£</li>
+            </ul>
+
+            <ul class="b-head__currency-list">
+                <li class="ru active">₽ Российский рубль</li>
+                <li class="us">$ Доллар США</li>
+                <li class="eu">€ Евро</li>
+                <li class="gb">£ Фунт стерлингов</li>
+            </ul>
+
+            <ul class="b-head__lang">
+                <li class="ru show"></li>
+                <li class="en"></li>
+                <li class="fr"></li>
+                <li class="sp"></li>
+                <li class="ch"></li>
+                <li class="it"></li>
+                <li class="ge"></li>
+            </ul>
+
+            <ul class="b-head__lang-list">
+                <li class="ru active">Русский</li>
+                <li class="en">English (UK)</li>
+                <li class="fr">Français</li>
+                <li class="sp">Español</li>
+                <li class="ch">简体中文</li>
+                <li class="it">Italiano</li>
+                <li class="ge">Deutsch</li>
+            </ul>
+        </div>
+
+        <div class="b-head__autorize">
+            <div class="b-topbuttons">
+                <div class="g-button b-topbuttons_button g-white_bg">Вход</div>
+                <div class="g-button b-topbuttons_button g-blue_bg">Регистрация</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-left">
+        <div class="b-left__menu">
+            <div class="b-leftmenu">
+                <div class="b-leftmenublue">
+                    <nav>
+                        <ul>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-1">Навигация и связь</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-2">Аварийно-спасательные средства</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-3">Противопожарные средства</a></li>
+                            <li> <a href="#" class="b-leftmenublue__link b-leftmenu_link-4">Судовое оборудование</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-5">Судовая электрика</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-6">Корпус и палуба</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-7">Судовые материалы</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-8">Рыбопромысловое оборудование</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-9">Гидрографическое оборудование</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-10">Водолазное и подводное оборудование</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-11">Плавсредства</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-12">Услуги и сервис</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-13">Сувениры и винтаж</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-14">Разное</a></li>
+                            <li><a href="#" class="b-leftmenublue__link b-leftmenu_link-15">Работа</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="b-leftmenuwhite">
+                    <nav>
+                        <ul>
+                            <li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-16">Как это работает</a></li>
+                            <li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-17">Правила</a></li>
+                            <li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-18">Помощь</a></li>
+                            <li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-19">Безопасность</a></li>
+                            <li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-20">FAQ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="b-left_bottom">
+            <div class="b-needhelp">
+                <div class="b-needhelp__header">нужна помощь?</div>
+                <div class="b-needhelp__body">Воспользуйтесь <a href="#">формой обратной связи</a> или свяжитесь с нами по телефону горячей линии</div>
+                <div class="b-needhelp__bottom">
+                    <div class="b-shedule">
+                        <div class="b-shedule__phone">8-800-100-00-00</div>
+                        <div class="b-shedule__shedule">ежедневно<br>с 9:00 до 20:00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="b-right">
+
+        <div class="b-advertising-top">
+            <a href="#"><img src="images/banner-01.jpg" /></a>
+        </div>
+
+        <div class="b-breadcrumb-search">
+            <li nk href="/bitrix/css/main/font-awesome.css?145318681428777" type="text/css" rel="stylesheet">
+                <div class="bx-breadcrumb">
+                    <div class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+
+                        <a href="/" title="Главная" itemprop="url">
+                            <span itemprop="title">Главная</span>
+                        </a>
+                    </div>
+                    <div class="bx-breadcrumb-item">
+                        <i class="fa fa-angle-right"></i>
+                        <span>Новости</span>
+                    </div><div style="clear:both"></div></div> <div class="b-search-nomain">
+                <div class="b-search__text nomain-search">
+                    <input class="b-search__inpfield nomain-search nomain-inp-text" type="text" value="">
+                    <input class="b-search__submit nomain-search search-small-pict" type="submit" value="">
+                </div>
+            </div>
+        </div>
+
+        <div class="b-ad-unit-block b-ad-unit-block--shop clearfix">
+            <div class="b-ad-unit-block__left clearfix">
+                <h2 class="b-ad-unit-block__title content-title">Кронштейн для трапа</h2>
+
+                <div class="b-ad-unit-block__views select-text">10 просмотров</div>
+
+                <div class="b-ad-unit-block__panel">
+                    <div class="b-ad-unit-block__panel-price-ru form-title">400 000 <span>руб.</span></div>
+                    <div class="b-ad-unit-block__panel-price-eu select-text">6 031.4 <span>€</span></div>
+                    <div class="b-ad-unit-block__panel-published select-text">Размещено сегодня в 10:45</div>
+                </div>
+
+                <div class="b-ad-unit-block__gallery clearfix">
+                    <div class="b-ad-unit-block__gallery-img-big">
+                        <div class="b-ad-unit-block__gallery-loupe"></div>
+                        <img src="images/bracket.jpg" alt="bracket">
+                    </div>
+
+                    <div class="b-ad-unit-block__gallery-img">
+                        <img src="images/bracket.jpg" alt="bracket">
+                    </div>
+                    <div class="b-ad-unit-block__gallery-img">
+                        <img src="images/bracket.jpg" alt="bracket">
+                    </div>
+                    <div class="b-ad-unit-block__gallery-img">
+                        <img src="images/bracket.jpg" alt="bracket">
+                    </div>
+                    <div class="b-ad-unit-block__gallery-img">
+                        <img src="images/bracket.jpg" alt="bracket">
+                    </div>
+                </div>
+
+                <table class="b-ad-unit-block__table">
+                    <tr>
+                        <td class="b-ad-unit-block__table-name select-text select-text--black">Категория</td>
+                        <td class="b-ad-unit-block__table-val select-text select-text--black">Судовое оборудование</td>
+                    </tr>
+                    <tr>
+                        <td class="b-ad-unit-block__table-name select-text select-text--black">Дата производства</td>
+                        <td class="b-ad-unit-block__table-val select-text select-text--black">Сентябрь 2014</td>
+                    </tr>
+                    <tr>
+                        <td class="b-ad-unit-block__table-name select-text select-text--black">Место производства</td>
+                        <td class="b-ad-unit-block__table-val select-text select-text--black">SUMAR, Китай</td>
+                    </tr>
+                    <tr>
+                        <td class="b-ad-unit-block__table-name select-text select-text--black">Габариты</td>
+                        <td class="b-ad-unit-block__table-val select-text select-text--black">25 мм</td>
+                    </tr>
+                    <tr>
+                        <td class="b-ad-unit-block__table-name select-text select-text--black">Вес</td>
+                        <td class="b-ad-unit-block__table-val select-text select-text--black">1 кг</td>
+                    </tr>
+                    <tr>
+                        <td class="b-ad-unit-block__table-name select-text select-text--black">Количество</td>
+                        <td class="b-ad-unit-block__table-val select-text select-text--black">1</td>
+                    </tr>
+                    <tr>
+                        <td class="b-ad-unit-block__table-name select-text select-text--black">Сведения о<br>документации</td>
+                        <td class="b-ad-unit-block__table-val select-text select-text--black">
+                            <span>номер чертежа ТУ</span><br>5535675687975
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="b-ad-unit-block__table-name select-text select-text--black">Сведения о<br>сертификации</td>
+                        <td class="b-ad-unit-block__table-val select-text select-text--black">
+                            Госстандарт России № 64 от 30.07.2002 г.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="b-ad-unit-block__table-name select-text select-text--black">Местоположение товара</td>
+                        <td class="b-ad-unit-block__table-val select-text select-text--black">Россия, Санкт-Петербург</td>
+                    </tr>
+                </table>
+
+                <div class="b-ad-unit-block__map">
+                    <div id="map"></div>
+                </div>
+
+                <div class="b-ad-unit-block__included clearfix">
+                    <div class="b-ad-unit-block__included-title select-text select-text--black">В стоимость входят</div>
+                    <div class="b-ad-unit-block__included-shipping form-text">Доставка</div>
+                    <div class="b-ad-unit-block__included-loading form-text">Погрузка</div>
+                </div>
+            </div>
+
+            <div class="b-ad-unit-block__right">
+                <p class="b-ad-unit-block__right-info form-text">Автор объявления</p>
+
+				<div class="b-auction-public-block__buyer-info clearfix">
+
+					<div class="b-auction-public-block__buyer-photo">
+						<img src="images/korabel.jpg" alt="korabel">
+					</div>
+					<div class="b-auction-public-block__buyer-name">ООО «Корабел»</div>
+
+					<div class="b-auction-public-block__buyer-city">Сакнт-Петербург</div>
+
+					<div class="b-auction-public-block__buyer-rating">
+						<div class="b-auction-public-block__buyer-rating-title">Средняя оценка</div>
+						<span></span><span></span><span></span><span></span>
+					</div>
+				</div>
+
+                <a class="b-ad-unit-block__right-btn b-ad-unit-block__right-btn--ask blue_button js-fancy--close-on" href="#ask">
+                    Задать вопрос продавцу
+                </a>
+
+                <a
+                class="b-ad-unit-block__right-btn b-ad-unit-block__right-btn--favourite blue_button blue_button--dark" href="#">
+                    Добавить в избранное
+                </a>
+
+                <a class="b-ad-unit-block__right-btn b-ad-unit-block__right-btn--complain shadow_button" href="#">
+                    Пожаловаться на объявление
+                </a>
+
+                <form class="b-ad-unit-block__right-form" action="#" method="get">
+                    <a class="b-ad-unit-block__right-form-submit brown_button js-fancy--close-on"
+                       href="#buy-in-shop">
+                         Покупаю
+                    </a>
+
+                    <div class="b-ad-unit-block__right-form-text form-text">Укажите желаемый вид сделки:</div>
+
+                    <input class="input-radio" type="radio" name="b-ad-unit-block__right-form-deal" id="b-ad-unit-block__right-form-safe-deal">
+                    <label class="b-ad-unit-block__right-form-label label-radio select-text select-text--black" for="b-ad-unit-block__right-form-safe-deal">Безопасная сделка</label>
+
+                    <input class="input-radio" type="radio" name="b-ad-unit-block__right-form-deal" id="b-ad-unit-block__right-form-direct-deal">
+                    <label class="b-ad-unit-block__right-form-label label-radio select-text select-text--black" for="b-ad-unit-block__right-form-direct-deal">Прямая сделка</label>
+                </form>
+            </div>
+        </div>
+
+        <div class="b-advertising-bottom">
+            <div class="b-advertising-bottom__banner banner-02"><a href="#"><img src="images/examples/banner2.png" /></a></div>
+            <div class="b-advertising-bottom__banner banner-03"><a href="#"><img src="images/examples/banner3.png" /></a></div>
+        </div>
+
+    </div>
+
+    <div class="b-bottom-menu">
+        <nav>
+            <div class="b-menu-main"><!--b-menu_link_active-->
+                <div  class='b-menu-main__link'>
+                    <a href="#">О портале</a>
+                </div>
+                <div  class='b-menu-main__link'>
+                    <a href="#">Услуги портала</a>
+                </div>
+                <div  class='b-menu-main__link'>
+                    <a href="#">Новости</a>
+                </div>
+                <div  class='b-menu-main__link'>
+                    <a href="#">Реклама</a>
+                </div>
+                <div  class='b-menu-main__link'>
+                    <a href="#">Контакты</a>
+                </div>
+                <div  class='b-menu-main__link'>
+                    <a href="#">Дилеры</a>
+                </div>
+                <div  class='b-menu-main__link'>
+                    <a href="#">shipstoresbonus</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="b-footer">
+        <div class="b-footer-cr">
+            <div class="b-footer-cr__copy">© 2015 ShipStores</div>
+            <div class="b-footer-cr__bitrix"><img src="images/bitrix.png" /></div>
+            <div class="b-footer-cr__menu">
+                <a href="#">Закупки</a>
+                <a href="#">Магазины</a>
+                <a href="#">Объявления</a>
+            </div>
+            <div class="b-footer-cr__7studio">
+                <p><a href="//7sait.spb.ru/services/sozdanie-saitov/" title="Разработка сайтов">Разработка сайта: «7 Студио»</a></p>
+                <p><a href="//7sait.spb.ru/services/internet-marketing/" title="Продвижение сайтов">Продвижение сайта: «7 Студио»</a></p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="b-static-stripe">
+    <div class="b-your-blue">
+        <div class="b-your-blue__feedback my-divs">
+            <div class="form-button js-call-form">обратная связь</div>
+        </div>
+        <div class="b-your-blue__info my-divs b-your-blue__infofirst">
+            <div class="b-my-info">
+                <div class="b-my-info__icon icon-purchase"></div>
+                <div class="b-my-info__name"><a href="#">Закупки, в которых вы участвуете</a></div>
+                <div class="b-my-info__count">4</div>
+            </div>
+        </div>
+        <div class="b-your-blue__info my-divs">
+            <div class="b-my-info">
+                <div class="b-my-info__icon icon-notice"></div>
+                <div class="b-my-info__name"><a href="#">Размещено объявлений</a></div>
+                <div class="b-my-info__count">4</div>
+            </div>
+        </div>
+        <div class="b-your-blue__info my-divs">
+            <div class="b-my-info">
+                <div class="b-my-info__icon icon-favorites"></div>
+                <div class="b-my-info__name"><a href="#">Избранное</a></div>
+                <div class="b-my-info__count">4</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--buy-in-shop window-->
+<div class="buy-in-shop form-white" id="buy-in-shop">
+    <h3 class="buy-in-shop__title content-title-info">Вы отправили запрос на объявление<br>«Кронштейн для трапа»</h3>
+
+    <p class="buy-in-shop__text">
+		Товар по данному объявлению отправлен в ваш лист заказов.<br>
+		Для оплаты Вы можете сформировать счет сейчас или<br>
+		позже из листа заказов.
+	</p>
+
+    <a class="buy-in-shop__link brown_button" href="#">сформировать счет</a>
+</div>
+<!--end of buy-in-shop window-->
+
+<!--ask window-->
+<div class="ask form-white" id="ask">
+    <h3 class="ask__title content-title">Вопрос к объявлению «Кронштейн для трапа»</h3>
+
+    <div class="ask__message ask__message clearfix">
+		<div class="ask__message-img"><img src="images/user-1.png" alt="user-1"></div>
+		<div class="ask__message-interlocutor select-text select-text--black">Вы</div>
+		<div class="ask__message-date">Сегодня в 11:45</div>
+		<p class="ask__message-text ask__message-text--questioner">Здравствуйте! Цена указана за 1 единицу?</p>
+	</div>
+
+    <div class="ask__message ask__message clearfix">
+		<div class="ask__message-img"><img src="images/user-2.png" alt="user-2"></div>
+		<div class="ask__message-interlocutor select-text select-text--black">Александр</div>
+		<div class="ask__message-date">Сегодня в 11:45</div>
+		<p class="ask__message-text ask__message-text--answerer">Здравствуйте! да</p>
+	</div>
+
+    <form class="ask__write" action="#" method="get">
+		<textarea class="ask__write-textarea type-text" name="ask__write-textarea" id="ask__write-textarea" placeholder="Текст сообщения"></textarea>
+
+		<input class="ask__write-submit brown_button" type="submit" name="ask__write-submit" id="ask__write-submit" value="Отправить">
+	</form>
+</div>
+<!--end of ask window-->
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="http://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/contacts.js"></script>
+
+</body>
+</html>
