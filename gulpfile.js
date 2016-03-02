@@ -4,7 +4,7 @@ var jade = require('gulp-jade');
 var autoprefixer = require('gulp-autoprefixer');
 var browserSync = require('browser-sync').create();
 gulp.task('sass', function(){
-	return gulp.src('scss/+(page-styles.scss|ui.scss)')
+	return gulp.src('scss/+(page-styles.scss|ui.scss|template_styles.scss)')
 			.pipe(sass())
 			.pipe(autoprefixer())
 			.pipe(gulp.dest('app/css'))

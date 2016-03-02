@@ -514,20 +514,23 @@
   text-transform: none;
   text-decoration: none;
   letter-spacing: 0;
-  margin-right: 41px;
-  position: relative;
+  margin-right: 17px;
   cursor: pointer;
 }
-.pagination-page-number::after {
-  content: '';
-  position: absolute;
-  top: 10px;
-  right: -17px;
+.pagination-select {
+  display: inline-block;
+  vertical-align: top;
+}
+.pagination-select .jq-selectbox__select-text {
+  display: none;
+}
+.pagination-select .jq-selectbox__trigger-arrow {
   width: 0;
   height: 0;
   border-left: 6px solid transparent;
   border-right: 6px solid transparent;
   border-top: 7px solid #959595;
+  border-bottom: none;
 }
 .pagination-volume {
   font-family: NeueHaas_medium, Helvetica, sans-serif;

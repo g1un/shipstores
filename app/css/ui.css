@@ -88,7 +88,8 @@
   text-transform: none;
   text-decoration: none;
   letter-spacing: 0;
-  box-sizing: content-box; }
+  box-sizing: content-box;
+  padding: 5px; }
   .type-text:hover, .type-text:focus {
     border: 1px solid #7fb3ff; }
   .type-text:disabled {
@@ -426,7 +427,10 @@
 /*end of round-check*/
 /*pagination*/
 .pagination {
-  float: right;
+  display: block;
+  text-align: right;
+  font-size: 0;
+  line-height: 0;
   margin: 0 6px 0 0; }
   .pagination-title {
     font-family: NeueHaas_light, Helvetica, sans-serif;
@@ -447,19 +451,42 @@
     text-transform: none;
     text-decoration: none;
     letter-spacing: 0;
-    margin-right: 41px;
-    position: relative;
+    margin-right: 5px;
     cursor: pointer; }
-    .pagination-page-number::after {
-      content: '';
-      position: absolute;
-      top: 10px;
-      right: -17px;
-      width: 0;
-      height: 0;
-      border-left: 6px solid transparent;
-      border-right: 6px solid transparent;
-      border-top: 7px solid #959595; }
+  .pagination-select {
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px;
+    line-height: 1.2em;
+    margin-right: 30px; }
+    .pagination-select .jq-selectbox.opened .jq-selectbox__trigger-arrow {
+      border-bottom: 7px solid #959595;
+      border-top: none; }
+    .pagination-select .jq-selectbox__select {
+      border: none;
+      width: 12px;
+      height: 7px;
+      padding: 0;
+      background: transparent; }
+      .pagination-select .jq-selectbox__select-text {
+        display: none; }
+    .pagination-select .jq-selectbox__trigger {
+      width: 12px;
+      height: 7px; }
+      .pagination-select .jq-selectbox__trigger-arrow {
+        top: 0;
+        left: 0;
+        right: auto;
+        width: 0;
+        height: 0;
+        border-left: 6px solid transparent;
+        border-right: 6px solid transparent;
+        border-top: 7px solid #959595;
+        border-bottom: none; }
+    .pagination-select .jq-selectbox__dropdown {
+      width: auto;
+      top: 15px;
+      left: -7px; }
   .pagination-volume {
     font-family: NeueHaas_medium, Helvetica, sans-serif;
     font-size: 14px;
@@ -482,8 +509,7 @@
     .pagination-arrow--right {
       margin: 0;
       -webkit-transform: rotate(-135deg);
-              transform: rotate(-135deg);
-      margin-left: 32px; }
+              transform: rotate(-135deg); }
 
 /*end of pagination*/
 /*table*/

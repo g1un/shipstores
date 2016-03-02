@@ -1192,11 +1192,16 @@
 				width: 380px;
 			}
 
+			&--5,
 			&--3{
 				display: inline-block;
 				vertical-align: top;
 				width: 39px;
 				height: 23px;
+			}
+
+			&--5{
+				width: 50px;
 			}
 
 			&--2{

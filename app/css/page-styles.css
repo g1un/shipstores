@@ -823,6 +823,9 @@
         overflow: hidden; }
         .b-ad-unit-block__gallery-img-big img {
           max-width: 100%; }
+  .b-ad-unit-block table.b-ad-unit-block__table {
+    border-collapse: separate;
+    border-spacing: 2px; }
   .b-ad-unit-block__table {
     margin: 0 20px 0 16px; }
     .b-ad-unit-block__table td {
@@ -2124,7 +2127,7 @@
       height: 32px;
       padding: 5px;
       box-sizing: border-box; }
-    .b-create-purchase-block__table-starting-price .type-text {
+    .b-create-purchase-block__table-starting-price .type-text, .b-create-purchase-block__table-starting-price .search-query {
       display: inline-block;
       margin: 18px 11px 0 0;
       width: 130px;
@@ -3249,8 +3252,31 @@
     margin: 0 0 18px;
     background: #fff;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25); }
+    .b-news-item-block__info p {
+      font-family: NeueHaas_light, Helvetica, sans-serif;
+      font-size: 13px;
+      line-height: 1.33em;
+      font-weight: 400;
+      color: #000;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      margin: 10px 0; }
   .b-news-item-block__title {
     margin: 0 0 17px; }
+  .b-news-item-block__date {
+    display: block;
+    text-align: right;
+    font-family: NeueHaas_bold, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #8b0333;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0;
+    margin: 0;
+    padding: 0; }
   .b-news-item-block__paragraph {
     margin: 0;
     line-height: 1.33em; }
@@ -3402,7 +3428,7 @@
       height: 32px;
       padding: 5px;
       box-sizing: border-box; }
-    .b-offers-request-block__table-starting-price .type-text {
+    .b-offers-request-block__table-starting-price .type-text, .b-offers-request-block__table-starting-price .search-query {
       display: inline-block;
       margin: 7px 11px 0 0;
       width: 130px;
@@ -4548,18 +4574,15 @@
     text-decoration: none;
     letter-spacing: 0;
     margin-right: 39px;
-    position: relative;
     cursor: pointer; }
-    .content__choice-pagination-page-number::after {
-      content: '';
-      position: absolute;
-      top: 10px;
-      right: -17px;
-      width: 0;
-      height: 0;
-      border-left: 6px solid transparent;
-      border-right: 6px solid transparent;
-      border-top: 7px solid #959595; }
+  .content__choice-pagination-select {
+    display: inline-block;
+    vertical-align: top;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 7px solid #959595; }
   .content__choice-pagination-volume {
     font-family: NeueHaas_reg;
     font-size: 14-pluspx;
@@ -4580,8 +4603,7 @@
             transform: rotate(45deg); }
     .content__choice-pagination-arrow--right {
       -webkit-transform: rotate(-135deg);
-              transform: rotate(-135deg);
-      margin-left: 32px; }
+              transform: rotate(-135deg); }
 
 /*end of pagination*/
 /*price-offer-form*/
@@ -6635,11 +6657,13 @@
       margin: 0; }
       .b-cabinet-block__private-info-input-text--long {
         width: 380px; }
-      .b-cabinet-block__private-info-input-text--3 {
+      .b-cabinet-block__private-info-input-text--5, .b-cabinet-block__private-info-input-text--3 {
         display: inline-block;
         vertical-align: top;
         width: 39px;
         height: 23px; }
+      .b-cabinet-block__private-info-input-text--5 {
+        width: 50px; }
       .b-cabinet-block__private-info-input-text--2 {
         display: inline-block;
         vertical-align: top;
@@ -6922,4 +6946,6 @@
       width: 152px; }
 
 /*end of ask*/
+/*search-page*/
+/*end of search-page*/
 /*end of PAGE-STYLES*/
