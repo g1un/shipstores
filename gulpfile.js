@@ -2,11 +2,13 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var jade = require('gulp-jade');
 var autoprefixer = require('gulp-autoprefixer');
+var replace = require('gulp-replace');
 var browserSync = require('browser-sync').create();
 gulp.task('sass', function(){
-	return gulp.src('scss/+(page-styles.scss|ui.scss|template_styles.scss)')
+	return gulp.src('scss/template_styles.scss)')
 			.pipe(sass())
 			.pipe(autoprefixer())
+			.pipe(replace('../', ''))
 			.pipe(gulp.dest('app/css'))
 			.pipe(browserSync.reload({
 				stream: true
@@ -33,7 +35,7 @@ gulp.task('browserSync', function() {
 	browserSync.init({
 		server: {
 			baseDir: 'app',
-			index: "ad-unit-shop.html"
+			index: "search.html"
 		},
 	})
 });
