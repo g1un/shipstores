@@ -347,6 +347,7 @@
     margin: 0 17px 20px 3px;
     padding: 0 0 10px;
     border: 1px solid #d7d7d7;
+    position: relative;
 
     &-text{
       display: inline-block;
@@ -372,6 +373,26 @@
         margin: 0;
       }
     }
+
+		&-progress{
+			display: none;
+			height: 4px;
+			border: 1px solid #d7d7d7;
+			width: 100%;
+			position: absolute;
+			bottom: -12px;
+			left: -1px;
+
+			&.progress-active{
+				display: block;
+			}
+
+			.progress-value{
+				height: inherit;
+				width: 0;
+				background: #7fb3ff;
+			}
+		}
 
     input{
       display: none;

@@ -5,7 +5,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var replace = require('gulp-replace');
 var browserSync = require('browser-sync').create();
 gulp.task('sass', function(){
-	return gulp.src('scss/template_styles.scss)')
+	return gulp.src('scss/template_styles.scss')
 			.pipe(sass())
 			.pipe(autoprefixer())
 			.pipe(replace('../', ''))
@@ -35,7 +35,7 @@ gulp.task('browserSync', function() {
 	browserSync.init({
 		server: {
 			baseDir: 'app',
-			index: "search.html"
+			index: "orders-list.html"
 		},
 	})
 });

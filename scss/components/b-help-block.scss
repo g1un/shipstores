@@ -3,7 +3,7 @@
   clear: both;
   padding: 0;
   background: #fff;
-  margin: 25px 0px 15px;
+  margin: 25px 0 15px;
   border: 1px solid #ccc;
 
   &__title {
@@ -12,10 +12,10 @@
   }
 
   &__nav{
+		display: table-cell;
     width: 344px;
     border-right: 1px solid #e0e8f4;
     padding-right: 10px;
-    float: left;
     padding-bottom: 160px;
 
     &-list{
@@ -31,7 +31,7 @@
 
     &-title{
       margin:0 0 20px 0;
-      padding-left: 55px;
+      padding: 0 30px 0 55px;
       position: relative;
       cursor: pointer;
 
@@ -135,38 +135,118 @@
       }
 
       &::before{
-        top: 1px;
+        top: 3px;
         left: 9px;
       }
 
       &::after{
-        top: 4px;
+        top: 6px;
         left: 12px;
       }
     }
   }
 
   &__info{
-    float: right;
+    display: table-cell;
     width: 458px;
+		padding: 0 22px;
+		box-sizing: border-box;
 
-    &-title{
+		&-item{
+			display: none;
+
+			&.show{
+				display: block;
+			}
+		}
+
+    h3{
+			margin: 23px 0 22px 0;
+			font-family: NeueHaas_medium, Helvetica, sans-serif;
+			font-size: 16px;
+			line-height: 1.1em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
       text-align: center;
-      line-height: 1.1em;
-      margin: 23px 0 22px 0;
     }
 
-    &-text{
-      font-family: NeueHaas_light, Helvetica, sans-serif;
-      font-size: 12px;
-      line-height: 1.5em;
-      font-weight: 400;
-      color: #000;
-      text-transform: none;
-      text-decoration: none;
-      letter-spacing: 0;
-      margin: 0 22px 15px;
-    }
+		p, strong, b{
+			font-family: NeueHaas_light, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 1.5em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			margin: 0;
+
+			b{
+				display: inline;
+			}
+		}
+
+		p{
+			margin: 10px 0;
+		}
+
+		b{
+			display: block;
+			font-weight: bold;
+			margin: 0;
+		}
+
+		strong{
+			margin: 0;
+		}
+
+		table{
+			border-collapse: collapse;
+			padding: 0;
+			width: 95%;
+			margin: 5px auto;
+
+			td{
+				padding: 0 5px;
+				border: 1px solid rgba(202, 195, 195, 0.32);
+				width: 50%;
+				vertical-align: top;
+			}
+		}
+
+		ul{
+			list-style: none;
+			margin: 10px 0;
+			padding: 0;
+
+			li{
+				padding: 0 0 0 10px;
+				margin: 5px 0;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.5em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				position: relative;
+
+				&::before{
+					content: '';
+					position: absolute;
+					top: 8px;
+					left: 0;
+					width: 4px;
+					height: 4px;
+					border-radius: 50%;
+					background: #4583ff;
+				}
+			}
+		}
   }
 }
 /*end of b-help-block*/
