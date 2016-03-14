@@ -36,6 +36,12 @@ div.search-advanced-result{
 	width: auto;
 }
 
+div.search-item {
+	margin: 0 0 1.5em;
+	padding: 0 0 1.5em;
+	border-bottom:#E9E9E9 1px solid;
+}
+
 div.search-item h4 a{
 	font-family: NeueHaas_reg, Helvetica, sans-serif;
 	font-size: 16px;
@@ -199,5 +205,9 @@ div.search-item h4 a{
 			letter-spacing: 0;
 		}
 	}
+}
+
+.js--validate--error{
+	border: 1px solid red
 }
 /*end of search-page*/

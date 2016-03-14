@@ -652,7 +652,8 @@ table{
 	padding: 20px 36px;
 	display: inline-block
 }
-.b-menu__link:hover .b-menu__linkhover{
+.b-menu__link:hover .b-menu__linkhover,
+.b-menu .selected .b-menu__linkhover {
 	background: #fff;
 	cursor: pointer;
 }
@@ -711,6 +712,13 @@ table{
 	color: #fff;
 	border-bottom: 1px solid #7fb3ff;
 	box-shadow: 0px 2px 5px -2px #6d89b3;
+}
+.b-leftmenublue .selected{
+	color: #fff;
+	border-bottom: 1px solid #7fb3ff;
+	box-shadow: 0 2px 5px -2px #6d89b3;
+	background-color: #7fb3ff;
+	background-position: 44px -39px;
 }
 .b-leftmenuwhite__link:hover{
 	border-bottom: 1px solid #ddd;
@@ -1100,6 +1108,29 @@ table{
 	padding: 10px;
 	vertical-align: middle;
 }
+
+.b-purchase .b-deal{
+	width: 628px;
+}
+.b-purchase .b-deal .b-common-list-table td{
+	vertical-align: top;
+}
+.b-purchase .b-deal .b-common-list-table td:first-child{
+	width: 204px;
+	box-sizing: border-box;
+}
+.b-purchase .b-deal .b-common-list-table td:nth-child(2){
+	width: 120px;
+	box-sizing: border-box;
+}
+.b-purchase .b-deal .b-common-list-table td:nth-child(3){
+	width: 102px;
+	box-sizing: border-box;
+}
+.b-purchase .b-deal .b-common-list-table td:last-child{
+	width: 179px;
+	box-sizing: border-box;
+}
 .purchase-table-name{
 	background: url(images/icon_raw.png) 10px center no-repeat;
 	padding-left: 40px !important;
@@ -1129,6 +1160,14 @@ table{
 }
 .b-select-head__head{
 	margin-bottom: 5px;
+}
+.b-purchase .b-common-list-filter tr:nth-child(2) td:last-child{
+	width: 300px;
+	box-sizing: border-box;
+}
+.b-purchase .b-common-list-filter tr:nth-child(2) td:last-child .b-select-head__select{
+	width: 300px;
+	box-sizing: border-box;
 }
 .show-deal{
 	width: 120px;

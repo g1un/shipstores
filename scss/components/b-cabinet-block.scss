@@ -169,6 +169,10 @@
 			border: none;
 			padding: 0;
 		}
+
+		&--seller-docs{
+			padding: 0;
+		}
 	}
 
 	&__ads{
@@ -1025,6 +1029,20 @@
 			text-transform: uppercase;
 			text-decoration: none;
 			letter-spacing: 0;
+
+			label{
+				padding: 0 0 0 22px;
+				display: inline-block;
+				vertical-align: top;
+
+				&::before{
+					top: 2px;
+				}
+
+				&::after{
+					top: 4px;
+				}
+			}
 		}
 
 		&-list{
@@ -1450,6 +1468,275 @@
 		&-save{
 			width: 173px;
 		}
+	}
+
+	&__seller-docs{
+		border-collapse: collapse;
+		border: 0;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+
+		td{
+			line-height: 0;
+		}
+		
+		tr{
+			
+			&.list{
+				background: #f4f4f4;
+
+				td{
+					border: 0;
+					margin: 0;
+					padding: 0;
+					vertical-align: middle;
+					border-bottom: 1px solid #fff;
+
+					&:first-child{
+						padding: 14px 0 17px 18px;
+					}
+
+					&:last-child{
+						width: 189px;
+						padding: 0 16px 0 0;
+						box-sizing: border-box;
+					}
+				}
+			}
+
+			&.title{
+
+				td{
+					padding: 14px 16px 14px 18px;
+				}
+			}
+		}
+
+		&-title{
+
+			&-val{
+				float: left;
+				margin: 6px 0 0;
+				padding: 0;
+				max-width: 351px;
+				font-family: NeueHaas_medium, Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			label{
+				display: block;
+				float: right;
+				margin: 0;
+				width: 173px;
+			}
+
+			&-note{
+				clear: both;
+				margin: 0;
+				padding: 10px 0 0;
+				font-family: NeueHaas_light-it, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #b7b7b7;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&-info{
+				clear: both;
+				margin: 0;
+				padding: 21px 0 0;
+				font-family: NeueHaas_medium, Helvetica, sans-serif;
+				font-size: 15px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&-select{
+				width: 265px;
+				clear: both;
+				display: block;
+				padding: 15px 0 0;
+
+				&.jq-selectbox-main{
+
+					.placeholder{
+						font-family: NeueHaas_light-it, Helvetica, sans-serif;
+						font-size: 12px;
+						line-height: 1.2em;
+						font-weight: 400;
+						color: #b7b7b7;
+						text-transform: none;
+						text-decoration: none;
+						letter-spacing: 0;
+					}
+
+					li{
+						font-family: NeueHaas_reg, Helvetica, sans-serif;
+						font-size: 12px;
+						line-height: 1.2em;
+						font-weight: 400;
+						color: #959595;
+						text-transform: none;
+						text-decoration: none;
+						letter-spacing: 0;
+					}
+				}
+			}
+		}
+
+		&-input-file{
+			display: none;
+		}
+
+		&-list{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			li{
+				background: #f4f4f4;
+				margin: 0 0 1px;
+				padding: 0 16px 0 18px;
+				font-size: 0;
+
+				&:last-child{
+					margin: 0;
+				}
+			}
+		}
+
+		&-item{
+
+			&-name{
+				display: inline-block;
+				vertical-align: middle;
+				font-family: NeueHaas_medium, Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #464646;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&-confirmation{
+				margin: 0;
+				width: 173px;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #464646;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+
+				.on{
+					margin: 0 0 0 3px;
+					padding: 0 0 0 27px;
+				}
+
+				.off{
+					float: left;
+					margin: 0;
+				}
+
+				.to-confirm{
+					display: block;
+					float: right;
+					margin: 0;
+					width: 86px;
+				}
+			}
+
+			&-img{
+				display: inline-block;
+				vertical-align: middle;
+				width: 49px;
+				margin: 0;
+				padding: 0;
+				font-size: 0;
+				line-height: 0;
+				position: relative;
+				cursor: pointer;
+
+				&:hover,
+				&:focus{
+
+					&::before{
+						display: block;
+					}
+
+					&::after{
+						background-color: rgba(127,179,255,.87)
+					}
+				}
+
+				&::after{
+					content: '';
+					position: absolute;
+					bottom: -2px;
+					right: -9px;
+					width: 25px;
+					height: 25px;
+					border-radius: 50%;
+					background: rgba(127,179,255,.55) url("images/loupe-left-white.png") no-repeat center center;
+					box-shadow: 0 1px 1px 0 rgba(0,0,0,.25);
+				}
+
+				&::before{
+					display: none;
+					content: '';
+					top: 0;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					position: absolute;
+					background: #898989;
+					opacity: .67;
+				}
+
+				img{
+					max-width: 100%;
+				}
+			}
+
+			&-details{
+
+				.look{
+					display: block;
+					float: left;
+					margin: 0;
+					width: 91px;
+				}
+
+				.load{
+					display: block;
+					float: right;
+					margin: 0;
+					width: 63px;
+				}
+			}
+		}
+	}
+
+	&__finance{
+		
 	}
 }
 /*end of b-cabinet-block*/

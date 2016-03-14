@@ -1,0 +1,137 @@
+/*b-purchases-block*/
+.b-purchases-block{
+
+	&__top-table{
+		width: 628px;
+		border-collapse: collapse;
+		margin: 0 0 5px;
+
+		&-td{
+			border: none;
+			vertical-align: middle;
+			padding: 12px 0;
+			box-sizing: border-box;
+			background: #e7f1ff;
+
+			&:first-child{
+				padding-left: 45px;
+				width: 185px;
+				background: #e7f1ff url("images/icon_raw.png") no-repeat 12px center;
+			}
+
+			&:nth-child(2){
+				width: 314px;
+				padding: 12px 5px;
+			}
+
+			&:last-child{
+				width: 129px;
+			}
+		}
+
+		&-event{
+			display: block;
+			text-decoration: underline;
+			
+			&:hover,
+			&:focus{
+				color: #8b0333;
+			}
+		}
+
+		&-term{
+
+			&-date{
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&-time{
+				font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+		}
+
+		&-buyer{
+
+			&-name{
+				margin: 0 0 5px;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: center;
+			}
+
+			&-city{
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 10px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #7fb3ff;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: center;
+			}
+		}
+
+		&-price{
+
+			&-start{
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&-val{
+				display: inline-block;
+				vertical-align: baseline;
+				padding: 5px 17px;
+				background: #fff;
+				box-shadow: 0 -1px 1px 0 rgba(98,98,98,.26);
+				font-family: NeueHaas_medium, Helvetica, sans-serif;
+				font-size: 16px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #8b0333;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&-currency{
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #4f4f4f;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+		}
+	}
+}
+/*end of b-purchases-block*/

@@ -1,0 +1,31 @@
+<table class="b-purchases-block__top-table">
+	<?
+		$cntTop = 1;
+		foreach ($arResult['ITEMS'] as $key => $aItem):
+			if($key > $cntTop) break;
+	?>
+		<tr class="b-purchases-block__top-table-tr">
+			<td class="b-purchases-block__top-table-td">
+				<a class="b-purchases-block__top-table-event text-title" href="<?=$aItem['DETAIL_PAGE_URL']?>"><?=$aItem['NAME']?></a>
+			</td>
+			<td class="b-purchases-block__top-table-td">
+				<span class="b-purchases-block__top-table-term-date">
+					Окончание приема заявок: <?=date('d.m.Y H:i', strtotime($aItem['DATE_ACTIVE_TO']))?>
+				</span>
+				<span class="b-purchases-block__top-table-term-time">в <?=date('d.m.Y H:i', strtotime($aItem['DATE_ACTIVE_TO']))?></span>
+			</td>
+			<td class="b-purchases-block__top-table-td">
+				<div class="b-purchases-block__top-table-buyer-name">
+					<?=$arResult['USER_LIST'][$aItem['DISPLAY_PROPERTIES']['PR_USER_BY']['VALUE']]['NAME']?>
+					<?=substr($arResult['USER_LIST'][$aItem['DISPLAY_PROPERTIES']['PR_USER_BY']['VALUE']]['LAST_NAME'],0,1)?>.<br>
+				</div>
+				<div class="b-purchases-block__top-table-buyer-city">
+					<?=$aItem['DISPLAY_PROPERTIES']['LIB_CITY']['LINK_ELEMENT_VALUE'][$aItem['DISPLAY_PROPERTIES']['LIB_CITY']['VALUE']]['NAME']?>
+				</div>
+			</td>
+		</tr>
+	<?
+		// unset($arResult['ITEMS'][$key]);
+		endforeach
+	?>
+</table>

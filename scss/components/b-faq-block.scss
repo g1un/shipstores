@@ -203,6 +203,21 @@
         margin: 0;
       }
     }
+
+    a{
+			color: #961d48;
+
+			&:hover{
+				color: #c0bfc0;
+			}
+    }
+
+		.search-page{
+
+			p{
+				font-size: 14px;
+			}
+		}
   }
 }
 /*end of b-faq-block*/

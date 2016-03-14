@@ -202,6 +202,13 @@
   &:focus{
 	background: #a71548;
   }
+
+	&--little{
+		padding: 1px 0 6px;
+		font-family: NeueHaas_reg, Helvetica, sans-serif;
+		text-transform: none;
+		font-size: 12px;
+	}
 }
 /*end of brown button*/
 
@@ -692,4 +699,35 @@
 	}
 }
 /*end of table*/
+
+/*check-icon*/
+.check-icon{
+	position: relative;
+
+	&::before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 18px;
+		height: 18px;
+		border-radius: 50%;
+		background: #7fb3ff;
+	}
+
+	&::after{
+		content: '';
+		position: absolute;
+		top: 3px;
+		left: 4px;
+		width: 8px;
+		height: 5px;
+		background: transparent;
+		border-left: 2px solid #fff;
+		border-bottom: 2px solid #fff;
+		transform: rotate(-45deg);
+		box-shadow: 0 1px 3px 0 rgba(53,119,215,.5);
+	}
+}
+/*end of check-icon*/
 /*end of FORM*/
