@@ -488,6 +488,39 @@ $(document).ready(function() {
 
 	}
 	/*end of b-cabinet-block__activities-form*/
+
+	/*b-cabinet-block__purchase*/
+	if($('.b-cabinet-block__purchase-item-header--history').length){
+		var link = $('.b-cabinet-block__purchase-title--link');
+		var close = $('.b-cabinet-block__purchase-close');
+
+		for(var i=0; i<link.length; i++){
+			$(link[i]).on('click', function(){
+				$(this).toggleClass('opened');
+				$(this).next().toggle();
+				$(this).next().next().toggle();
+			});
+		}
+
+		for(var i=0; i<close.length; i++){
+			$(close[i]).on('click', function(){
+				$(this).prev().toggleClass('opened');
+				$(this).toggle();
+				$(this).next().toggle();
+			});
+		}
+
+		var history = $('.b-cabinet-block__purchase-item-header--history');
+
+		for(var i=0; i<history.length; i++){
+			$(history[i]).on('click', function(){
+				$(this).toggleClass('opened');
+				$(this).next().toggle();
+			});
+		}
+
+	}
+	/*end of b-cabinet-block__purchase*/
 });
 /*end of contacts.js*/
 
