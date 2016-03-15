@@ -106,6 +106,7 @@
 				}
 
 				a{
+					display: block;
 					color: #000;
 					text-decoration:none;
 				}
@@ -113,6 +114,8 @@
 				a:hover,
 				a:focus,
 				a.active{
+					background: #7da5fd;
+					background: linear-gradient(72deg, #5e8ffb, #9dbbff);
 					color: #fff;
 				}
 
@@ -171,6 +174,10 @@
 		}
 
 		&--seller-docs{
+			padding: 0;
+		}
+
+		&--paddingless{
 			padding: 0;
 		}
 	}
@@ -1736,7 +1743,426 @@
 	}
 
 	&__finance{
+		padding: 20px 0;
+
+		.jq-selectbox-main{
+
+			li{
+				font-family: NeueHaas_reg, Helvetica, sans-serif;
+				color: #959595;
+			}
+
+			.placeholder{
+				font-family: NeueHaas_light-it, Helvetica, sans-serif;
+				color: #b7b7b7;
+			}
+		}
+
+		&-score{
+			margin: 0 21px 13px 20px;
+
+			&-sum{
+				float: left;
+				margin: 0;
+				width: 179px;
+			}
+
+			&-add{
+				float: right;
+				margin: 0;
+				width: 173px;
+			}
+		}
+
+		&-analytics{
+			margin: 0 21px 14px 21px;
+			padding: 0 0 9px;
+			border: 1px solid #d7d7d7;
+
+			&-plug{
+				margin: 5px 0 0;
+				display: block;
+				float: right;
+				width: 173px;
+			}
+
+			&-info{
+				margin: 0 9px 0 81px;
+				padding: 9px 2px 9px 8px;
+				background: #f3f3f3;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #464646;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				position: relative;
+
+				&::before{
+					content: '';
+					position: absolute;
+					top: 7px;
+					left: -70px;
+					width: 57px;
+					height: 48px;
+					background: url("images/analytics.png") no-repeat 0 0;
+				}
+			}
+		}
+
+		&-title{
+			margin: 11px 0 14px 15px;
+			font-family: NeueHaas_medium, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 0;
+
+			&--bills{
+				margin: 0 0 21px;
+				text-align: center;
+			}
+		}
+
+		&-pay-variant{
+			margin: 0;
+			padding: 16px 21px 16px 0;
+			background: #f4f4f4;
+
+			&-title{
+				float: left;
+				margin: 0 0 0 21px;
+				padding: 0 10px 0 0;
+				width: 94px;
+				box-sizing: border-box;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #464646;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&-select{
+				float: left;
+				margin: 0;
+				width: 225px;
+			}
+
+			&-submit{
+				display: block;
+				float: right;
+				margin: 0;
+				width: 173px;
+			}
+		}
 		
+		&-card-form{
+			background: #fcfcfc;
+			font-size: 0;
+			padding: 17px 22px 23px 21px;
+
+		}
+
+		&-paypal{
+			display: block;
+			float: right;
+			margin: 0;
+			padding: 9px 0 0;
+			box-sizing: border-box;
+			background: #f4f4f4;
+			border: 1px solid #d7d7d7;
+			width: 171px;
+			height: 80px;
+			font-family: NeueHaas_light, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #464646;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: center;
+			position: relative;
+
+
+			&::before{
+				content: 'i';
+				position: absolute;
+				top: 7px;
+				left: 7px;
+				border: 1px solid #c9c9c9;
+				border-radius: 50%;
+				font-family: 'Times New Roman', sans-serif;
+				font-size: 11px;
+				line-height: 17px;
+				font-weight: 400;
+				color: #b0afaf;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				width: 17px;
+			}
+
+			&::after{
+				content: '';
+				position: absolute;
+				bottom: 10px;
+				left: 31px;
+				width: 107px;
+				height: 37px;
+				background: url("images/paypal.png") no-repeat 0 0;
+			}
+		}
+
+		&-card{
+			width: 320px;
+			margin: 0 0 9px;
+			padding: 0;
+			border-collapse: collapse;
+			border: 0;
+
+			td{
+				border: 0;
+				padding: 7px 0;
+				vertical-align: middle;
+
+				&.confirmed{
+					font-family: NeueHaas_reg, Helvetica, sans-serif;
+					font-size: 12px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #000;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+				}
+			}
+
+			&-val{
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #464646;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&-type-select{
+				width: 225px;
+			}
+
+			.type-text{
+				display: block;
+				width: 225px;
+				height: 32px;
+				box-sizing: border-box;
+			}
+
+			&-month-select{
+				width: 98px;
+				float: left;
+
+				.jq-selectbox__trigger{
+					width: 24px;
+				}
+
+				.jq-selectbox__select{
+					padding-right: 24px;
+				}
+			}
+
+			.slash{
+				display: inline-block;
+				vertical-align: top;
+				margin: 8px 0 0 11px;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #464646;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&-year-select{
+				width: 98px;
+				float: right;
+			}
+
+			&-cvc-mean{
+				display: block;
+				font-family: NeueHaas_light-it, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #959595;
+				text-transform: none;
+				text-decoration: underline;
+				letter-spacing: 0;
+				
+				&:hover,
+				&:focus{
+					color: #4c8efc;
+				}
+			}
+
+			&-submit{
+				display: inline-block;
+				vertical-align: top;
+				width: 173px;
+				margin: 0 24px 0 0;
+			}
+
+			&-info{
+				display: inline-block;
+				vertical-align: top;
+				margin: 0;
+				padding: 0;
+				max-width: 319px;
+				font-family: NeueHaas_light-it, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #959595;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&-confirmed{
+				margin: 0;
+				padding: 0 0 0 32px;
+				font-family: NeueHaas_medium, Helvetica, sans-serif;
+				font-size: 15px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+		}
+
+		&-pro{
+			display: inline-block;
+			vertical-align: top;
+			margin: 0 0 24px 20px;
+			padding: 0;
+
+			&-link{
+				font-size: 12px;
+				display: inline-block;
+				vertical-align: top;
+				width: 173px;
+				margin: 0 26px 0 0;
+			}
+
+			&-text{
+				display: inline-block;
+				vertical-align: top;
+				margin: 7px 0 0;
+				font-family: NeueHaas_light-it, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #b7b7b7;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+		}
+
+		&-bills{
+			margin: 0;
+			padding: 21px 0 0 0;
+			font-size: 0;
+
+			&-table{
+				margin: 0 0 0 22px;
+				padding: 0;
+				border: 0;
+				width: 515px;
+				box-shadow: none;
+				
+				tr{
+
+					&:nth-child(n+2){
+						cursor: default;
+
+						&:hover,
+						&:focus{
+							background: transparent;
+						}
+					}
+				}
+
+				th{
+					border: 0;
+					color: #898989;
+					text-align: left;
+					padding: 12px 0;
+
+					&:first-child{
+						padding-left: 12px;
+						padding-right: 10px;
+					}
+				}
+
+				td{
+					padding: 12px 0;
+					border: 0;
+					box-sizing: border-box;
+					font-family: NeueHaas_light, Helvetica, sans-serif;
+					font-size: 12px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #464646;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+
+					&:first-child{
+						width: 168px;
+						padding-left: 12px;
+						padding-right: 10px;
+					}
+
+					&:nth-child(2){
+						width: 118px;
+						padding-right: 10px;
+					}
+
+					&:nth-child(3){
+						width: 73px;
+						padding-right: 10px;
+					}
+
+					&:nth-child(4){
+						width: 83px;
+						padding-right: 10px;
+					}
+
+					&:last-child{
+						width: 73px;
+					}
+
+					.check-icon{
+						padding: 0 0 0 26px;
+					}
+				}
+			}
+		}
 	}
 }
 /*end of b-cabinet-block*/
