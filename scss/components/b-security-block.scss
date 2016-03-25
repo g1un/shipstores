@@ -12,8 +12,9 @@
 	}
 
 	&__nav{
-		float: left;
+		display: table-cell;
 		width: 354px;
+		padding-bottom: 15px;
 
 		&-list{
 			list-style: none;
@@ -79,17 +80,26 @@
 	}
 
 	&__info{
-		float: right;
+		display: table-cell;
 		width: 458px;
 		border-left: 1px solid #efefef;
+		padding: 0 22px;
+		box-sizing: border-box;
 
 		&-title{
 			margin: 24px 0 17px;
+			font-family: NeueHaas_bold, Helvetica, sans-serif;
+			font-size: 18px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 0;
 			text-align: center;
 		}
 
-		&-text{
-			margin: 0 25px 25px 18px;
+		&-text, p, strong, b{
 			font-family: NeueHaas_light, Helvetica, sans-serif;
 			font-size: 12px;
 			line-height: 1.5em;
@@ -98,6 +108,12 @@
 			text-transform: none;
 			text-decoration: none;
 			letter-spacing: 0;
+			margin: 0;
+			//margin: 0 25px 25px 18px;
+
+			b{
+				display: inline;
+			}
 
 			&--par{
 				margin: 0px 18px 0px 18px;
@@ -108,6 +124,70 @@
 				margin: 0;
 				width: 255px;
 			}
+		}
+
+		p{
+			margin: 10px 0;
+		}
+
+		b{
+			display: block;
+			font-weight: bold;
+			margin: 0;
+		}
+
+		strong{
+			margin: 0;
+		}
+
+		table{
+			border-collapse: collapse;
+			padding: 0;
+			width: 95%;
+			margin: 5px auto;
+
+			td{
+				padding: 0 5px;
+				border: 1px solid rgba(202, 195, 195, 0.32);
+				width: 50%;
+				vertical-align: top;
+			}
+		}
+
+		ul{
+			list-style: none;
+			margin: 10px 0;
+			padding: 0;
+
+			li{
+				padding: 0 0 0 10px;
+				margin: 5px 0;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.5em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				position: relative;
+
+				&::before{
+					content: '';
+					position: absolute;
+					top: 8px;
+					left: 0;
+					width: 4px;
+					height: 4px;
+					border-radius: 50%;
+					background: #4583ff;
+				}
+			}
+		}
+
+		ol{
+			margin: 0;
+			padding: 0 0 0 10px;
 		}
 
 		&-par{

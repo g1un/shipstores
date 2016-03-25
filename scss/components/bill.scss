@@ -1,0 +1,249 @@
+/*bill*/
+.bill{
+	display: none;
+	padding: 21px 60px 49px 61px;
+	width: 833px;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	opacity: 0;
+	transition: opacity .5s;
+
+	&.show{
+		display: block;
+	}
+
+	&__wrapper{
+		font-size: 0;
+		line-height: 0;
+		position: relative;
+	}
+
+	h2{
+		margin: 0 85px 36px;
+		font-family: NeueHaas_bold, Helvetica, sans-serif;
+		font-size: 24px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 0;
+		text-align: center;
+	}
+
+	&__text{
+		margin: 0;
+		max-width: 500px;
+		float: left;
+		font-family: NeueHaas_bold, Helvetica, sans-serif;
+		font-size: 18px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
+
+	&__currency{
+
+		&-input{
+			float: right;
+		}
+
+		&-label{
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			padding: 0 0 0 27px;
+			display: block;
+			float: right;
+			font-family: NeueHaas_light, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+
+			&::before{
+				top: 3px;
+			}
+
+			&:after{
+				top: 5px;
+			}
+
+			span{
+				font-size: 16px;
+			}
+		}
+	}
+
+	table{
+		margin: 20px 0 42px;
+		width: 100%;
+		border-collapse: collapse;
+		border: 0;
+		padding: 0;
+
+		tr{
+			border-bottom: 1px solid #ededed;
+		}
+
+		td{
+			border: 0;
+			padding: 7px 0 8px;
+			vertical-align: middle;
+			box-sizing: border-box;
+
+			&:first-child{
+				font-size: 0;
+				line-height: 0;
+				width: 35px;
+
+				img{
+					max-width: 100%;
+				}
+			}
+
+			&:nth-child(2){
+				width: 202px;
+				font-family: NeueHaas_reg, Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #3577d7;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&:nth-child(3){
+				width: 215px;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #898989;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&:nth-child(4){
+				width: 178px;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #898989;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+
+				span{
+					margin: 0;
+					font-family: NeueHaas_medium, Helvetica, sans-serif;
+					color: #8b0333;
+				}
+			}
+
+			&:last-child{
+
+				.wrapper{
+					background: #f2f2f2;
+					padding: 8px 10px;
+					font-family: NeueHaas_light, Helvetica, sans-serif;
+					font-size: 14px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #959595;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+
+					span{
+						margin: 0;
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+
+	&__total{
+
+		&-title{
+			margin: 0 31px 0 0;
+			float: left;
+			vertical-align: top;
+			font-family: NeueHaas_medium, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 30px;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		&-value{
+			margin: 0 13px 0 0;
+			padding: 0 30px 0;
+			float: left;
+			box-shadow: inset 0 1px 3px 0 rgba(0,0,0,.17);
+			font-family: NeueHaas_bold, Helvetica, sans-serif;
+			font-size: 18px;
+			line-height: 32px;
+			font-weight: 400;
+			color: #8b0333;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		&-currency{
+			margin: 0;
+			display: block;
+			float: left;
+			font-family: NeueHaas_light, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 30px;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+	}
+
+	&__pay{
+		margin: 0;
+		display: block;
+		float: right;
+		width: 194px;
+	}
+
+	&__background{
+		display: none;
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 999;
+		background: rgba(0,0,0,.25);
+		opacity: 0;
+		transition: opacity .5s;
+
+		&.show{
+			display: block;
+		}
+	}
+}
+/*end of bill*/

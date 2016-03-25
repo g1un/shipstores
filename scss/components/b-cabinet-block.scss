@@ -131,8 +131,8 @@
 
 		&-paid-services{
 			margin: 0 auto 3px;
-			padding: 9px 0;
-			width: 240px;
+			padding: 9px 0 9px 29px;
+			width: 211px;
 			display: block;
 			background: #5e8ffb;
 			box-shadow: 0 1px 1px 0 rgba(0,0,0,.25);
@@ -144,7 +144,7 @@
 			text-transform: uppercase;
 			text-decoration: none;
 			letter-spacing: 0;
-			text-align: center;
+			text-align: left;
 
 			&:hover,
 			&:focus{
@@ -154,7 +154,9 @@
 
 		&-services{
 			margin: 0 auto;
-			width: 240px;
+			width: 211px;
+			text-align: left;
+			padding-left: 29px;
 		}
 	}
 
@@ -1554,7 +1556,8 @@
 				display: block;
 				float: right;
 				margin: 0;
-				width: 173px;
+				padding: 8px 10px;
+				min-width: 153px;
 			}
 
 			&-note{
@@ -1652,6 +1655,25 @@
 				text-transform: none;
 				text-decoration: none;
 				letter-spacing: 0;
+			}
+
+			&-rename{
+				font-size: 10px;
+				color: #961d48;
+				border-bottom: 1px dashed #961d48;
+				cursor: pointer;
+			}
+
+			&_edit-name{
+				padding: 2px 10px;
+				margin: 0 10px 0 0;
+
+				&-ok{
+					margin: 10px 0;
+					cursor: pointer;
+					color: #961d48;
+					border-bottom: 1px dashed #961d48;
+				}
 			}
 
 			&-confirmation{
@@ -1752,6 +1774,11 @@
 					width: 63px;
 				}
 			}
+		}
+
+		&-inputs{
+			position: relative;
+			height: 31px;
 		}
 	}
 
@@ -2657,6 +2684,34 @@
 		&-apply{
 			margin: 0 0 0 16px;
 			width: 155px;
+		}
+	}
+
+	&__add-doc{
+
+		&-progress{
+			float: left;
+			margin: 4px 0 0 0;
+			display: none;
+			height: 4px;
+			border: 1px solid #d7d7d7;
+			width: 100%;
+
+			&.progress-active{
+				display: block;
+			}
+
+			.progress-value{
+				height: inherit;
+				width: 0;
+				background: #7fb3ff;
+			}
+		}
+
+		&-text{
+			float: left;
+			width: 100%;
+			margin: 3px 0;
 		}
 	}
 }

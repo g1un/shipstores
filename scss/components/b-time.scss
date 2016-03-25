@@ -1,0 +1,66 @@
+/*b-time*/
+.b-time{
+	margin: 40px auto;
+	width: 303px;
+	box-sizing: border-box;
+	border: 1px solid #d1d1d1;
+	font-size: 0;
+
+	&__value{
+		display: inline-block;
+		vertical-align: top;
+		width: 55%;
+		padding: 3px 0 3px 49px;
+		box-sizing: border-box;
+		background: url("images/clock-icon.png") no-repeat 12px center;
+		border-right: 1px solid #d1d1d1;
+		font-family: NeueHaas_bold, Helvetica, sans-serif;
+		font-size: 18px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #7fb3ff;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+
+		span{
+			display: block;
+		}
+	}
+
+	&__title{
+		display: inline-block;
+		vertical-align: top;
+		width: 45%;
+		box-sizing: border-box;
+		padding: 3px 0;
+		font-family: NeueHaas_bold, Helvetica, sans-serif;
+		font-size: 18px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #7fb3ff;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 0;
+		text-align: center;
+	}
+
+	&__official{
+		display: inline-block;
+		vertical-align: top;
+		width: 100%;
+		padding: 5px 0;
+		box-sizing: border-box;
+		background: #7fb3ff;
+		font-family: NeueHaas_light, Helvetica, sans-serif;
+		font-size: 17px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #fff;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+		text-align: center;
+	}
+}
+/*end of b-time*/

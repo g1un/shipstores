@@ -602,6 +602,7 @@ table{
 .b-advertising-bottom{
 	height: 120px;
 	margin: 15px 0 0;
+	clear: both;
 }
 .b-advertising-bottom__banner{
 	box-shadow: 0px 1px 2px 0px #cccccc;
@@ -1018,18 +1019,26 @@ table{
 	float: right;
 	margin-top: -40px;
 }
+.b-right-list .add_adv {
+	padding:0;
+}
+.add_adv a{
+	text-decoration:none;
+	color: #fff;
+	padding:8px 0;
+	display:block;
+}
 .b-notice-goods__item{
 	width: 178px;
-	height: 125px;
+	min-height: 125px;
 	border: 1px solid #cdcdcd;
 	background: white;
 	margin: 10px auto;
 	padding: 5px 0;
 	font-size: 12px;
-	overflow: hidden;
 }
 .b-item-element{
-	height: 20px;
+	min-height: 20px;
 	padding: 2px 10px;
 	position: relative;
 }
@@ -1057,6 +1066,9 @@ table{
 .b-item-element__name{
 	position: absolute;
 	left: 40px;
+}
+.b-item-element__name-announce{
+	margin: 0 0 0 30px;
 }
 .b-item-element__start-price, .b-item-element__saler-city{
 	font-size: 10px;
@@ -1130,6 +1142,9 @@ table{
 .b-purchase .b-deal .b-common-list-table td:last-child{
 	width: 179px;
 	box-sizing: border-box;
+}
+.b-purchase .b-deal .b-common-list-table__table .announce-table td{
+	width: auto;
 }
 .purchase-table-name{
 	background: url(images/icon_raw.png) 10px center no-repeat;

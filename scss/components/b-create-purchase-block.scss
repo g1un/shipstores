@@ -105,16 +105,17 @@
     &-country-select{
       margin: 4px 0 0;
 
-      .jq-selectbox{
-        width: 200px;
+      .jq-selectbox,
+      .jq-select-multiple{
+        width: 300px;
       }
     }
 
     &-city-select{
       margin: 7px 0 0;
 
-      .jq-selectbox{
-        width: 200px;
+      .jq-select-multiple{
+        width: 300px;
       }
     }
 

@@ -521,6 +521,76 @@ $(document).ready(function() {
 
 	}
 	/*end of b-cabinet-block__purchase*/
+
+	/*bill window*/
+	if ($('.bill').length) {
+		var billLink = $('.b-orders-list-block__purchase-deal-table--deals tr');
+		var bill = $('.bill');
+		var billCancel = $('.bill .form-close');
+		var billBg = $('.bill__background');
+
+		for(var i=0; i<billLink.length; i++){
+			$(billLink[i]).on('click', function(e){
+				billBg.addClass('show');
+				bill.addClass('show');
+				setTimeout(function(){
+					billBg.css('opacity', '1');
+					bill.css('opacity', '1');
+				}, 50);
+				billCss();
+			});
+		}
+
+		function billCss() {
+			if (window.innerHeight >= bill.outerHeight()) {
+				var billTop = (window.innerHeight - bill.outerHeight()) / 2;
+				var billLeft = ($(window).width() - bill.outerWidth()) / 2;
+				bill.css({
+					'top': billTop,
+					'position': 'fixed',
+					'left': billLeft
+				});
+			}else{
+				billLeft = ($('body').width() - bill.outerWidth()) / 2;
+				bill.css({
+					'position': 'absolute',
+					'top': 0,
+					'left': billLeft
+				});
+			}
+		}
+
+		billCss();
+
+		$(window).on('resize', function () {
+			billCss();
+		});
+
+		billCancel.on('click', function () {
+			billBg.css('opacity', '0');
+			bill.css('opacity', '0');
+			setTimeout(function(){
+				billBg.removeClass('show');
+				bill.removeClass('show');
+			}, 500);
+
+		});
+
+		billBg.mousedown(function (e) {
+			var clicked = $(e.target);
+			if (clicked.is('.bill') || clicked.closest('.bill').length) {
+				return;
+			} else {
+				billBg.css('opacity', '0');
+				bill.css('opacity', '0');
+				setTimeout(function(){
+					billBg.removeClass('show');
+					bill.removeClass('show');
+				}, 500);
+			}
+		});
+	}
+	/*end of bill window*/
 });
 /*end of contacts.js*/
 
