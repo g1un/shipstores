@@ -36,6 +36,19 @@
 		}
 	}
 
+	h3{
+		margin: 0;
+		padding: 0;
+		font-family: NeueHaas_bold, Helvetica, sans-serif;
+		font-size: 18px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
+
 	&__mailing{
 		margin: 0;
 		padding: 0;
@@ -46,15 +59,6 @@
 
 		h3{
 			margin: 0 0 18px;
-			padding: 0;
-			font-family: NeueHaas_bold, Helvetica, sans-serif;
-			font-size: 18px;
-			line-height: 1.2em;
-			font-weight: 400;
-			color: #000;
-			text-transform: none;
-			text-decoration: none;
-			letter-spacing: 0;
 		}
 
 		&-category{
@@ -153,6 +157,142 @@
 
 		&-order{
 			width: 208px;
+		}
+	}
+
+	&__pro{
+		margin: 0;
+
+		p{
+			margin: 0 0 25px;
+			font-family: NeueHaas_reg, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+
+			b{
+				font-family: NeueHaas_bold, Helvetica, sans-serif;
+				font-weight: 400;
+			}
+		}
+
+		a{
+			width: 252px;
+		}
+	}
+
+	&__ads{
+		margin: 0;
+
+		h3{
+			margin: 0 0 19px;
+		}
+
+		p{
+			margin: 0 0 24px;
+			font-family: NeueHaas_bold, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		&-publish,
+		&-promotion{
+			margin: 0 0 29px;
+
+			th{
+				text-align: left;
+				padding: 9px 10px;
+			}
+
+			td{
+				vertical-align: top;
+				border: 0;
+				padding: 12px 10px 6px;
+				box-sizing: border-box;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #464646;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+
+				&:first-child{
+					font-family: NeueHaas_medium, Helvetica, sans-serif;
+					width: 116px;
+					text-align: left;
+				}
+
+				&:nth-child(2){
+					width: 94px;
+					text-align: center;
+				}
+
+				&:last-child{
+					width: 237px;
+
+					span{
+						margin: 0;
+						display: block;
+						float: left;
+					}
+
+					.brown_button{
+						margin: 0;
+						float: right;
+						width: 73px;
+					}
+
+					&::after{
+						content: '';
+						display: table;
+						clear: both;
+					}
+				}
+			}
+		}
+
+		&-promotion{
+			margin: 0;
+
+			th{
+				text-align: left;
+
+				&:nth-child(2){
+					text-align: left;
+					padding-left: 67px;
+					border-right: none;
+				}
+			}
+
+			td{
+
+				&:first-child{
+					font-family: NeueHaas_medium, Helvetica, sans-serif;
+					width: 116px;
+					text-align: left;
+				}
+
+				&:nth-child(2){
+					width: 208px;
+					text-align: left;
+					padding-left: 67px;
+				}
+
+				&:last-child{
+					width: 126px;
+				}
+			}
 		}
 	}
 }

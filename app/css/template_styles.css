@@ -1916,6 +1916,14 @@ table {
     padding: 16px 0; }
     .table th:last-child {
       border: none; }
+  .table--light {
+    box-shadow: none; }
+    .table--light tr:nth-child(n+2) {
+      cursor: default; }
+      .table--light tr:nth-child(n+2):hover, .table--light tr:nth-child(n+2):focus {
+        background: transparent; }
+        .table--light tr:nth-child(n+2):hover td, .table--light tr:nth-child(n+2):focus td {
+          border-color: transparent; }
 
 /*end of table*/
 /*check-icon*/
@@ -2035,7 +2043,7 @@ table {
       font-size: 12px;
       line-height: 1.2em;
       font-weight: 400;
-      color: #464646;
+      color: #959595;
       text-transform: none;
       text-decoration: none;
       letter-spacing: 0; }
@@ -11068,22 +11076,25 @@ div.search-item h4 a {
     margin: 0;
     width: 326px; }
 
+.cabinet-services h3 {
+  margin: 0;
+  padding: 0;
+  font-family: NeueHaas_bold, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #000;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0; }
+
 .cabinet-services__mailing {
   margin: 0;
   padding: 0; }
   .cabinet-services__mailing .jq-selectbox__select {
     padding-top: 6px; }
   .cabinet-services__mailing h3 {
-    margin: 0 0 18px;
-    padding: 0;
-    font-family: NeueHaas_bold, Helvetica, sans-serif;
-    font-size: 18px;
-    line-height: 1.2em;
-    font-weight: 400;
-    color: #000;
-    text-transform: none;
-    text-decoration: none;
-    letter-spacing: 0; }
+    margin: 0 0 18px; }
   .cabinet-services__mailing-category {
     margin: 0 0 34px;
     display: block;
@@ -11156,6 +11167,96 @@ div.search-item h4 a {
         font-weight: 400; }
   .cabinet-services__mailing-order {
     width: 208px; }
+
+.cabinet-services__pro {
+  margin: 0; }
+  .cabinet-services__pro p {
+    margin: 0 0 25px;
+    font-family: NeueHaas_reg, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0; }
+    .cabinet-services__pro p b {
+      font-family: NeueHaas_bold, Helvetica, sans-serif;
+      font-weight: 400; }
+  .cabinet-services__pro a {
+    width: 252px; }
+
+.cabinet-services__ads {
+  margin: 0; }
+  .cabinet-services__ads h3 {
+    margin: 0 0 19px; }
+  .cabinet-services__ads p {
+    margin: 0 0 24px;
+    font-family: NeueHaas_bold, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0; }
+  .cabinet-services__ads-publish, .cabinet-services__ads-promotion {
+    margin: 0 0 29px; }
+    .cabinet-services__ads-publish th, .cabinet-services__ads-promotion th {
+      text-align: left;
+      padding: 9px 10px; }
+    .cabinet-services__ads-publish td, .cabinet-services__ads-promotion td {
+      vertical-align: top;
+      border: 0;
+      padding: 12px 10px 6px;
+      box-sizing: border-box;
+      font-family: NeueHaas_light, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #464646;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+      .cabinet-services__ads-publish td:first-child, .cabinet-services__ads-promotion td:first-child {
+        font-family: NeueHaas_medium, Helvetica, sans-serif;
+        width: 116px;
+        text-align: left; }
+      .cabinet-services__ads-publish td:nth-child(2), .cabinet-services__ads-promotion td:nth-child(2) {
+        width: 94px;
+        text-align: center; }
+      .cabinet-services__ads-publish td:last-child, .cabinet-services__ads-promotion td:last-child {
+        width: 237px; }
+        .cabinet-services__ads-publish td:last-child span, .cabinet-services__ads-promotion td:last-child span {
+          margin: 0;
+          display: block;
+          float: left; }
+        .cabinet-services__ads-publish td:last-child .brown_button, .cabinet-services__ads-publish td:last-child .search-button, .cabinet-services__ads-promotion td:last-child .brown_button, .cabinet-services__ads-promotion td:last-child .search-button {
+          margin: 0;
+          float: right;
+          width: 73px; }
+        .cabinet-services__ads-publish td:last-child::after, .cabinet-services__ads-promotion td:last-child::after {
+          content: '';
+          display: table;
+          clear: both; }
+  .cabinet-services__ads-promotion {
+    margin: 0; }
+    .cabinet-services__ads-promotion th {
+      text-align: left; }
+      .cabinet-services__ads-promotion th:nth-child(2) {
+        text-align: left;
+        padding-left: 67px;
+        border-right: none; }
+    .cabinet-services__ads-promotion td:first-child {
+      font-family: NeueHaas_medium, Helvetica, sans-serif;
+      width: 116px;
+      text-align: left; }
+    .cabinet-services__ads-promotion td:nth-child(2) {
+      width: 208px;
+      text-align: left;
+      padding-left: 67px; }
+    .cabinet-services__ads-promotion td:last-child {
+      width: 126px; }
 
 /*end of cabinet-services*/
 /*end of PAGE-STYLES*/

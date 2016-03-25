@@ -742,6 +742,26 @@
 			border: none;
 		}
 	}
+
+	&--light{
+		box-shadow: none;
+
+		tr{
+
+			&:nth-child(n+2){
+				cursor: default;
+
+				&:hover,
+				&:focus{
+					background: transparent;
+
+					td{
+						border-color: transparent;
+					}
+				}
+			}
+		}
+	}
 }
 /*end of table*/
 
@@ -895,7 +915,7 @@
 			font-size: 12px;
 			line-height: 1.2em;
 			font-weight: 400;
-			color: #464646;
+			color: #959595;
 			text-transform: none;
 			text-decoration: none;
 			letter-spacing: 0;
