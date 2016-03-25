@@ -1101,6 +1101,9 @@ table{
 	float: left;
 	margin-bottom: 10px;
 }
+.b-deal .pagination {
+	margin: 10px 6px 0 0;
+}
 .b-deal-list{
 	width: 620px;
 }
@@ -1145,6 +1148,9 @@ table{
 }
 .b-purchase .b-deal .b-common-list-table__table .announce-table td{
 	width: auto;
+}
+.b-purchase .b-deal .b-common-list-table__table .announce-table td:nth-child(3) {
+	text-align:center;
 }
 .purchase-table-name{
 	background: url(images/icon_raw.png) 10px center no-repeat;

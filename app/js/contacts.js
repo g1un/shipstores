@@ -591,6 +591,44 @@ $(document).ready(function() {
 		});
 	}
 	/*end of bill window*/
+
+	/*multiselect__form*/
+	if($('.multiselect__form').length){
+		var multiselect = $('.multiselect');
+		var multiselectForm = $('.multiselect__form');
+		var multiselectBtn = $('.multiselect__placeholder');
+
+		multiselectBtn.on('click', function(){
+			multiselect.toggleClass('opened');
+			multiselectBtn.toggleClass('opened');
+			multiselectForm.toggleClass('show');
+		});
+
+		$(window).mousedown(function (e) {
+			var clicked = $(e.target);
+			if (clicked.is('.multiselect__form')||clicked.closest('.multiselect__form').length||clicked.closest('.multiselect__placeholder').length){
+				return;
+			} else {
+				multiselect.removeClass('opened');
+				multiselectBtn.removeClass('opened');
+				multiselectForm.removeClass('show');
+			}
+		});
+	}
+	/*end of multiselect__form*/
+
+	/*cabinet-services__mailing-category*/
+	if($('.cabinet-services__mailing-category').length){
+		var mailingBtn = $('.cabinet-services__mailing-category .multiselect__section');
+
+		for(var i=0; i<mailingBtn.length; i++){
+			$(mailingBtn[i]).on('click', function(){
+				$(this).toggleClass('opened');
+				$(this).next().toggleClass('show');
+			});
+		}
+	}
+	/*end of cabinet-services__mailing-category*/
 });
 /*end of contacts.js*/
 

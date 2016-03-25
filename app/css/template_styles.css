@@ -1066,6 +1066,9 @@ table {
   float: left;
   margin-bottom: 10px; }
 
+.b-deal .pagination {
+  margin: 10px 6px 0 0; }
+
 .b-deal-list {
   width: 620px; }
 
@@ -1109,6 +1112,9 @@ table {
 
 .b-purchase .b-deal .b-common-list-table__table .announce-table td {
   width: auto; }
+
+.b-purchase .b-deal .b-common-list-table__table .announce-table td:nth-child(3) {
+  text-align: center; }
 
 .purchase-table-name {
   background: url(images/icon_raw.png) 10px center no-repeat;
@@ -1939,6 +1945,106 @@ table {
     box-shadow: 0 1px 3px 0 rgba(53, 119, 215, 0.5); }
 
 /*end of check-icon*/
+/*multiselect*/
+.multiselect {
+  position: relative; }
+  .multiselect.opened {
+    z-index: 101; }
+  .multiselect__placeholder {
+    margin: 0;
+    padding: 9px 38px 9px 10px;
+    font-family: NeueHaas_light-it, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #b7b7b7;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    background: #fff;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.25);
+    cursor: pointer; }
+    .multiselect__placeholder::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 6px;
+      background: #fff;
+      z-index: 2; }
+    .multiselect__placeholder:after {
+      content: '';
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 0;
+      height: 0;
+      border-top: 7px solid #8b0333;
+      border-left: 6px solid transparent;
+      border-right: 6px solid transparent; }
+    .multiselect__placeholder.opened:after {
+      border-top: none;
+      border-bottom: 7px solid #8b0333; }
+  .multiselect__form {
+    display: none;
+    margin: 0;
+    padding: 0 12px 10px;
+    max-height: 264px;
+    background: #fff;
+    overflow: auto;
+    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.25);
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    right: 0; }
+    .multiselect__form.show {
+      display: block; }
+  .multiselect__section {
+    margin: 9px 0;
+    padding: 0;
+    font-family: NeueHaas_medium, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #464646;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0; }
+    .multiselect__section label {
+      padding: 0 0 0 22px;
+      display: inline-block;
+      vertical-align: top; }
+      .multiselect__section label::before {
+        top: 2px; }
+      .multiselect__section label::after {
+        top: 4px; }
+  .multiselect__list {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  .multiselect__item {
+    margin: 0 0 6px;
+    line-height: 0; }
+    .multiselect__item label {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0;
+      padding: 0 0 0 22px;
+      font-family: NeueHaas_reg, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #464646;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+      .multiselect__item label::before {
+        top: 1px; }
+      .multiselect__item label::after {
+        top: 3px; }
+
+/*end of multiselect*/
 /*end of FORM*/
 /*TITLES*/
 .form-title {
@@ -10932,4 +11038,124 @@ div.search-item h4 a {
       display: block; }
 
 /*end of bill*/
+/*cabinet-services*/
+.cabinet-services .jq-selectbox__select-text {
+  font-family: NeueHaas_reg, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.2em;
+  font-weight: 400;
+  color: #959595;
+  text-transform: none;
+  text-decoration: none;
+  letter-spacing: 0; }
+
+.cabinet-services__header {
+  display: block;
+  margin: 0;
+  padding: 0 0 28px; }
+  .cabinet-services__header h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-family: NeueHaas_medium, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0; }
+  .cabinet-services__header .jq-selectbox-main {
+    margin: 0;
+    width: 326px; }
+
+.cabinet-services__mailing {
+  margin: 0;
+  padding: 0; }
+  .cabinet-services__mailing .jq-selectbox__select {
+    padding-top: 6px; }
+  .cabinet-services__mailing h3 {
+    margin: 0 0 18px;
+    padding: 0;
+    font-family: NeueHaas_bold, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0; }
+  .cabinet-services__mailing-category {
+    margin: 0 0 34px;
+    display: block;
+    width: 326px; }
+    .cabinet-services__mailing-category .multiselect__placeholder {
+      padding: 8px 38px 8px 10px;
+      font-family: NeueHaas_reg, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #959595;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+    .cabinet-services__mailing-category .multiselect__form {
+      max-height: 430px; }
+    .cabinet-services__mailing-category .multiselect__section {
+      cursor: pointer;
+      text-decoration: underline; }
+      .cabinet-services__mailing-category .multiselect__section.opened {
+        text-decoration: none; }
+    .cabinet-services__mailing-category .multiselect__list {
+      display: none; }
+      .cabinet-services__mailing-category .multiselect__list.show {
+        display: block; }
+  .cabinet-services__mailing-term {
+    margin: 0 0 34px;
+    width: 181px;
+    display: block; }
+  .cabinet-services__mailing-cost {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 0 31px;
+    padding: 14px 0 14px 19px;
+    box-sizing: border-box;
+    min-width: 348px;
+    background: #f4f4f4; }
+    .cabinet-services__mailing-cost p {
+      margin: 0 27px 0 0;
+      display: inline-block;
+      vertical-align: top;
+      font-family: NeueHaas_reg, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 30px;
+      font-weight: 400;
+      color: #898989;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+    .cabinet-services__mailing-cost span {
+      display: inline-block;
+      vertical-align: top;
+      padding: 6px 10px 6px 5px;
+      border-radius: 4px;
+      min-width: 59px;
+      box-sizing: border-box;
+      background: #fff;
+      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
+      font-family: NeueHaas_reg, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #898989;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      text-align: right; }
+      .cabinet-services__mailing-cost span b {
+        font-size: 16px;
+        font-weight: 400; }
+  .cabinet-services__mailing-order {
+    width: 208px; }
+
+/*end of cabinet-services*/
 /*end of PAGE-STYLES*/
