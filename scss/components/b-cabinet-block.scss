@@ -2714,5 +2714,167 @@
 			margin: 3px 0;
 		}
 	}
+
+	&__pro{
+		margin: 10px -10px;
+		padding: 20px 10px;
+		background: #f0f6ff;
+
+		h3{
+			margin: 0 0 10px;
+			font-family: NeueHaas_medium, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: center;
+		}
+
+		p{
+			margin: 10px 0;
+			font-family: NeueHaas_reg, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: justify;
+		}
+
+		.more{
+			margin: 10px 0 0;
+			display: block;
+			float: left;
+			font-family: NeueHaas_reg, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #8b0333;
+			text-transform: none;
+			text-decoration: underline;
+			letter-spacing: 0;
+		}
+
+		.get{
+			display: block;
+			width: 173px;
+			float: right;
+		}
+	}
+
+	&__cash-flow{
+		margin: 10px -10px;
+		padding: 20px 10px;
+		background: #f0f6ff;
+
+		h3{
+			margin: 0 0 15px;
+			font-family: NeueHaas_medium, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: center;
+		}
+
+		p{
+			margin: 10px 0;
+			font-family: NeueHaas_medium, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		.month{
+			margin: 0 10px 0 0;
+			width: 85px;
+
+			.jq-selectbox__select{
+				padding: 9px 24px 6px 7px;
+			}
+		}
+
+		.year{
+			width: 80px;
+		}
+
+		&-wrapper{
+			margin: 15px 0;
+			font-size: 0;
+
+			&--report{
+				margin: 15px 0 0;
+			}
+		}
+
+		.total{
+
+			&-title{
+				margin: 0 15px 0 0;
+				font-family: NeueHaas_reg, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&-value{
+				margin: 0 5px 0 0;
+				font-family: NeueHaas_bold, Helvetica, sans-serif;
+				font-size: 24px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #0c4da2;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&-units{
+				margin: 0 15px 0 0;
+				font-family: NeueHaas_it, Helvetica, sans-serif;
+				font-size: 16px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #0c4da2;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&-currency{
+				margin: 0;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #9d9e9e;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+		}
+
+		.report{
+			display: block;
+			float: right;
+			width: 173px;
+		}
+	}
 }
 /*end of b-cabinet-block*/

@@ -90,7 +90,7 @@
 							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-1">Навигация и связь</a></li>
 							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-2">Аварийно-спасательные средства</a></li>
 							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-3">Противопожарные средства</a></li>
-							<li> <a href="#" class="b-leftmenublue__link b-leftmenu_link-4">Судовое оборудование</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-4">Судовое оборудование</a></li>
 							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-5">Судовая электрика</a></li>
 							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-6">Корпус и палуба</a></li>
 							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-7">Судовые материалы</a></li>
@@ -130,20 +130,6 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="b-time">
-			<div class="b-time__value">
-				<span>23:01:45</span>
-				<span>21.03.2016</span>
-			</div>
-
-			<div class="b-time__title">Текущее время</div>
-
-			<div class="b-time__official">
-				Официальное время<br>
-				Shipstores.net – GMT + 2
-			</div>
-		</div>
 	</div>
 
 	<div class="b-right">
@@ -165,7 +151,7 @@
 		</div>
 
 		<div class="b-breadcrumb-search">
-			<li nk href="/bitrix/css/main/font-awesome.css?145318681428777" type="text/css" rel="stylesheet">
+			<link href="/bitrix/css/main/font-awesome.css?145318681428777" type="text/css" rel="stylesheet">
 				<div class="bx-breadcrumb">
 					<div class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
 
@@ -199,7 +185,7 @@
 						<li class="b-cabinet-block__panel-nav-item">Документы</li>
 						<li class="b-cabinet-block__panel-nav-item">Публикация вакансий и резюме</li>
 						<li class="b-cabinet-block__panel-nav-item">Сфера деятельности</li>
-						<li class="b-cabinet-block__panel-nav-item active">Открытые сделки и закупки</li>
+						<li class="b-cabinet-block__panel-nav-item">Открытые сделки и закупки</li>
 						<li class="b-cabinet-block__panel-nav-item">Мои объявления</li>
 						<li class="b-cabinet-block__panel-nav-item">Мой лист заказов</li>
 					</ul>
@@ -211,206 +197,88 @@
 			</div>
 
 			<div class="b-cabinet-block__sections">
-				<div class="b-cabinet-block__purchase">
-					<h3 class="b-cabinet-block__purchase-title">Сделки, в которых вы участвуете:</h3>
+				<section class="cabinet-services">
+					<header class="cabinet-services__header">
+						<h2>Заказать сервисы</h2>
 
-					<section class="b-cabinet-block__purchase-item">
-						<header class="b-cabinet-block__purchase-item-header">
-							<div class="b-cabinet-block__purchase-item-header-up">
-								<div class="b-cabinet-block__purchase-item-name-title">Категория и название сделки</div>
-								<div class="b-cabinet-block__purchase-item-price-title">Ваша цена</div>
-							</div>
-
-							<div class="b-cabinet-block__purchase-item-header-bottom">
-								<div class="b-cabinet-block__purchase-item-name-value">
-									<div class="b-cabinet-block__purchase-item-name-img"><img src="images/gear.png" alt="gear"></div>
-									<span>Закупка насосно-компрессорных труб</span>
-								</div>
-								<div class="b-cabinet-block__purchase-item-price-value">33 000 <span>€</span></div>
-							</div>
-						</header>
-
-						<div class="b-cabinet-block__purchase-wrapper">
-							<div class="b-cabinet-block__purchase-item-status">
-								<div class="b-cabinet-block__purchase-item-status-img on"></div>
-								<div class="b-cabinet-block__purchase-item-status-value">Идет прием заявок</div>
-								<div class="b-cabinet-block__purchase-item-status-term">
-									<div class="name">Срок приема заявок</div>
-									<div class="value">14.09.2015</div>
-								</div>
-								<div class="b-cabinet-block__purchase-item-status-date">
-									<div class="name">Дата публикации</div>
-									<div class="value">14.03.2015</div>
-								</div>
-							</div>
-
-							<table class="b-cabinet-block__purchase-item-info">
-								<tr>
-									<td>Заказчик</td>
-									<td>УПС «Мария»</td>
-								</tr>
-
-								<tr>
-									<td>Город</td>
-									<td>Москва</td>
-								</tr>
-							</table>
-
-							<a class="b-cabinet-block__purchase-item-doc" href="#">Заявка на товар.pdf</a>
+						<div class="jq-selectbox-main" data-placeholder="Выберите сервис">
+							<select name="cabinet-services__select" id="cabinet-services__select" data-placeholder="Выберите сервис">
+								<option></option>
+								<option value="1">Email рассылка</option>
+								<option value="2">Личный кабинет «Pro»</option>
+								<option value="3">Объявления категории «Стандарт»</option>
+								<option value="4" selected>Объявления категории «Закупка»</option>
+							</select>
 						</div>
+					</header>
+
+					<section class="cabinet-services__purchase">
+						<h3>Информация о стоимости публикации объявлений</h3>
+
+						<p>
+							Публикация объявления категории «Закупка» бесплатно
+						</p>
+
+						<a class="brown_button" href="#">Заказать объявление закупка</a>
+
+						<h3>Продвижение объявления</h3>
+
+						<table class="cabinet-services__promotion-table table table--light">
+							<tr>
+								<th>Категория</th>
+								<th>у.е./10 дней</th>
+								<th></th>
+							</tr>
+							<tr>
+								<td>
+									«Тор»<br>
+									(выделенный блок сверху)
+								</td>
+								<td>3,00</td>
+								<td>
+									<a class="brown_button brown_button--little" href="#">заказать</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									«Extra plus»<br>
+									(выделенный блок справа)
+								</td>
+								<td>2,00</td>
+								<td>
+									<a class="brown_button brown_button--little" href="#">заказать</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									«Extra»<br>
+									(выделение золотым цветом)
+								</td>
+								<td>1,00</td>
+								<td>
+									<a class="brown_button brown_button--little" href="#">заказать</a>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									«UP»<br>
+									(режим - поднять объявление)
+								</td>
+								<td>0,50 у.е./раз</td>
+								<td>
+									<a class="brown_button brown_button--little" href="#">заказать</a>
+								</td>
+							</tr>
+							<tr>
+								<td>Специальное предложение</td>
+								<td>5 у.е./день</td>
+								<td>
+									<a class="brown_button brown_button--little" href="#">заказать</a>
+								</td>
+							</tr>
+						</table>
 					</section>
-
-					<h3 class="b-cabinet-block__purchase-title">Закупки, в которых вы участвуете:</h3>
-
-					<section class="b-cabinet-block__purchase-item">
-						<header class="b-cabinet-block__purchase-item-header">
-							<div class="b-cabinet-block__purchase-item-header-up">
-								<div class="b-cabinet-block__purchase-item-name-title">Категория и название сделки</div>
-								<div class="b-cabinet-block__purchase-item-price-title">Ваша цена</div>
-							</div>
-
-							<div class="b-cabinet-block__purchase-item-header-bottom">
-								<div class="b-cabinet-block__purchase-item-name-value">
-									<div class="b-cabinet-block__purchase-item-name-img"><img src="images/arrow-in-circle.png" alt="arrow-in-circle"></div>
-									<span>Поставка системы интегральной навигации и стабилизации "Кама-НС-В" с монтажными и пусконаладочными работами</span>
-								</div>
-								<div class="b-cabinet-block__purchase-item-price-value">33 000 <span>€</span></div>
-							</div>
-						</header>
-
-						<div class="b-cabinet-block__purchase-wrapper">
-							<div class="b-cabinet-block__purchase-item-status">
-								<div class="b-cabinet-block__purchase-item-status-img off"></div>
-								<div class="b-cabinet-block__purchase-item-status-value">Прием заявок завершен</div>
-								<div class="b-cabinet-block__purchase-item-status-term">
-									<div class="name">Срок приема заявок</div>
-									<div class="value">14.09.2015</div>
-								</div>
-								<div class="b-cabinet-block__purchase-item-status-date">
-									<div class="name">Дата публикации</div>
-									<div class="value">14.03.2015</div>
-								</div>
-							</div>
-
-							<table class="b-cabinet-block__purchase-item-info">
-								<tr>
-									<td>Заказчик</td>
-									<td>Государственное унитарное предприятие Республики Крым «Феодосийский судомеханический завод»</td>
-								</tr>
-
-								<tr>
-									<td>Город</td>
-									<td>Севастополь</td>
-								</tr>
-							</table>
-
-							<a class="b-cabinet-block__purchase-item-doc" href="#">Заявка на товар.pdf</a>
-						</div>
-					</section>
-
-					<h3 class="b-cabinet-block__purchase-title b-cabinet-block__purchase-title--link">История сделок и закупок (2)</h3>
-
-					<div class="b-cabinet-block__purchase-close">Закрыть</div>
-
-					<ul class="b-cabinet-block__purchase-history">
-						<li>
-							<header class="b-cabinet-block__purchase-item-header b-cabinet-block__purchase-item-header--history">
-								<div class="b-cabinet-block__purchase-item-name-value">
-									<div class="b-cabinet-block__purchase-item-name-img"><img src="images/gear.png" alt="gear"></div>
-									<span>Закупка насосно-компрессорных труб</span>
-								</div>
-								<div class="b-cabinet-block__purchase-history-status"><span class="canceled">сделка не состоялась</span></div>
-							</header>
-
-							<table class="b-cabinet-block__purchase-history-table">
-								<tr>
-									<th>Дата завершения</th>
-									<th>Заказчик</th>
-									<th>Сумма</th>
-									<th>Оценка</th>
-								</tr>
-								<tr>
-									<td>14.03.2015</td>
-									<td>УПС «Мария»</td>
-									<td>30 000</td>
-									<td>5</td>
-								</tr>
-							</table>
-						</li>
-
-						<li>
-							<header class="b-cabinet-block__purchase-item-header b-cabinet-block__purchase-item-header--history">
-								<div class="b-cabinet-block__purchase-item-name-value">
-									<div class="b-cabinet-block__purchase-item-name-img"><img src="images/gear.png" alt="gear"></div>
-									<span>Закупка насосно-компрессорных труб</span>
-								</div>
-								<div class="b-cabinet-block__purchase-history-status"><span class="check-icon">сделка состоялась</span></div>
-							</header>
-
-							<table class="b-cabinet-block__purchase-history-table">
-								<tr>
-									<th>Дата завершения</th>
-									<th>Заказчик</th>
-									<th>Сумма</th>
-									<th>Оценка</th>
-								</tr>
-								<tr>
-									<td>14.03.2015</td>
-									<td>УПС «Мария»</td>
-									<td>30 000</td>
-									<td>5</td>
-								</tr>
-							</table>
-						</li>
-					</ul>
-
-					<h3 class="b-cabinet-block__purchase-title b-cabinet-block__purchase-title--link">избранное (3)</h3>
-
-					<div class="b-cabinet-block__purchase-close">Закрыть</div>
-
-					<section class="b-cabinet-block__purchase-item b-cabinet-block__purchase-item--favourite">
-						<header class="b-cabinet-block__purchase-item-header">
-							<div class="b-cabinet-block__purchase-item-header-up">
-								<div class="b-cabinet-block__purchase-item-name-title">Категория и название сделки</div>
-							</div>
-							<div class="b-cabinet-block__purchase-item-header-bottom">
-								<div class="b-cabinet-block__purchase-item-name-value">
-									<div class="b-cabinet-block__purchase-item-name-img"><img src="images/arrow-in-circle.png" alt="arrow-in-circle"></div>
-									<span>Поставка системы интегральной навигации и стабилизации "Кама-НС-В" с монтажными и пусконаладочными работами</span>
-								</div>
-							</div>
-						</header>
-
-						<div class="b-cabinet-block__purchase-wrapper">
-							<div class="b-cabinet-block__purchase-item-status">
-								<div class="b-cabinet-block__purchase-item-status-img on"></div>
-								<div class="b-cabinet-block__purchase-item-status-value on">Идет прием заявок</div>
-								<div class="b-cabinet-block__purchase-item-status-term">
-									<div class="name">Срок приема заявок</div>
-									<div class="value">14.09.2015</div>
-								</div>
-								<div class="b-cabinet-block__purchase-item-status-date">
-									<div class="name">Дата публикации</div>
-									<div class="value">14.03.2015</div>
-								</div>
-							</div>
-
-							<table class="b-cabinet-block__purchase-item-info">
-								<tr>
-									<td>Заказчик</td>
-									<td>Государственное унитарное предприятие Республики Крым «Феодосийский судомеханический завод»</td>
-								</tr>
-
-								<tr>
-									<td>Город</td>
-									<td>Севастополь</td>
-								</tr>
-							</table>
-
-							<a class="b-cabinet-block__purchase-apply brown_button" href="#">Подать заявку</a>
-						</div>
-					</section>
-				</div>
+				</section>
 			</div>
 		</div>
 

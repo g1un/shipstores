@@ -49,6 +49,62 @@
 		letter-spacing: 0;
 	}
 
+	&__promotion-table{
+		margin: 0;
+		width: 451px;
+
+		th{
+			vertical-align: middle;
+			text-align: left;
+			padding: 5px 10px;
+			height: 40px;
+
+			&:nth-child(2){
+				padding-left: 67px;
+				border-right: none;
+			}
+		}
+
+		td{
+			vertical-align: middle;
+			border: 0;
+			padding: 5px 10px;
+			box-sizing: border-box;
+			height: 54px;
+			font-family: NeueHaas_medium, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #464646;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+
+			.brown_button{
+				display: inline-block;
+				vertical-align: middle;
+				margin: 0;
+				width: 73px;
+			}
+
+			&:first-child{
+				font-family: NeueHaas_medium, Helvetica, sans-serif;
+				width: 142px;
+				text-align: left;
+			}
+
+			&:nth-child(2){
+				width: 208px;
+				text-align: left;
+				padding-left: 67px;
+			}
+
+			&:last-child{
+				width: 100px;
+			}
+		}
+	}
+
 	&__mailing{
 		margin: 0;
 		padding: 0;
@@ -576,6 +632,33 @@
 					padding: 5px 10px 5px 5px;
 				}
 			}
+		}
+	}
+
+	&__purchase{
+		margin: 0;
+		padding: 0;
+
+		h3{
+			margin: 15px 0;
+		}
+
+		&>p{
+			margin: 15px 0;
+			font-family: NeueHaas_reg, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		&>.brown_button{
+			margin: 15px 0 25px;
+			display: block;
+			width: 270px;
 		}
 	}
 }

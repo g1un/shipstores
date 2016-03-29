@@ -10167,6 +10167,129 @@ table {
     float: left;
     width: 100%;
     margin: 3px 0; }
+  .b-cabinet-block__pro {
+    margin: 10px -10px;
+    padding: 20px 10px;
+    background: #f0f6ff; }
+    .b-cabinet-block__pro h3 {
+      margin: 0 0 10px;
+      font-family: NeueHaas_medium, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #000;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0;
+      text-align: center; }
+    .b-cabinet-block__pro p {
+      margin: 10px 0;
+      font-family: NeueHaas_reg, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #000;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      text-align: justify; }
+    .b-cabinet-block__pro .more {
+      margin: 10px 0 0;
+      display: block;
+      float: left;
+      font-family: NeueHaas_reg, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #8b0333;
+      text-transform: none;
+      text-decoration: underline;
+      letter-spacing: 0; }
+    .b-cabinet-block__pro .get {
+      display: block;
+      width: 173px;
+      float: right; }
+  .b-cabinet-block__cash-flow {
+    margin: 10px -10px;
+    padding: 20px 10px;
+    background: #f0f6ff; }
+    .b-cabinet-block__cash-flow h3 {
+      margin: 0 0 15px;
+      font-family: NeueHaas_medium, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #000;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0;
+      text-align: center; }
+    .b-cabinet-block__cash-flow p {
+      margin: 10px 0;
+      font-family: NeueHaas_medium, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #000;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+    .b-cabinet-block__cash-flow .month {
+      margin: 0 10px 0 0;
+      width: 85px; }
+      .b-cabinet-block__cash-flow .month .jq-selectbox__select {
+        padding: 9px 24px 6px 7px; }
+    .b-cabinet-block__cash-flow .year {
+      width: 80px; }
+    .b-cabinet-block__cash-flow-wrapper {
+      margin: 15px 0;
+      font-size: 0; }
+      .b-cabinet-block__cash-flow-wrapper--report {
+        margin: 15px 0 0; }
+    .b-cabinet-block__cash-flow .total-title {
+      margin: 0 15px 0 0;
+      font-family: NeueHaas_reg, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #000;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+    .b-cabinet-block__cash-flow .total-value {
+      margin: 0 5px 0 0;
+      font-family: NeueHaas_bold, Helvetica, sans-serif;
+      font-size: 24px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #0c4da2;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+    .b-cabinet-block__cash-flow .total-units {
+      margin: 0 15px 0 0;
+      font-family: NeueHaas_it, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #0c4da2;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+    .b-cabinet-block__cash-flow .total-currency {
+      margin: 0;
+      font-family: NeueHaas_light, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #9d9e9e;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+    .b-cabinet-block__cash-flow .report {
+      display: block;
+      float: right;
+      width: 173px; }
 
 /*end of b-cabinet-block*/
 /*buy-in-shop*/
@@ -11137,6 +11260,47 @@ div.search-item h4 a {
   text-decoration: none;
   letter-spacing: 0; }
 
+.cabinet-services__promotion-table {
+  margin: 0;
+  width: 451px; }
+  .cabinet-services__promotion-table th {
+    vertical-align: middle;
+    text-align: left;
+    padding: 5px 10px;
+    height: 40px; }
+    .cabinet-services__promotion-table th:nth-child(2) {
+      padding-left: 67px;
+      border-right: none; }
+  .cabinet-services__promotion-table td {
+    vertical-align: middle;
+    border: 0;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    height: 54px;
+    font-family: NeueHaas_medium, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #464646;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0; }
+    .cabinet-services__promotion-table td .brown_button, .cabinet-services__promotion-table td .search-button {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0;
+      width: 73px; }
+    .cabinet-services__promotion-table td:first-child {
+      font-family: NeueHaas_medium, Helvetica, sans-serif;
+      width: 142px;
+      text-align: left; }
+    .cabinet-services__promotion-table td:nth-child(2) {
+      width: 208px;
+      text-align: left;
+      padding-left: 67px; }
+    .cabinet-services__promotion-table td:last-child {
+      width: 100px; }
+
 .cabinet-services__mailing {
   margin: 0;
   padding: 0; }
@@ -11515,5 +11679,189 @@ div.search-item h4 a {
       width: 100px;
       padding: 5px 10px 5px 5px; }
 
+.cabinet-services__purchase {
+  margin: 0;
+  padding: 0; }
+  .cabinet-services__purchase h3 {
+    margin: 15px 0; }
+  .cabinet-services__purchase > p {
+    margin: 15px 0;
+    font-family: NeueHaas_reg, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0; }
+  .cabinet-services__purchase > .brown_button, .cabinet-services__purchase > .search-button {
+    margin: 15px 0 25px;
+    display: block;
+    width: 270px; }
+
 /*end of cabinet-services*/
+/*notification*/
+.notification {
+  margin: 10px 0;
+  padding: 10px 0 10px 70px;
+  clear: both;
+  background: #f0f6ff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.15);
+  position: relative; }
+  .notification::before {
+    content: '!';
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #8b0333;
+    font-family: NeueHaas_bold, Helvetica, sans-serif;
+    font-size: 21px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-align: center; }
+  .notification p {
+    margin: 0;
+    padding: 0;
+    font-family: NeueHaas_reg, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0; }
+    .notification p b {
+      font-family: NeueHaas_bold, Helvetica, sans-serif;
+      font-weight: 400; }
+
+/*end of notification*/
+/*cabinet-buttons*/
+.cabinet-buttons {
+  margin: 0;
+  padding: 0 40px;
+  list-style: none;
+  font-size: 0; }
+  .cabinet-buttons li {
+    display: inline-block;
+    vertical-align: top;
+    line-height: 0;
+    width: 33.33%;
+    text-align: center; }
+    .cabinet-buttons li a {
+      display: inline-block;
+      vertical-align: top;
+      min-width: 200px;
+      min-height: 20px;
+      background: #7fb3ff;
+      box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+      font-family: NeueHaas_bold, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 20px;
+      font-weight: 400;
+      color: #fff;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      text-align: center; }
+      .cabinet-buttons li a:hover, .cabinet-buttons li a:focus {
+        background: #4c83fc; }
+
+/*end of cabinet-buttons*/
+/*b-left*/
+.b-left__subscribe {
+  margin: 20px auto;
+  padding: 15px 15px 10px;
+  box-sizing: border-box;
+  width: 305px;
+  border: 1px solid #464646; }
+  .b-left__subscribe h3 {
+    margin: 0 0 15px;
+    font-family: NeueHaas_bold, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #707070;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-align: center; }
+  .b-left__subscribe input[type='text'] {
+    display: block;
+    margin: 10px 0 15px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 32px;
+    border: none;
+    outline: none;
+    background: #fafafa;
+    font-family: NeueHaas_reg, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 32px;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0; }
+    .b-left__subscribe input[type='text']::-webkit-input-placeholder {
+      opacity: 1;
+      font-family: NeueHaas_light-it, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 32px;
+      font-weight: 400;
+      color: #b7b7b7;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+    .b-left__subscribe input[type='text']:-ms-input-placeholder {
+      opacity: 1;
+      font-family: NeueHaas_light-it, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 32px;
+      font-weight: 400;
+      color: #b7b7b7;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+    .b-left__subscribe input[type='text']::-moz-placeholder {
+      opacity: 1;
+      font-family: NeueHaas_light-it, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 32px;
+      font-weight: 400;
+      color: #b7b7b7;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+  .b-left__subscribe input[type='submit'] {
+    margin: 10px auto 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: block;
+    width: 136px;
+    min-height: 32px;
+    border: 1px solid #8b0333;
+    outline: none;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+    background: #fff;
+    font-family: NeueHaas_bold, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #8b0333;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-align: center; }
+
+/*end of b-left*/
 /*end of PAGE-STYLES*/
