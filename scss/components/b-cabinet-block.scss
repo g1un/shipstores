@@ -768,11 +768,11 @@
 			}
 		}
 
-		&-categories{
+		&-categories,
+		&-categories2{
 			list-style: none;
 			margin: 0 0 5px;
 			padding: 0;
-			max-height: 92px;
 			position: relative;
 
 			&::after{
@@ -807,7 +807,6 @@
 			&-all{
 				display: inline-block;
 				vertical-align: top;
-				margin: 0 0 26px;
 				font-family: NeueHaas_medium, Helvetica, sans-serif;
 				font-size: 12px;
 				line-height: 1.2em;
@@ -821,6 +820,13 @@
 				&:focus{
 					text-decoration: none;
 				}
+			}
+		}
+
+		&-categories2{
+
+			&::after{
+				background: none;
 			}
 		}
 

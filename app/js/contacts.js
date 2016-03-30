@@ -664,11 +664,6 @@ $(document).ready(function() {
 				$('body').append('<div class="b-ad-unit-block__cancel form-close"></div>');
 			}
 
-			//$('body').append('<div class="b-ad-unit-block__image"></div>');
-			//
-			//$('.b-ad-unit-block__image').append('<img src="'+imageBig.attr('src')+'">');
-			//$('.b-ad-unit-block__image').append('<div class="b-ad-unit-block__cancel form-close"></div>');
-
 			$('.b-ad-unit-block__background').addClass('show');
 			$('.b-ad-unit-block__image').addClass('show');
 			$('.b-ad-unit-block__cancel').addClass('show');
@@ -788,6 +783,57 @@ $(document).ready(function() {
 		ymaps.ready(init);
 	}
 	/*end of map everywhere*/
+
+	/*b-orders-list-block__archive*/
+	if($('.b-orders-list-block__archive').length){
+		var archiveButton = $('.b-orders-list-block__archive h3');
+		var archiveTable = $('.b-orders-list-block__archive table');
+
+		archiveButton.on('click', function(){
+			$(this).toggleClass('opened');
+			archiveTable.toggleClass('show');
+		});
+	}
+	/*end of b-orders-list-block__archive*/
+
+	/*b-orders-list-block__table-favourite*/
+	if($('.b-orders-list-block__table-favourite').length){
+		var favButton = $('.b-orders-list-block__selector-item');
+		var favTable = $('.b-orders-list-block__table-favourite');
+
+		for(var i=0; i<favButton.length; i++){
+			$(favButton[i]).on('click', function () {
+				for(var j=0; j<favButton.length; j++){
+					$(favButton[j]).removeClass('active');
+					$(favTable[j]).removeClass('show');
+				}
+				$(this).addClass('active');
+				$(favTable[$(this).index()]).addClass('show');
+			});
+		}
+	}
+	/*end of b-orders-list-block__table-favourite*/
+
+	/*b-head__controls*/
+	if ($('.b-head__controls').length) {
+		var headControls = $('.b-head__controls');
+		var headUser = $('.b-head__user');
+
+		headUser.on('click', function(e){
+			e.preventDefault();
+			headControls.fadeToggle('fast');
+		});
+
+		$(window).mousedown(function (e) {
+			var clicked = $(e.target);
+			if (clicked.is('.b-head__controls') || clicked.closest('.b-head__controls').length || clicked.is('.b-head__user') || clicked.closest('.b-head__user').length) {
+				return;
+			} else {
+				headControls.fadeOut('fast');
+			}
+		});
+	}
+	/*end of b-head__controls*/
 });
 /*end of contacts.js*/
 
