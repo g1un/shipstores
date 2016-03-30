@@ -1,0 +1,13 @@
+/*left-buttons*/
+.left-buttons{
+	a{
+		display: block;
+		margin: 10px 0;
+		font-size: 12px;
+
+		&:last-child{
+			margin: 0;
+		}
+	}
+}
+/*end of left-buttons*/
