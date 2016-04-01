@@ -936,6 +936,27 @@ $(document).ready(function() {
 
 	}
 	/*end of b-ad-order-block__options-scheme*/
+
+	/*favourite tables*/
+	if($('.favourite').length){
+		var favBtn = $('.favourite__nav li');
+		var favTable = $('.favourite__tables table');
+
+		favBtn.each(function(){
+			$(this).on('click', function(){
+				favBtn.each(function(){
+					$(this).removeClass('active');
+				});
+				favTable.each(function(){
+					$(this).removeClass('show');
+				});
+				$(this).addClass('active');
+				var number = $(this).index();
+				favTable.eq(number).addClass('show');
+			});
+		});
+	}
+	/*end of favourite tables*/
 });
 /*end of contacts.js*/
 
