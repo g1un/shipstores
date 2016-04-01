@@ -765,6 +765,126 @@
 }
 /*end of table*/
 
+/*table-shop-goods*/
+.table-shop-goods{
+	margin: 0 0 30px;
+	padding: 0;
+	width: 100%;
+	border-collapse: collapse;
+	border: none;
+	background: #fff;
+
+	tr{
+
+		&:nth-child(n+2){
+			border-bottom: 1px solid #ededed;
+		}
+	}
+
+	th{
+		background: #f3f3f3;
+		height: 45px;
+		padding: 5px 10px;
+		box-sizing: border-box;
+		border: none;
+		border-right: 1px solid #fff;
+		vertical-align: middle;
+		font-family: NeueHaas_light, Helvetica, sans-serif;
+		font-size: 11px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #acacac;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+
+		&:last-child{
+			border: none;
+		}
+	}
+
+	td{
+		vertical-align: middle;
+		height: 50px;
+		padding: 5px 10px;
+		box-sizing: border-box;
+
+		&:first-child{
+			width: 200px;
+		}
+
+		&:nth-child(2){
+			width: 140px;
+			font-family: NeueHaas_medium, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #8b0333;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		&:nth-child(3){
+			width: 165px;
+			font-family: NeueHaas_light, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		&:nth-child(4){
+			width: 130px;
+			font-family: NeueHaas_light, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #464646;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		&:last-child{
+			font-family: NeueHaas_reg, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #464646;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		.title{
+			font-family: NeueHaas_reg, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #464646;
+			text-transform: none;
+			text-decoration: underline;
+			letter-spacing: 0;
+		}
+
+		.category{
+			font-family: NeueHaas_light, Helvetica, sans-serif;
+			font-size: 10px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #3577d7;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+	}
+}
+/*end of table-shop-goods*/
+
 /*check-icon*/
 .check-icon{
 	position: relative;

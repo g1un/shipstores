@@ -272,42 +272,6 @@
 			&:last-child{
 				margin: 0;
 			}
-
-			//&--all{
-			//	width: 91px;
-			//}
-			//
-			//&--individ{
-			//	width: 222px;
-			//}
-			//
-			//&--entity{
-			//	width: 225px;
-			//}
-			//
-			//&--sellers{
-			//	width: 141px;
-			//}
-			//
-			//&--stores{
-			//	width: 138px;
-			//}
-			//
-			//&--ads{
-			//	width: 145px;
-			//}
-			//
-			//&--purchases{
-			//	width: 133px;
-			//}
-			//
-			//&--vacancies{
-			//	width: 128px;
-			//}
-			//
-			//&--resume{
-			//	width: 125px;
-			//}
 		}
 	}
 
@@ -585,6 +549,10 @@
 					b{
 						font-weight: 400;
 						text-decoration: underline;
+
+						a{
+							color: #000;
+						}
 					}
 
 					span{

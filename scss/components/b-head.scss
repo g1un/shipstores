@@ -1,4 +1,4 @@
-/*b-head__messages & b-head__user*/
+/*b-head*/
 .b-head{
 	position: relative;
 
@@ -250,28 +250,81 @@
 			margin-top: 27px;
 			margin-left: 60px;
 		}
+
+		&--add-account{
+
+			a{
+
+				&::after{
+					content: '+';
+					display: block;
+					width: 20px;
+					height: 20px;
+					position: absolute;
+					top: 7px;
+					left: 5px;
+					border: 1px solid #ddd;
+					font-size: 25px;
+					border-radius: 50%;
+					text-align: center;
+					color: #AFAFAF;
+					background: #F4F4F4;
+				}
+			}
+
+			&:hover{
+
+				a{
+
+					&::after{
+						background: #fff;
+					}
+				}
+			}
+		}
+
+		&__custom-user{
+
+			&--image{
+
+				.b-head__user-photo{
+					margin-right: 10px;
+				}
+			}
+
+			&--name{
+				font-family: NeueHaas_medium, Helvetica, sans-serif;
+				font-size: 14px;
+			}
+
+			&--type{
+				font-family: NeueHaas_light-it, Helvetica, sans-serif;
+				font-size: 12px;
+			}
+		}
 	}
 
 	&__controls{
+		z-index: 200;
 		display: none;
-		//opacity: 0;
 		position: absolute;
-		top: 65px;
+		top: 60px;
 		right: 0;
 		width: 245px;
-		background: #8b0333;
-		box-shadow: 0 1px 1px 0 rgba(0,0,0,.25);
+		background: #fff;
+		box-shadow: 0 0 10px 0 rgba(0,0,0,.25);
+		border-bottom: 2px solid #8B0333;
 		list-style: none;
 		margin: 0;
 		padding: 0;
-		//transition: opacity .5s;
 
 		li{
+			position: relative;
+			border-bottom: 1px solid rgba(228, 228, 228, 0.4);
 
 			a{
 				display: block;
-				margin: 5px;
-				padding: 5px;
+				padding: 10px 15px 10px 33px;
 				background: #fff;
 				font-family: NeueHaas_medium, Helvetica, sans-serif;
 				font-size: 14px;
@@ -284,10 +337,15 @@
 
 				&:hover,
 				&:focus{
-					background: linear-gradient(to bottom, #fff, #d9d9d9);
+					background: rgba(228, 228, 228, 0.4);
+				}
+
+				&.b-head__user__custom-user{
+					padding: 10px;
+					background: #F4F4F4;
 				}
 			}
 		}
 	}
 }
-/*end of b-head__messages & b-head__user*/
+/*end of b-head*/

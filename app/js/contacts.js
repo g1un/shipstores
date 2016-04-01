@@ -834,6 +834,108 @@ $(document).ready(function() {
 		});
 	}
 	/*end of b-head__controls*/
+
+	/*b-ad-order-block__options-scheme*/
+	if ($('.b-ad-order-block__options-scheme').length) {
+		var adLocationSelect = $('.b-ad-order-block__options-location select');
+		var adLocationOption = $('.b-ad-order-block__options-location option:selected');
+		var adNumberSelect = $('.b-ad-order-block__options-block-num select');
+		var adNumberOption = $('.b-ad-order-block__options-block-num option:selected');
+		var adBlock = $('.b-ad-order-block__options-scheme-block');
+		var adBlockInfo = $('.b-ad-order-block__options-scheme-info');
+
+		function indicate(){
+			var adNumberOption = $('.b-ad-order-block__options-block-num option:selected');
+			for(var j=0; j<adBlock.length; j++){
+				$(adBlock[j]).removeClass('active');
+			}
+			for(var i=0; i<adBlock.length; i++){
+				if(adNumberOption.text() == $(adBlock[i]).children('span').text()){
+					$(adBlock[i]).addClass('active');
+					blockSize();
+				}
+			}
+		};
+
+		function scheme(){
+			var adLocationOption = $('.b-ad-order-block__options-location option:selected');
+			if(adLocationOption.text() != 'Магазин'){
+				$(adBlock[2]).css('display', 'none');
+				$(adBlock[0]).css('margin-bottom', '206px');
+				if($('.b-ad-order-block__options-block-num option').length == 5){
+					$('.b-ad-order-block__options-block-num option:last-child').remove();
+					$('.b-ad-order-block__options-block-num option:first-child').prop('selected','true');
+					$('.jq-selectbox-main select').trigger('refresh');
+					indicate();
+				}
+
+			}else{
+				$(adBlock[2]).css('display', 'block');
+				$(adBlock[0]).css('margin-bottom', '75px');
+				if($('.b-ad-order-block__options-block-num option').length < 5){
+					$('.b-ad-order-block__options-block-num select').append('<option value="5">05</option>');
+					$('.jq-selectbox-main select').trigger('refresh');
+				}
+			}
+		};
+
+		function blockClick(){
+			for(var i=0; i<adBlock.length; i++){
+				$(adBlock[i]).on('click', function(){
+					for(var j=0; j<adBlock.length; j++){
+						$(adBlock[j]).removeClass('active');
+					}
+					$(this).addClass('active');
+					blockSize();
+					var position = parseInt($(this).children('span').text().substr(1,1)) - 1;
+					$('.b-ad-order-block__options-block-num option').eq(position).prop('selected','true');
+					$('.jq-selectbox-main select').trigger('refresh');
+				});
+			}
+		};
+
+		function blockSize(){
+			for(var i=0; i<adBlock.length; i++){
+				if($(adBlock[i]).hasClass('active')){
+					if(i<2){
+						adBlockInfo.css({
+							'top': '15px',
+							'bottom': 'auto',
+						})
+						.text('400px × 70px');
+					}else if(i==2){
+						adBlockInfo.css({
+							'top': '143px',
+							'bottom': 'auto',
+						})
+						.text('240px × 400px');
+					}else if(i>2){
+						adBlockInfo.css({
+							'top': 'auto',
+							'bottom': '50px',
+						})
+						.text('400px × 120px');
+					}
+				}
+			}
+		};
+
+		blockClick();
+		indicate();
+		scheme();
+		blockSize();
+
+		adNumberSelect.change(function () {
+			indicate();
+		});
+
+		adLocationSelect.change(function () {
+			scheme();
+		});
+
+
+	}
+	/*end of b-ad-order-block__options-scheme*/
 });
 /*end of contacts.js*/
 

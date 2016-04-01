@@ -1,0 +1,30 @@
+/*popup*/
+.popup-avatar .upload {float: left; width: 206px; font-size: 13px; text-align: center;}
+
+.popup-avatar .upload .input-file {margin-bottom: 10px; width: 206px; position: relative; display: inline-block;}
+.popup-avatar .upload .input-file-title {position: relative; text-align: center; cursor: pointer;}
+.popup-avatar .upload .input-file-title:after {content: ''; position: absolute; width: 25px; height: 24px; left: 8px; top: 7px;}
+
+.popup-avatar .upload .input-file input[type='file'] {position: absolute; left: -30000px;}
+.popup-avatar .upload .input-file .progress {position: relative; height: 10px; margin: 20px 10px 5px; border-radius: 5px; overflow: hidden; box-shadow: inset 0 1px 1px #aaa; background: #ebebeb; display: none;}
+.popup-avatar .upload .input-file .progress .progress-value {position: absolute; width: 0%; left: 0; top: 0; background: #3f7b80; height: 100%;}
+.popup-avatar .upload .input-file .progress-active {display: block;}
+.popup-avatar .upload .input-file .error {display: none; color: #f6250e; font-size: 12px; line-height: 18px; text-align: center;}
+
+.popup-avatar .mini {float: left;font-size: 18px;line-height: 24px;padding-top: 15px;clear: both;text-transform: uppercase;text-align: center}
+.popup-avatar .mini .image {display: block; width: 204px; height: 204px; border: 1px solid #666; border-radius: 12px; margin-top: 5px; background: 0 0 no-repeat;}
+.popup-avatar .preview {margin-left: 280px; height: 310px; background: 50% 50% no-repeat #eee; position: relative; overflow: hidden;}
+.popup-avatar .preview img {display: none; max-height: 310px; max-width: 410px; margin: 0 auto;}
+.popup-avatar .preview .gray {display: none; width: 100%; height: 100%; top: 0; left: 0; background: rgba(0, 0, 0, 0.18); position: absolute;}
+.popup-avatar .preview .area-wrap {display: none; width: 100%; height: 100%; top: 0; left: 0; position: absolute;}
+.popup-avatar .preview .area-wrap .area {width: 50px; height: 50px; top: 0; left: 0; position: absolute; background: 0 0 no-repeat #fff;}
+.popup-avatar .preview .area-wrap .area .ui-resizable-nw {position: absolute; border: 1px solid #fff; width: 5px; height: 5px; top: -4px; left: -4px; cursor: nw-resize;}
+.popup-avatar .preview .area-wrap .area .ui-resizable-ne {position: absolute; border: 1px solid #fff; width: 5px; height: 5px; top: -4px; right: -4px; cursor: ne-resize;}
+.popup-avatar .preview .area-wrap .area .ui-resizable-sw {position: absolute; border: 1px solid #fff; width: 5px; height: 5px; bottom: -4px; left: -4px; cursor: sw-resize;}
+.popup-avatar .preview .area-wrap .area .ui-resizable-se {position: absolute; border: 1px solid #fff; width: 5px; height: 5px; bottom: -4px; right: -4px; cursor: se-resize;}
+.popup-avatar .preview-active img {display: block;}
+.popup-avatar .preview-active .gray {display: block;}
+.popup-avatar .preview-active .area-wrap {display: block;}
+
+.popup-avatar input[type='submit'] {width: 206px;}
+/*end of popup*/

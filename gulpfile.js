@@ -35,7 +35,7 @@ gulp.task('browserSync', function() {
 	browserSync.init({
 		server: {
 			baseDir: 'app',
-			index: "Shipstores_List_zakazov_customer_2016-03-28.html"
+			index: "ad-order.html"
 		},
 	})
 });

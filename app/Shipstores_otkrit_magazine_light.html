@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shipstores</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link href="css/jquery.formstyler.css" rel="stylesheet">
+	<link href="css/jquery.fancybox.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/template_styles.css">
+</head>
+
+<body>
+
+<div class="b-main">
+
+	<div class="b-head">
+		<div class="b-head__logo">
+			<div class="b-logo">
+				<a href="#"><img src="images/logo.png" /></a>
+			</div>
+		</div>
+		<div class="b-head__links">
+			<div class="b-menu">
+				<div  class='b-menu__link'>
+					<a href="#">закупки</a>
+					<div class="b-menu__linkhover"></div>
+				</div>
+				<div  class='b-menu__link'>
+					<a href="#">магазины</a>
+					<div class="b-menu__linkhover"></div>
+				</div>
+				<div  class='b-menu__link'>
+					<a href="#">объявления</a>
+					<div class="b-menu__linkhover"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="b-head__currency-lang">
+			<ul class="b-head__currency">
+				<li class="ru show">₽</li>
+				<li class="us">$</li>
+				<li class="eu">€</li>
+				<li class="gb">£</li>
+			</ul>
+
+			<ul class="b-head__currency-list">
+				<li class="ru active">₽ Российский рубль</li>
+				<li class="us">$ Доллар США</li>
+				<li class="eu">€ Евро</li>
+				<li class="gb">£ Фунт стерлингов</li>
+			</ul>
+
+			<ul class="b-head__lang">
+				<li class="ru show"></li>
+				<li class="en"></li>
+				<li class="fr"></li>
+				<li class="sp"></li>
+				<li class="ch"></li>
+				<li class="it"></li>
+				<li class="ge"></li>
+			</ul>
+
+			<ul class="b-head__lang-list">
+				<li class="ru active">Русский</li>
+				<li class="en">English (UK)</li>
+				<li class="fr">Français</li>
+				<li class="sp">Español</li>
+				<li class="ch">简体中文</li>
+				<li class="it">Italiano</li>
+				<li class="ge">Deutsch</li>
+			</ul>
+		</div>
+
+		<div class="b-head__autorize">
+			<div class="b-topbuttons">
+				<div class="g-button b-topbuttons_button g-white_bg">Вход</div>
+				<div class="g-button b-topbuttons_button g-blue_bg">Регистрация</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="b-left">
+		<div class="b-left__menu">
+			<div class="b-leftmenu">
+				<div class="b-leftmenublue">
+					<nav>
+						<ul>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-1">Навигация и связь</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-2">Аварийно-спасательные средства</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-3">Противопожарные средства</a></li>
+							<li> <a href="#" class="b-leftmenublue__link b-leftmenu_link-4">Судовое оборудование</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-5">Судовая электрика</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-6">Корпус и палуба</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-7">Судовые материалы</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-8">Рыбопромысловое оборудование</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-9">Гидрографическое оборудование</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-10">Водолазное и подводное оборудование</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-11">Плавсредства</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-12">Услуги и сервис</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-13">Сувениры и винтаж</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-14">Разное</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-15">Работа</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="b-leftmenuwhite">
+					<nav>
+						<ul>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-16">Как это работает</a></li>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-17">Правила</a></li>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-18">Помощь</a></li>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-19">Безопасность</a></li>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-20">FAQ</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="b-left_bottom">
+			<div class="b-needhelp">
+				<div class="b-needhelp__header">нужна помощь?</div>
+				<div class="b-needhelp__body">Воспользуйтесь <a href="#">формой обратной связи</a> или свяжитесь с нами по телефону горячей линии</div>
+				<div class="b-needhelp__bottom">
+					<div class="b-shedule">
+						<div class="b-shedule__phone">8-800-100-00-00</div>
+						<div class="b-shedule__shedule">ежедневно<br>с 9:00 до 20:00</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="b-right">
+
+		<div class="b-advertising-top">
+			<a href="#"><img src="images/banner-01.jpg" /></a>
+		</div>
+
+		<div class="b-breadcrumb-search">
+			<link href="/bitrix/css/main/font-awesome.css?145318681428777" type="text/css" rel="stylesheet">
+			<div class="bx-breadcrumb">
+				<div class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+
+					<a href="/" title="Главная" itemprop="url">
+						<span itemprop="title">Главная</span>
+					</a>
+				</div>
+				<div class="bx-breadcrumb-item">
+					<i class="fa fa-angle-right"></i>
+					<span>Новости</span>
+				</div><div style="clear:both"></div></div> <div class="b-search-nomain">
+			<div class="b-search__text nomain-search">
+				<input class="b-search__inpfield nomain-search nomain-inp-text" type="text" value="">
+				<input class="b-search__submit nomain-search search-small-pict" type="submit" value="">
+			</div>
+		</div>
+		</div>
+
+		<form class="open-shop" action="#" method="get">
+			<div class="open-shop__tariff">Выбран тариф: <span class="light">«Light»</span></div>
+
+			<h2>Ваши данные по магазину</h2>
+
+			<p class="open-shop__comment">
+				Перед добавлением на сайт каждый магазин проверяется на соответствие <a href="#">правилам SHIPSTORES.NET</a>
+			</p>
+
+			<table class="open-shop__info open-shop__info--light">
+				<tr>
+					<td>Название магазина</td>
+					<td>
+						<input class="type-text" type="text" name="shop-name" id="shop-name">
+					</td>
+				</tr>
+				<tr>
+					<td>Постоянный адрес</td>
+					<td>
+						<input class="type-text" type="text" name="shop-address" id="shop-address" placeholder="http://shipstores.net/korabel">
+					</td>
+				</tr>
+				<tr>
+					<td>Телефон магазина</td>
+					<td class="tel">
+						<label><input class="type-text" type="text" name="shop-tel-code" id="shop-tel-code"></label>
+						<input class="type-text" type="text" name="shop-tel-num" id="shop-tel-num">
+					</td>
+				</tr>
+				<tr>
+					<td>Мобильный телефон</td>
+					<td class="tel">
+						<span>+7</span>
+						<label><input class="type-text" type="text" name="shop-mobile-code" id="shop-mobile-code"></label>
+						<input class="type-text" type="text" name="shop-mobile-num" id="shop-mobile-num">
+					</td>
+				</tr>
+				<tr>
+					<td>E-mail</td>
+					<td class="mail">
+						<input class="type-text" type="text" name="shop-mail" id="shop-mail">
+					</td>
+				</tr>
+				<tr>
+					<td>Желаемый вид связи</td>
+					<td class="communication">
+						<div class="jq-selectbox-main">
+							<select name="open-shop__communication" id="open-shop__communication">
+								<option value="1">Портал Shipstores.net</option>
+								<option value="2">Почта</option>
+								<option value="3">Телефон</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+			</table>
+
+			<h3>Информация, которая  будет видна пользователю после публикации:</h3>
+
+			<table class="location">
+				<tr>
+					<td>Страна</td>
+					<td>
+						<div class="jq-selectbox-main">
+							<select name="open-shop__country" id="open-shop__country">
+								<option value="1">Россия</option>
+								<option value="2">Германия</option>
+								<option value="3">Великобритания</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Город</td>
+					<td>
+						<div class="jq-selectbox-main">
+							<select name="open-shop__city" id="open-shop__city">
+								<option value="1">Москва</option>
+								<option value="2">Куала-Лумпур</option>
+								<option value="3">Рейкъявик</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Адрес</td>
+					<td>
+						<input class="type-text" type="text" name="open-shop__address" id="open-shop__address">
+					</td>
+				</tr>
+			</table>
+
+			<input class="input-checkbox" type="checkbox" name="open-shop__exist" id="open-shop__exist">
+			<label class="open-shop__exist label-checkbox" for="open-shop__exist">Торговая точка существует</label>
+
+			<table class="schedule">
+				<tr>
+					<td class="title" rowspan="3">Режим работы</td>
+					<td>Пн</td>
+					<td>Вт</td>
+					<td>Ср</td>
+					<td>Чт</td>
+					<td>Пт</td>
+					<td>Сб</td>
+					<td>Вс</td>
+				</tr>
+				<tr>
+					<td class="from">
+						<span>С</span>
+						<input class="type-text" type="text" name="shop-schedule-from-mon" id="shop-schedule-from-mon" placeholder="9:00">
+					</td>
+					<td><input class="type-text" type="text" name="shop-schedule-from-tue" id="shop-schedule-from-tue" placeholder="9:00"></td>
+					<td><input class="type-text" type="text" name="shop-schedule-from-wed" id="shop-schedule-from-wed" placeholder="9:00"></td>
+					<td><input class="type-text" type="text" name="shop-schedule-from-thi" id="shop-schedule-from-thi" placeholder="9:00"></td>
+					<td><input class="type-text" type="text" name="shop-schedule-from-fri" id="shop-schedule-from-fri" placeholder="9:00"></td>
+					<td><input class="type-text" type="text" name="shop-schedule-from-sat" id="shop-schedule-from-sat" placeholder="9:00"></td>
+					<td><input class="type-text" type="text" name="shop-schedule-from-sun" id="shop-schedule-from-sun" placeholder="9:00"></td>
+				</tr>
+				<tr>
+					<td class="to">
+						<span>До</span>
+						<input class="type-text" type="text" name="shop-schedule-to-mon" id="shop-schedule-to-mon" placeholder="00:00">
+					</td>
+					<td><input class="type-text" type="text" name="shop-schedule-to-tue" id="shop-schedule-to-tue" placeholder="00:00"></td>
+					<td><input class="type-text" type="text" name="shop-schedule-to-wed" id="shop-schedule-to-wed" placeholder="00:00"></td>
+					<td><input class="type-text" type="text" name="shop-schedule-to-thi" id="shop-schedule-to-thi" placeholder="00:00"></td>
+					<td><input class="type-text" type="text" name="shop-schedule-to-fri" id="shop-schedule-to-fri" placeholder="00:00"></td>
+					<td><input class="type-text" type="text" name="shop-schedule-to-sat" id="shop-schedule-to-sat" placeholder="00:00"></td>
+					<td><input class="type-text" type="text" name="shop-schedule-to-sun" id="shop-schedule-to-sun" placeholder="00:00"></td>
+				</tr>
+			</table>
+
+			<section class="open-shop__goods">
+				<h3>Размещенные товары</h3>
+
+				<table class="table-shop-goods">
+					<tr>
+						<th>Наименование товара</th>
+						<th>Цена, руб</th>
+						<th>Производство</th>
+						<th>Вес</th>
+						<th>Дата размещения</th>
+					</tr>
+					<tr>
+						<td>
+							<div class="title">Лебедки судовые</div>
+							<div class="category">Судовое оборудование</div>
+						</td>
+						<td>40 000</td>
+						<td>SUMMAR, Китай</td>
+						<td>500 кг</td>
+						<td>
+							12.04.2014
+							<span class="remove"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="title">Лебедки судовые</div>
+							<div class="category">Судовое оборудование</div>
+						</td>
+						<td>40 000</td>
+						<td>SUMMAR, Китай</td>
+						<td>500 кг</td>
+						<td>
+							12.04.2014
+							<span class="remove"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="title">Лебедки судовые</div>
+							<div class="category">Судовое оборудование</div>
+						</td>
+						<td>40 000</td>
+						<td>SUMMAR, Китай</td>
+						<td>500 кг</td>
+						<td>
+							12.04.2014
+							<span class="remove"></span>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<div class="title">Лебедки судовые</div>
+							<div class="category">Судовое оборудование</div>
+						</td>
+						<td>40 000</td>
+						<td>SUMMAR, Китай</td>
+						<td>500 кг</td>
+						<td>
+							12.04.2014
+							<span class="remove"></span>
+						</td>
+					</tr>
+				</table>
+
+				<div class="open-shop__wrapper clearfix">
+					<a class="open-shop__add-good shadow_button" href="#">Добавить товар</a>
+
+					<p class="comment">
+						В соответствии с выбранным тарифом, вы можете разместить еще 18 товаров
+					</p>
+				</div>
+			</section>
+
+			<div class="open-shop__extra-service">
+				<h3>Укажите дополнительные услуги магазина:</h3>
+
+				<ul>
+					<li>
+						<input class="input-checkbox" type="checkbox" name="open-shop__shipping" id="open-shop__shipping">
+						<label class="label-checkbox" for="open-shop__shipping">Доставка</label>
+					</li>
+					<li>
+						<input class="input-checkbox" type="checkbox" name="open-shop__loading" id="open-shop__loading">
+						<label class="label-checkbox" for="open-shop__loading">Погрузка</label>
+					</li>
+					<li>
+						<input class="input-checkbox" type="checkbox" name="open-shop__customhouse" id="open-shop__customhouse">
+						<label class="label-checkbox" for="open-shop__customhouse">Оформление таможни</label>
+					</li>
+					<li>
+						<input class="input-checkbox" type="checkbox" name="open-shop__visibility" id="open-shop__visibility">
+						<label class="label-checkbox" for="open-shop__visibility">Показывать магазин только зарегистрированным пользователям</label>
+					</li>
+				</ul>
+			</div>
+
+			<p class="comment">
+				После проверки объявления модератором на соответствие правилам портала, магазин становится доступным для просмотра.
+			</p>
+
+			<div class="open-shop__wrapper clearfix">
+				<input class="open-shop__submit brown_button" type="submit" name="open-shop__submit" id="open-shop__submit" value="Отправить на модерацию">
+			</div>
+		</form>
+
+		<div class="b-advertising-bottom">
+			<div class="b-advertising-bottom__banner banner-02"><a href="#"><img src="images/examples/banner2.png" /></a></div>
+			<div class="b-advertising-bottom__banner banner-03"><a href="#"><img src="images/examples/banner3.png" /></a></div>
+		</div>
+
+	</div>
+
+	<div class="b-bottom-menu">
+		<nav>
+			<div class="b-menu-main"><!--b-menu_link_active-->
+				<div  class='b-menu-main__link'>
+					<a href="#">О портале</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Услуги портала</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Новости</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Реклама</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Контакты</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Дилеры</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">shipstoresbonus</a>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="b-footer">
+		<div class="b-footer-cr">
+			<div class="b-footer-cr__copy">© 2015 ShipStores</div>
+			<div class="b-footer-cr__bitrix"><img src="images/bitrix.png" /></div>
+			<div class="b-footer-cr__menu">
+				<a href="#">Закупки</a>
+				<a href="#">Магазины</a>
+				<a href="#">Объявления</a>
+			</div>
+			<div class="b-footer-cr__7studio">
+				<p><a href="//7sait.spb.ru/services/sozdanie-saitov/" title="Разработка сайтов">Разработка сайта: «7 Студио»</a></p>
+				<p><a href="//7sait.spb.ru/services/internet-marketing/" title="Продвижение сайтов">Продвижение сайта: «7 Студио»</a></p>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="b-static-stripe">
+	<div class="b-your-blue">
+		<div class="b-your-blue__feedback my-divs">
+			<div class="form-button js-call-form">обратная связь</div>
+		</div>
+		<div class="b-your-blue__info my-divs b-your-blue__infofirst">
+			<div class="b-my-info">
+				<div class="b-my-info__icon icon-purchase"></div>
+				<div class="b-my-info__name"><a href="#">Закупки, в которых вы участвуете</a></div>
+				<div class="b-my-info__count">4</div>
+			</div>
+		</div>
+		<div class="b-your-blue__info my-divs">
+			<div class="b-my-info">
+				<div class="b-my-info__icon icon-notice"></div>
+				<div class="b-my-info__name"><a href="#">Размещено объявлений</a></div>
+				<div class="b-my-info__count">4</div>
+			</div>
+		</div>
+		<div class="b-your-blue__info my-divs">
+			<div class="b-my-info">
+				<div class="b-my-info__icon icon-favorites"></div>
+				<div class="b-my-info__name"><a href="#">Избранное</a></div>
+				<div class="b-my-info__count">4</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--price-offer form-->
+<div class="price-offer form-white" id="price-offer">
+	<h3 class="price-offer__title form-title">Участвовать в запросе предложений</h3>
+
+	<form class="price-offer__form" action="#" method="get">
+		<label class="price-offer__label form-text" for="price-offer__sum">Сумма, которую вы готовы предложить</label>
+		<input class="price-offer__sum type-text-shadow" type="text" name="price-offer__sum" id="price-offer__sum">
+
+		<span class="price-offer__sum-units form-text">рублей</span>
+
+		<input class="price-offer__submit brown_button" type="submit" name="price-offer__submit" id="price-offer__submit" value="Сделать предложение">
+	</form>
+
+	<div class="price-offer__close form-close"></div>
+</div>
+<!--end of price-offer form-->
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="http://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/contacts.js"></script>
+
+</body>
+</html>

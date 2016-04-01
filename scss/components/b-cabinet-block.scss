@@ -19,6 +19,11 @@
 			border-radius: 50%;
 			font-size: 0;
 			line-height: 0;
+			cursor: pointer;
+
+			&:hover{
+				border: 6px solid #7FB3FF;
+			}
 
 			img{
 				border-radius: 50%;

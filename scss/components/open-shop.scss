@@ -1,0 +1,589 @@
+/*open-shop*/
+.open-shop{
+	margin: 0;
+	padding: 20px 15px;
+	clear: both;
+	background: #fff;
+	border: 1px solid #d1d1d1;
+
+	&__tariff{
+		margin: 0;
+		float: right;
+		font-family: NeueHaas_light-it, Helvetica, sans-serif;
+		font-size: 12px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #616161;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+
+		.pro{
+			font-family: NeueHaas_bold-it, Helvetica, sans-serif;
+			font-size: 15px;
+			color: #8b0333;
+			text-transform: uppercase;
+		}
+
+		.business{
+			font-family: NeueHaas_bold-it, Helvetica, sans-serif;
+			font-size: 15px;
+			color: #3474d6;
+		}
+
+		.light{
+			font-family: NeueHaas_it, Helvetica, sans-serif;
+			font-size: 15px;
+			color: #3577d7;
+		}
+	}
+
+	h2{
+		margin: 0 0 20px;
+		padding: 0;
+		font-family: NeueHaas_bold, Helvetica, sans-serif;
+		font-size: 18px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
+
+	&__comment{
+		margin: 0 0 25px;
+		padding: 0;
+		font-family: NeueHaas_it, Helvetica, sans-serif;
+		font-size: 12px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #363636;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+
+		a{
+			color: #363636;
+		}
+	}
+
+	&__info{
+		margin: 0 0 30px;
+		padding: 0;
+		border-collapse: collapse;
+		border: 0;
+		width: 100%;
+
+		td{
+			padding: 5px 0;
+			border: 0;
+			box-sizing: border-box;
+			font-family: NeueHaas_light, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+
+			&.logo{
+				vertical-align: top;
+				width: 170px;
+				padding: 0 25px 0 0;
+
+				img{
+					margin: 0 0 10px;
+					display: block;
+					width: 145px;
+					line-height: 0;
+				}
+
+				input{
+					display: none;
+				}
+
+				label{
+					margin: 0;
+					padding: 6px 0;
+					display: block;
+					background: #8b0333;
+					box-shadow: 0 1px 1px 0 rgba(0,0,0,.25);
+					cursor: pointer;
+					font-family: NeueHaas_reg, Helvetica, sans-serif;
+					font-size: 12px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #fff;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+					text-align: center;
+				}
+			}
+
+			&:last-child{
+				width: 455px;
+				padding: 5px 0 5px 10px;
+			}
+
+			input[type='text']{
+				display: block;
+				width: 100%;
+				height: 32px;
+				box-sizing: border-box;
+			}
+
+			&.tel{
+				font-size: 0;
+				position: relative;
+
+				label{
+					margin: 0 10px 0 0;
+					display: inline-block;
+					vertical-align: top;
+					width: 55px;
+					position: relative;
+
+					&::before{
+						content: '(';
+						position: absolute;
+						top: 50%;
+						left: 7px;
+						transform: translateY(-8px);
+						font-family: NeueHaas_reg, Helvetica, sans-serif;
+						font-size: 12px;
+						line-height: 16px;
+						font-weight: 400;
+						color: #9d9e9e;
+						text-transform: none;
+						text-decoration: none;
+						letter-spacing: 0;
+					}
+
+					&::after{
+						content: ')';
+						position: absolute;
+						top: 50%;
+						right: 7px;
+						transform: translateY(-8px);
+						font-family: NeueHaas_reg, Helvetica, sans-serif;
+						font-size: 12px;
+						line-height: 16px;
+						font-weight: 400;
+						color: #9d9e9e;
+						text-transform: none;
+						text-decoration: none;
+						letter-spacing: 0;
+					}
+
+					input{
+						display: block;
+						width: 100%;
+						padding: 5px 10px;
+						text-align: center;
+					}
+				}
+
+				input{
+					margin: 0;
+					display: inline-block;
+					vertical-align: top;
+					width: 135px;
+				}
+
+				span{
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: -8px;
+					transform: translateY(-8px);
+					font-family: NeueHaas_reg, Helvetica, sans-serif;
+					font-size: 12px;
+					line-height: 16px;
+					font-weight: 400;
+					color: #9d9e9e;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+				}
+			}
+
+			&.mail{
+
+				input{
+					display: block;
+					width: 200px;
+				}
+			}
+
+			&.communication{
+
+				.jq-selectbox-main{
+					width: 200px;
+				}
+			}
+		}
+
+		&--light{
+
+			td{
+
+				&:first-child{
+					width: 160px;
+					padding-right: 10px;
+				}
+
+				&:last-child{
+					width: auto;
+					padding-left: 0;
+				}
+			}
+		}
+	}
+
+	h3{
+		margin: 0 0 20px;
+		font-family: NeueHaas_bold, Helvetica, sans-serif;
+		font-size: 18px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
+
+	.location{
+		margin: 0 0 20px;
+		padding: 0;
+		border-collapse: collapse;
+		border: 0;
+		width: 100%;
+
+		td{
+			padding: 5px 0;
+			border: 0;
+			box-sizing: border-box;
+			font-family: NeueHaas_light, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+
+			&:first-child{
+				width: 160px;
+				padding: 0 10px 0 0;
+			}
+
+			.jq-selectbox-main{
+				width: 200px;
+			}
+
+			input{
+				display: block;
+				width: 100%;
+				height: 32px;
+				box-sizing: border-box;
+			}
+		}
+	}
+
+	&__exist{
+		margin: 0 0 25px;
+		padding: 0 0 0 30px;
+		display: inline-block;
+		vertical-align: top;
+		font-family: NeueHaas_reg, Helvetica, sans-serif;
+		font-size: 14px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+
+		&::before{
+			top: 3px;
+		}
+
+		&::after{
+			top: 5px;
+		}
+	}
+
+	.schedule{
+		margin: 0 0 30px;
+		padding: 0;
+		border-collapse: collapse;
+		border: 0;
+		width: 640px;
+
+		td{
+			padding: 5px 0;
+			border: 0;
+			box-sizing: border-box;
+			font-family: NeueHaas_reg, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+
+			&.title{
+				width: 160px;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			input{
+				display: block;
+				width: 55px;
+				box-sizing: border-box;
+				box-shadow: inset 0 1px 2px 0 rgba(0,0,0,.17);
+				background: #f7f7f7;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: center;
+
+				&::-webkit-input-placeholder{
+					opacity: 1;
+					color: #898989;
+				}
+
+				&:-ms-input-placeholder{
+					opacity: 1;
+					color: #898989;
+				}
+
+				&::-moz-placeholder{
+					opacity: 1;
+					color: #898989;
+				}
+			}
+
+			&.from{
+				position: relative;
+
+				span{
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: -15px;
+					transform: translateY(-8px);
+					min-width: 10px;
+					font-family: NeueHaas_it, Helvetica, sans-serif;
+					font-size: 12px;
+					line-height: 16px;
+					font-weight: 400;
+					color: #9d9e9e;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+				}
+			}
+
+			&.to{
+				position: relative;
+
+				span{
+					display: block;
+					position: absolute;
+					top: 50%;
+					left: -20px;
+					transform: translateY(-8px);
+					min-width: 20px;
+					font-family: NeueHaas_it, Helvetica, sans-serif;
+					font-size: 12px;
+					line-height: 16px;
+					font-weight: 400;
+					color: #9d9e9e;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+				}
+			}
+		}
+	}
+
+	&__goods{
+		margin: 0;
+
+		h3{
+			margin: 0 0 25px;
+			font-family: NeueHaas_bold, Helvetica, sans-serif;
+			font-size: 18px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: center;
+		}
+
+		table{
+			margin: 0 0 20px;
+
+			.remove{
+				display: block;
+				float: right;
+				width: 19px;
+				height: 19px;
+				background: #8b0333;
+				border-radius: 50%;
+				cursor: pointer;
+				position: relative;
+
+				&::before{
+					content: '';
+					position: absolute;
+					top: 8px;
+					left: 3px;
+					width: 12px;
+					height: 3px;
+					background: #fff;
+					transform: rotate(45deg);
+				}
+
+				&::after{
+					content: '';
+					position: absolute;
+					top: 8px;
+					left: 3px;
+					width: 12px;
+					height: 3px;
+					background: #fff;
+					transform: rotate(-45deg);
+				}
+			}
+		}
+
+		.comment{
+			display: table-cell;
+			vertical-align: middle;
+			height: 32px;
+			margin: 0;
+			font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #464646;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+	}
+
+	&__add-good{
+		margin: 0 30px 0 0;
+		display: block;
+		float: left;
+		width: 215px;
+	}
+
+	&__extra-service{
+		margin: 30px 0 20px;
+		padding: 15px;
+		background: #f3f3f3;
+
+		h3{
+			margin: 0 0 15px;
+			font-family: NeueHaas_medium, Helvetica, sans-serif;
+			font-size: 15px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		ul{
+			margin: 0;
+			padding: 0;
+			list-style: none;
+
+			label{
+				display: inline-block;
+				vertical-align: top;
+				padding: 0 0 0 30px;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+
+				&::before{
+					top: 1px;
+				}
+
+				&::after{
+					top: 3px;
+				}
+			}
+
+			li{
+				margin: 0 0 10px;
+				line-height: 0;
+
+				&:last-child{
+					margin: 20px 0 0;
+
+					label{
+						font-family: NeueHaas_medium, Helvetica, sans-serif;
+						font-size: 15px;
+
+						&::before{
+							top: 3px;
+						}
+
+						&::after{
+							top: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.comment{
+		margin: 0 0 20px;
+		font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+		font-size: 12px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #464646;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
+
+	&__submit{
+		float: right;
+		display: block;
+		width: 210px;
+	}
+}
+/*end of open-shop*/
