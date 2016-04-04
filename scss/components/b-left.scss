@@ -97,6 +97,13 @@
 			text-decoration: none;
 			letter-spacing: 0;
 			text-align: center;
+			cursor: pointer;
+
+			&:hover,
+			&:focus{
+				background: #8b0333;
+				color: #fff;
+			}
 		}
 	}
 }

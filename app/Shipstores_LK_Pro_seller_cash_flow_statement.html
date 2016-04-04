@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shipstores</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link href="css/jquery.formstyler.css" rel="stylesheet">
+	<link href="css/jquery.fancybox.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/template_styles.css">
+</head>
+
+<body>
+
+<div class="b-main">
+
+	<div class="b-head">
+		<div class="b-head__logo">
+			<div class="b-logo">
+				<a href="#"><img src="images/logo.png" /></a>
+			</div>
+		</div>
+		<div class="b-head__links">
+			<div class="b-menu">
+				<div  class='b-menu__link'>
+					<a href="#">закупки</a>
+					<div class="b-menu__linkhover"></div>
+				</div>
+				<div  class='b-menu__link'>
+					<a href="#">магазины</a>
+					<div class="b-menu__linkhover"></div>
+				</div>
+				<div  class='b-menu__link'>
+					<a href="#">объявления</a>
+					<div class="b-menu__linkhover"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="b-head__currency-lang">
+			<ul class="b-head__currency">
+				<li class="ru show">₽</li>
+				<li class="us">$</li>
+				<li class="eu">€</li>
+				<li class="gb">£</li>
+			</ul>
+
+			<ul class="b-head__currency-list">
+				<li class="ru active">₽ Российский рубль</li>
+				<li class="us">$ Доллар США</li>
+				<li class="eu">€ Евро</li>
+				<li class="gb">£ Фунт стерлингов</li>
+			</ul>
+
+			<ul class="b-head__lang">
+				<li class="ru show"></li>
+				<li class="en"></li>
+				<li class="fr"></li>
+				<li class="sp"></li>
+				<li class="ch"></li>
+				<li class="it"></li>
+				<li class="ge"></li>
+			</ul>
+
+			<ul class="b-head__lang-list">
+				<li class="ru active">Русский</li>
+				<li class="en">English (UK)</li>
+				<li class="fr">Français</li>
+				<li class="sp">Español</li>
+				<li class="ch">简体中文</li>
+				<li class="it">Italiano</li>
+				<li class="ge">Deutsch</li>
+			</ul>
+		</div>
+
+		<div class="b-head__autorize">
+			<div class="b-topbuttons">
+				<div class="g-button b-topbuttons_button g-white_bg">Вход</div>
+				<div class="g-button b-topbuttons_button g-blue_bg">Регистрация</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="b-left">
+		<div class="b-left__menu">
+			<div class="b-leftmenu">
+				<div class="b-leftmenublue">
+					<nav>
+						<ul>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-1">Навигация и связь</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-2">Аварийно-спасательные средства</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-3">Противопожарные средства</a></li>
+							<li> <a href="#" class="b-leftmenublue__link b-leftmenu_link-4">Судовое оборудование</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-5">Судовая электрика</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-6">Корпус и палуба</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-7">Судовые материалы</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-8">Рыбопромысловое оборудование</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-9">Гидрографическое оборудование</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-10">Водолазное и подводное оборудование</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-11">Плавсредства</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-12">Услуги и сервис</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-13">Сувениры и винтаж</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-14">Разное</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-15">Работа</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="b-leftmenuwhite">
+					<nav>
+						<ul>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-16">Как это работает</a></li>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-17">Правила</a></li>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-18">Помощь</a></li>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-19">Безопасность</a></li>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-20">FAQ</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<form class="b-left__subscribe">
+			<h3>Подпишитесь на рассылку,<br>чтобы узнать о новостях<br>Shipstores.net</h3>
+
+			<input type="text" name="b-left__subscribe-mail" id="b-left__subscribe-mail" placeholder="E-mail">
+
+			<input type="submit" name="b-left__subscribe-submit" id="b-left__subscribe-submit" value="Подписаться">
+		</form>
+	</div>
+
+	<div class="b-right">
+
+		<ul class="cabinet-buttons">
+			<li>
+				<a href="#">Участвовать в закупке</a>
+			</li>
+			<li>
+				<a href="#">Открыть магазин</a>
+			</li>
+			<li>
+				<a href="#">Разместить объявление</a>
+			</li>
+		</ul>
+
+		<div class="b-advertising-top">
+			<a href="#"><img src="images/banner-01.jpg" /></a>
+		</div>
+
+		<div class="b-breadcrumb-search">
+			<li nk href="/bitrix/css/main/font-awesome.css?145318681428777" type="text/css" rel="stylesheet">
+				<div class="bx-breadcrumb">
+					<div class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+
+						<a href="/" title="Главная" itemprop="url">
+							<span itemprop="title">Главная</span>
+						</a>
+					</div>
+					<div class="bx-breadcrumb-item">
+						<i class="fa fa-angle-right"></i>
+						<span>Новости</span>
+					</div><div style="clear:both"></div></div> <div class="b-search-nomain">
+				<div class="b-search__text nomain-search">
+					<input class="b-search__inpfield nomain-search nomain-inp-text" type="text" value="">
+					<input class="b-search__submit nomain-search search-small-pict" type="submit" value="">
+				</div>
+			</div>
+		</div>
+
+		<div class="b-cabinet-block clearfix">
+			<div class="b-cabinet-block__panel">
+				<div class="b-cabinet-block__panel-img"><img src="images/seller.jpg" alt="seller"></div>
+
+				<div class="b-cabinet-block__panel-name">Александр</div>
+
+				<div class="b-cabinet-block__panel-nav">
+					<div class="b-cabinet-block__panel-nav-title active">Общая информация</div>
+
+					<ul class="b-cabinet-block__panel-nav-list">
+						<li class="b-cabinet-block__panel-nav-item">Личная информация</li>
+						<li class="b-cabinet-block__panel-nav-item">Финансовая информация</li>
+						<li class="b-cabinet-block__panel-nav-item active">Отчет о движении<br>денежных средств</li>
+						<li class="b-cabinet-block__panel-nav-item">Документы</li>
+						<li class="b-cabinet-block__panel-nav-item">Публикация вакансий и резюме</li>
+						<li class="b-cabinet-block__panel-nav-item">Сфера деятельности</li>
+						<li class="b-cabinet-block__panel-nav-item">Открытые сделки и закупки</li>
+						<li class="b-cabinet-block__panel-nav-item">Мои объявления</li>
+						<li class="b-cabinet-block__panel-nav-item">Мой лист заказов</li>
+					</ul>
+				</div>
+
+				<a class="b-cabinet-block__panel-paid-services" href="#">Заказать платные услуги</a>
+
+				<a class="b-cabinet-block__panel-services brown_button" href="#">Заказать сервисы</a>
+			</div>
+
+			<div class="b-cabinet-block__sections b-cabinet-block__sections--paddingless">
+				<section class="cash-flows">
+					<h2>отчет о движении денежных средств</h2>
+
+					<form class="clearfix" action="#" method="get">
+						<p>Период, за который вы хотите получить отчет</p>
+
+						<div class="cash-flows__month jq-selectbox-main">
+							<select name="cash-flows__month" id="cash-flows__month">
+								<option value="1">август</option>
+								<option value="2">сентябрь</option>
+								<option value="3">октябрь</option>
+							</select>
+						</div>
+
+						<div class="cash-flows__year jq-selectbox-main">
+							<select name="cash-flows__year" id="cash-flows__year">
+								<option value="1">2016</option>
+								<option value="2">2017</option>
+								<option value="3">2018</option>
+							</select>
+						</div>
+
+						<input class="brown_button" type="submit" name="cash-flows__submit" id="cash-flows__submit" value="Показать отчет">
+					</form>
+
+					<div class="cash-flows__tables">
+						<table class="cash-flows__income">
+							<tr>
+								<th>Показатель</th>
+								<th class="months" colspan="3">
+									<h4>Числа месяца</h4>
+
+									<div class="days">
+										<ul>
+											<li>1</li>
+											<li>2</li>
+											<li>3</li>
+											<li>4</li>
+											<li>5</li>
+											<li>6</li>
+											<li>7</li>
+											<li>8</li>
+											<li>9</li>
+											<li>10</li>
+										</ul>
+									</div>
+
+									<div class="left"></div>
+									<div class="right"></div>
+								</th>
+								<th>Итого за<br>июль, руб.</th>
+								<th>Итого за<br>2015, руб.</th>
+							</tr>
+							<tr>
+								<td colspan="6"><i>Доходы</i></td>
+							</tr>
+							<tr>
+								<td>Продажа товара</td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>100 000</td>
+								<td>400 000</td>
+							</tr>
+						</table>
+
+						<table class="cash-flows__expenses">
+							<tr>
+								<td colspan="6"><i>Расходы</i></td>
+							</tr>
+							<tr>
+								<td>Личный кабинет «Pro»</td>
+								<td>10 000</td>
+								<td></td>
+								<td>10 000</td>
+								<td>100 000</td>
+								<td>400 000</td>
+							</tr>
+							<tr>
+								<td>Перевод объявлений</td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+								<td></td>
+							</tr>
+							<tr>
+								<td><b>«Стандарт»</b></td>
+								<td></td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>100 000</td>
+								<td>400 000</td>
+							</tr>
+							<tr>
+								<td><b>«Закупка»</b></td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>100 000</td>
+								<td>400 000</td>
+							</tr>
+							<tr>
+								<td>
+									<b>Опции</b>
+									<span>(продвижение объявления)</span>
+								</td>
+								<td></td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>100 000</td>
+								<td>400 000</td>
+							</tr>
+						</table>
+
+						<table class="cash-flows__shops">
+							<tr>
+								<td colspan="6"><i>Магазины</i></td>
+							</tr>
+							<tr>
+								<td><b>«Light»</b></td>
+								<td></td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>100 000</td>
+								<td>400 000</td>
+							</tr>
+							<tr>
+								<td><b>«Business»</b></td>
+								<td></td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>100 000</td>
+								<td>400 000</td>
+							</tr>
+							<tr>
+								<td><b>«Pro»</b></td>
+								<td></td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>100 000</td>
+								<td>400 000</td>
+							</tr>
+							<tr>
+								<td>
+									<b>Опции</b>
+									<span>(продвижение объявления)</span>
+								</td>
+								<td></td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>100 000</td>
+								<td>400 000</td>
+							</tr>
+						</table>
+
+						<table class="cash-flows__fees">
+							<tr>
+								<td colspan="6"><i>Сборы</i></td>
+							</tr>
+							<tr>
+								<td><b>За участие в закупке</b></td>
+								<td></td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>100 000</td>
+								<td>400 000</td>
+							</tr>
+							<tr>
+								<td><b>Безопансая сделка</b></td>
+								<td></td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>100 000</td>
+								<td>400 000</td>
+							</tr>
+							<tr>
+								<td><b>Прямая сделка</b></td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td></td>
+								<td>400 000</td>
+							</tr>
+							<tr>
+								<td><b>Банковские расходы</b></td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td></td>
+								<td>400 000</td>
+							</tr>
+							<tr>
+								<td><b>Сбор Pay Pal</b></td>
+								<td></td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>100 000</td>
+								<td>400 000</td>
+							</tr>
+						</table>
+
+						<table class="cash-flows__advertising">
+							<tr>
+								<td colspan="6"><i>Реклама</i></td>
+							</tr>
+							<tr>
+								<td><b>Баннерная реклама</b></td>
+								<td></td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>100 000</td>
+								<td>400 000</td>
+							</tr>
+							<tr>
+								<td><b>Новости</b></td>
+								<td></td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>100 000</td>
+								<td>400 000</td>
+							</tr>
+						</table>
+
+						<table class="cash-flows__services">
+							<tr>
+								<td colspan="6"><i>Услуги</i></td>
+							</tr>
+							<tr>
+								<td><b>Транспортные расходы</b></td>
+								<td></td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>100 000</td>
+								<td>400 000</td>
+							</tr>
+							<tr>
+								<td><b>Ответственное хранение</b></td>
+								<td></td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>100 000</td>
+								<td>400 000</td>
+							</tr>
+							<tr>
+								<td><b>Оформление таможенных формальностей</b></td>
+								<td></td>
+								<td>10 000</td>
+								<td>10 000</td>
+								<td>100 000</td>
+								<td>400 000</td>
+							</tr>
+						</table>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div class="b-advertising-bottom">
+			<div class="b-advertising-bottom__banner banner-02"><a href="#"><img src="images/examples/banner2.png" /></a></div>
+			<div class="b-advertising-bottom__banner banner-03"><a href="#"><img src="images/examples/banner3.png" /></a></div>
+		</div>
+
+	</div>
+
+	<div class="b-bottom-menu">
+		<nav>
+			<div class="b-menu-main"><!--b-menu_link_active-->
+				<div  class='b-menu-main__link'>
+					<a href="#">О портале</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Услуги портала</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Новости</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Реклама</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Контакты</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Дилеры</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">shipstoresbonus</a>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="b-footer">
+		<div class="b-footer-cr">
+			<div class="b-footer-cr__copy">© 2015 ShipStores</div>
+			<div class="b-footer-cr__bitrix"><img src="images/bitrix.png" /></div>
+			<div class="b-footer-cr__menu">
+				<a href="#">Закупки</a>
+				<a href="#">Магазины</a>
+				<a href="#">Объявления</a>
+			</div>
+			<div class="b-footer-cr__7studio">
+				<p><a href="//7sait.spb.ru/services/sozdanie-saitov/" title="Разработка сайтов">Разработка сайта: «7 Студио»</a></p>
+				<p><a href="//7sait.spb.ru/services/internet-marketing/" title="Продвижение сайтов">Продвижение сайта: «7 Студио»</a></p>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="b-static-stripe">
+	<div class="b-your-blue">
+		<div class="b-your-blue__feedback my-divs">
+			<div class="form-button js-call-form">обратная связь</div>
+		</div>
+		<div class="b-your-blue__info my-divs b-your-blue__infofirst">
+			<div class="b-my-info">
+				<div class="b-my-info__icon icon-purchase"></div>
+				<div class="b-my-info__name"><a href="#">Закупки, в которых вы участвуете</a></div>
+				<div class="b-my-info__count">4</div>
+			</div>
+		</div>
+		<div class="b-your-blue__info my-divs">
+			<div class="b-my-info">
+				<div class="b-my-info__icon icon-notice"></div>
+				<div class="b-my-info__name"><a href="#">Размещено объявлений</a></div>
+				<div class="b-my-info__count">4</div>
+			</div>
+		</div>
+		<div class="b-your-blue__info my-divs">
+			<div class="b-my-info">
+				<div class="b-my-info__icon icon-favorites"></div>
+				<div class="b-my-info__name"><a href="#">Избранное</a></div>
+				<div class="b-my-info__count">4</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--price-offer form-->
+<div class="price-offer form-white" id="price-offer">
+	<h3 class="price-offer__title form-title">Участвовать в запросе предложений</h3>
+
+	<form class="price-offer__form" action="#" method="get">
+		<label class="price-offer__label form-text" for="price-offer__sum">Сумма, которую вы готовы предложить</label>
+		<input class="price-offer__sum type-text-shadow" type="text" name="price-offer__sum" id="price-offer__sum">
+
+		<span class="price-offer__sum-units form-text">рублей</span>
+
+		<input class="price-offer__submit brown_button" type="submit" name="price-offer__submit" id="price-offer__submit" value="Сделать предложение">
+	</form>
+
+	<div class="price-offer__close form-close"></div>
+</div>
+<!--end of price-offer form-->
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/contacts.js"></script>
+
+</body>
+</html>

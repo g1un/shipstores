@@ -1026,6 +1026,41 @@ $(document).ready(function() {
 		});
 	}
 	/*end of reminder*/
+
+	/*cash-flows days*/
+	if('.cash-flows__tables .month'){
+		var daysLeft = $('.cash-flows__tables .months .left');
+		var daysRight = $('.cash-flows__tables .months .right');
+		var days = $('.cash-flows__tables .months .days ul');
+		var daysWindowWidth = $('.cash-flows__tables .months .days').outerWidth();
+		var oneDayWidth = $('.cash-flows__tables .months .days li').eq(0).outerWidth();
+		var daysWidth = $('.cash-flows__tables .months .days li').length * oneDayWidth;
+
+		daysLeft.on('click', function() {
+			if(days.css('margin-left') != "0px" && days.css('margin-left') != ''){
+				var mL = days.css('margin-left');
+				mL = mL.replace('px','');
+				mL = parseInt(mL);
+				mL = mL + oneDayWidth;
+				mL = mL + 'px';
+				days.css('margin-left', mL);
+			}
+		});
+
+		daysRight.on('click', function() {
+			if(days.css('margin-left') != ('-' + (daysWidth - daysWindowWidth + 'px'))){
+				console.log(days.css('margin-left'));
+				console.log('-' + (daysWidth - daysWindowWidth + 'px'));
+
+				var mR = days.css('margin-left');
+				mR = mR.replace('px','');
+				mR = mR - oneDayWidth;
+				mR = mR + 'px';
+				days.css('margin-left', mR);
+			}
+		});
+	}	
+	/*end of cash-flows days*/
 });
 /*end of contacts.js*/
 

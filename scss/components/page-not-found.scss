@@ -1,0 +1,116 @@
+/*page-not-found*/
+.page-not-found{
+	margin: 70px auto;
+	padding: 40px 0 165px;
+	width: 880px;
+	background: #f4f4f4;
+	box-shadow: 0 1px 3px 0 rgba(0,0,0,.25);
+	text-align: center;
+
+	h2{
+		margin: 0 0 5px;
+		font-family: NeueHaas_bold, Helvetica, sans-serif;
+		font-size: 170px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #7fb3ff;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
+
+	h3{
+		margin: 0 0 125px;
+		font-family: NeueHaas_light, Helvetica, sans-serif;
+		font-size: 28px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #898989;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
+
+	p{
+		margin: 0 0 50px;
+		font-family: NeueHaas_medium, Helvetica, sans-serif;
+		font-size: 15px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+
+		a{
+			color: #63a2ff;
+			text-decoration: underline;
+		}
+	}
+
+	form{
+		margin: 0 auto;
+		width: 500px;
+		position: relative;
+	}
+
+	input[type='text']{
+		margin: 0;
+		padding: 8px 15px;
+		width: 100%;
+		min-height: 32px;
+		box-sizing: border-box;
+
+		&::-webkit-input-placeholder{
+			opacity: 1;
+			font-family: NeueHaas_light-it, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #b7b7b7;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		&:-ms-input-placeholder{
+			opacity: 1;
+			font-family: NeueHaas_light-it, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #b7b7b7;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		&::-moz-placeholder{
+			opacity: 1;
+			font-family: NeueHaas_light-it, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #b7b7b7;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+	}
+
+	input[type='submit']{
+		display: none;
+	}
+
+	label{
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 32px;
+		height: 32px;
+		background: url("images/b-faq-block__content-search-label-submit.png") no-repeat 5px center;
+		cursor: pointer;
+	}
+}
+/*end of page-not-found*/
