@@ -42,12 +42,14 @@
 html, body {
 	margin:0;
 	padding:0;
-	width:100%;
-	height:100%;
+	min-width: 1260px;
+	//width:100%;
+	//height:100%;
 }
 body {
 	color: #000;
 	font-family:NeueHaas_medium, Helvetica, sans-serif;
+	position: relative;
 }
 h1{
 	text-transform: uppercase;

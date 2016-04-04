@@ -957,6 +957,75 @@ $(document).ready(function() {
 		});
 	}
 	/*end of favourite tables*/
+
+	/*reminder*/
+	if($('.reminder').length){
+		var reminder = $('.reminder');
+		var reminderCancel = $('.reminder__close');
+
+		$('body').append('<div class="reminder__background"></div>');
+		var reminderBg = $('.reminder__background');
+
+		reminderBg.fadeToggle('500');
+		reminder.fadeToggle('500');
+
+		function reminderCss() {
+			var reminderLeft = ($(window).width() - reminder.outerWidth()) / 2;
+
+			if (window.innerHeight >= reminder.outerHeight()) {
+				var reminderTop = (window.innerHeight - reminder.outerHeight()) / 2;
+				reminder.css({
+					'position': 'fixed',
+					'top': reminderTop,
+					'left': reminderLeft
+				});
+			}else{
+				reminderTop = $(window).scrollTop();
+				reminder.css({
+					'position': 'absolute',
+					'top': reminderTop,
+					'left': reminderLeft
+				});
+			}
+
+			if($(window).width() <= reminder.outerWidth()){
+				reminder.css({
+					'position': 'absolute',
+					'left': 0
+				});
+
+				if(window.innerHeight >= reminder.outerHeight()){
+					var top = $(window).scrollTop() + ((window.innerHeight - reminder.outerHeight()) / 2);
+					console.log(top);
+					reminder.css({
+						'top': top
+					});
+				}
+			}
+		}
+
+		reminderCss();
+
+		$(window).on('resize', function () {
+			reminderCss();
+		});
+
+		reminderCancel.on('click', function () {
+			reminderBg.fadeOut('500').remove();
+			reminder.fadeOut('500');
+		});
+
+		reminderBg.mousedown(function (e) {
+			var clicked = $(e.target);
+			if (clicked.is('.reminder') || clicked.closest('.reminder').length) {
+				return;
+			} else {
+				reminderBg.fadeOut('500').remove();
+				reminder.fadeOut('500');
+			}
+		});
+	}
+	/*end of reminder*/
 });
 /*end of contacts.js*/
 
