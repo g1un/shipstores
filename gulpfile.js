@@ -35,7 +35,7 @@ gulp.task('browserSync', function() {
 	browserSync.init({
 		server: {
 			baseDir: 'app',
-			index: "Shipstores_LK_Pro_seller_cash_flow_statement.html"
+			index: "Shipstores_razmestit_resume.html"
 		},
 	})
 });

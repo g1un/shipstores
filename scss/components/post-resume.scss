@@ -1,0 +1,469 @@
+/*post-resume*/
+.post-resume{
+	margin: 0;
+	padding: 20px 15px;
+	clear: both;
+	background: #fff;
+	border: 1px solid #d1d1d1;
+
+	h2{
+		margin: 0 0 20px;
+		padding: 0;
+		font-family: NeueHaas_bold, Helvetica, sans-serif;
+		font-size: 18px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 0;
+
+		&.center{
+			text-align: center;
+		}
+	}
+
+	&__comment{
+		margin: 0 0 25px;
+		padding: 0;
+		font-family: NeueHaas_it, Helvetica, sans-serif;
+		font-size: 12px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #363636;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+
+		a{
+			color: #363636;
+		}
+	}
+
+	h3{
+		margin: 0 0 20px;
+		font-family: NeueHaas_bold, Helvetica, sans-serif;
+		font-size: 18px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
+
+	h4{
+		margin: 0 0 20px;
+		font-family: NeueHaas_medium, Helvetica, sans-serif;
+		font-size: 15px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
+
+	&__wrapper{
+		font-size: 0;
+		line-height: 0;
+	}
+
+	&__photo{
+		margin: 0 45px 35px 0;
+		display: inline-block;
+		vertical-align: top;
+		width: 110px;
+		height: 120px;
+		cursor: pointer;
+
+		input{
+			display: none;
+		}
+
+		img{
+			max-width: 100%;
+			max-height: 100%;
+		}
+	}
+
+	table{
+		padding: 0;
+		border-collapse: collapse;
+		border: 0;
+
+		td{
+			border: 0;
+			padding: 5px;
+			box-sizing: border-box;
+
+			&:first-child{
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+		}
+	}
+
+	&__info{
+		margin: 0;
+		display: inline-block;
+		vertical-align: top;
+
+		td{
+			height: 30px;
+
+			&:first-child{
+				width: 130px;
+				padding: 5px 10px 5px 5px;
+			}
+
+			&:nth-child(2){
+				width: 165px;
+				padding: 5px 10px 5px 0;
+				font-family: NeueHaas_medium, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&:nth-child(3){
+
+				input:checked + label{
+					font-size: 12px;
+				}
+
+				label{
+					display: block;
+					float: left;
+					padding: 0 0 0 30px;
+					min-height: 14px;
+					font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+					font-size: 0;
+					line-height: 14px;
+					font-weight: 400;
+					color: #959595;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+
+					&::before{
+						top: 3px;
+					}
+
+					&::after{
+						top: 6px;
+					}
+				}
+			}
+		}
+	}
+
+	&__parameters{
+		margin: 0 0 20px;
+		width: 100%;
+
+		td{
+			height: 42px;
+
+			&:first-child{
+				padding: 5px 5px 5px 0;
+				width: 160px;
+			}
+
+			.jq-selectbox-main{
+				width: 200px;
+			}
+
+			.position{
+				display: block;
+				width: 100%;
+				min-height: 32px;
+				box-sizing: border-box;
+			}
+
+			.salary{
+				margin: 0 10px 0 0;
+				display: inline-block;
+				vertical-align: middle;
+				width: 130px;
+				min-height: 32px;
+				box-sizing: border-box;
+			}
+
+			.currency{
+				display: inline-block;
+				vertical-align: middle;
+				width: 105px;
+			}
+		}
+	}
+
+	&__secondment{
+		margin: 0;
+
+		label{
+			margin: 0 0 15px;
+			padding: 0 0 0 30px;
+			display: inline-block;
+			vertical-align: top;
+			font-family: NeueHaas_light, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+
+			&::before{
+				top: 2px;
+			}
+
+			&::after{
+				top: 5px;
+			}
+		}
+	}
+
+	&__about{
+		margin: 0 0 40px;
+		width: 100%;
+
+		td{
+			height: 42px;
+
+			.jq-selectbox-main{
+				width: 200px;
+			}
+
+			.birthday{
+				margin: 0 10px 0 0;
+				display: inline-block;
+				vertical-align: middle;
+				width: 55px;
+			}
+
+			.birthmonth{
+				margin: 0 10px 0 0;
+				display: inline-block;
+				vertical-align: top;
+				width: 105px;
+			}
+
+			.birthyear{
+				margin: 0;
+				display: inline-block;
+				vertical-align: middle;
+				width: 80px;
+			}
+
+			.type-text{
+				height: 32px;
+				box-sizing: border-box;
+			}
+
+			.citizenship{
+				width: 200px;
+			}
+
+			.specialization{
+				width: 100%;
+			}
+
+			&.languages{
+				position: relative;
+
+				.tip{
+					top: 5px;
+					left: 220px;
+				}
+			}
+
+			&:first-child{
+				padding: 5px 5px 5px 0;
+				width: 160px;
+			}
+		}
+	}
+
+	&__experience{
+		margin: 0 0 40px;
+		width: 100%;
+
+		td {
+			height: 42px;
+
+			&:first-child {
+				padding: 5px 5px 5px 0;
+				width: 160px;
+			}
+
+			input{
+				margin: 0 15px 0 0;
+				display: inline-block;
+				vertical-align: middle;
+				width: 75px;
+				height: 32px;
+				box-sizing: border-box;
+			}
+
+			span{
+				margin: 0 30px 0 0;
+				display: inline-block;
+				vertical-align: middle;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+		}
+	}
+
+	&__job{
+		margin: 0 0 10px;
+		padding: 20px 0 25px;
+		background: #f3f3f3;
+
+		table{
+			margin: 0;
+			width: 100%;
+
+			td {
+				height: 42px;
+
+				&:first-child {
+					padding: 5px 5px 5px 20px;
+					width: 160px;
+				}
+
+				&:last-child{
+					padding-right: 15px;
+				}
+
+				.type-text{
+					width: 100%;
+					box-sizing: border-box;
+				}
+
+				textarea{
+					min-height: 105px;
+				}
+
+				&.duty{
+					vertical-align: top;
+					padding-top: 10px;
+				}
+
+				&.period{
+					font-size: 0;
+					position: relative;
+
+					span{
+						margin: 0;
+						display: inline-block;
+						vertical-align: middle;
+						font-family: NeueHaas_light-it, Helvetica, sans-serif;
+						font-size: 12px;
+						line-height: 1.2em;
+						font-weight: 400;
+						color: #000;
+						text-transform: none;
+						text-decoration: none;
+						letter-spacing: 0;
+
+						&.from{
+							position: absolute;
+							top: 14px;
+							left: -10px;
+						}
+
+						&.to{
+							margin: 0 10px 0 0;
+						}
+					}
+
+					.month{
+						margin: 0 15px 0 0;
+						width: 105px;
+						display: inline-block;
+						vertical-align: middle;
+					}
+
+					.year{
+						margin: 0 30px 0 0;
+						width: 80px;
+						display: inline-block;
+						vertical-align: middle;
+					}
+				}
+
+				&.tip__target{
+
+					.tip{
+						top: 6px;
+						right: 15px;
+					}
+				}
+			}
+		}
+	}
+
+	&__add-job{
+		margin: 0 0 35px;
+		display: block;
+		width: 215px;
+	}
+
+	&__extra-info{
+		margin: 0 0 30px;
+		width: 100%;
+
+		td {
+			height: 42px;
+
+			&:first-child {
+				vertical-align: top;
+				padding: 5px 5px 5px 0;
+				width: 160px;
+			}
+			textarea {
+				width: 100%;
+				box-sizing: border-box;
+				min-height: 80px;
+			}
+		}
+	}
+
+	.comment{
+		margin: 0 0 20px;
+		font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+		font-size: 12px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #464646;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
+
+	&__submit{
+		display: block;
+		float: right;
+		width: 210px;
+	}
+}
+/*end of post-resume*/

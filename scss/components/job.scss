@@ -1,0 +1,181 @@
+/*job*/
+.job{
+	margin: 0;
+	padding: 25px 20px;
+	clear: both;
+	border: 1px solid #d1d1d1;
+	background: #fff;
+
+	h2{
+		margin: 0 0 20px;
+		float: left;
+	}
+
+	&__resumes{
+		margin: 0;
+		display: block;
+		float: right;
+		font-family: NeueHaas_medium, Helvetica, sans-serif;
+		font-size: 14px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #8b0333;
+		text-transform: none;
+		text-decoration: underline;
+		letter-spacing: 0;
+	}
+
+	&__wrapper{
+		margin: 0;
+		font-size: 0;
+		line-height: 0;
+	}
+
+	p{
+		margin: 0 0 20px;
+		font-family: NeueHaas_medium, Helvetica, sans-serif;
+		font-size: 13px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
+
+	&__search{
+		margin: 0 65px 40px 0;
+		display: inline-block;
+		vertical-align: top;
+		font-size: 0;
+		line-height: 0;
+
+		input[type='text']{
+			margin: 0;
+			display: inline-block;
+			vertical-align: top;
+			padding: 0 15px;
+			box-sizing: border-box;
+			width: 315px;
+			min-height: 32px;
+			border: none;
+			outline: none;
+			background: #fafafa;
+			font-family: NeueHaas_reg, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 32px;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+
+			&::-webkit-input-placeholder{
+				opacity: 1;
+				font-family: NeueHaas_light-it, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 32px;
+				font-weight: 400;
+				color: #b7b7b7;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&:-ms-input-placeholder{
+				opacity: 1;
+				font-family: NeueHaas_light-it, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 32px;
+				font-weight: 400;
+				color: #b7b7b7;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			&::-moz-placeholder{
+				opacity: 1;
+				font-family: NeueHaas_light-it, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 32px;
+				font-weight: 400;
+				color: #b7b7b7;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+		}
+
+		input[type='submit']{
+			display: none;
+		}
+
+		.submit{
+			display: inline-block;
+			vertical-align: top;
+			width: 32px;
+			height: 32px;
+			background: #fafafa url("images/b-faq-block__content-search-label-submit.png") no-repeat center center;
+			cursor: pointer;
+		}
+
+		.jq-selectbox-main{
+			width: 140px;
+			height: 30px;
+
+			.jq-selectbox__select{
+				height: 30px;
+			}
+		}
+	}
+
+	&__vacancies{
+		margin: 0;
+		display: inline-block;
+		vertical-align: middle;
+		font-family: NeueHaas_light, Helvetica, sans-serif;
+		font-size: 14px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #8b0333;
+		text-transform: none;
+		text-decoration: underline;
+		letter-spacing: 0;
+	}
+
+	h3{
+		margin: 0 0 25px;
+		text-align: center;
+	}
+
+	.blue_button{
+		margin: 0 auto 10px;
+		width: 215px;
+		font-size: 12px;
+		box-shadow: 0 1px 3px 0 rgba(0,0,0,.25);
+
+		&:last-of-type{
+			margin-bottom: 35px;
+		}
+	}
+
+	&__link{
+		margin: 0 0 15px;
+		display: block;
+		font-family: NeueHaas_medium, Helvetica, sans-serif;
+		font-size: 14px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: underline;
+		letter-spacing: 0;
+
+		&:hover,
+		&:focus{
+			color: #4c83fc;
+		}
+	}
+}
+/*end of job*/

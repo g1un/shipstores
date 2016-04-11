@@ -141,12 +141,11 @@
 			}
 
 			&-big{
-				display: table-cell;
-				vertical-align: top;
+				float: left;
 				position: relative;
 				width: 414px;
 				max-width: 414px;
-				max-height: 317px;
+				height: 317px;
 				overflow: hidden;
 				line-height: 0;
 				text-align: center;
@@ -155,7 +154,6 @@
 					border: 1px solid #e9e8e8;
 					box-sizing: border-box;
 					max-width: 100%;
-					min-width: 414px;
 					cursor: pointer;
 				}
 			}
@@ -247,6 +245,20 @@
 
 	&__respond{
 
+		&-buttons{
+			margin: 0 0 5px 0;
+			font-size: 11px;
+			text-align: center;
+			height: 14px;
+
+			span{
+				margin:0 20px 0 0;
+				color: #3577d7;
+				border-bottom: 1px dashed #3577d7;
+				cursor: pointer;
+			}
+		}
+
 		&-title{
 			font-family: NeueHaas_bold, Helvetica, sans-serif;
 			color: #fff;
@@ -261,6 +273,10 @@
 
 			&--direct{
 				background: #3577d7;
+			}
+
+			&--messages-only{
+				background: #0b54bd;
 			}
 		}
 
@@ -286,6 +302,10 @@
 			display: inline-block;
 			vertical-align: top;
 			margin: 0 14px 11px 0;
+
+			&-name{
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+			}
 		}
 
 		&-name{
@@ -355,15 +375,15 @@
 			display: none;
 			background: #fff;
 			box-shadow: 0 1px 4px 0 rgba(0,0,0,.15);
-			padding: 29px 0 10px;
-			margin: -20px 2px 19px -7px;
+			padding: 2px;
 			text-align: center;
 
 			&-show-history{
 				font-family: NeueHaas_thin, Helvetica, sans-serif;
 				color: #bdbdbd;
 				display: block;
-				margin: 0 0 7px;
+				float: right;
+				margin: 0 0 0 7px;
 			}
 
 			&-text{
@@ -373,11 +393,28 @@
 				line-height: 1.3em;
 			}
 
+			&-text2{
+				margin: 0;
+				font-size: 12px;
+				line-height: 12px;
+				text-align: left;
+
+				span{
+					font-size: 11px;
+					color: #898989;
+				}
+			}
+
+			&-ans-his{
+				height: 15px;
+				width: 100%;
+			}
+
 			&-answer{
 				display: block;
 				text-align: left;
-				margin: 0 0 0 14px;
 				color: #898989;
+				float: left;
 				text-decoration: underline;
 
 				&:hover,
@@ -386,6 +423,11 @@
 				}
 			}
 		}
+	}
+
+	&__question-item{
+		padding: 2px 5px;
+		border-bottom: 1px solid #e8e8e8;
 	}
 
 	&--shop{

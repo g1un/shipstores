@@ -1059,8 +1059,62 @@ $(document).ready(function() {
 				days.css('margin-left', mR);
 			}
 		});
-	}	
+	}
 	/*end of cash-flows days*/
+
+	/*tip animation*/
+	if($('.tip').length){
+		var tip = $('.tip');
+		var tipTarget = $('.tip__target');
+		var tipClose = $('.tip>span');
+		var tipStop = false;
+		var tipStopIndex = {};
+
+		tipTarget.on('mouseenter', function(){
+			if(!(tipStop && tipTarget.index(this) == tipStopIndex[tipTarget.index(this)])){
+				var tipIndex = tipTarget.index(this);
+				var thisTip = $(tip[tipIndex]);
+				thisTip
+						.stop(true, true)
+						.fadeIn('500');
+			}
+		});
+
+		tipTarget.on('mouseleave', function(){
+			if(!(tipStop && tipTarget.index(this) == tipStopIndex[tipTarget.index(this)])){
+				var tipIndex = tipTarget.index(this);
+				var thisTip = $(tip[tipIndex]);
+				thisTip
+						.stop(true, true)
+						.delay('1000')
+						.fadeOut('500');
+			}
+		});
+
+		tip.on('mouseenter', function(){
+			$(this)
+					.stop(true, true)
+					.fadeIn('500');
+		});
+
+		tip.on('mouseleave', function(){
+			$(this)
+					.stop(true, true)
+					.delay('1000')
+					.fadeOut('500');
+		});
+
+		tipClose.on('click', function(){
+			var closeIndex = tipClose.index(this);
+			var thisTip = $(tip[closeIndex]);
+
+			thisTip.stop(true, true).fadeOut('500');
+
+			tipStop = true;
+			tipStopIndex[closeIndex] = closeIndex;
+		});
+	}
+	/*end of tip animation*/
 });
 /*end of contacts.js*/
 

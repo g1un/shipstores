@@ -2887,5 +2887,206 @@
 			width: 173px;
 		}
 	}
+
+	&__vacancies{
+		margin: 0;
+		padding: 0;
+
+		h2{
+			margin: 0 0 20px;
+			font-family: NeueHaas_medium, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		table{
+			margin: 0 0 30px;
+			width: 100%;
+
+			th{
+				border: none;
+				height: 40px;
+				padding: 5px;
+				box-sizing: border-box;
+				text-align: left;
+
+				&:first-child{
+					text-align: center;
+				}
+			}
+
+			td{
+				border: none;
+				height: 40px;
+				padding: 5px;
+				box-sizing: border-box;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #464646;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+
+				img{
+					max-width: 20px;
+				}
+
+				&:first-child{
+					width: 75px;
+					line-height: 0;
+					text-align: center;
+				}
+
+				&:nth-child(2){
+					width: 185px;
+				}
+
+				&:nth-child(3){
+					width: 85px;
+				}
+
+				&:nth-child(4){
+					width: 65px;
+				}
+
+				&:last-child{
+					text-align: right;
+					padding-right: 0;
+				}
+
+				a:not(.brown_button){
+					font-family: NeueHaas_medium, Helvetica, sans-serif;
+					color: #464646;
+					text-decoration: underline;
+				}
+
+				.brown_button{
+					display: inline-block;
+					vertical-align: top;
+					min-width: 95px;
+				}
+			}
+		}
+
+		p{
+			margin: 20px 0 15px;
+			font-family: NeueHaas_medium, Helvetica, sans-serif;
+			font-size: 15px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+
+			&.light{
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+			}
+		}
+
+		label{
+			margin: 0 0 10px;
+			padding: 0 0 0 30px;
+			display: inline-block;
+			vertical-align: top;
+			font-family: NeueHaas_light, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+	}
+
+	&__resume{
+		margin: 0;
+		padding: 0;
+
+		h2{
+			margin: 0 0 20px;
+			font-family: NeueHaas_medium, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: uppercase;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		p{
+			margin: 20px 0 25px;
+			font-family: NeueHaas_bold, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+
+			&.light{
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+			}
+		}
+
+		.steps{
+			margin: 0 0 40px;
+			line-height: 0;
+
+			img{
+				margin: 0 auto 20px;
+				display: block;
+				max-width: 431px;
+			}
+
+			ul{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				font-size: 0;
+
+				li{
+					margin: 0;
+					display: inline-block;
+					vertical-align: top;
+					width: 33.33%;
+					box-sizing: border-box;
+					font-family: NeueHaas_medium, Helvetica, sans-serif;
+					font-size: 14px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #000;
+					text-transform: uppercase;
+					text-decoration: none;
+					letter-spacing: 0;
+					text-align: center;
+
+					&:first-child{
+						padding: 0 12px 0 0;
+					}
+
+					&:last-child{
+						padding: 0 0 0 12px;
+					}
+				}
+			}
+		}
+
+		.brown_button{
+			width: 175px;
+		}
+	}
 }
 /*end of b-cabinet-block*/

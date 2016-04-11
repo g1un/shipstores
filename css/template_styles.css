@@ -2155,58 +2155,6 @@ table {
         top: 3px; }
 
 /*end of multiselect*/
-/*tip*/
-.tip {
-  display: none;
-  position: absolute;
-  background: #898989;
-  padding: 5px 5px 10px 5px;
-  border-radius: 2px; }
-  .tip.show {
-    display: block; }
-  .tip > span {
-    margin: 0 0 10px;
-    display: block;
-    float: right;
-    width: 10px;
-    height: 10px;
-    cursor: pointer;
-    position: relative; }
-    .tip > span::before {
-      content: '';
-      position: absolute;
-      top: 5px;
-      right: 0;
-      width: 14px;
-      height: 2px;
-      background: #fff;
-      -webkit-transform: rotate(45deg);
-              transform: rotate(45deg); }
-    .tip > span::after {
-      content: '';
-      position: absolute;
-      top: 5px;
-      right: 0;
-      width: 14px;
-      height: 2px;
-      background: #fff;
-      -webkit-transform: rotate(-45deg);
-              transform: rotate(-45deg); }
-  .tip p {
-    margin: 0;
-    clear: both;
-    font-family: NeueHaas_light, Helvetica, sans-serif;
-    font-size: 12px;
-    line-height: 1.2em;
-    font-weight: 400;
-    color: #fff;
-    text-transform: none;
-    text-decoration: none;
-    letter-spacing: 0; }
-  .tip__target {
-    position: relative; }
-
-/*end of tip*/
 /*end of FORM*/
 /*TITLES*/
 .form-title {
@@ -3202,11 +3150,12 @@ table {
       .b-ad-unit-block__gallery-img img {
         max-width: 100%; }
       .b-ad-unit-block__gallery-img-big {
-        float: left;
+        display: table-cell;
+        vertical-align: top;
         position: relative;
         width: 414px;
         max-width: 414px;
-        height: 317px;
+        max-height: 317px;
         overflow: hidden;
         line-height: 0;
         text-align: center; }
@@ -3214,6 +3163,7 @@ table {
           border: 1px solid #e9e8e8;
           box-sizing: border-box;
           max-width: 100%;
+          min-width: 414px;
           cursor: pointer; }
   .b-ad-unit-block table.b-ad-unit-block__table {
     border-collapse: separate;
@@ -3268,16 +3218,6 @@ table {
         width: 21px;
         height: 14px;
         background: url("images/shipping-icon.png") no-repeat 0 0; }
-  .b-ad-unit-block__respond-buttons {
-    margin: 0 0 5px 0;
-    font-size: 11px;
-    text-align: center;
-    height: 14px; }
-    .b-ad-unit-block__respond-buttons span {
-      margin: 0 20px 0 0;
-      color: #3577d7;
-      border-bottom: 1px dashed #3577d7;
-      cursor: pointer; }
   .b-ad-unit-block__respond-title {
     font-family: NeueHaas_bold, Helvetica, sans-serif;
     color: #fff;
@@ -3289,8 +3229,6 @@ table {
       font-family: NeueHaas_reg, Helvetica, sans-serif; }
     .b-ad-unit-block__respond-title--direct {
       background: #3577d7; }
-    .b-ad-unit-block__respond-title--messages-only {
-      background: #0b54bd; }
   .b-ad-unit-block__respond-list {
     list-style: none;
     padding: 0;
@@ -3307,8 +3245,6 @@ table {
     display: inline-block;
     vertical-align: top;
     margin: 0 14px 11px 0; }
-    .b-ad-unit-block__respond-photo-name {
-      font-family: NeueHaas_light, Helvetica, sans-serif; }
   .b-ad-unit-block__respond-name {
     display: inline-block;
     vertical-align: top;
@@ -3359,41 +3295,27 @@ table {
     display: none;
     background: #fff;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.15);
-    padding: 2px;
+    padding: 29px 0 10px;
+    margin: -20px 2px 19px -7px;
     text-align: center; }
     .b-ad-unit-block__respond-opened-show-history {
       font-family: NeueHaas_thin, Helvetica, sans-serif;
       color: #bdbdbd;
       display: block;
-      float: right;
-      margin: 0 0 0 7px; }
+      margin: 0 0 7px; }
     .b-ad-unit-block__respond-opened-text {
       text-align: left;
       margin: 0 13px 7px;
       font-family: NeueHaas_light, Helvetica, sans-serif;
       line-height: 1.3em; }
-    .b-ad-unit-block__respond-opened-text2 {
-      margin: 0;
-      font-size: 12px;
-      line-height: 12px;
-      text-align: left; }
-      .b-ad-unit-block__respond-opened-text2 span {
-        font-size: 11px;
-        color: #898989; }
-    .b-ad-unit-block__respond-opened-ans-his {
-      height: 15px;
-      width: 100%; }
     .b-ad-unit-block__respond-opened-answer {
       display: block;
       text-align: left;
+      margin: 0 0 0 14px;
       color: #898989;
-      float: left;
       text-decoration: underline; }
       .b-ad-unit-block__respond-opened-answer:hover, .b-ad-unit-block__respond-opened-answer:focus {
         text-decoration: none; }
-  .b-ad-unit-block__question-item {
-    padding: 2px 5px;
-    border-bottom: 1px solid #e8e8e8; }
   .b-ad-unit-block--shop .b-ad-unit-block__right-info {
     padding: 13px 20px;
     text-align: center; }
@@ -14133,15 +14055,7 @@ div.search-item h4 a {
     .post-resume__comment a {
       color: #363636; }
   .post-resume h3 {
-    margin: 0 0 20px;
-    font-family: NeueHaas_bold, Helvetica, sans-serif;
-    font-size: 18px;
-    line-height: 1.2em;
-    font-weight: 400;
-    color: #000;
-    text-transform: none;
-    text-decoration: none;
-    letter-spacing: 0; }
+    margin: 0 0 20px; }
   .post-resume h4 {
     margin: 0 0 20px;
     font-family: NeueHaas_medium, Helvetica, sans-serif;
@@ -14269,7 +14183,7 @@ div.search-item h4 a {
       .post-resume__secondment label::after {
         top: 5px; }
   .post-resume__about {
-    margin: 0 0 40px;
+    margin: 0;
     width: 100%; }
     .post-resume__about td {
       height: 42px; }
@@ -14283,8 +14197,8 @@ div.search-item h4 a {
       .post-resume__about td .birthmonth {
         margin: 0 10px 0 0;
         display: inline-block;
-        vertical-align: top;
-        width: 105px; }
+        vertical-align: middle;
+        width: 100px; }
       .post-resume__about td .birthyear {
         margin: 0;
         display: inline-block;
@@ -14297,128 +14211,9 @@ div.search-item h4 a {
         width: 200px; }
       .post-resume__about td .specialization {
         width: 100%; }
-      .post-resume__about td.languages {
-        position: relative; }
-        .post-resume__about td.languages .tip {
-          top: 5px;
-          left: 220px; }
       .post-resume__about td:first-child {
         padding: 5px 5px 5px 0;
         width: 160px; }
-  .post-resume__experience {
-    margin: 0 0 40px;
-    width: 100%; }
-    .post-resume__experience td {
-      height: 42px; }
-      .post-resume__experience td:first-child {
-        padding: 5px 5px 5px 0;
-        width: 160px; }
-      .post-resume__experience td input {
-        margin: 0 15px 0 0;
-        display: inline-block;
-        vertical-align: middle;
-        width: 75px;
-        height: 32px;
-        box-sizing: border-box; }
-      .post-resume__experience td span {
-        margin: 0 30px 0 0;
-        display: inline-block;
-        vertical-align: middle;
-        font-family: NeueHaas_light, Helvetica, sans-serif;
-        font-size: 12px;
-        line-height: 1.2em;
-        font-weight: 400;
-        color: #000;
-        text-transform: none;
-        text-decoration: none;
-        letter-spacing: 0; }
-  .post-resume__job {
-    margin: 0 0 10px;
-    padding: 20px 0 25px;
-    background: #f3f3f3; }
-    .post-resume__job table {
-      margin: 0;
-      width: 100%; }
-      .post-resume__job table td {
-        height: 42px; }
-        .post-resume__job table td:first-child {
-          padding: 5px 5px 5px 20px;
-          width: 160px; }
-        .post-resume__job table td:last-child {
-          padding-right: 15px; }
-        .post-resume__job table td .type-text, .post-resume__job table td .search-query {
-          width: 100%;
-          box-sizing: border-box; }
-        .post-resume__job table td textarea {
-          min-height: 105px; }
-        .post-resume__job table td.duty {
-          vertical-align: top;
-          padding-top: 10px; }
-        .post-resume__job table td.period {
-          font-size: 0;
-          position: relative; }
-          .post-resume__job table td.period span {
-            margin: 0;
-            display: inline-block;
-            vertical-align: middle;
-            font-family: NeueHaas_light-it, Helvetica, sans-serif;
-            font-size: 12px;
-            line-height: 1.2em;
-            font-weight: 400;
-            color: #000;
-            text-transform: none;
-            text-decoration: none;
-            letter-spacing: 0; }
-            .post-resume__job table td.period span.from {
-              position: absolute;
-              top: 14px;
-              left: -10px; }
-            .post-resume__job table td.period span.to {
-              margin: 0 10px 0 0; }
-          .post-resume__job table td.period .month {
-            margin: 0 15px 0 0;
-            width: 105px;
-            display: inline-block;
-            vertical-align: middle; }
-          .post-resume__job table td.period .year {
-            margin: 0 30px 0 0;
-            width: 80px;
-            display: inline-block;
-            vertical-align: middle; }
-        .post-resume__job table td.tip__target .tip {
-          top: 6px;
-          right: 15px; }
-  .post-resume__add-job {
-    margin: 0 0 35px;
-    display: block;
-    width: 215px; }
-  .post-resume__extra-info {
-    margin: 0 0 30px;
-    width: 100%; }
-    .post-resume__extra-info td {
-      height: 42px; }
-      .post-resume__extra-info td:first-child {
-        vertical-align: top;
-        padding: 5px 5px 5px 0;
-        width: 160px; }
-      .post-resume__extra-info td textarea {
-        width: 100%;
-        box-sizing: border-box;
-        min-height: 80px; }
-  .post-resume .comment {
-    margin: 0 0 20px;
-    font-family: NeueHaas_thin-it, Helvetica, sans-serif;
-    font-size: 12px;
-    line-height: 1.2em;
-    font-weight: 400;
-    color: #464646;
-    text-transform: none;
-    text-decoration: none;
-    letter-spacing: 0; }
-  .post-resume__submit {
-    display: block;
-    float: right;
-    width: 210px; }
 
 /*end of post-resume*/
 /*end of PAGE-STYLES*/
