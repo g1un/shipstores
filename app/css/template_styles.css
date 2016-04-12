@@ -1617,7 +1617,7 @@ table {
       left: 0;
       right: 0;
       z-index: 1;
-      background: rgba(255, 255, 255, 0.85);
+      background: rgba(241, 241, 241, 0.85);
       box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.17);
       border: none; }
     .jq-selectbox-main.disabled .jq-selectbox {
@@ -1750,6 +1750,18 @@ table {
   box-shadow: 2px 2px 3px 0 rgba(0, 0, 0, 0.31); }
 
 /*end of form-white*/
+/*modal-window*/
+.modal-window__background {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.25); }
+
+/*end of modal-window*/
 /*close-blue*/
 .close-blue {
   position: absolute;
@@ -2207,6 +2219,24 @@ table {
     position: relative; }
 
 /*end of tip*/
+/*js*/
+.js--input-eye--to-show-password {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  z-index: 2;
+  background: url(images/eye_quick_view.png);
+  opacity: 0.3;
+  cursor: pointer; }
+  .js--input-eye--to-show-password:hover, .js--input-eye--to-show-password--active {
+    opacity: 1; }
+
+.js--show-password:focus + span {
+  opacity: 1; }
+
+/*end of js*/
 /*end of FORM*/
 /*TITLES*/
 .form-title {
@@ -3130,12 +3160,17 @@ table {
     margin: 0 19px 0; }
     .b-ad-unit-block__panel-price-ru {
       color: #0c4da2;
+      line-height: 14px;
       float: left;
       margin: 0 27px 12px 0; }
       .b-ad-unit-block__panel-price-ru span {
         font-size: 16px;
         font-family: NeueHaas_it, Helvetica, sans-serif;
         text-transform: none; }
+      .b-ad-unit-block__panel-price-ru i {
+        font-family: NeueHaas_it, Helvetica, sans-serif;
+        font-size: 10px;
+        color: #464646; }
     .b-ad-unit-block__panel-price-eu {
       font-family: NeueHaas_light, Helvetica, sans-serif;
       margin: 9px 0 0 0;
@@ -8618,7 +8653,7 @@ table {
       border: 1px solid #cccccc;
       background: #fff; }
       .b-cabinet-block__panel-nav-title {
-        padding: 6px 5px 10px;
+        padding: 6px 5px 10px 29px;
         border-bottom: 1px solid #cccccc;
         background: #f9f9f9;
         font-family: NeueHaas_light, Helvetica, sans-serif;
@@ -8629,7 +8664,6 @@ table {
         text-transform: none;
         text-decoration: none;
         letter-spacing: 0;
-        text-align: center;
         cursor: pointer; }
         .b-cabinet-block__panel-nav-title a {
           color: #464646;
@@ -9784,7 +9818,8 @@ table {
       font-size: 10px;
       color: #961d48;
       border-bottom: 1px dashed #961d48;
-      cursor: pointer; }
+      cursor: pointer;
+      margin: 0 5px 0 0; }
     .b-cabinet-block__seller-docs-item_edit-name {
       padding: 2px 10px;
       margin: 0 10px 0 0; }
@@ -9861,6 +9896,12 @@ table {
       float: right;
       margin: 0;
       width: 63px; }
+    .b-cabinet-block__seller-docs-item-arhive {
+      font-size: 10px;
+      color: #961d48;
+      border-bottom: 1px dashed #961d48;
+      cursor: pointer;
+      margin: 0 5px 0 0; }
     .b-cabinet-block__seller-docs-inputs {
       position: relative;
       height: 31px; }
@@ -10819,6 +10860,10 @@ table {
             padding: 0 0 0 12px; }
     .b-cabinet-block__resume .brown_button, .b-cabinet-block__resume .search-button {
       width: 175px; }
+  .b-cabinet-block__docs-arhive-buttons {
+    display: block;
+    width: 193px;
+    margin: 37px auto 0; }
 
 /*end of b-cabinet-block*/
 /*buy-in-shop*/
@@ -14185,7 +14230,7 @@ div.search-item h4 a {
         text-decoration: none;
         letter-spacing: 0; }
   .post-resume__info {
-    margin: 0;
+    margin: 0 0 35px;
     display: inline-block;
     vertical-align: top; }
     .post-resume__info td {
@@ -14249,6 +14294,25 @@ div.search-item h4 a {
         display: inline-block;
         vertical-align: middle;
         width: 105px; }
+      .post-resume__parameters td .negotiable {
+        margin: 0 0 0 50px;
+        display: inline-block;
+        vertical-align: middle; }
+        .post-resume__parameters td .negotiable label {
+          padding: 0 0 0 30px;
+          display: block;
+          font-family: NeueHaas_light, Helvetica, sans-serif;
+          font-size: 12px;
+          line-height: 1.2em;
+          font-weight: 400;
+          color: #000;
+          text-transform: none;
+          text-decoration: none;
+          letter-spacing: 0; }
+          .post-resume__parameters td .negotiable label::before {
+            top: 2px; }
+          .post-resume__parameters td .negotiable label::after {
+            top: 4px; }
   .post-resume__secondment {
     margin: 0; }
     .post-resume__secondment label {
@@ -14268,6 +14332,12 @@ div.search-item h4 a {
         top: 2px; }
       .post-resume__secondment label::after {
         top: 5px; }
+    .post-resume__secondment--vacancy label {
+      font-family: NeueHaas_medium, Helvetica, sans-serif; }
+      .post-resume__secondment--vacancy label::before {
+        top: 0; }
+      .post-resume__secondment--vacancy label::after {
+        top: 2px; }
   .post-resume__about {
     margin: 0 0 40px;
     width: 100%; }
@@ -14388,6 +14458,9 @@ div.search-item h4 a {
         .post-resume__job table td.tip__target .tip {
           top: 6px;
           right: 15px; }
+    .post-resume__job--vacancy table td:first-child {
+      vertical-align: top;
+      padding: 5px 5px 5px 20px; }
   .post-resume__add-job {
     margin: 0 0 35px;
     display: block;
@@ -14421,4 +14494,447 @@ div.search-item h4 a {
     width: 210px; }
 
 /*end of post-resume*/
+/*resume-list*/
+.resume-list {
+  margin: 0;
+  padding: 20px 15px;
+  clear: both;
+  background: #fff;
+  border: 1px solid #d1d1d1; }
+  .resume-list h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-family: NeueHaas_bold, Helvetica, sans-serif;
+    font-size: 21px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0; }
+  .resume-list__form {
+    margin: 0 0 15px;
+    padding: 20px;
+    background: #f4f4f4; }
+  .resume-list__term {
+    margin: 0 0 25px;
+    padding: 0;
+    list-style: none;
+    font-size: 0; }
+    .resume-list__term li {
+      margin: 0 50px 0 0;
+      display: inline-block;
+      vertical-align: top; }
+      .resume-list__term li label {
+        padding: 0 0 0 25px;
+        font-family: NeueHaas_light, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #000;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0; }
+        .resume-list__term li label::before {
+          top: 3px; }
+        .resume-list__term li label::after {
+          top: 6px; }
+  .resume-list__types {
+    margin: 0 0 25px;
+    padding: 0;
+    list-style: none;
+    font-size: 0; }
+    .resume-list__types > li {
+      display: inline-block;
+      vertical-align: top;
+      width: 33.33%; }
+      .resume-list__types > li h3 {
+        margin: 0 0 10px;
+        font-family: NeueHaas_reg, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #000;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0; }
+      .resume-list__types > li .jq-selectbox-main {
+        margin: 0;
+        width: 225px; }
+  .resume-list__salary h3 {
+    margin: 0 20px 10px 0;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: NeueHaas_reg, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0; }
+  .resume-list__salary .type-text, .resume-list__salary .search-query {
+    margin: 0 10px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 125px;
+    height: 32px;
+    box-sizing: border-box; }
+  .resume-list__salary .jq-selectbox-main {
+    margin: 0 115px 0 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 105px; }
+  .resume-list__salary .brown_button, .resume-list__salary .search-button {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+    width: 125px; }
+  .resume-list__table {
+    margin: 0 0 35px;
+    width: 100%;
+    box-shadow: none; }
+    .resume-list__table th {
+      padding: 5px;
+      box-sizing: border-box;
+      height: 45px;
+      text-align: center; }
+    .resume-list__table td {
+      border: 0;
+      padding: 5px 5px 5px 10px;
+      box-sizing: border-box;
+      height: 50px;
+      font-family: NeueHaas_light, Helvetica, sans-serif;
+      font-size: 12px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #464646;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0;
+      text-align: left; }
+      .resume-list__table td:first-child {
+        width: 120px;
+        font-family: NeueHaas_light-it, Helvetica, sans-serif; }
+      .resume-list__table td:nth-child(2) {
+        width: 240px;
+        font-family: NeueHaas_medium, Helvetica, sans-serif;
+        text-decoration: underline; }
+      .resume-list__table td:nth-child(3) {
+        width: 130px;
+        font-family: NeueHaas_medium, Helvetica, sans-serif;
+        color: #8b0333;
+        padding: 5px 10px;
+        text-align: right; }
+      .resume-list__table td:nth-child(4) {
+        width: 145px; }
+
+/*end of resume-list*/
+/*resume*/
+.resume {
+  margin: 0;
+  padding: 20px 15px;
+  clear: both;
+  background: #fff;
+  border: 1px solid #d1d1d1; }
+  .resume h2 {
+    margin: 0 0 20px;
+    padding: 0;
+    font-family: NeueHaas_bold, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0; }
+  .resume h3 {
+    margin: 0 0 30px;
+    font-family: NeueHaas_bold, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0; }
+    .resume h3.center {
+      text-transform: uppercase;
+      text-align: center; }
+  .resume table {
+    padding: 0;
+    border-collapse: collapse;
+    border: none;
+    width: 100%; }
+    .resume table td {
+      padding: 10px 5px 10px 0;
+      box-sizing: border-box;
+      border: none;
+      vertical-align: top;
+      font-family: NeueHaas_reg, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #000;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+      .resume table td:first-child {
+        width: 265px; }
+  .resume__date {
+    margin: 0;
+    float: left;
+    font-family: NeueHaas_light-it, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #464646;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0; }
+  .resume__controls {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right; }
+    .resume__controls li {
+      margin: 0 35px 0 0;
+      display: inline-block;
+      vertical-align: top; }
+      .resume__controls li:first-child a {
+        background: url("images/message.png") no-repeat 0 center; }
+      .resume__controls li:nth-child(2) a {
+        background: url("images/star-icon--grey.png") no-repeat 0 center; }
+      .resume__controls li:last-child {
+        margin: 0; }
+        .resume__controls li:last-child a {
+          background: url("images/stop-icon.png") no-repeat 0 center; }
+      .resume__controls li a {
+        margin: 0;
+        padding: 0 0 0 25px;
+        display: block;
+        font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+        font-size: 14px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #898989;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0; }
+  .resume__main {
+    margin: 20px 0 30px; }
+    .resume__main table {
+      margin: 0 0 0 150px;
+      width: auto; }
+      .resume__main table td {
+        padding: 5px 0;
+        vertical-align: baseline; }
+        .resume__main table td:first-child {
+          width: 120px;
+          font-family: NeueHaas_light, Helvetica, sans-serif;
+          font-size: 12px;
+          line-height: 1.2em;
+          font-weight: 400;
+          color: #000;
+          text-transform: none;
+          text-decoration: none;
+          letter-spacing: 0; }
+        .resume__main table td .salary {
+          margin: 0 30px 0 0;
+          display: inline-block;
+          vertical-align: baseline;
+          font-family: NeueHaas_bold, Helvetica, sans-serif;
+          font-size: 24px;
+          line-height: 1.2em;
+          font-weight: 400;
+          color: #0c4da2;
+          text-transform: none;
+          text-decoration: none;
+          letter-spacing: 0; }
+          .resume__main table td .salary span {
+            font-family: NeueHaas_it, Helvetica, sans-serif;
+            font-size: 16px; }
+        .resume__main table td .currency {
+          display: inline-block;
+          vertical-align: baseline;
+          font-family: NeueHaas_light, Helvetica, sans-serif;
+          font-size: 16px;
+          line-height: 1.2em;
+          font-weight: 400;
+          color: #9d9e9e;
+          text-transform: none;
+          text-decoration: none;
+          letter-spacing: 0; }
+          .resume__main table td .currency span {
+            font-size: 16px; }
+  .resume__photo {
+    margin: 0;
+    float: left;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden; }
+    .resume__photo img {
+      width: 100%; }
+  .resume__name {
+    margin: 0 0 25px 150px;
+    font-family: NeueHaas_medium, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0; }
+  .resume__info {
+    margin: 0 0 30px; }
+    .resume__info table {
+      margin: 0 0 25px; }
+      .resume__info table td ul {
+        margin: 0;
+        padding: 0;
+        list-style: none; }
+        .resume__info table td ul li {
+          margin: 5px 0;
+          padding: 0 0 0 30px; }
+          .resume__info table td ul li:first-child {
+            margin: 0 0 5px; }
+          .resume__info table td ul li.ship-equipment {
+            background: url("images/ship-equipment--blue.png") no-repeat 0 center; }
+          .resume__info table td ul li.ship-electronic {
+            background: url("images/ship-electronic--blue.png") no-repeat 0 center; }
+          .resume__info table td ul li.ship-materials {
+            background: url("images/ship-materials--blue.png") no-repeat 0 center; }
+  .resume__secondment {
+    margin: 0;
+    padding: 0 0 0 30px;
+    font-family: NeueHaas_reg, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0; }
+  .resume__about {
+    margin: 0 0 45px; }
+  .resume__experience {
+    margin: 0 0 20px; }
+    .resume__experience p {
+      margin: 0 0 20px;
+      font-family: NeueHaas_reg, Helvetica, sans-serif;
+      font-size: 14px;
+      line-height: 1.2em;
+      font-weight: 400;
+      color: #000;
+      text-transform: none;
+      text-decoration: none;
+      letter-spacing: 0; }
+      .resume__experience p span {
+        font-family: NeueHaas_bold, Helvetica, sans-serif; }
+    .resume__experience table {
+      background: #f7f7f7; }
+      .resume__experience table td {
+        padding: 20px 15px; }
+        .resume__experience table td:first-child {
+          width: 245px; }
+        .resume__experience table td h4 {
+          margin: 0;
+          font-family: NeueHaas_bold, Helvetica, sans-serif;
+          font-size: 18px;
+          line-height: 1.2em;
+          font-weight: 400;
+          color: #000;
+          text-transform: none;
+          text-decoration: none;
+          letter-spacing: 0; }
+        .resume__experience table td span {
+          margin: 20px 0 0;
+          display: block; }
+
+/*end of resume*/
+/*calculator*/
+.calculator {
+  display: none;
+  padding: 0 0 40px;
+  width: 900px;
+  background: #fff;
+  z-index: 1000;
+  position: relative; }
+  .calculator h2 {
+    margin: 0 0 40px;
+    padding: 20px 35px;
+    height: 68px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e1e1e1;
+    font-family: NeueHaas_medium, Helvetica, sans-serif;
+    font-size: 19px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-align: center; }
+  .calculator p {
+    margin: 0 0 25px;
+    padding: 0 35px;
+    font-family: NeueHaas_reg, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.2em;
+    font-weight: 400;
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+    letter-spacing: 0;
+    text-align: left; }
+    .calculator p b {
+      font-family: NeueHaas_bold, Helvetica, sans-serif;
+      font-weight: 400; }
+  .calculator form {
+    margin: 0;
+    padding: 30px 35px 45px;
+    background: #fafafa; }
+    .calculator form table {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      border-collapse: collapse;
+      border: none;
+      width: 100%; }
+      .calculator form table td {
+        border: none;
+        padding: 10px 5px;
+        box-sizing: border-box;
+        font-family: NeueHaas_light, Helvetica, sans-serif;
+        font-size: 12px;
+        line-height: 1.2em;
+        font-weight: 400;
+        color: #000;
+        text-transform: none;
+        text-decoration: none;
+        letter-spacing: 0; }
+        .calculator form table td:first-child {
+          width: 195px; }
+        .calculator form table td .type-text, .calculator form table td .search-query {
+          margin: 0 15px 0 0;
+          display: inline-block;
+          vertical-align: middle;
+          width: 130px;
+          min-height: 32px;
+          box-sizing: border-box; }
+        .calculator form table td .jq-selectbox-main {
+          margin: 0 85px 0 0;
+          display: inline-block;
+          vertical-align: middle;
+          width: 105px; }
+        .calculator form table td .brown_button, .calculator form table td .search-button {
+          margin: 0;
+          display: inline-block;
+          vertical-align: middle;
+          width: 195px; }
+        .calculator form table td.fee .type-text, .calculator form table td.fee .search-query {
+          margin: 0 24px 0 0; }
+
+/*end of calculator*/
 /*end of PAGE-STYLES*/

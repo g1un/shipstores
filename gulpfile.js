@@ -35,7 +35,7 @@ gulp.task('browserSync', function() {
 	browserSync.init({
 		server: {
 			baseDir: 'app',
-			index: "Shipstores_razmestit_resume.html"
+			index: "Shipstores_LK_order service_kabinet.html"
 		},
 	})
 });

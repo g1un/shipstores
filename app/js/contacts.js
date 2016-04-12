@@ -70,7 +70,7 @@ $(document).ready(function() {
 		var addressDisabler = $('.address-disabler');
 		var disAddress = $('.disabling-address');
 
-		function shippingAssressOff(){
+		function shippingAddressOff(){
 			if (addressEnabler.is(':checked')){
 				disAddress.prop('disabled', false);
 			} else{
@@ -78,14 +78,14 @@ $(document).ready(function() {
 			}
 		}
 
-		shippingAssressOff();
+		shippingAddressOff();
 
 		addressEnabler.on('click', function(){
-			setTimeout(function () {shippingAssressOff();}, 50);
+			setTimeout(function () {shippingAddressOff();}, 50);
 		});
 
 		addressDisabler.on('click', function(){
-			setTimeout(function () {shippingAssressOff();}, 50);
+			setTimeout(function () {shippingAddressOff();}, 50);
 		});
 	}
 	/*end of disabling of shipping address*/
@@ -1115,6 +1115,75 @@ $(document).ready(function() {
 		});
 	}
 	/*end of tip animation*/
+
+	/*standard modal window*/
+	if($('.modal-window-opened').length){
+		var modalWindow = $('.modal-window-opened');
+		var modalWindowCancel = $('.modal-window__close');
+
+		$('body').append('<div class="modal-window__background"></div>');
+		var modalWindowBg = $('.modal-window__background');
+
+		modalWindowBg.fadeToggle('500');
+		modalWindow.fadeToggle('500');
+
+		function modalWindowCss() {
+			var modalWindowLeft = ($(window).width() - modalWindow.outerWidth()) / 2;
+
+			if (window.innerHeight >= modalWindow.outerHeight()) {
+				var modalWindowTop = (window.innerHeight - modalWindow.outerHeight()) / 2;
+				modalWindow.css({
+					'position': 'fixed',
+					'top': modalWindowTop,
+					'left': modalWindowLeft
+				});
+			}else{
+				modalWindowTop = $(window).scrollTop();
+				modalWindow.css({
+					'position': 'absolute',
+					'top': modalWindowTop,
+					'left': modalWindowLeft
+				});
+			}
+
+			if($(window).width() <= modalWindow.outerWidth()){
+				modalWindow.css({
+					'position': 'absolute',
+					'left': 0
+				});
+
+				if(window.innerHeight >= modalWindow.outerHeight()){
+					var top = $(window).scrollTop() + ((window.innerHeight - modalWindow.outerHeight()) / 2);
+					console.log(top);
+					modalWindow.css({
+						'top': top
+					});
+				}
+			}
+		}
+
+		modalWindowCss();
+
+		$(window).on('resize', function () {
+			modalWindowCss();
+		});
+
+		modalWindowCancel.on('click', function () {
+			modalWindowBg.fadeOut('500').remove();
+			modalWindow.fadeOut('500');
+		});
+
+		modalWindowBg.mousedown(function (e) {
+			var clicked = $(e.target);
+			if (clicked.is('.modal-window') || clicked.closest('.modal-window').length) {
+				return;
+			} else {
+				modalWindowBg.fadeOut('500').remove();
+				modalWindow.fadeOut('500');
+			}
+		});
+	}
+	/*end of standard modal window*/
 });
 /*end of contacts.js*/
 

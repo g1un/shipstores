@@ -1,0 +1,183 @@
+/*resume-list*/
+.resume-list{
+	margin: 0;
+	padding: 20px 15px;
+	clear: both;
+	background: #fff;
+	border: 1px solid #d1d1d1;
+
+	h2{
+		margin: 0 0 20px;
+		padding: 0;
+		font-family: NeueHaas_bold, Helvetica, sans-serif;
+		font-size: 21px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: uppercase;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
+
+	&__form{
+		margin: 0 0 15px;
+		padding: 20px;
+		background: #f4f4f4;
+	}
+
+	&__term{
+		margin: 0 0 25px;
+		padding: 0;
+		list-style: none;
+		font-size: 0;
+
+		li{
+			margin: 0 50px 0 0;
+			display: inline-block;
+			vertical-align: top;
+
+			label{
+				padding: 0 0 0 25px;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+
+				&::before{
+					top: 3px;
+				}
+
+				&::after{
+					top: 6px;
+				}
+			}
+		}
+	}
+
+	&__types{
+		margin: 0 0 25px;
+		padding: 0;
+		list-style: none;
+		font-size: 0;
+
+		&>li{
+			display: inline-block;
+			vertical-align: top;
+			width: 33.33%;
+
+			h3{
+				margin: 0 0 10px;
+				font-family: NeueHaas_reg, Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+
+			.jq-selectbox-main{
+				margin: 0;
+				width: 225px;
+			}
+		}
+	}
+
+	&__salary{
+
+		h3{
+			margin: 0 20px 10px 0;
+			display: inline-block;
+			vertical-align: middle;
+			font-family: NeueHaas_reg, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+		}
+
+		.type-text{
+			margin: 0 10px 0 0;
+			display: inline-block;
+			vertical-align: middle;
+			width: 125px;
+			height: 32px;
+			box-sizing: border-box;
+		}
+
+		.jq-selectbox-main{
+			margin: 0 115px 0 0;
+			display: inline-block;
+			vertical-align: middle;
+			width: 105px;
+		}
+
+		.brown_button{
+			margin: 0;
+			display: inline-block;
+			vertical-align: middle;
+			width: 125px;
+		}
+	}
+
+	&__table{
+		margin: 0 0 35px;
+		width: 100%;
+		box-shadow: none;
+
+		th{
+			padding: 5px;
+			box-sizing: border-box;
+			height: 45px;
+			text-align: center;
+		}
+
+		td{
+			border: 0;
+			padding: 5px 5px 5px 10px;
+			box-sizing: border-box;
+			height: 50px;
+			font-family: NeueHaas_light, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #464646;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: left;
+
+			&:first-child{
+				width: 120px;
+				font-family: NeueHaas_light-it, Helvetica, sans-serif;
+			}
+
+			&:nth-child(2){
+				width: 240px;
+				font-family: NeueHaas_medium, Helvetica, sans-serif;
+				text-decoration: underline;
+			}
+
+			&:nth-child(3){
+				width: 130px;
+				font-family: NeueHaas_medium, Helvetica, sans-serif;
+				color: #8b0333;
+				padding: 5px 10px;
+				text-align: right;
+			}
+
+			&:nth-child(4){
+				width: 145px;
+			}
+		}
+	}
+}
+/*end of resume-list*/

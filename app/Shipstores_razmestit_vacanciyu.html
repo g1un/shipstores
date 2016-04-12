@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shipstores</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link href="css/jquery.formstyler.css" rel="stylesheet">
+	<link href="css/jquery.fancybox.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/template_styles.css">
+</head>
+
+<body>
+
+<div class="b-main">
+
+	<div class="b-head">
+		<div class="b-head__logo">
+			<div class="b-logo">
+				<a href="#"><img src="images/logo.png" /></a>
+			</div>
+		</div>
+		<div class="b-head__links">
+			<div class="b-menu">
+				<div  class='b-menu__link'>
+					<a href="#">закупки</a>
+					<div class="b-menu__linkhover"></div>
+				</div>
+				<div  class='b-menu__link'>
+					<a href="#">магазины</a>
+					<div class="b-menu__linkhover"></div>
+				</div>
+				<div  class='b-menu__link'>
+					<a href="#">объявления</a>
+					<div class="b-menu__linkhover"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="b-head__currency-lang">
+			<ul class="b-head__currency">
+				<li class="ru show">₽</li>
+				<li class="us">$</li>
+				<li class="eu">€</li>
+				<li class="gb">£</li>
+			</ul>
+
+			<ul class="b-head__currency-list">
+				<li class="ru active">₽ Российский рубль</li>
+				<li class="us">$ Доллар США</li>
+				<li class="eu">€ Евро</li>
+				<li class="gb">£ Фунт стерлингов</li>
+			</ul>
+
+			<ul class="b-head__lang">
+				<li class="ru show"></li>
+				<li class="en"></li>
+				<li class="fr"></li>
+				<li class="sp"></li>
+				<li class="ch"></li>
+				<li class="it"></li>
+				<li class="ge"></li>
+			</ul>
+
+			<ul class="b-head__lang-list">
+				<li class="ru active">Русский</li>
+				<li class="en">English (UK)</li>
+				<li class="fr">Français</li>
+				<li class="sp">Español</li>
+				<li class="ch">简体中文</li>
+				<li class="it">Italiano</li>
+				<li class="ge">Deutsch</li>
+			</ul>
+		</div>
+
+		<div class="b-head__autorize">
+			<div class="b-topbuttons">
+				<div class="g-button b-topbuttons_button g-white_bg">Вход</div>
+				<div class="g-button b-topbuttons_button g-blue_bg">Регистрация</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="b-left">
+		<div class="b-left__menu">
+			<div class="b-leftmenu">
+				<div class="b-leftmenublue">
+					<nav>
+						<ul>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-1">Навигация и связь</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-2">Аварийно-спасательные средства</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-3">Противопожарные средства</a></li>
+							<li> <a href="#" class="b-leftmenublue__link b-leftmenu_link-4">Судовое оборудование</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-5">Судовая электрика</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-6">Корпус и палуба</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-7">Судовые материалы</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-8">Рыбопромысловое оборудование</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-9">Гидрографическое оборудование</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-10">Водолазное и подводное оборудование</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-11">Плавсредства</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-12">Услуги и сервис</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-13">Сувениры и винтаж</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-14">Разное</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-15">Работа</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="b-leftmenuwhite">
+					<nav>
+						<ul>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-16">Как это работает</a></li>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-17">Правила</a></li>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-18">Помощь</a></li>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-19">Безопасность</a></li>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-20">FAQ</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="b-left_bottom">
+			<div class="b-needhelp">
+				<div class="b-needhelp__header">нужна помощь?</div>
+				<div class="b-needhelp__body">Воспользуйтесь <a href="#">формой обратной связи</a> или свяжитесь с нами по телефону горячей линии</div>
+				<div class="b-needhelp__bottom">
+					<div class="b-shedule">
+						<div class="b-shedule__phone">8-800-100-00-00</div>
+						<div class="b-shedule__shedule">ежедневно<br>с 9:00 до 20:00</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="b-right">
+
+		<div class="b-advertising-top">
+			<a href="#"><img src="images/banner-01.jpg" /></a>
+		</div>
+
+		<div class="b-breadcrumb-search">
+			<link href="/bitrix/css/main/font-awesome.css?145318681428777" type="text/css" rel="stylesheet">
+			<div class="bx-breadcrumb">
+				<div class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+
+					<a href="/" title="Главная" itemprop="url">
+						<span itemprop="title">Главная</span>
+					</a>
+				</div>
+				<div class="bx-breadcrumb-item">
+					<i class="fa fa-angle-right"></i>
+					<span>Новости</span>
+				</div><div style="clear:both"></div></div> <div class="b-search-nomain">
+			<div class="b-search__text nomain-search">
+				<input class="b-search__inpfield nomain-search nomain-inp-text" type="text" value="">
+				<input class="b-search__submit nomain-search search-small-pict" type="submit" value="">
+			</div>
+		</div>
+		</div>
+
+		<form class="post-resume" action="#" method="get">
+			<h2>Разместить вакансию</h2>
+
+			<p class="post-resume__comment">
+				Перед добавлением на сайт каждая вакансия проверяется на соответствие <a href="#">правилам SHIPSTORES.NET</a>
+			</p>
+
+			<table class="post-resume__info">
+				<tr>
+					<td>Ваше компания</td>
+					<td colspan="2">ООО «Корабел»</td>
+				</tr>
+				<tr>
+					<td>Телефон</td>
+					<td>+7 (911) 666-66-66</td>
+					<td>
+						<input class="input-radio" type="radio" name="communication" id="communication-tel" checked>
+						<label class="label-radio" for="communication-tel">Желаемый вид связи</label>
+					</td>
+				</tr>
+				<tr>
+					<td>E-mail</td>
+					<td>alexander98@gmail.com</td>
+					<td>
+						<input class="input-radio" type="radio" name="communication" id="communication-email">
+						<label class="label-radio" for="communication-email">Желаемый вид связи</label>
+					</td>
+				</tr>
+			</table>
+
+			<h3>Информация, которая  будет видна пользователю после публикации:</h3>
+
+			<table class="post-resume__parameters">
+				<tr>
+					<td>Страна</td>
+					<td>
+						<div class="jq-selectbox-main">
+							<select name="country" id="country">
+								<option value="1">Россия</option>
+								<option value="2">КНДР</option>
+								<option value="3">Великобритания</option>
+								<option value="4">Южно-Африканская Республика</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Город</td>
+					<td>
+						<div class="jq-selectbox-main">
+							<select name="city" id="city">
+								<option value="1">Москва</option>
+								<option value="2">Санкт-Петербуг</option>
+								<option value="3">Рига</option>
+								<option value="4">Вильнюс</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Название вакансии</td>
+					<td>
+						<input class="position type-text" type="text" name="position" id="position">
+					</td>
+				</tr>
+				<tr>
+					<td>Категория</td>
+					<td>
+						<div class="jq-selectbox-main">
+							<select name="category" id="category">
+								<option value="1">Все категории</option>
+								<option value="2">Категория 1</option>
+								<option value="3">Категория 2</option>
+								<option value="4">Категория 3</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Заработаная плата</td>
+					<td class="disabling-block">
+						<input class="salary type-text disabling-val" type="text" name="salary" id="salary">
+
+						<div class="currency jq-selectbox-main disabling-currency">
+							<div class="disabled"></div>
+							<select name="currency" id="currency">
+								<option value="1">Рублей</option>
+								<option value="2">Долларов</option>
+								<option value="3">Евро</option>
+								<option value="4">Фунтов</option>
+							</select>
+						</div>
+
+						<div class="negotiable">
+							<input class="input-checkbox disabling-btn" type="checkbox" name="negotiable" id="negotiable">
+							<label class="label-checkbox disabling-label" for="negotiable">Договорная</label>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Режим работы</td>
+					<td>
+						<div class="jq-selectbox-main" data-placeholder="Выберите график работы">
+							<select name="schedule" id="schedule" data-placeholder="Выберите график работы">
+								<option></option>
+								<option value="1">График 1</option>
+								<option value="2">График 2</option>
+								<option value="3">График 3</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>Занятость</td>
+					<td>
+						<div class="jq-selectbox-main">
+							<select name="employment" id="employment">
+								<option value="1">Полная</option>
+								<option value="2">Частичная</option>
+							</select>
+						</div>
+					</td>
+				</tr>
+			</table>
+
+			<div class="post-resume__secondment post-resume__secondment--vacancy">
+				<input class="input-checkbox" type="checkbox" name="secondment" id="secondment">
+				<label class="label-checkbox" for="secondment">Возможны командировки</label>
+			</div>
+
+			<h2 class="center">О вакансии</h2>
+
+			<div class="post-resume__job post-resume__job--vacancy">
+				<table>
+					<tr>
+						<td class="duty">Должностные обязанности</td>
+						<td>
+							<textarea class="type-text" name="duty" id="duty"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="require">Требования к соискателю</td>
+						<td>
+							<textarea class="type-text" name="require" id="require"></textarea>
+						</td>
+					</tr>
+					<tr>
+						<td class="qualification">Требования к квалификации</td>
+						<td>
+							<textarea class="type-text" name="qualification" id="qualification"></textarea>
+						</td>
+					</tr>
+				</table>
+			</div>
+
+			<p class="comment">
+				После проверки вакансии модератором на соответствие правилам портала, магазин становится доступным для просмотра.
+			</p>
+
+			<div class="post-resume__wrapper clearfix">
+				<input class="post-resume__submit brown_button" type="submit" name="post-resume__submit" id="post-resume__submit" value="Отправить на модерацию">
+			</div>
+		</form>
+
+		<div class="b-advertising-bottom">
+			<div class="b-advertising-bottom__banner banner-02"><a href="#"><img src="images/examples/banner2.png" /></a></div>
+			<div class="b-advertising-bottom__banner banner-03"><a href="#"><img src="images/examples/banner3.png" /></a></div>
+		</div>
+
+	</div>
+
+	<div class="b-bottom-menu">
+		<nav>
+			<div class="b-menu-main"><!--b-menu_link_active-->
+				<div  class='b-menu-main__link'>
+					<a href="#">О портале</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Услуги портала</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Новости</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Реклама</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Контакты</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Дилеры</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">shipstoresbonus</a>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="b-footer">
+		<div class="b-footer-cr">
+			<div class="b-footer-cr__copy">© 2015 ShipStores</div>
+			<div class="b-footer-cr__bitrix"><img src="images/bitrix.png" /></div>
+			<div class="b-footer-cr__menu">
+				<a href="#">Закупки</a>
+				<a href="#">Магазины</a>
+				<a href="#">Объявления</a>
+			</div>
+			<div class="b-footer-cr__7studio">
+				<p><a href="//7sait.spb.ru/services/sozdanie-saitov/" title="Разработка сайтов">Разработка сайта: «7 Студио»</a></p>
+				<p><a href="//7sait.spb.ru/services/internet-marketing/" title="Продвижение сайтов">Продвижение сайта: «7 Студио»</a></p>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="b-static-stripe">
+	<div class="b-your-blue">
+		<div class="b-your-blue__feedback my-divs">
+			<div class="form-button js-call-form">обратная связь</div>
+		</div>
+		<div class="b-your-blue__info my-divs b-your-blue__infofirst">
+			<div class="b-my-info">
+				<div class="b-my-info__icon icon-purchase"></div>
+				<div class="b-my-info__name"><a href="#">Закупки, в которых вы участвуете</a></div>
+				<div class="b-my-info__count">4</div>
+			</div>
+		</div>
+		<div class="b-your-blue__info my-divs">
+			<div class="b-my-info">
+				<div class="b-my-info__icon icon-notice"></div>
+				<div class="b-my-info__name"><a href="#">Размещено объявлений</a></div>
+				<div class="b-my-info__count">4</div>
+			</div>
+		</div>
+		<div class="b-your-blue__info my-divs">
+			<div class="b-my-info">
+				<div class="b-my-info__icon icon-favorites"></div>
+				<div class="b-my-info__name"><a href="#">Избранное</a></div>
+				<div class="b-my-info__count">4</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--price-offer form-->
+<div class="price-offer form-white" id="price-offer">
+	<h3 class="price-offer__title form-title">Участвовать в запросе предложений</h3>
+
+	<form class="price-offer__form" action="#" method="get">
+		<label class="price-offer__label form-text" for="price-offer__sum">Сумма, которую вы готовы предложить</label>
+		<input class="price-offer__sum type-text-shadow" type="text" name="price-offer__sum" id="price-offer__sum">
+
+		<span class="price-offer__sum-units form-text">рублей</span>
+
+		<input class="price-offer__submit brown_button" type="submit" name="price-offer__submit" id="price-offer__submit" value="Сделать предложение">
+	</form>
+
+	<div class="price-offer__close form-close"></div>
+</div>
+<!--end of price-offer form-->
+
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="http://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU" type="text/javascript"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/contacts.js"></script>
+
+</body>
+</html>

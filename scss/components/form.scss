@@ -336,7 +336,8 @@
 	  left: 0;
 	  right: 0;
 	  z-index: 1;
-	  background: rgba(255, 255, 255, 0.85);
+	  //background: rgba(255, 255, 255, 0.85);
+		background: rgba(241, 241, 241, 0.85);
 	  box-shadow: inset 0 1px 2px 0 rgba(0, 0, 0, 0.17);
 	  border: none;
 	}
@@ -514,6 +515,22 @@
   box-shadow: 2px 2px 3px 0 rgba(0,0,0,.31);
 }
 /*end of form-white*/
+
+/*modal-window*/
+.modal-window{
+
+	&__background{
+		display: none;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		z-index: 999;
+		background: rgba(0,0,0,.25);
+	}
+}
+/*end of modal-window*/
 
 /*close-blue*/
 .close-blue{
@@ -1111,4 +1128,36 @@
 	}
 }
 /*end of tip*/
+
+/*js*/
+.js{
+
+	&--input-eye--to-show-password {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 32px;
+		height: 32px;
+		z-index: 2;
+		background: url(images/eye_quick_view.png);
+		opacity: 0.3;
+		cursor: pointer;
+
+		&:hover,
+		&--active{
+			opacity: 1;
+		}
+	}
+
+	&--show-password{
+
+		&:focus{
+
+			& + span{
+				opacity: 1;
+			}
+		}
+	}
+}
+/*end of js*/
 /*end of FORM*/
