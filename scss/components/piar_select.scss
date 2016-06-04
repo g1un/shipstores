@@ -1,0 +1,25 @@
+/*piar_select*/
+#piar_select{
+	width:550px;
+	height:250px;
+}
+#piar_select h3{
+	margin: 20px 86px 20px 20px;
+}
+#piar_select .tarif-info{
+	padding:10px;
+	font-size:12px;
+}
+#piar_select .tarif-info div{
+	display:none;
+}
+#piar_select  table{
+	margin:10px 0;
+	width: 100%;
+	height: 115px;
+}
+#piar_select .jq-selectbox__dropdown,
+#piar_select .jq-selectbox-main .jq-selectbox__select{
+	width:230px;
+}
+/*end of piar_select*/
