@@ -332,39 +332,38 @@
 			border-right: 1px solid #fff;
 
 			&:first-child{
-				padding-left: 17px;
+				padding-left: 15px;
 				width: 282px;
+			}
 
-				a{
-					color: #000;
-					text-decoration: none;
+			a{
+				color: #000;
+				text-decoration: none;
 
-					&:focus,
-					&:hover{
-						text-decoration: underline;
-					}
+				&:focus,
+				&:hover{
+					text-decoration: underline;
 				}
 			}
 
 			&:nth-child(2){
-				padding-left: 28px;
-				width: 297px;
+				padding-left: 15px;
 				font-family: NeueHaas_medium, Helvetica, sans-serif;
 				color: #464646;
 			}
 
 			&:last-child{
-				padding-right: 38px;
+				padding: 0 5px;
 				border: none;
-				width: 237px;
-				text-align: right;
+				width: 170px;
+				text-align: left;
 			}
 		}
 
 		&-remove{
 			display: inline-block;
 			vertical-align: top;
-			width: 161px;
+			width: 160px;
 			text-transform: none;
 			font-family: NeueHaas_reg, Helvetica, sans-serif;
 			font-size: 12px;
@@ -402,6 +401,20 @@
 			text-transform: none;
 			text-decoration: none;
 			letter-spacing: 0;
+
+			&.b-feedback-block__box-title{
+				float: none;
+				font-family: NeueHaas_bold, Helvetica, sans-serif;
+				font-size: 18px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: center;
+				margin: 0 70px 42px;
+			}
 		}
 
 		.b-orders-list-block{
@@ -602,6 +615,68 @@
 				&:last-child{
 					font-size: 12px;
 					text-align: left;
+				}
+			}
+
+			.b-orders-list-block__table-favourite{
+
+				&-td{
+
+					&:first-child{
+						padding-left: 15px;
+						width: 282px;
+					}
+
+					&:nth-child(2){
+						padding-left: 15px;
+						font-family: NeueHaas_medium, Helvetica, sans-serif;
+						color: #464646;
+						width: auto;
+					}
+
+					&:last-child{
+						padding: 0 5px;
+						border: none;
+						width: 170px;
+						text-align: left;
+					}
+				}
+			}
+
+			&.b-stores-block__table{
+
+				td{
+
+					&:first-child{
+						width: 30px;
+					}
+				}
+			}
+		}
+	}
+
+	&__features{
+		position: relative;
+
+		img{
+			cursor: pointer;
+		}
+
+		ul{
+			display: none;
+			position: absolute;
+			background: #fff;
+			box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
+			top: 0;
+			width: 150px;
+			right: 27px;
+			padding: 10px 28px;
+
+			a{
+				color: #000;
+
+				&:hover{
+					color: #a62150;
 				}
 			}
 		}

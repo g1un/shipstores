@@ -9,12 +9,21 @@
 
 	&__title{
 		margin: 0 0 13px;
+
+		&-info{
+			margin: 0;
+			padding: 5px 10px;
+			float: right;
+			background: #fff;
+			border: 1px solid #c3c3c3;
+			font-size: 12px;
+		}
 	}
 
 	&__sort{
 		background: #f4f4f4;
 		margin: 0 0 26px;
-		padding: 0 0 22px 21px;
+		padding: 20px;
 
 		&-type{
 			margin: 0;

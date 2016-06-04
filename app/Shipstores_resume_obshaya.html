@@ -185,12 +185,25 @@
 					<li>
 						<h3>Выберите категорию</h3>
 
-						<div class="jq-selectbox-main">
-							<select name="category" id="category">
-								<option value="1">Все категории</option>
-								<option value="2">Категория 1</option>
-								<option value="3">Категория 2</option>
-							</select>
+						<div class="multiselect">
+							<div class="multiselect__placeholder">Категории</div>
+
+							<div class="multiselect__form">
+								<ul class="multiselect__list">
+									<li class="multiselect__item">
+										<input class="input-checkbox" type="checkbox" name="multiselect__items" id="multiselect__item-1">
+										<label class="label-checkbox" for="multiselect__item-1">Все категории</label>
+									</li>
+									<li class="multiselect__item">
+										<input class="input-checkbox" type="checkbox" name="multiselect__items" id="multiselect__item-2">
+										<label class="label-checkbox" for="multiselect__item-2">Категория 1</label>
+									</li>
+									<li class="multiselect__item">
+										<input class="input-checkbox" type="checkbox" name="multiselect__items" id="multiselect__item-3">
+										<label class="label-checkbox" for="multiselect__item-3">Категория 2</label>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</li>
 					<li>
@@ -240,7 +253,7 @@
 				<tr>
 					<th>Дата размещения</th>
 					<th>Должность</th>
-					<th>Цена, руб</th>
+					<th>Заработная плата, руб</th>
 					<th>Соискатель</th>
 					<th>Город</th>
 				</tr>

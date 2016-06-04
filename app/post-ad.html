@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shipstores</title>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<link href="css/jquery.formstyler.css" rel="stylesheet">
+	<link href="css/jquery.fancybox.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/template_styles.css">
+</head>
+
+<body>
+
+<div class="b-main">
+
+	<div class="b-head">
+		<div class="b-head__logo">
+			<div class="b-logo">
+				<a href="#"><img src="../images/logo.png" /></a>
+			</div>
+		</div>
+		<div class="b-head__links">
+			<div class="b-menu">
+				<div  class='b-menu__link'>
+					<a href="#">закупки</a>
+					<div class="b-menu__linkhover"></div>
+				</div>
+				<div  class='b-menu__link'>
+					<a href="#">магазины</a>
+					<div class="b-menu__linkhover"></div>
+				</div>
+				<div  class='b-menu__link'>
+					<a href="#">объявления</a>
+					<div class="b-menu__linkhover"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="b-head__currency-lang">
+			<ul class="b-head__currency">
+				<li class="ru show">₽</li>
+				<li class="us">$</li>
+				<li class="eu">€</li>
+				<li class="gb">£</li>
+			</ul>
+
+			<ul class="b-head__currency-list">
+				<li class="ru active">₽ Российский рубль</li>
+				<li class="us">$ Доллар США</li>
+				<li class="eu">€ Евро</li>
+				<li class="gb">£ Фунт стерлингов</li>
+			</ul>
+
+			<ul class="b-head__lang">
+				<li class="ru show"></li>
+				<li class="en"></li>
+				<li class="fr"></li>
+				<li class="sp"></li>
+				<li class="ch"></li>
+				<li class="it"></li>
+				<li class="ge"></li>
+			</ul>
+
+			<ul class="b-head__lang-list">
+				<li class="ru active">Русский</li>
+				<li class="en">English (UK)</li>
+				<li class="fr">Français</li>
+				<li class="sp">Español</li>
+				<li class="ch">简体中文</li>
+				<li class="it">Italiano</li>
+				<li class="ge">Deutsch</li>
+			</ul>
+		</div>
+
+		<div class="b-head__autorize">
+			<div class="b-topbuttons">
+				<div class="g-button b-topbuttons_button g-white_bg">Вход</div>
+				<div class="g-button b-topbuttons_button g-blue_bg">Регистрация</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="b-left">
+		<div class="b-left__menu">
+			<div class="b-leftmenu">
+				<div class="b-leftmenublue">
+					<nav>
+						<ul>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-1">Навигация и связь</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-2">Аварийно-спасательные средства</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-3">Противопожарные средства</a></li>
+							<li> <a href="#" class="b-leftmenublue__link b-leftmenu_link-4">Судовое оборудование</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-5">Судовая электрика</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-6">Корпус и палуба</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-7">Судовые материалы</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-8">Рыбопромысловое оборудование</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-9">Гидрографическое оборудование</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-10">Водолазное и подводное оборудование</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-11">Плавсредства</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-12">Услуги и сервис</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-13">Сувениры и винтаж</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-14">Разное</a></li>
+							<li><a href="#" class="b-leftmenublue__link b-leftmenu_link-15">Работа</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="b-leftmenuwhite">
+					<nav>
+						<ul>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-16">Как это работает</a></li>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-17">Правила</a></li>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-18">Помощь</a></li>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-19">Безопасность</a></li>
+							<li><a href="#" class="b-leftmenuwhite__link b-leftmenu_link-20">FAQ</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<div class="b-left_bottom">
+			<div class="b-needhelp">
+				<div class="b-needhelp__header">нужна помощь?</div>
+				<div class="b-needhelp__body">Воспользуйтесь <a href="#">формой обратной связи</a> или свяжитесь с нами по телефону горячей линии</div>
+				<div class="b-needhelp__bottom">
+					<div class="b-shedule">
+						<div class="b-shedule__phone">8-800-100-00-00</div>
+						<div class="b-shedule__shedule">ежедневно<br>с 9:00 до 20:00</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="b-right">
+
+		<div class="b-advertising-top">
+			<a href="#"><img src="../images/banner-01.jpg" /></a>
+		</div>
+
+		<div class="b-breadcrumb-search">
+			<li nk href="/bitrix/css/main/font-awesome.css?145318681428777" type="text/css" rel="stylesheet">
+				<div class="bx-breadcrumb">
+					<div class="bx-breadcrumb-item" id="bx_breadcrumb_0" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+
+						<a href="/" title="Главная" itemprop="url">
+							<span itemprop="title">Главная</span>
+						</a>
+					</div>
+					<div class="bx-breadcrumb-item">
+						<i class="fa fa-angle-right"></i>
+						<span>Новости</span>
+					</div><div style="clear:both"></div></div> <div class="b-search-nomain">
+				<div class="b-search__text nomain-search">
+					<input class="b-search__inpfield nomain-search nomain-inp-text" type="text" value="">
+					<input class="b-search__submit nomain-search search-small-pict" type="submit" value="">
+				</div>
+			</div>
+		</div>
+
+		<div class="b-post-ad-block clearfix">
+			<h2 class="b-post-ad-block__title content-title">Разместить объявление</h2>
+
+			<p class="b-post-ad-block__text text-little text-little--italic">
+				Перед добавлением на сайт каждое объявление проверяется на соответствие
+				<a class="b-post-ad-block__text-link" href="#">правилам SHIPSTORES.NET</a>
+			</p>
+
+			<form class="b-post-ad-block__form clearfix">
+				<table class="b-post-ad-block__table">
+					<tr>
+						<td class="b-post-ad-block__table-title b-post-ad-block__table-title--ad-type text-little text-little--light">Тип объявления</td>
+						<td class="b-post-ad-block__table-ad-type text-little" colspan="2">
+							<div class="b-post-ad-block__table-ad-type-select jq-selectbox-main">
+								<select id="b-post-ad-block__table-ad-type-select" name="b-post-ad-block__table-country-select">
+									<option value="1">Анонимное</option>
+									<option value="2">Открытое</option>
+								</select>
+							</div>
+
+							<p class="b-post-ad-block__table-text select-text select-text--thinit">
+								При публикации посредством Анонимного<br>
+								объявления данные продавца скрываются
+							</p>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="b-post-ad-block__table-title text-little text-little--light">Ваше имя</td>
+						<td class="b-post-ad-block__table-name text-little" colspan="2">Александр</td>
+					</tr>
+
+					<tr>
+						<td class="b-post-ad-block__table-title text-little text-little--light">Телефон</td>
+						<td class="b-post-ad-block__table-tel text-little">+7 (911) 777-77-77</td>
+						<td class="b-post-ad-block__table-tel-radio text-little">
+							<input class="input-radio" type="radio" name="b-post-ad-block__table-contact" id="b-post-ad-block__table-tel" checked>
+							<label class="label-radio select-text" for="b-post-ad-block__table-tel">Желаемый вид связи</label>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="b-post-ad-block__table-title text-little text-little--light">E-mail</td>
+						<td class="b-post-ad-block__table-tel text-little">alexander98@gmail.com</td>
+						<td class="b-post-ad-block__table-mail-radio text-little">
+							<input class="input-radio" type="radio" name="b-post-ad-block__table-contact" id="b-post-ad-block__table-mail">
+							<label class="label-radio select-text" for="b-post-ad-block__table-mail">Желаемый вид связи</label>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="b-post-ad-block__table-title b-post-ad-block__table-title--country text-little text-little--light">
+							Страна
+						</td>
+						<td colspan="2">
+							<div class="custom-select custom-select--country">
+								<div class="custom-select__input">
+									<input type="text" name="country" id="country" value="Россия" disabled>
+									<i></i>
+								</div>
+
+								<ul>
+									<li>Россия</li>
+									<li>США</li>
+									<li>Великобритания</li>
+									<li>Россия</li>
+									<li>США</li>
+									<li>Великобритания</li>
+									<li>Россия</li>
+									<li>США</li>
+									<li>Великобритания</li>
+									<li>Россия</li>
+									<li>США</li>
+									<li>Великобритания</li>
+									<li>Россия</li>
+									<li>США</li>
+									<li>Великобритания</li>
+									<li>Россия</li>
+									<li>США</li>
+									<li>Великобритания</li>
+									<li>Россия</li>
+									<li>США</li>
+									<li>Великобритания</li>
+								</ul>
+							</div>
+						</td>
+						<!--<td class="b-post-ad-block__table-country text-little" colspan="2">-->
+							<!--<div class="b-post-ad-block__table-country-select jq-selectbox-main">-->
+								<!--<select id="b-post-ad-block__table-country-select" name="b-post-ad-block__table-country-select">-->
+									<!--<option value="1">Россия</option>-->
+									<!--<option value="2">Непал</option>-->
+									<!--<option value="3">Северная Корея</option>-->
+									<!--<option value="4">Куба</option>-->
+								<!--</select>-->
+							<!--</div>-->
+						<!--</td>-->
+					</tr>
+
+					<tr>
+						<td class="b-post-ad-block__table-title b-post-ad-block__table-title--city text-little text-little--light">Город</td>
+						<td colspan="2">
+							<div class="custom-select custom-select--city">
+								<div class="custom-select__input">
+									<input type="text" name="city" id="city" value="Москва" disabled>
+									<i></i>
+								</div>
+
+								<ul>
+									<li>Москва</li>
+									<li>Санкт-Петербург</li>
+									<li>Вильнюс</li>
+								</ul>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="b-post-ad-block__table-title b-post-ad-block__table-title--good-name text-little text-little--light">
+							<label for="b-post-ad-block__table-good-name">Наименование товара</label>
+						</td>
+						<td class="b-post-ad-block__table-good-name text-little" colspan="2">
+							<input class="type-text" type="text" name="b-post-ad-block__table-good-name" id="b-post-ad-block__table-good-name">
+						</td>
+					</tr>
+
+					<tr>
+						<td class="b-post-ad-block__table-big-title content-title-info" colspan="3">Информация о товаре</td>
+					</tr>
+
+					<tr>
+						<td class="b-post-ad-block__table-title b-post-ad-block__table-title--category text-little text-little--light">Категория</td>
+						<td class="b-post-ad-block__table-category text-little" colspan="2">
+							<div class="b-post-ad-block__table-category-select jq-selectbox-main">
+								<select id="b-post-ad-block__table-category-select" name="b-post-ad-block__table-category-select">
+									<option>Выберите категорию</option>
+									<option value="1">Категория 1</option>
+									<option value="2">Категория 2</option>
+									<option value="3">Категория 3</option>
+									<option value="4">Категория 4</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="b-post-ad-block__table-title b-post-ad-block__table-title--produced text-little
+						text-little--light">Дата производства</td>
+						<td class="b-post-ad-block__table-produced" colspan="2">
+							<div class="b-post-ad-block__table-produced-month jq-selectbox-main">
+								<select id="b-post-ad-block__table-produced-month-from-select" name="b-post-ad-block__table-produced-month-from-select">
+									<option value="1">август</option>
+									<option value="2">15</option>
+									<option value="3">16</option>
+								</select>
+							</div>
+
+							<div class="b-post-ad-block__table-produced-year jq-selectbox-main">
+								<select id="b-post-ad-block__table-produced-year-from-select" name="b-post-ad-block__table-produced-year-from-select">
+									<option value="1">2015</option>
+									<option value="2">15</option>
+									<option value="3">16</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="b-post-ad-block__table-title b-post-ad-block__table-title--produce-place text-little text-little--light">
+							<label for="b-post-ad-block__table-produce-place">Место производства</label>
+						</td>
+						<td class="b-post-ad-block__table-produce-place text-little" colspan="2">
+							<input class="type-text" type="text" name="b-post-ad-block__table-produce-place" id="b-post-ad-block__table-produce-place">
+						</td>
+					</tr>
+
+					<tr>
+						<td class="b-post-ad-block__table-title b-post-ad-block__table-title--producer text-little text-little--light">
+							<label for="b-post-ad-block__table-producer">Производитель</label>
+						</td>
+						<td class="b-post-ad-block__table-producer text-little" colspan="2">
+							<input class="type-text" type="text" name="b-post-ad-block__table-producer" id="b-post-ad-block__table-producer">
+						</td>
+					</tr>
+
+					<tr>
+						<td class="b-post-ad-block__table-title b-post-ad-block__table-title--dimensions text-little text-little--light">
+							<label for="b-post-ad-block__table-dimensions">Габариты<br><span>(приблизительно)</span></label>
+						</td>
+						<td class="b-post-ad-block__table-dimensions text-little" colspan="2">
+							<input class="type-text" type="text" name="b-post-ad-block__table-dimensions" id="b-post-ad-block__table-dimensions">
+						</td>
+					</tr>
+
+					<tr>
+						<td class="b-post-ad-block__table-title b-post-ad-block__table-title--weight text-little
+						text-little--light">Вес</td>
+						<td class="b-post-ad-block__table-weight" colspan="2">
+							<input class="type-text" type="text" name="b-post-ad-block__table-weight-val" id="b-post-ad-block__table-weight-val">
+
+							<div class="b-post-ad-block__table-weight-units jq-selectbox-main">
+								<div class="disabled"></div>
+								<select id="b-post-ad-block__table-weight-units-select" name="b-post-ad-block__table-weight-units">
+									<option value="1">кг</option>
+									<option value="2">фунтов</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="b-post-ad-block__table-title b-post-ad-block__table-title--quantity text-little text-little--light">
+							<label for="b-post-ad-block__table-quantity">Количество</label>
+						</td>
+						<td class="b-post-ad-block__table-quantity text-little" colspan="2">
+							<input class="type-text" type="text" name="b-post-ad-block__table-quantity" id="b-post-ad-block__table-quantity">
+						</td>
+					</tr>
+
+					<tr>
+						<td class="b-post-ad-block__table-title b-post-ad-block__table-title--doc-info text-little text-little--light">
+							<label for="b-post-ad-block__table-doc-info">
+								Сведения о документации<br>
+								<span>(номер чертежа ТУ)</span>
+							</label>
+						</td>
+						<td class="b-post-ad-block__table-doc-info text-little" colspan="2">
+							<input class="type-text" type="text" name="b-post-ad-block__table-doc-info" id="b-post-ad-block__table-doc-info">
+						</td>
+					</tr>
+
+					<tr>
+						<td class="b-post-ad-block__table-title b-post-ad-block__table-title--certification text-little text-little--light">
+							<label for="b-post-ad-block__table-certification">
+								Сведения о сертификации<br>
+								<span>
+									(наличие сертификата<br>
+									классификационного<br>
+									общества)
+								</span>
+							</label>
+						</td>
+						<td class="b-post-ad-block__table-certification text-little" colspan="2">
+							<input class="type-text" type="text" name="b-post-ad-block__table-certification" id="b-post-ad-block__table-certification">
+						</td>
+					</tr>
+
+					<tr>
+						<td class="b-post-ad-block__table-title b-post-ad-block__table-title--good-condition text-little text-little--light">Оценка состояния<br> товара</td>
+						<td class="b-post-ad-block__table-good-condition text-little" colspan="2">
+							<div class="b-post-ad-block__table-good-condition-select jq-selectbox-main">
+								<select id="b-post-ad-block__table-good-condition-select" name="b-post-ad-block__table-good-condition-select">
+									<option value="1">Восстановленный</option>
+									<option value="2">Категория 2</option>
+									<option value="3">Категория 3</option>
+									<option value="4">Категория 4</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="b-post-ad-block__table-title b-post-ad-block__table-title--good-location text-little text-little--light">Местоположение<br>товара</td>
+						<td class="b-post-ad-block__table-good-location text-little" colspan="2">
+							<div class="b-post-ad-block__table-good-location-country-select jq-selectbox-main">
+								<select id="b-post-ad-block__table-good-location-country-select" name="b-post-ad-block__table-good-location-country-select">
+									<option>Страна</option>
+									<option value="1">Категория 1</option>
+									<option value="2">Категория 2</option>
+									<option value="3">Категория 3</option>
+									<option value="4">Категория 4</option>
+								</select>
+							</div>
+							<div class="b-post-ad-block__table-good-location-city-select jq-selectbox-main">
+								<select id="b-post-ad-block__table-good-location-city-select" name="b-post-ad-block__table-good-location-city-select">
+									<option>Город</option>
+									<option value="1">Категория 1</option>
+									<option value="2">Категория 2</option>
+									<option value="3">Категория 3</option>
+									<option value="4">Категория 4</option>
+								</select>
+							</div>
+						</td>
+					</tr>
+				</table>
+
+				<div class="b-post-ad-block__options">
+					<div class="b-post-ad-block__options-shipping clearfix">
+						<h3 class="b-post-ad-block__options-shipping-title form-text">Условия поставки</h3>
+
+						<input class="address-disabler input-radio" type="radio" name="b-post-ad-block__options-shipping" id="b-post-ad-block__options-shipping-sellers-warehouse">
+						<label class="label-radio text-little text-little--light" for="b-post-ad-block__options-shipping-sellers-warehouse">склад продавца</label>
+
+						<input class="address-enabler input-radio" type="radio" name="b-post-ad-block__options-shipping" id="b-post-ad-block__options-shipping-buyers-warehouse">
+						<label class="label-radio text-little text-little--light" for="b-post-ad-block__options-shipping-buyers-warehouse">склад покупателя</label>
+
+						<input class="b-post-ad-block__options-shipping-address type-text disabling-address" type="text" name="b-post-ad-block__options-shipping-address" id="b-post-ad-block__options-shipping-address">
+
+						<input class="address-disabler input-radio" type="radio" name="b-post-ad-block__options-shipping" id="b-post-ad-block__options-shipping-other">
+						<label class="label-radio text-little text-little--light" for="b-post-ad-block__options-shipping-other">иные</label>
+					</div>
+
+					<div class="b-post-ad-block__options-notes">
+						<label class="b-post-ad-block__options-notes-label text-little text-little--light">Примечания</label>
+
+						<textarea class="b-post-ad-block__options-notes-text type-text textarea" name="b-post-ad-block__options-notes-text" id="b-post-ad-block__options-notes-text" placeholder="Примечания"></textarea>
+
+						<div class="b-post-ad-block__options-notes-popup text-little text-little--light">
+							Если имеются дополнительные сведения о товаре, опишите их <i>(например, <span>оценка состояния товара</span>)</i>
+							<div class="b-post-ad-block__options-notes-popup-close"></div>
+						</div>
+					</div>
+
+					<label class="b-post-ad-block__options-cost-label text-little text-little--light" for="b-post-ad-block__options-cost-val">Стоимость</label>
+					<input class="b-post-ad-block__options-cost-input type-text" type="text" name="b-post-ad-block__options-cost-val" id="b-post-ad-block__options-cost-val">
+					<div class="b-post-ad-block__options-cost-units jq-selectbox-main">
+						<div class="disabled"></div>
+						<select id="b-post-ad-block__options-cost-units-select" name="b-post-ad-block__options-cost-units">
+							<option value="1">рублей</option>
+							<option value="2">долларов</option>
+							<option value="3">евро</option>
+						</select>
+					</div>
+
+					<label class="b-post-ad-block__options-file-label shadow_button" for="b-post-ad-block__options-file">Прикрепить файл</label>
+					<input class="b-post-ad-block__options-file" type="file" name="b-post-ad-block__options-file" id="b-post-ad-block__options-file">
+
+					<ul class="b-post-ad-block__options-added-files">
+						<li class="b-post-ad-block__options-added-files-item">
+							<div class="b-post-ad-block__options-added-files-close close-blue"></div>
+							<div class="b-post-ad-block__options-added-files-img">
+								<img src="../images/b-post-ad-block__options-added-files-img-1.jpg" alt="b-post-ad-block__options-added-files-img-1">
+							</div>
+							<div class="b-post-ad-block__options-added-files-status text-little text-little--light round-check">загружено</div>
+						</li>
+						<li class="b-post-ad-block__options-added-files-item">
+							<div class="b-post-ad-block__options-added-files-close close-blue"></div>
+							<div class="b-post-ad-block__options-added-files-img">
+								<img src="../images/b-post-ad-block__options-added-files-img-1.jpg" alt="b-post-ad-block__options-added-files-img-1">
+							</div>
+							<div class="b-post-ad-block__options-added-files-status text-little text-little--light round-check">загружено</div>
+						</li>
+					</ul>
+
+					<div class="b-post-ad-block__options-translation">
+						<h3 class="b-post-ad-block__options-translation-title form-text">Услуга перевода объявлений на другой язык</h3>
+
+						<input class="input-radio" type="radio" name="b-post-ad-block__options-translation" id="b-post-ad-block__options-translation-on">
+						<label class="label-radio text-little text-little--light" for="b-post-ad-block__options-translation-on">Заказать услугу</label>
+
+						<input class="input-radio" type="radio" name="b-post-ad-block__options-translation" id="b-post-ad-block__options-translation-off">
+						<label class="label-radio text-little text-little--light" for="b-post-ad-block__options-translation-off">Спасибо, не надо</label>
+					</div>
+
+					<div class="b-post-ad-block__options-deal-kind">
+						<h3 class="b-post-ad-block__options-deal-kind-title form-text">Укажите желаемый вид проведения сделок:</h3>
+
+						<input class="input-radio" type="radio" name="b-post-ad-block__options-deal-kind" id="b-post-ad-block__options-deal-kind-straight">
+						<label class="label-radio text-little text-little--light" for="b-post-ad-block__options-deal-kind-straight">Прямая сделка</label>
+
+						<input class="input-radio" type="radio" name="b-post-ad-block__options-deal-kind" id="b-post-ad-block__options-deal-kind-secured">
+						<label class="label-radio text-little text-little--light" for="b-post-ad-block__options-deal-kind-secured">Безопасная сделка</label>
+
+						<input class="input-radio" type="radio" name="b-post-ad-block__options-deal-kind" id="b-post-ad-block__options-deal-kind-any">
+						<label class="label-radio text-little text-little--light" for="b-post-ad-block__options-deal-kind-any">Любой</label>
+					</div>
+				</div>
+
+				<input class="b-post-ad-block__submit brown_button" type="submit" value="Отправить на модерацию">
+			</form>
+		</div>
+
+		<div class="b-advertising-bottom">
+			<div class="b-advertising-bottom__banner banner-02"><a href="#"><img src="../images/examples/banner2.png" /></a></div>
+			<div class="b-advertising-bottom__banner banner-03"><a href="#"><img src="../images/examples/banner3.png" /></a></div>
+		</div>
+
+	</div>
+
+	<div class="b-bottom-menu">
+		<nav>
+			<div class="b-menu-main"><!--b-menu_link_active-->
+				<div  class='b-menu-main__link'>
+					<a href="#">О портале</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Услуги портала</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Новости</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Реклама</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Контакты</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">Дилеры</a>
+				</div>
+				<div  class='b-menu-main__link'>
+					<a href="#">shipstoresbonus</a>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="b-footer">
+		<div class="b-footer-cr">
+			<div class="b-footer-cr__copy">© 2015 ShipStores</div>
+			<div class="b-footer-cr__bitrix"><img src="../images/bitrix.png" /></div>
+			<div class="b-footer-cr__menu">
+				<a href="#">Закупки</a>
+				<a href="#">Магазины</a>
+				<a href="#">Объявления</a>
+			</div>
+			<div class="b-footer-cr__7studio">
+				<p><a href="//7sait.spb.ru/services/sozdanie-saitov/" title="Разработка сайтов">Разработка сайта: «7 Студио»</a></p>
+				<p><a href="//7sait.spb.ru/services/internet-marketing/" title="Продвижение сайтов">Продвижение сайта: «7 Студио»</a></p>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+
+<div class="b-static-stripe">
+	<div class="b-your-blue">
+		<div class="b-your-blue__feedback my-divs">
+			<div class="form-button js-call-form">обратная связь</div>
+		</div>
+		<div class="b-your-blue__info my-divs b-your-blue__infofirst">
+			<div class="b-my-info">
+				<div class="b-my-info__icon icon-purchase"></div>
+				<div class="b-my-info__name"><a href="#">Закупки, в которых вы участвуете</a></div>
+				<div class="b-my-info__count">4</div>
+			</div>
+		</div>
+		<div class="b-your-blue__info my-divs">
+			<div class="b-my-info">
+				<div class="b-my-info__icon icon-notice"></div>
+				<div class="b-my-info__name"><a href="#">Размещено объявлений</a></div>
+				<div class="b-my-info__count">4</div>
+			</div>
+		</div>
+		<div class="b-your-blue__info my-divs">
+			<div class="b-my-info">
+				<div class="b-my-info__icon icon-favorites"></div>
+				<div class="b-my-info__name"><a href="#">Избранное</a></div>
+				<div class="b-my-info__count">4</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="deposit-message__wrapper" id="deposit">
+	<section class="deposit-message">
+		<h2 class="deposit-message__title">Внимание!</h2>
+
+		<p class="deposit-message__text">
+			Для дальнейшего испольвания сайта<br>
+			вам необходимо внести депозит<br>
+			и заполнить личные данные
+		</p>
+
+		<div class="deposit-message__btn brown_button">Продолжить</div>
+	</section>
+</div>
+
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/contacts.js"></script>
+
+</body>
+</html>

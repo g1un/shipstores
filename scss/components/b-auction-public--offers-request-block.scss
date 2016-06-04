@@ -1,157 +1,160 @@
 /*b-auction-public--offers-request-block*/
 .b-auction-public-block{
 
-  &__purchase{
-    overflow: hidden;
+	&__purchase{
+		overflow: hidden;
 
-    &-step{
-      margin: 0 0 84px;
-      position: relative;
+		&-step{
+			margin: 0 0 84px;
+			position: relative;
 
-      &-val{
-        float: left;
-        margin: 6px 27px 0 32px;
-        font-family: NeueHaas_reg, Helvetica, sans-serif;
-        font-size: 20px;
-        line-height: 1.2em;
-        font-weight: 400;
-        color: #8b0333;
-        text-transform: none;
-        text-decoration: none;
-        letter-spacing: 0;
-        position: relative;
+			&-val{
+				float: left;
+				margin: 6px 27px 0 32px;
+				padding: 2px 0 0;
+				width: 23px;
+				font-family: NeueHaas_reg, Helvetica, sans-serif;
+				font-size: 20px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #8b0333;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: center;
+				position: relative;
 
-        &::before{
-          content: '';
-          position: absolute;
-          top: -6px;
-          left: -13px;
-          width: 50px;
-          height: 47px;
-          background: url("../images/b-auction-public-block__purchase-step-val.png") no-repeat 0 0;
-        }
-      }
+				&::before{
+					content: '';
+					position: absolute;
+					top: -6px;
+					left: -13px;
+					width: 50px;
+					height: 47px;
+					background: url("../images/b-auction-public-block__purchase-step-val.png") no-repeat 0 0;
+				}
+			}
 
-      &-units{
-        float: left;
-        margin: 0;
-        padding: 2px 0 3px;
-        width: 49px;
-        font-family: NeueHaas_light, Helvetica, sans-serif;
-        font-size: 8px;
-        line-height: 1.2em;
-        font-weight: 400;
-        color: #fff;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 0;
-        text-align: center;
-        background: #8b0333;
-        border-radius: 8px;
-        position: absolute;
-        top: 35px;
-        left: 18px;
-      }
+			&-units{
+				float: left;
+				margin: 0;
+				padding: 2px 0 3px;
+				width: 49px;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 8px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #fff;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: center;
+				background: #8b0333;
+				border-radius: 8px;
+				position: absolute;
+				top: 35px;
+				left: 18px;
+			}
 
-      &-title{
-        padding: 16px 0 0;
-        font-family: NeueHaas_light-it, Helvetica, sans-serif;
-        font-size: 12px;
-        line-height: 1.2em;
-        font-weight: 400;
-        color: #464646;
-        text-transform: none;
-        text-decoration: none;
-        letter-spacing: 0;
-      }
-    }
+			&-title{
+				padding: 16px 0 0;
+				font-family: NeueHaas_light-it, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #464646;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+			}
+		}
 
-    &-left{
-      margin-bottom: 0;
-    }
+		&-left{
+			margin-bottom: 0;
+		}
 
-    &-shipping-date--out{
-      clear: both;
-      margin-bottom: 4px;
+		&-shipping-date--out{
+			clear: both;
+			margin-bottom: 4px;
 
-      &-title{
+			&-title{
 
-        margin: 0 82px 0 0;
-      }
+				margin: 0 82px 0 0;
+			}
 
-      &-val{
-        float: left;
-      }
-    }
+			&-val{
+				float: left;
+			}
+		}
 
-    &-shipping-address{
-      padding: 10px 0 0 17px;
-      position: relative;
+		&-shipping-address{
+			padding: 10px 0 0 17px;
+			position: relative;
 
-      &.opened{
-        box-shadow: 0 1px 6px 0 rgba(0,0,0,.15);
+			&.opened{
+				box-shadow: 0 1px 6px 0 rgba(0,0,0,.15);
 
-        &::before{
-          border-bottom: 7px solid #8b0333;
-          border-top: none;
-        }
+				&::before{
+					border-bottom: 7px solid #8b0333;
+					border-top: none;
+				}
 
-        .b-auction-public-block__purchase-shipping-address{
+				.b-auction-public-block__purchase-shipping-address{
 
-          &-map{
-            display: block;
-          }
-        }
-      }
+					&-map{
+						display: block;
+					}
+				}
+			}
 
-      &-title{
-        float: left;
-        margin: 0 72px 0 0;
-      }
+			&-title{
+				float: left;
+				margin: 0 72px 0 0;
+			}
 
-      &-val{
-        float: left;
-        margin: 0;
-        cursor: pointer;
-      }
+			&-val{
+				float: left;
+				margin: 0;
+				cursor: pointer;
+			}
 
-      &::before{
-        content: '';
-        position: absolute;
-        top: 15px;
-        right: 28px;
-        width: 0;
-        height: 0;
-        border-top: 7px solid #8b0333;
-        border-left: 6px solid transparent;
-        border-right: 6px solid transparent;
-      }
+			&::before{
+				content: '';
+				position: absolute;
+				top: 15px;
+				right: 28px;
+				width: 0;
+				height: 0;
+				border-top: 7px solid #8b0333;
+				border-left: 6px solid transparent;
+				border-right: 6px solid transparent;
+			}
 
-      &-map{
-        display: none;
-        clear: both;
-        padding: 10px 0 12px;
-        width: 526px;
-        height: 165px;
+			&-map{
+				display: none;
+				clear: both;
+				padding: 10px 0 12px;
+				width: 526px;
+				height: 165px;
 
-        #map{
-          width: 100%;
-          height: 100%;
-          padding: 0;
-          margin: 0;
-        }
-      }
-    }
+				#map{
+					width: 100%;
+					height: 100%;
+					padding: 0;
+					margin: 0;
+				}
+			}
+		}
 
-    &-make-offer--center{
-      margin-right: 0;
-    }
+		&-make-offer--center{
+			margin-right: 0;
+		}
 
-    &-make-offer-link--center{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  }
+		&-make-offer-link--center{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
 }
 /*end of b-auction-public--offers-request-block*/

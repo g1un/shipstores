@@ -36,6 +36,10 @@
 			display: inline-block;
 			vertical-align: top;
 
+			&:last-child{
+				margin: 0;
+			}
+
 			label{
 				padding: 0 0 0 25px;
 				font-family: NeueHaas_light, Helvetica, sans-serif;
@@ -79,6 +83,24 @@
 				text-transform: none;
 				text-decoration: none;
 				letter-spacing: 0;
+			}
+
+			.multiselect{
+				width: 225px;
+				height: 32px;
+
+				&__placeholder{
+					height: 100%;
+					box-sizing: border-box;
+					font-family: NeueHaas_light, Helvetica, sans-serif;
+					font-size: 12px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #000;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+				}
 			}
 
 			.jq-selectbox-main{

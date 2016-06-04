@@ -427,7 +427,6 @@ $(document).ready(function() {
 		$(window).mousedown(function (e) {
 			var clicked = $(e.target);
 			if (clicked.is('.b-orders-list-block__orders-story-block')||clicked.closest('.b-orders-list-block__orders-story-block').length){
-				console.log('closest');
 				return;
 			} else {
 				ordersStoryBlock.removeClass('show');
@@ -672,7 +671,11 @@ $(document).ready(function() {
 				$('.b-ad-unit-block__image').css('opacity', '1');
 				$('.b-ad-unit-block__cancel').css('opacity', '1');
 			}, 50);
-			imageCss();
+			$('b-ad-unit-block__image').imagesLoaded( function() {
+				console.log('loaded');
+				imageCss();
+			});
+
 			mouseDown();
 			cancel();
 		});
@@ -1184,6 +1187,70 @@ $(document).ready(function() {
 		});
 	}
 	/*end of standard modal window*/
+
+	/*b-head__messages-list*/
+	if($('.b-head__messages-list').length){
+		var messagesList = $('.b-head__messages-list');
+		var messagesBtn = $('.b-head__messages-link');
+
+		messagesBtn.on('click', function(){
+			messagesList.toggle();
+		});
+
+		$(window).mousedown(function (e) {
+			var clicked = $(e.target);
+			if (clicked.is('.b-head__messages-list') || clicked.closest('.b-head__messages-list').length || clicked.is('.b-head__messages-link') || clicked.closest('.b-head__messages-link').length ) {
+				return;
+			} else {
+				messagesList.hide();
+			}
+		});
+	}
+	/*end of b-head__messages-list*/
+
+	/*custom-select*/
+	if($('.custom-select').length){
+		var customSelect = $('.custom-select');
+		var customSelectBtn = $('.custom-select__input i');
+		var customSelectList = $('.custom-select ul');
+		var customSelectItem = $('.custom-select ul li');
+		var customSelectInput = $('.custom-select input');
+
+		customSelectBtn.on('click', function(){
+			if($(this).hasClass('opened')){
+				customSelectBtn.removeClass('opened');
+				customSelectList.hide();
+			}else{
+				customSelectBtn.removeClass('opened');
+				customSelectList.hide();
+				$(this).addClass('opened');
+				$(this).closest('.custom-select').find('ul').show();
+			}
+
+			//customSelectListHeight = $(window).height() - (customSelectList.offset().top - $(window).scrollTop()) - $('.b-your-blue').outerHeight() - 10;
+			//customSelectList.css({
+			//	'max-height': customSelectListHeight,
+			//	'overflow-y': 'scroll'
+			//});
+		});
+
+		customSelectItem.on('click', function(){
+			$(this).closest('.custom-select').find('input').attr('value', $(this).text());
+			$(this).closest('.custom-select').find('i').removeClass('opened');
+			$(this).closest('.custom-select').find('ul').hide();
+		});
+
+		$(window).mousedown(function (e) {
+			var clicked = $(e.target);
+			if (clicked.closest('.custom-select').length){
+				return;
+			}else {
+				customSelectBtn.removeClass('opened');
+				customSelectList.hide();
+			}
+		});
+	}
+	/*end of custom-select*/
 });
 /*end of contacts.js*/
 

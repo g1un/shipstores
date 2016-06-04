@@ -76,6 +76,16 @@
       &--details{
         margin: 0 0 12px 16px;
       }
+
+      a{
+				color: #961d48;
+
+				&:hover,
+				&:focus{
+					text-decoration: none;
+					color: #c0bfc0;
+				}
+			}
     }
 
     &-button{

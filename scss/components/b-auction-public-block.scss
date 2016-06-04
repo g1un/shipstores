@@ -1,469 +1,469 @@
 /*b-auction-public-block*/
 .b-auction-public-block {
-  clear: both;
-  padding: 0;
-  background: #fff;
-  margin: 25px 0px 15px;
-  border: 1px solid #ccc;
+	clear: both;
+	padding: 0;
+	background: #fff;
+	margin: 25px 0px 15px;
+	border: 1px solid #ccc;
 
-  &__title {
-    margin: 0 0 28px 19px;
-    padding-top: 22px;
+	&__title {
+		margin: 0 0 28px 19px;
+		padding-top: 22px;
 
-    span{
-      font-size: 24px;
-    }
-  }
+		span{
+			font-size: 24px;
+		}
+	}
 
-  &__purchase{
-    float: left;
-    width: 564px;
-    border-right: 1px solid #dedede;
+	&__purchase{
+		float: left;
+		width: 564px;
+		border-right: 1px solid #dedede;
 
-    &-title{
-      text-transform: none;
-      margin: 0 0 40px 16px;
-    }
+		&-title{
+			text-transform: none;
+			margin: 0 0 40px 16px;
+		}
 
-    &-link{
-      display: inline-block;
-      padding: 7px 40px 9px 12px;
-      margin: 0 0 28px 18px;
-      background: #f5f5f5;
-      border-radius: 5px;
-      box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
-      position: relative;
+		&-link{
+			display: inline-block;
+			padding: 7px 40px 9px 12px;
+			margin: 0 0 28px 18px;
+			background: #f5f5f5;
+			border-radius: 5px;
+			box-shadow: 0 1px 1px 0 rgba(0,0,0,.15);
+			position: relative;
 
-      &::after{
-        content: '';
-        position: absolute;
-        top: 7px;
-        right: 10px;
-        width: 17px;
-        height: 16px;
-        background: url("../images/b-auction-public-block__purchase-link.png") no-repeat 0 0;
-      }
-    }
+			&::after{
+				content: '';
+				position: absolute;
+				top: 7px;
+				right: 10px;
+				width: 17px;
+				height: 16px;
+				background: url("../images/b-auction-public-block__purchase-link.png") no-repeat 0 0;
+			}
+		}
 
-    &-max-price{
-      font-family: NeueHaas_thin-it, Helvetica, sans-serif;
-      margin: 0 0 0 18px;
+		&-max-price{
+			font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+			margin: 0 0 0 18px;
 
-      &-ru{
-        display: inline-block;
-        vertical-align: top;
-        font-family: NeueHaas_bold, Helvetica, sans-serif;
-        font-size: 24px;
-        line-height: 1.2em;
-        font-weight: 400;
-        color: #0c4da2;
-        text-transform: none;
-        text-decoration: none;
-        letter-spacing: 0;
-        margin: 2px 0 0;
+			&-ru{
+				display: inline-block;
+				vertical-align: top;
+				font-family: NeueHaas_bold, Helvetica, sans-serif;
+				font-size: 24px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #0c4da2;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				margin: 2px 0 0;
 
-        span{
-          font-family: NeueHaas_it, Helvetica, sans-serif;
-          font-size: 16px;
-        }
-      }
+				span{
+					font-family: NeueHaas_it, Helvetica, sans-serif;
+					font-size: 16px;
+				}
+			}
 
-      &-eu{
-        display: inline-block;
-        vertical-align: top;
-        margin: 9px 0 0 23px;
-        padding: 0;
-        font-family: NeueHaas_light, Helvetica, sans-serif;
-        font-size: 14px;
-        line-height: 1.2em;
-        font-weight: 400;
-        color: #9d9e9e;
-        text-transform: none;
-        text-decoration: none;
-        letter-spacing: 0;
+			&-eu{
+				display: inline-block;
+				vertical-align: top;
+				margin: 9px 0 0 23px;
+				padding: 0;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #9d9e9e;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
 
-        span{
-          font-size: 17px;
-          margin: 0 0 0 2px;
-        }
-      }
-    }
+				span{
+					font-size: 17px;
+					margin: 0 0 0 2px;
+				}
+			}
+		}
 
-    &-shipping-date{
-      margin: 0 0 0 17px;
+		&-shipping-date{
+			margin: 0 0 0 17px;
 
-      &-title{
-        display: block;
-        float: left;
-      }
+			&-title{
+				display: block;
+				float: left;
+			}
 
-      &-val{
-        display: block;
-        float: right;
-        margin: 0 2px 0 0;
-      }
-    }
+			&-val{
+				display: block;
+				float: right;
+				margin: 0 2px 0 0;
+			}
+		}
 
-    &-category{
-      margin: 26px 0 19px 17px;
+		&-category{
+			margin: 26px 0 19px 17px;
 
-      &-title{
-        font-family: NeueHaas_thin-it, Helvetica, sans-serif;
-        font-size: 14px;
-        line-height: 1.2em;
-        font-weight: 400;
-        color: #464646;
-        text-transform: none;
-        text-decoration: none;
-        letter-spacing: 0;
-        margin: 0 0 2px;
-      }
+			&-title{
+				font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #464646;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				margin: 0 0 2px;
+			}
 
-      &-val{
-        margin: 0;
-      }
-    }
+			&-val{
+				margin: 0;
+			}
+		}
 
-    &-posted{
-      float: right;
-      font-family: NeueHaas_light-it, Helvetica, sans-serif;
-      font-size: 14px;
-      line-height: 1.2em;
-      font-weight: 400;
-      color: #464646;
-      text-transform: none;
-      text-decoration: none;
-      letter-spacing: 0;
-      margin: 0 25px 18px 0;
-    }
+		&-posted{
+			float: right;
+			font-family: NeueHaas_light-it, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #464646;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			margin: 0 25px 18px 0;
+		}
 
-    &-views{
-      float: right;
-      clear: both;
-      font-family: NeueHaas_light-it, Helvetica, sans-serif;
-      font-size: 14px;
-      line-height: 1.2em;
-      font-weight: 400;
-      color: #464646;
-      text-transform: none;
-      text-decoration: none;
-      letter-spacing: 0;
-      margin: 0 25px 0 0;
-      padding: 0 0 7px 29px;
-      position: relative;
+		&-views{
+			float: right;
+			clear: both;
+			font-family: NeueHaas_light-it, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #464646;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			margin: 0 25px 0 0;
+			padding: 0 0 7px 29px;
+			position: relative;
 
-      &::before{
-        content: '';
-        position: absolute;
-        top: 4px;
-        left: 0;
-        width: 19px;
-        height: 11px;
-        background: url("../images/b-auction-public-block__purchase-views.png") no-repeat 0 0;
-      }
-    }
+			&::before{
+				content: '';
+				position: absolute;
+				top: 4px;
+				left: 0;
+				width: 19px;
+				height: 11px;
+				background: url("../images/b-auction-public-block__purchase-views.png") no-repeat 0 0;
+			}
+		}
 
-    &-info{
-      clear: both;
-      border: 1px solid #d7d7d7;
-      width: 248px;
-      height: 157px;
-      margin: 0 0 0 17px;
+		&-info{
+			clear: both;
+			border: 1px solid #d7d7d7;
+			width: 248px;
+			padding: 0 0 10px;
+			margin: 0 0 0 17px;
 
-      &-item{
-        margin: 12px 0 0 10px;
-        padding: 0 0 0 44px;
+			&-item{
+				margin: 12px 0 0 10px;
+				padding: 0 0 0 44px;
 
-        &-title{
-          margin: 0 0 4px;
-          font-family: NeueHaas_light-it, Helvetica, sans-serif;
-          font-size: 14px;
-          line-height: 1.2em;
-          font-weight: 400;
-          color: #464646;
-          text-transform: none;
-          text-decoration: none;
-          letter-spacing: 0;
-        }
+				&-title{
+					margin: 0 0 4px;
+					font-family: NeueHaas_light-it, Helvetica, sans-serif;
+					font-size: 14px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #464646;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+				}
 
-        &-val{
-          margin: 0;
-          font-family: NeueHaas_medium, Helvetica, sans-serif;
-          font-size: 14px;
-          line-height: 1.2em;
-          font-weight: 400;
-          color: #000;
-          text-transform: none;
-          text-decoration: none;
-          letter-spacing: 0;
-          position: relative;
+				&-val{
+					margin: 0;
+					font-family: NeueHaas_medium, Helvetica, sans-serif;
+					font-size: 14px;
+					line-height: 1.2em;
+					font-weight: 400;
+					color: #000;
+					text-transform: none;
+					text-decoration: none;
+					letter-spacing: 0;
+					position: relative;
 
-          &::before{
-            content: '';
-            position: absolute;
-            top: -16px;
-            left: -45px;
-            width: 30px;
-            height: 30px;
-          }
+					&::before{
+						content: '';
+						position: absolute;
+						top: -16px;
+						left: -45px;
+						width: 30px;
+						height: 30px;
+					}
 
-          &--start{
+					&--start{
 
-            &::before{
-              background: url("../images/b-auction-public-block__purchase-info-item-start.png") no-repeat 0 0;
-            }
-          }
+						&::before{
+							background: url("../images/b-auction-public-block__purchase-info-item-start.png") no-repeat 0 0;
+						}
+					}
 
-          &--kind{
+					&--kind{
 
-            &::before{
-              background: url("../images/b-faq-block__link--deals.png") no-repeat 0 0;
-            }
-          }
+						&::before{
+							background: url("../images/b-faq-block__link--deals.png") no-repeat 0 0;
+						}
+					}
 
-          &--condition{
+					&--condition{
 
-            &::before{
-              background: url("../images/b-auction-public-block__purchase-info-item-condition.png") no-repeat 0 0;
-            }
-          }
+						&::before{
+							background: url("../images/b-auction-public-block__purchase-info-item-condition.png") no-repeat 0 0;
+						}
+					}
 
-          span{
-            font-family: NeueHaas_bold, Helvetica, sans-serif;
-            color: #8b0333;
-          }
-        }
-      }
-    }
+					span{
+						font-family: NeueHaas_bold, Helvetica, sans-serif;
+						color: #8b0333;
+					}
+				}
+			}
+		}
 
-    &-last-offer-time{
-      font-family: NeueHaas_light, Helvetica, sans-serif;
-      font-size: 14px;
-      line-height: 1.2em;
-      font-weight: 400;
-      color: #000;
-      text-transform: none;
-      text-decoration: none;
-      letter-spacing: 0;
-      margin: 0 0 53px 17px;
-    }
+		&-last-offer-time{
+			font-family: NeueHaas_light, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			margin: 0 0 10px 17px;
+		}
 
-    &-make-offer{
-      margin: 0 36px 205px 0;
-      font-size: 0;
-      text-align: right;
+		&-make-offer{
+			margin: 0 36px 205px 0;
+			font-size: 0;
+			text-align: right;
 
-      &-link{
-        display: inline-block;
-        vertical-align: top;
-        width: 216px;
-        margin: 5px 21px 0 0;
-      }
+			&-link{
+				display: inline-block;
+				vertical-align: top;
+				width: 216px;
+				margin: 5px 21px 0 0;
+			}
 
-      &-info{
-        display: inline-block;
-        vertical-align: top;
-        width: 120px;
-        margin: 0;
-        font-family: NeueHaas_light-it, Helvetica, sans-serif;
-        font-size: 12px;
-        line-height: 1.3em;
-        font-weight: 400;
-        color: #464646;
-        text-transform: none;
-        text-decoration: none;
-        letter-spacing: 0;
-        text-align: left;
-      }
-    }
+			&-info{
+				display: inline-block;
+				vertical-align: top;
+				width: 120px;
+				margin: 0;
+				font-family: NeueHaas_light-it, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.3em;
+				font-weight: 400;
+				color: #464646;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: left;
+			}
+		}
 
-    &-left{
-      float: left;
-      width: 240px;
-      margin: 0 0 44px;
-    }
+		&-left{
+			float: left;
+			width: 240px;
+			margin: 0 0 44px;
+		}
 
-    &-right{
-      float: right;
-      width: 290px;
-    }
+		&-right{
+			float: right;
+			width: 290px;
+		}
 
-    &-bottom{
-      clear: both;
-      margin: 0;
-      padding: 73px 0 28px;
+		&-bottom{
+			clear: both;
+			margin: 0;
+			padding: 73px 0 28px;
 
-      &-title{
-        margin: 0 0 18px;
-        font-family: NeueHaas_medium, Helvetica, sans-serif;
-        font-size: 14px;
-        line-height: 1.2em;
-        font-weight: 400;
-        color: #000;
-        text-transform: uppercase;
-        text-decoration: none;
-        letter-spacing: 0;
-        text-align: center;
-      }
+			&-title{
+				margin: 0 0 18px;
+				font-family: NeueHaas_medium, Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: uppercase;
+				text-decoration: none;
+				letter-spacing: 0;
+				text-align: center;
+			}
 
-      &-link{
-        display: block;
-        font-family: NeueHaas_medium, Helvetica, sans-serif;
-        font-size: 14px;
-        line-height: 1.2em;
-        font-weight: 400;
-        color: #000;
-        text-transform: none;
-        text-decoration: underline;
-        letter-spacing: 0;
-        margin: 0 0 14px 16px;
+			&-link{
+				display: block;
+				font-family: NeueHaas_medium, Helvetica, sans-serif;
+				font-size: 14px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #000;
+				text-transform: none;
+				text-decoration: underline;
+				letter-spacing: 0;
+				margin: 0 0 14px 16px;
 
-        span{
-          font-family: NeueHaas_bold, Helvetica, sans-serif;
-        }
+				span{
+					font-family: NeueHaas_bold, Helvetica, sans-serif;
+				}
 
-        &:hover,
-        &:focus{
-          text-decoration: none;
-        }
-      }
-    }
-  }
+				&:hover,
+				&:focus{
+					text-decoration: none;
+				}
+			}
+		}
+	}
 
-  &__buyer{
-    float: right;
-    width: 248px;
+	&__buyer{
+		float: right;
+		width: 248px;
 
-    &-purchase-confirmed{
-      margin: 0;
-      padding: 56px 0 27px;
-      text-align: center;
-      position: relative;
+		&-purchase-confirmed{
+			margin: 0;
+			padding: 56px 0 27px;
+			text-align: center;
+			position: relative;
 
-      &::before{
-        content: '';
-        position: absolute;
-        top: 24px;
-        left: 112px;
-        width: 23px;
-        height: 25px;
-        background: url("../images/hammer.png") no-repeat 0 0;
-      }
-    }
+			&::before{
+				content: '';
+				position: absolute;
+				top: 24px;
+				left: 112px;
+				width: 23px;
+				height: 25px;
+				background: url("../images/hammer.png") no-repeat 0 0;
+			}
+		}
 
-    &-info{
-      margin: 0 0 36px;
-    }
+		&-info{
+			margin: 0 0 36px;
+		}
 
-    &-title{
-      font-family: NeueHaas_medium, Helvetica, sans-serif;
-      font-size: 14px;
-      line-height: 1.2em;
-      font-weight: 400;
-      color: #000;
-      text-transform: none;
-      text-decoration: none;
-      letter-spacing: 0;
-      text-align: center;
-      margin: 0 0 15px;
-      padding: 10px 0 13px;
-      background: #f3f3f3;
-    }
+		&-title{
+			font-family: NeueHaas_medium, Helvetica, sans-serif;
+			font-size: 14px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			text-align: center;
+			margin: 0 0 15px;
+			padding: 10px 0 13px;
+			background: #f3f3f3;
+		}
 
-    &-name{
-      font-family: NeueHaas_medium, Helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 1.2em;
-      font-weight: 400;
-      color: #000;
-      text-transform: none;
-      text-decoration: none;
-      letter-spacing: 0;
-      margin: 0 0 6px 86px;
-    }
+		&-name{
+			font-family: NeueHaas_medium, Helvetica, sans-serif;
+			font-size: 16px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			margin: 0 0 6px 86px;
+		}
 
-    &-city{
-      font-family: NeueHaas_reg, Helvetica, sans-serif;
-      font-size: 12px;
-      line-height: 1.2em;
-      font-weight: 400;
-      color: #000;
-      text-transform: none;
-      text-decoration: none;
-      letter-spacing: 0;
-      margin: 0 0 10px 86px;
-    }
+		&-city{
+			font-family: NeueHaas_reg, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #000;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+			margin: 0 0 10px 86px;
+		}
 
-    &-rating{
-      font-size: 0;
-      line-height: 0;
-      margin: 0 0 0 86px;
+		&-rating{
+			font-size: 0;
+			line-height: 0;
+			margin: 0 0 0 86px;
 
-      &-title{
-        font-family: NeueHaas_light-it, Helvetica, sans-serif;
-        font-size: 12px;
-        line-height: 1.2em;
-        font-weight: 400;
-        color: #959595;
-        text-transform: none;
-        text-decoration: none;
-        letter-spacing: 0;
-        margin: 0 0 6px;
-      }
+			&-title{
+				font-family: NeueHaas_light-it, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #959595;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
+				margin: 0 0 6px;
+			}
 
-      span{
-        display: inline-block;
-        vertical-align: top;
-        margin: 0 3px 0 0;
-        width: 16px;
-        height: 16px;
-        background: url("../images/yellow-star.png") no-repeat 0 0;
-      }
-    }
+			span{
+				display: inline-block;
+				vertical-align: top;
+				margin: 0 3px 0 0;
+				width: 16px;
+				height: 16px;
+				background: url("../images/yellow-star.png") no-repeat 0 0;
+			}
+		}
 
-    &-photo{
-      float: left;
-      margin: 0 0 0 13px;
-      font-size: 0;
-      line-height: 0;
-      width: 57px;
+		&-photo{
+			float: left;
+			margin: 0 0 0 13px;
+			font-size: 0;
+			line-height: 0;
+			width: 57px;
+			text-align: center;
 
-      img{
-        display: block;
-        max-width: 100%;
-      }
-    }
+			img{
+				max-width: 100%;
+			}
+		}
 
-    &-btn{
-      display: block;
-      width: 217px;
-      margin: 0 auto 11px;
-      font-size: 12px;
-    }
+		&-btn{
+			display: block;
+			width: 217px;
+			margin: 0 auto 11px;
+			font-size: 12px;
+		}
 
-    &-attention{
-      margin: 15px 0;
-      padding: 0 18px;
-      font-family: NeueHaas_thin-it, Helvetica, sans-serif;
-      font-size: 12px;
-      line-height: 1.2em;
-      font-weight: 400;
-      color: #898989;
-      text-transform: none;
-      text-decoration: none;
-      letter-spacing: 0;
+		&-attention{
+			margin: 15px 0;
+			padding: 0 18px;
+			font-family: NeueHaas_thin-it, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 1.2em;
+			font-weight: 400;
+			color: #898989;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
 
-      &-link{
-        font-family: NeueHaas_light-it, Helvetica, sans-serif;
-        color: #8b0333;
-        text-decoration: underline;
+			&-link{
+				font-family: NeueHaas_light-it, Helvetica, sans-serif;
+				color: #8b0333;
+				text-decoration: underline;
 
-        &:hover,
-        &focus{
-          text-decoration: none;
-        }
-      }
-    }
-  }
+				&:hover,
+				&focus{
+					text-decoration: none;
+				}
+			}
+		}
+	}
 }
 /*end of b-auction-public-block*/

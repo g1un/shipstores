@@ -303,21 +303,18 @@
 
 		&-good-location{
 
-			&-country-select{
+			.custom-select{
+				display: inline-block;
 				vertical-align: top;
 				width: 198px;
-				height: 35px;
-				margin: 0 14px 0 0;
+				height: 32px;
+				margin: 0 45px 0 0;
 				padding: 0;
 			}
+		}
 
-			&-city-select{
-				vertical-align: top;
-				width: 198px;
-				height: 35px;
-				margin: 0;
-				padding: 0;
-			}
+		.custom-select{
+			margin-top: 7px;
 		}
 	}
 

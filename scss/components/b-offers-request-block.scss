@@ -417,7 +417,7 @@
 
   &__translation{
     background: #f3f3f3;
-    margin: 0 18px 31px 3px;
+    //margin: 0 18px 31px 3px;
     padding: 0 0 3px;
 
     &-title{
@@ -429,7 +429,7 @@
 
     label{
       display: block;
-      margin: 0 0 13px 14px;
+      margin: 0 0 13px 0;
       padding: 0 0 0 23px;
 
       &::before{

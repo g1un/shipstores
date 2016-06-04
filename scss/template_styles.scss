@@ -406,7 +406,6 @@ table{
 }
 /*----------- top-banner ----------------*/
 .b-advertising-top{
-	box-shadow: 0px 1px 2px 0px #cccccc;
 	float: left;
 	margin: 15px 0px;
 	cursor: pointer;
@@ -612,11 +611,16 @@ table{
 	clear: both;
 }
 .b-advertising-bottom__banner{
-	box-shadow: 0px 1px 2px 0px #cccccc;
+	box-shadow: 0 1px 2px 0 #cccccc;
 	float: left;
 	width: 400px;
 	height: 120px;
 	overflow: hidden;
+	background: #fff;
+	position: relative;
+}
+.b-advertising-bottom__banner.top-banner {
+	height: 70px;
 }
 .b-advertising-bottom__banner:first-child{
 	margin-right: 15px;
@@ -916,7 +920,7 @@ table{
 }
 .b-your-blue__info{
 	border-right: 1px solid #b2cefe;
-	padding-left: 50px !important;
+	padding-left: 30px !important;
 }
 .b-your-blue__info:last-child{
 	border-right: none;

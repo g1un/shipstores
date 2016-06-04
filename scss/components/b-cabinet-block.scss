@@ -3,6 +3,27 @@
 	clear: both;
 	display: table-row;
 
+	&__message{
+		background: #f0f7fd url("images/attention.jpg") 20px 20px no-repeat;
+		border: 1px solid #e9e9e9;
+		min-height: 50px;
+		float: left;
+		width: 100%;
+		margin: 0 0 10px;
+
+		&-text{
+			padding: 10px 30px 10px 60px;
+
+			a{
+				color: #961d48;
+
+				&:hover{
+					text-decoration:none;
+				}
+			}
+		}
+	}
+
 	&__panel{
 		display: table-cell;
 		vertical-align: top;
@@ -34,10 +55,13 @@
 
 		&-name{
 			margin: 0 0 22px;
+			width: 242px;
+			overflow: hidden;
+			word-wrap: break-word;
 			font-family: NeueHaas_light, Helvetica, sans-serif;
-			font-size: 28px;
+			font-size: 20px;
 			line-height: 1.2em;
-			font-weight: 400;
+			font-weight: bold;
 			color: #898989;
 			text-transform: uppercase;
 			text-decoration: none;
@@ -677,7 +701,7 @@
 			&-info{
 				float: left;
 				margin: 0;
-				width: 179px;
+				width: 50%;
 			}
 
 			&-add{
@@ -918,6 +942,50 @@
 				&:focus{
 					text-decoration: none;
 				}
+			}
+		}
+
+		&-deals-announce-and-purchases{
+
+			table{
+				width: 100%;
+
+				tr{
+
+					td{
+
+						&:first-child{
+							width: 300px;
+
+							span{
+								display: block;
+								font-family: NeueHaas_light, Helvetica, sans-serif;
+								font-size: 10px;
+								line-height: 1.2em;
+								font-weight: 400;
+								color: #3577d7;
+							}
+						}
+
+						a{
+							color: #464646;
+						}
+					}
+				}
+			}
+
+			td{
+				padding: 8px 5px;
+				box-sizing: border-box;
+				border: none;
+				font-family: NeueHaas_light, Helvetica, sans-serif;
+				font-size: 12px;
+				line-height: 1.2em;
+				font-weight: 400;
+				color: #464646;
+				text-transform: none;
+				text-decoration: none;
+				letter-spacing: 0;
 			}
 		}
 	}

@@ -500,8 +500,8 @@
 					}
 				}
 
-				.brown_button{
-					display: none;
+				.brown_button,
+				.search-button{
 					margin: 0;
 					float: right;
 					width: 147px;
@@ -512,7 +512,6 @@
 				}
 
 				table{
-					display: none;
 					margin: 15px 0 0;
 					clear: both;
 					width: 100%;
@@ -718,6 +717,22 @@
 					padding: 5px 10px 5px 5px;
 				}
 			}
+		}
+
+		&-ordered{
+			float: right;
+			padding: 14px 14px 0 0;
+			color: #5e8ffb;
+			cursor: auto;
+		}
+	}
+
+	&__store-open{
+
+		&-info{
+			display: none;
+			padding: 10px;
+			border: 1px solid #c3c3c3;
 		}
 	}
 

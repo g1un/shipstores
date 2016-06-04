@@ -86,21 +86,21 @@
 			display: inline-block;
 			vertical-align: top;
 
-			&:first-child{
+			&.message{
 
 				a{
 					background: url("images/message.png") no-repeat 0 center;
 				}
 			}
 
-			&:nth-child(2){
+			&.resume-favourite{
 
 				a{
 					background: url("images/star-icon--grey.png") no-repeat 0 center;
 				}
 			}
 
-			&:last-child{
+			&.claim{
 				margin: 0;
 
 				a{

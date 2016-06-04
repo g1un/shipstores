@@ -458,6 +458,20 @@
 			}
 		}
 	}
+
+	&.js--loading{
+		position: relative;
+
+		&::before{
+			content: '';
+			position: absolute;
+			left: -23px;
+			top: 7px;
+			width: 20px;
+			height: 20px;
+			background: url(images/wait20x20.gif);
+		}
+	}
 }
 /*end of select formstyler plugin*/
 
@@ -725,7 +739,6 @@
 
 		&:nth-child(n+2){
 			border-bottom: 1px solid #ededed;
-			cursor: pointer;
 
 			&:hover,
 			&:focus{
@@ -822,13 +835,15 @@
 		height: 50px;
 		padding: 5px 10px;
 		box-sizing: border-box;
+		font-family: NeueHaas_light, Helvetica, sans-serif;
+		font-size: 14px;
 
 		&:first-child{
 			width: 200px;
 		}
 
 		&:nth-child(2){
-			width: 140px;
+			width: 100px;
 			font-family: NeueHaas_medium, Helvetica, sans-serif;
 			font-size: 14px;
 			line-height: 1.2em;
@@ -852,7 +867,7 @@
 		}
 
 		&:nth-child(4){
-			width: 130px;
+			width: 100px;
 			font-family: NeueHaas_light, Helvetica, sans-serif;
 			font-size: 14px;
 			line-height: 1.2em;
@@ -894,6 +909,39 @@
 			text-transform: none;
 			text-decoration: none;
 			letter-spacing: 0;
+		}
+	}
+
+	.remove{
+		margin: 0 auto;
+		display: block;
+		width: 19px;
+		height: 19px;
+		background: #8b0333;
+		border-radius: 50%;
+		cursor: pointer;
+		position: relative;
+
+		&::before{
+			content: '';
+			position: absolute;
+			top: 8px;
+			left: 3px;
+			width: 12px;
+			height: 3px;
+			background: #fff;
+			transform: rotate(45deg);
+		}
+
+		&::after{
+			content: '';
+			position: absolute;
+			top: 8px;
+			left: 3px;
+			width: 12px;
+			height: 3px;
+			background: #fff;
+			transform: rotate(-45deg);
 		}
 	}
 }
@@ -1066,6 +1114,115 @@
 }
 /*end of multiselect*/
 
+/*custom-select*/
+.custom-select{
+	position: relative;
+	width: 198px;
+	height: 32px;
+
+	&.loading{
+
+		&::before{
+			content: '';
+			position: absolute;
+			left: -23px;
+			top: 7px;
+			width: 20px;
+			height: 20px;
+			background: url(/local/templates/shipstores_main/images/wait20x20.gif);
+		}
+	}
+
+	&__input{
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	span{
+		padding: 8px 22px 8px 10px;
+		box-sizing: border-box;
+		display: block;
+		height: 100%;
+		width: 100%;
+		box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.25);
+		border: none;
+		outline: none;
+		background: #fff;
+		font-family: NeueHaas_light, Helvetica, sans-serif;
+		font-size: 12px;
+		line-height: 1.2em;
+		font-weight: 400;
+		color: #000;
+		text-transform: none;
+		text-decoration: none;
+		letter-spacing: 0;
+	}
+
+	i{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		cursor: pointer;
+
+		&::after{
+			content: '';
+			position: absolute;
+			top: 13px;
+			right: 10px;
+			width: 0;
+			height: 0;
+			border-bottom: 0;
+			border-top: 7px solid #8b0333;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+		}
+
+		&.opened{
+
+			&::after{
+				border-top: none;
+				border-bottom: 7px solid #8b0333;
+			}
+		}
+	}
+
+	ul{
+		display: none;
+		position: absolute;
+		left: 0;
+		right: 0;
+		z-index: 101;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+		background: #fff;
+		max-height: 330px;
+		overflow-y: auto;
+
+		li{
+			padding: 2px 10px;
+			cursor: pointer;
+			font-family: NeueHaas_light, Helvetica, sans-serif;
+			font-size: 12px;
+			line-height: 1.5em;
+			font-weight: 400;
+			color: #8f9091;
+			text-transform: none;
+			text-decoration: none;
+			letter-spacing: 0;
+
+			&:hover{
+				background: #e7f0fe;
+			}
+		}
+	}
+}
+/*end of custom-select*/
+
 /*tip*/
 .tip{
 	display: none;
@@ -1131,7 +1288,6 @@
 
 /*js*/
 .js{
-
 	&--input-eye--to-show-password {
 		position: absolute;
 		right: 0;
@@ -1139,7 +1295,10 @@
 		width: 32px;
 		height: 32px;
 		z-index: 2;
-		background: url(images/eye_quick_view.png);
+		background-image: url(images/eye_quick_view.png);
+		background-size: 75%;
+		background-repeat: no-repeat;
+		background-position: center;
 		opacity: 0.3;
 		cursor: pointer;
 
@@ -1148,16 +1307,8 @@
 			opacity: 1;
 		}
 	}
-
-	&--show-password{
-
-		&:focus{
-
-			& + span{
-				opacity: 1;
-			}
+} .js--show-password:focus + span {
+			opacity: 1;
 		}
-	}
-}
 /*end of js*/
 /*end of FORM*/
